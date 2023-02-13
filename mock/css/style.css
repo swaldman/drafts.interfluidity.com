@@ -40,11 +40,26 @@
     src: url("../font/caroni/Caroni-Regular.otf");
 }
 
+:root {
+    --rss-animation-alt-0: orange;
+    --rss-animation-alt-1: #ffcc00;
+    --rss-animation-alt-2: white;
+
+    --min-side-margin:    60px;
+    --max-main-width: min(calc(100vw - 2 * var(--min-side-margin)), 800px);
+}
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Latin-Modern-Mono-Light;
     background-color: white;
 }
 header {
+    margin-right: 2em;
+    text-align: right;
 }
 main {
     max-width: 40em;
@@ -64,6 +79,8 @@ b i, b em, strong i, strong em {
     font-family: Latin-Modern-Mono-Light-Bold-Oblique;
 }
 div.entry-header h1 {
+    position: relative;
+    left: -1em;
     /* font-family: Latin-Modern-Mono-Caps; */
     font-family: CooperHewitt-Bold;
     /* font-family: F25_Bank_Printer; */
@@ -116,4 +133,40 @@ div.entry-footer {
     text-align: right;
 }
 
+
+@keyframes flashy-rss {
+      0%  {color:var( --rss-animation-alt-0 );}
+     33%  {color:var( --rss-animation-alt-1 );}
+     67%  {color:var( --rss-animation-alt-2 );}
+}
+
+a#rss-link {
+    color: black;
+    text-decoration: none;
+    font-family: Latin-Modern-Mono-Light-Bold;
+}
+a#rss-link .outer {
+    color: var( --rss-animation-alt-2 );
+    animation-name: flashy-rss;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s
+}
+a#rss-link .middle {
+    color: var( --rss-animation-alt-1 );
+    animation-name: flashy-rss;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s
+}
+a#rss-link .inner {
+    color: var( --rss-animation-alt-0 );
+    animation-name: flashy-rss;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+a#rss-link .cent {
+    color: black;
+}
 
