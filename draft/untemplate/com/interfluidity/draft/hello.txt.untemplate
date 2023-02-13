@@ -1,0 +1,26 @@
+import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter.RFC_1123_DATE_TIME
+
+(name : String = "world")[]~()>               # Header delimeter, text start!
+
+  \      |       /
+-- * GREETINGS! * --
+  /      |       \
+
+I am so happy to meet you.
+Please allow me to effuse:
+
+<()                                           # text end!
+for (i <- 0 to 20)
+()---->------------>---------->-------------> # This is a "long delimeter", text start!
+<( "-" * i )>> Hello <( name )>!!!
+<-----<------------<----------<------------() # text end!
+
+val now = ZonedDateTime.now()
+
+()>                                           # text start!
+
+----------------------------------------------------------
+Generated for <( name )> on <( RFC_1123_DATE_TIME.format( now ) )>
+  |
+Love! :P
