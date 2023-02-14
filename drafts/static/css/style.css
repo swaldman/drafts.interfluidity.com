@@ -63,6 +63,7 @@ main {
 }
 b, strong {
     font-family: Latin-Modern-Mono-Light-Bold;
+    font-weight: normal;
 }
 i, em {
     /* letter-spacing: -0.015em; */
@@ -74,12 +75,14 @@ b i, b em, strong i, strong em {
     /* letter-spacing: -0.05em; */
     font-family: Latin-Modern-Mono-Light-Bold-Oblique;
     font-style: normal;
+    font-weight: normal;
 }
 div.entry-header h1 {
     position: relative;
     left: var( --title-offset );
     /* font-family: Latin-Modern-Mono-Caps; */
     font-family: CooperHewitt-Bold;
+    font-weight: normal;
     /* font-family: F25_Bank_Printer; */
     /* font-family: caroni; */
     /* text-transform: uppercase; */
@@ -141,6 +144,7 @@ a#rss-link {
     color: black;
     text-decoration: none;
     font-family: Latin-Modern-Mono-Light-Bold;
+    font-weight: normal;
 }
 a#rss-link span {
     color: #FF8800
