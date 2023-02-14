@@ -1,0 +1,33 @@
+import com.interfluidity.drafts.DraftsSite
+
+import unstatic.*
+
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Second Test Post",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-02-13T17:25:00-05:00",
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : DraftsSite.MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+This is a second test post. It follows the [first test post](##first-test-post).
+
+I don't really have any new words in me. So I'll repeat the old ones. With a numbered
+list this time.
+
+This post is only a test.
+
+Like the space shuttle _Enterprise_, it is destined to pave the way but never travel it.
+
+What happens to words unread, like these. Where do they even go?
+
+Some possibilities:
+
+1. They live on in all of our hearts.
+2. They were never anywhere to begin with.
+3. Vegas.
+
+Goodbye.
+

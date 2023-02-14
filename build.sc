@@ -1,24 +1,27 @@
 import mill._
-import mill.define._
 import mill.scalalib._
-import mill.define.Source
-import mill.modules.Jvm
-import mill.api.Result
 
 // huge thanks to @lolgab onn the Scala discord!
 import $file.buildCompilationSettings
 
-import $ivy.`com.mchange::untemplate-mill:0.0.3`
+import $ivy.`com.mchange::untemplate-mill:0.0.4`
 import untemplate.mill._
 
-object draft extends UntemplateModule {
+val UnstaticVersion = "0.0.3-SNAPSHOT"
+
+object Dependency {
+  val Unstatic             = ivy"com.mchange::unstatic:${UnstaticVersion}"
+  val UnstaticZTapir       = ivy"com.mchange::unstatic-ztapir:${UnstaticVersion}"
+}
+
+object drafts extends UntemplateModule {
   override def scalaVersion = "3.2.1"
 
   // supports Scala 3.2.1
   override def ammoniteVersion = "2.5.6"
 
   // we'll build an index!
-  override def untemplateIndexNameFullyQualified : Option[String] = Some("com.interfluidity.draft.Untemplates")
+  override def untemplateIndexNameFullyQualified : Option[String] = Some("com.interfluidity.drafts.IndexedUntemplates")
 
   override def untemplateSelectCustomizer: untemplate.Customizer.Selector = { key =>
     var out = untemplate.Customizer.empty
@@ -29,6 +32,14 @@ object draft extends UntemplateModule {
     // e.g. out = out.copy(extraImports=Seq("draft.*"))
 
     out
+  }
+
+  override def ivyDeps = T {
+    super.ivyDeps() ++
+      Agg (
+        Dependency.Unstatic,
+        Dependency.UnstaticZTapir,
+      )
   }
 }
 
