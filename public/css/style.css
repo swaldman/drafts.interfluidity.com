@@ -170,18 +170,36 @@ footer a:hover {
 #right-footer {
     float: right;
 }
+/* modified from https://medium.com/towards-more-beautiful-web-typography/everything-about-hr-when-to-use-it-and-how-to-style-it-fd17b66573 */
+hr.entry-separator {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: none;
+}
+hr.entry-separator::before {
+    font-size: 100%;
+    content: '<< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
 
 
 @media only screen and (max-width: 700px) {
     :root {
-	--title-offset: 0em;
+    	--title-offset: 0em;
     }
     main {
-	max-width: clear;
-	margin-left: 2em;;
-	margin-right: 2em;;
+        max-width: clear;
+        margin-left: 2em;;
+        margin-right: 2em;;
     }
     footer {
-	min-height: 1.5em; /* bigger on desktop to prevent occlusion by link targets on hover */
+    	min-height: 1.5em; /* bigger on desktop to prevent occlusion by link targets on hover */
+    }
+    hr.entry-separator::before {
+        content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
     }
 }
