@@ -22,7 +22,7 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
     override type Site = DraftsSite.type
     override val site = DraftsSite.this
     override lazy val rssFeed = site.location( "/feed/index.rss" )
-    override val feedTitle = "drafts — interfluidity"
+    override val feedTitle = "drafts \u2014 interfluidity" // \u2014 is unicode &mdash;, works the same if I just include '—' char
     override val frontPage = site.location("/index.html")
     override val frontPageIdentifiers = super.frontPageIdentifiers ++ immutable.Set("home","homePage") // since we are using the blog as home
     override val maxFrontPageEntries = Some(5)

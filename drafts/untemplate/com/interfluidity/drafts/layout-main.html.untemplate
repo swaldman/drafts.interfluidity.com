@@ -18,7 +18,7 @@ val cssLoc = site.location("css/style.css")
     <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="<( feedLoc.relative )>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="<( cssLoc.relative )>" />
-    <title>drafts — interfluidity</title>
+    <title>drafts &mdash; interfluidity</title>
   </head>
   <body>
     <header>
