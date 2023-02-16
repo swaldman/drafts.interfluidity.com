@@ -1,7 +1,7 @@
 import java.time.format.DateTimeFormatter
 import com.interfluidity.drafts.DraftsSite
 import unstatic.PageBase
-import unstatic.ztapir.simple.Attribute.Key
+import unstatic.ztapir.simple.Attribute.Key.*
 
 > val PubDateFormatter = DateTimeFormatter.ofPattern("""'['yyyy'-'MM'-'dd' @ 'hh':'mm' 'a' 'zzz']'""").withZone(java.time.ZoneId.systemDefault())
 
@@ -11,7 +11,7 @@ val presentationTypeClass =
 val resolved = input.sourceEntry
 val ut = resolved.entryUntemplate
 val permalink = resolved.permalink
-val entryAnchor = Key.`Anchor`.caseInsensitiveCheck(ut)
+val entryAnchor = ut.checkIgnoreCase(`Anchor`)
 val articleClasses = presentationTypeClass + entryAnchor.fold("")(anchor => "uid-" + anchor)
 val mbTitle  = resolved.entryInfo.mbTitle
 val authors = resolved.entryInfo.authors
@@ -24,7 +24,7 @@ val authorsString =
       val (init, last) =
         authors.splitAt(sz-1)
       init.mkString(", ", ", ", "") + last.head
-val pubDate = Key.`PubDate`.caseInsensitiveCheck(ut).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
+val pubDate = ut.checkIgnoreCase(`PubDate`).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
 val timestamp = PubDateFormatter.format(pubDate)
 
 given PageBase = PageBase.fromPage(input.renderLocation)
