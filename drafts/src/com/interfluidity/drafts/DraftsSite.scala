@@ -27,11 +27,11 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
     override val frontPageIdentifiers = super.frontPageIdentifiers ++ immutable.Set("home","homePage") // since we are using the blog as home
     override val maxFrontPageEntries = Some(5)
     override def entryUntemplates =
-      def isEntry( fqn : String ) =
-        val asVec = fqn.split('.').toVector
-        asVec.length > 1 && asVec.last.startsWith("entry") && asVec.contains("mainblog")
-      val raw = IndexedUntemplates.filter { case (fqn, _) => isEntry(fqn) }.map( _(1) )
-      raw.map( _.asInstanceOf[EntryUntemplate] ).toSet
+      IndexFilter.fromIndex( IndexedUntemplates )
+        .inOrBeneathPackage("com.interfluidity.drafts.mainblog")
+        .withNameLike( _.startsWith("entry_") )
+        .untemplates
+        .map( _.asInstanceOf[EntryUntemplate] )
     override def mediaPathPermalink( ut : untemplate.Untemplate[?,?] ) : MediaPathPermalink =
       import MediaPathPermalink.*
       overridable( yearMonthDayNameDir, ut )

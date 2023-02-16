@@ -29,7 +29,6 @@ val timestamp = PubDateFormatter.format(pubDate)
 
 val mbPrevPermalinkLoc = input.previousEntry.map( _.permalink )
 val prevTitle = input.previousEntry.flatMap( _.entryInfo.mbTitle ).getOrElse("previous")
-println("mbPrevPermalinkLoc: " + mbPrevPermalinkLoc)
 
 val mbNextPermalinkLoc = input.nextEntry.map( _.permalink )
 val nextTitle = input.nextEntry.flatMap( _.entryInfo.mbTitle ).getOrElse("next")
