@@ -8,13 +8,14 @@ import unstatic.ztapir.simple.Attribute.Key.*
 val presentationTypeClass =
   s"presentation-${input.presentation.toString().toLowerCase}"
 
+val info = input.info
 val resolved = input.sourceEntry
 val ut = resolved.entryUntemplate
 val permalink = resolved.permalink
 val entryAnchor = ut.checkAttributeKey(`Anchor`)
 val articleClasses = presentationTypeClass + entryAnchor.fold("")(anchor => "uid-" + anchor)
-val mbTitle  = resolved.entryInfo.mbTitle
-val authors = resolved.entryInfo.authors
+val mbTitle  = info.mbTitle
+val authors = info.authors
 val authorsString =
   authors.size match
     case 0 => "anonymous"
