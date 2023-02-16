@@ -11,7 +11,7 @@ val presentationTypeClass =
 val resolved = input.sourceEntry
 val ut = resolved.entryUntemplate
 val permalink = resolved.permalink
-val entryAnchor = ut.checkIgnoreCase(`Anchor`)
+val entryAnchor = ut.checkAttributeKey(`Anchor`)
 val articleClasses = presentationTypeClass + entryAnchor.fold("")(anchor => "uid-" + anchor)
 val mbTitle  = resolved.entryInfo.mbTitle
 val authors = resolved.entryInfo.authors
@@ -24,7 +24,7 @@ val authorsString =
       val (init, last) =
         authors.splitAt(sz-1)
       init.mkString(", ", ", ", "") + last.head
-val pubDate = ut.checkIgnoreCase(`PubDate`).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
+val pubDate = ut.checkAttributeKey(`PubDate`).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
 val timestamp = PubDateFormatter.format(pubDate)
 
 given PageBase = PageBase.fromPage(input.renderLocation)
