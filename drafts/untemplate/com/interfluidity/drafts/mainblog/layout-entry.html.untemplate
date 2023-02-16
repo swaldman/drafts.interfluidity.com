@@ -27,6 +27,13 @@ val authorsString =
 val pubDate = ut.checkAttributeKey(`PubDate`).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
 val timestamp = PubDateFormatter.format(pubDate)
 
+val mbPrevPermalinkLoc = input.previousEntry.map( _.permalink )
+val prevTitle = input.previousEntry.flatMap( _.entryInfo.mbTitle ).getOrElse("previous")
+println("mbPrevPermalinkLoc: " + mbPrevPermalinkLoc)
+
+val mbNextPermalinkLoc = input.nextEntry.map( _.permalink )
+val nextTitle = input.nextEntry.flatMap( _.entryInfo.mbTitle ).getOrElse("next")
+
 given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : DraftsSite.MainBlog.Layout.Input.Entry)[]~()>
@@ -44,7 +51,39 @@ given PageBase = PageBase.fromPage(input.renderLocation)
           <( input.articleContentHtml )>
         </div>
         <div class="entry-footer">
-          <a href="<( permalink.relative )>">draft</a> by <b><( authorsString )></b><br/><( timestamp )>
+          <div class="post-metainfo">
+            <a href="<( permalink.relative )>">draft</a> by <b><( authorsString )></b><br/><( timestamp )>
+          </div>
+<()
+if input.presentation == input.blog.Entry.Presentation.Single then {
+()>
+          <div class="prev-top-next">
+            <div class="prev">
+<()
+  mbPrevPermalinkLoc.foreach { prevLoc =>
+()>
+               &larr; <a href="<( prevLoc.relative )>"><( prevTitle )></a>
+<()
+  } // mbPrevPermalinkLoc
+()>
+            </div>
+            <div class="top">
+                <a href="<( input.blog.frontPage.relative )>">&uarr;&uarr;&uarr;</a>
+            </div>
+            <div class="next">
+<()
+  mbNextPermalinkLoc.foreach { nextLoc =>
+()>
+               <a href="<( nextLoc.relative )>"><( nextTitle )></a> &rarr;
+<()
+  } // mbNextPermalinkLoc
+()>
+
+            </div>
+          </div>
+<()
+} // if
+()>
         </div>
       </article>
 
