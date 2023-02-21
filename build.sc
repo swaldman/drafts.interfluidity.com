@@ -26,6 +26,10 @@ object drafts extends UntemplateModule {
   override def untemplateSelectCustomizer: untemplate.Customizer.Selector = { key =>
     var out = untemplate.Customizer.empty
 
+    if (key.inferredPackage.indexOf("mainblog")>=0 && key.inferredFunctionName.startsWith("entry_")) {
+      out = out.copy(extraImports=Seq("unstatic.*","com.interfluidity.drafts.DraftsSite.MainBlog"))
+    }
+
     // to customize, examine key and modify the customer
     // with out = out.copy=...
     //
