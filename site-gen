@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./mill drafts.run gen
