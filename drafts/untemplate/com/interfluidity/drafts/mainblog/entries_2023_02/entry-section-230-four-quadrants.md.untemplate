@@ -1,0 +1,195 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Four quadrants of Section 230ishness",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-02-22T12:00:00-05:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Section 230 is in the news again, as the Supreme Court hears
+[two](https://www.supremecourt.gov/DocketPDF/21/21-1333/220254/20220404211548101_GonzalezPetPDF.pdf)
+[cases](https://www.supremecourt.gov/DocketPDF/21/21-1496/226415/20220526180216120_21-xxxx%20-%20Twitter%20Inc.%20v.%20Taamneh%20-%20cert.%20petition.pdf) challenging the liability shield. Both cases concern whether large platforms (YouTube and Twitter respectively) should be liable for
+a role in helping recruit or radicalize terrorists for what their algorithms recommended (YouTube) or what they insufficiently failed
+to suppress (Twitter).
+
+I think it unlikely that the Supreme Court will find liability in these cases. They might well nibble at the edge of Section 230,
+distinguishing the present facts from facts under which they might find platform liability despite the Section 230 shield, and that
+might prove consequential going forward. In the Twitter case, they
+seem eager to consider some questions about the Anti-Terrorism Act (the act that creates the liability that 
+Section 230 might shield). But the Court understands that serious modification of the judiciary's
+broad interpretation of Section 230 would
+dramatically upend a large swathe of the economy, with questionable democratic legitimacy.
+
+Of course, this Court has been willing to countenace disruption and accept a loss of legitimacy where they are sufficiently
+ideologically motivated, as they were with abortion. But with the possible exception of Justice Thomas, I don't think there is
+that kind of motivation here.
+
+It's not a balls and strikes thing. I think it's entirely reasonable, as a substantive and legal matter,
+to argue that contemporary algorithmic recommendation and suppression is so different in scale and kind and consequence from the
+kind of moderation lawmakers considered in 1996 that Section 230 protections might not apply.
+
+But whatever the merits or demerits
+of that argument in theory, in practice a whole economy has been built around an aggressive interpretation of Section 230. I think
+it's a rotten economy, but the Court won't want to unilaterally tear it down, they'll want (probably appropriately) to
+punt these questions to Congress.
+
+As readers may or may not know, I've become a [Section 230](https://www.interfluidity.com/v2/8093.html)
+[skeptic](https://www.theatlantic.com/ideas/archive/2021/01/trump-fighting-section-230-wrong-reason/617497/).
+At a theoretical level, I think Section 230 enshrines a balance of liabilities that is quite perverse. If I, in private anger,
+text something defamatory about a third party to a friend who then publicly tweets my text, neither of the parties meaningfully
+responsible for whatever injury the defamed party suffers (the forwarder or the broadcaster) can be held
+liable, because Section 230 shields them. Only I, who communicated under an expectation of privacy, can be. I think that's dumb.
+
+But okay, it's an edge case. My animus towards Section 230 is about its central tendency, which has been to eliminate from the
+profit-and-loss statement very real diseconomies of scale associated with interpreting and curating speech well. Given the reality of
+network effects, eliminating these countervailing diseconomies has bequeathed to us a
+consolidated information sphere, dominated by massive platforms whose incentives are to promote engagement rather than high
+quality deliberation.
+
+Platforms like
+Facebook, Twitter, YouTube, etc. are implicated in profound, undeniable harms precisely because they cannot, for example, understand
+whether or not a post in Myanmar is promoting extermination and genocide, but they can broadcast that post regardless, and profit from
+the attention it provokes. Curating public speech well is an activity that is inherently artisanal, community and context-bound. This centrifugal fact should
+counterbalance the yawning pull of network effects, except we've eliminated as a matter of law any reason for firms to pay attention
+to it. As a consequence, our public square has become worse than Wonder Bread, mass-produced and low quality, but enriched with
+no vitamins and minerals. The providers of this disservice, on the other hand, have growin to prosperous and predatory monopolies,
+with profoundly antidemocratic power over public speech. Section 230 seemed like a good idea at the time, but we've run the experiment.
+The results aren't good.
+
+That's my view. A lot of people I usually agree with (including my past self!) vehemently support Section 230.
+I think I was mistaken, and they are mistaken. Yes, we want public forums on the internet, and we should craft a liability
+regime that renders it practical to operate one. But we want deliberation and controversial speech to inhabit a diverse array of smaller, higher
+quality public forums, with radically divergent "community standards". Megaplatforms may be okay for baby pictures and
+how-to videos. They make a terrible public square. There's no meaningful democracy with a terrible public square.
+
+A great thing about lawsuits is they tend to go where the money is. Section 230 proponents often argue fatalistically that
+it's no good trying to undo the platform economy by eliminating the law they [enthuse literally created it](https://www.jeffkosseff.com/home),
+because big platforms
+can afford lawyers to parry lawsuits, but small forums can't. Sure, but lots of us have blogged for decades with no
+liability shield, and it's fine, because defamation and other speech torts are hard to prove, and we're not so rich as
+to make long-shot lawsuits worthwhile. Win a case against Facebook and you can win millions. Yeah, they can afford lawyers,
+but unless they err on the side of tremendous caution, they'll need a whole lot of them.
+
+We should strengthen [anti-SLAPP protections](https://anti-slapp.org/), and define safe-harbors
+(perhaps a notice period before forum operators become potentially liable for third-party speech). But the blanket immunity
+provided by Section 230 is just, in my view, a failed experiment.
+
+Anyway, I didn't plan to write all this. I mostly meant to post this graphic:
+
+<img alt="Positions on Section 230 mapped into four quadrants" src="##./section-230-quadrants-white.png" width="100%" />
+
+I think it interesting that on both sides of the Section 230 discourse, there are both free-expression-focused and more censorious
+tendencies.
+
+In the upper-left quadrant, we have the old-school internet utopians. They supported, and however disappointed and disillusioned
+now still mostly support, Section 230 as a straightforward boon to free speech. We want people to be able to express themselves
+easily and freely on the internet, internet forums are an important venue for that speech, but no one will operate a forum
+if they'll be liable for whatever crap their users say. So, it felt (and still feels to many) free-speech supportive just to
+eliminate liability for forum operators, regardless of how much or little those forums moderate or curate or shape content.
+Forums are good for speech, a liability shield enables and encourages forums, QED, it seemed at the time.
+
+But it's worth recalling, the core of the [Communications Decency Act](https://www.mtsu.edu/first-amendment/article/1070/communications-decency-act-of-1996)
+in which Section 230 is embedded was straightfowardly to censor putatively harmful material from the internet. Section 230
+was supported also by people (the upper-right quadrant) who were less concerned with promoting freewheeling expression on-line, and more
+interested in making it possible for forums to censor. Prior to Section 230, by moderating, a forum operator might be deemed a publisher rather
+than mere distributor of material, so there was a perverse (pun intended) disincentive to ban or suppress speech operators did not want
+on their forums.
+
+Section 230 _allowed_ anything without liability (pleasing the upper-left quadrant), while _enabling_ suppression and censorship
+(pleasing the upper-right). Whether you were the kind of person who loved passing along [transgressional memes](https://dbpedia.org/page/Goatse.cx)
+or wanted censoriously wholesome spaces for families, as long as you were optimistic about a "marketplace of ideas"
+that would reward what was best, you could believe that Section 230 would serve your cause.
+
+The bottom-right quadrant is easy to understand. A lot of people are not in favor of an anything-goes public sphere, and are happy
+for the law to discourage speech they think ought not go. Traditional religious conservatives have no illusions that some marketplace
+will elevate virtuous speech over porn. They suggest we ban the porn.
+
+Across the political spectrum, people concerned that less
+regulated spaces should be safe and welcoming for people and groups often subject to harassment are under no illusion that a market
+will solve their problems. They argue that forums should be assiduously policed against what they deem to be harassment or hate
+speech, and would use the law to insist on this.
+
+Many of those I've deemed "anti-harrassment activists" would object, I think,
+to the axiom beneath my diagram, that there is a trade-off between concern about expression or safety. They would
+[argue](https://crookedtimber.org/2020/07/30/whats-wrong-with-cancel-culture/) that in
+fact the two are complements, that suppressing harassment and hate-speech is in fact encouraging expression by all but the harassers
+and hate-speakers. Pretty much no one is opposed to "free expression", when you put it that way, but we have radically divergent views about
+what should count as free expression.
+
+Regardless of the virtue of their ultimate ends, groups in the bottom right quadrant are
+willing to use the law to suppress outright certain categories of speech they deem objectionable. (A bit cheekily, I've placed
+both "woke" and "anti-woke" in the bottom-right quadrant. The anti-woke might object, they are true _Free Speech Warriors!_ but I think it's
+clear that people polarized on either side of this axis are glad to use the law to block "harmful" speech from the other side.
+[School libraries in my state](https://weartv.com/news/local/florida-school-district-removes-library-book-called-pornography-by-desantis-administration-ron-broward-county-lets-talk-about-teen-guide-sex) are being emptied of "woke" literature, because it's "grooming" or "indoctrination".)
+
+The quadrant I think most interesting is (perhaps unsurprisingly) the one in which I place myself. I now oppose Section 230,
+but perceive myself as doing so in support of the same values of free expression that once led me to celebrate that law.
+
+There are
+two distinct cases for paring back Section 230 in the name of free expression. First is the case that those I've labeled "populists,
+conservatives, and fringes" most commonly make: Section 230 affirmatively protects platforms when they censor their views, and it should not.
+
+If you understand the top-right quadrant, why some 90s-era social conservatives favored Section 230, then you should understand
+that _removing_ the ability of forum owners to moderate without liability means classes of expression that are in practice frequently
+moderated away under Secion 230 would become more expressable without it.
+
+Under the optimistic 1990s view of the internet, it was supposed to be
+incoherent to talk about even arguably valuable classes of expression "frequently moderated away", because the internet was going to
+be so open and diverse that any sort of expression anybody valued would have its home somewhere. And that is still true! You can
+find lots of "cancelled" perspectives at [gab.com](https://gab.com/) if you want to.
+
+But that brings us to the second critique, which is mine.
+
+In the 1990s, we didn't foresee the polarization of "freedom of reach" on
+the internet. On the contrary, the internet was the vehicle that would give reach to voices locked out of broadcast television and
+respectable newspapers. Freedom of the press, they say, is worth very little unless you can afford to operate one. The internet would give each
+of our "home pages" the same reach as _The New York Times_, if we had something of value to say. The combination of technical availability
+and meriticracy was going to end concerns about media oligopoly.
+
+The consolidation of attention beneath a few large platforms has fully revived those concerns. Nazi speech would do poorly under anything I'd recognize
+as meritocracy, but segregating it from Twitter and onto Gab short-circuits the weighing process, and allows Nazi speakers to argue their
+ideas are suppressed rather than what they are, which is just dumb.
+
+It's no good to pull an Elon Musk and just let the Nazis
+back, because once attention is consolidated onto megaplatforms, there is no "neutral" way for speech to be present. Megaplatform algorithms
+amplify and suppress, and must amplify and suppress to keep feeds appealing to the eyeballs they sell. Twitter can pretend
+as much as it wants that its algorithm is objective and orthogonal to the perspectives offered, but in social affairs nothing is orthogonal,
+choices will entrain correlations, and Nazi shit can be pretty engaging in a tabloidy way. You are either with the Nazis or against them,
+Elon, which will it be?
+
+The better solution, I would argue, is for a much less polarized and hierarchical public square. We can't have a world with more than a
+handful of Twitters, Facebook, YouTube, TikToks. We should prefer a world with a whole lot of Gabs, except most of them would be full
+of decent and interesting people rather than aggrieved conspiracists. "Virality", the transformation of an individual's local expression
+to a signal with systematic effects should be hard, a result of consensus rather than mere "engagement". Amplification should
+be the result of decentralized human choices, not centralized attention-seeking algorithms.
+
+[Mastodon](https://joinmastodon.org/) is imperfect in a lot of ways, but it's one "social network" that begins to approach this vision.
+The "local-first" ethos of
+the [hometown](https://github.com/hometown-fork/hometown) Mastodon fork is an even closer fit. It augurs a civil society made up
+of communities that are by default local and private, from which social consensus might emerge only from meaningfully independent
+evaluation by diverse communities small enough to be deliberative, rather than via some signal that becomes salient and systematic
+among individuals by virtue of salaciousness. (Read [Darius Kazemi](https://runyourown.social/).)
+We are so trained now to seek influence, each of us tiny minnows in a giant ocean
+hoping our next post or tweet will make us a big fish. We are rendered both pathetic and venal by this dynamic. A sane public square
+is a composition of diverse and sane communities, not attention-seeking atoms.
+
+So long as the internet remains hospitable to scale and driven by monetary incentives towards engagement, we won't have diverse, sane
+communities. We will have giant, manipulative tabloids in the sky.
+
+But, you might claim, these platforms "won the market test". Why
+should we pick winners and losers?
+
+We did pick winners and losers, when in the 1990s we demonetized quality of curation, leaving only attention and engagement
+to sell. That's what Section 230 does. Absent Section 230, good moderators are financial winners, bad moderators are financial black holes.
+
+We picked winners and losers in the 1990s when we strengthened "intellectual property law" and passed the
+[Digital Millennium Copyright Act](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act) both of which render a mix of scale and
+predatory legal creativity key to market success.
+
+There is no neutral, in law and technology. We make this stuff up.
+We picked winners and losers in the 1990s. We made dystopian choices. It is time to revisit them.
+
+
