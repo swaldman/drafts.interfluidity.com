@@ -183,6 +183,9 @@ a#rss-link {
 a#rss-link span {
     color: #FF8800
 }
+.flexmark .footnotes p {
+    display: inline;
+}
 footer {
     flex-grow:       0;
     flex-shrink:     0;
