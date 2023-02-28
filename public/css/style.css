@@ -82,6 +82,9 @@ b i, b em, strong i, strong em {
     font-style: normal;
     font-weight: normal;
 }
+hr {
+    border-top: 1px solid black;
+}
 div.entry-header h1 {
     position: relative;
     left: var( --title-offset );
