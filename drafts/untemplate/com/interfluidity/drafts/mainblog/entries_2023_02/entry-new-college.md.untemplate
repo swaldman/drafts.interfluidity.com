@@ -1,0 +1,75 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "New College",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-02-27T22:00:00-05:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+After you’re dead, do you care if it’s the end of the world?
+
+_New College_ is my goto metaphor when I contemplate death. You wonder what it will be like, all of life is this vivid stream
+of experience, and then all of a sudden it's just... gone?
+
+The high-school drama clich&eacute; play ["Our Town"](https://en.wikipedia.org/wiki/Our_Town) always brings
+me to tears. In the play, a town's graveyard becomes a kind of a greek chorus or [MST3K](https://en.wikipedia.org/wiki/Our_Town) riff.
+The dead once set there become spectators, chatting about the antics of the living. Only, over time, they become ever more forgetful and indifferent.
+The living world begins, when you are among the living, as an object of such intensity and care. You cannot help but feel, pain, excitement,
+love, annoyance, hatred, hope, disappointment, triumph, anxiety, joy. The living world draws from you such attention.
+
+But objectively you are just some
+animal, your words mere chirps echoing briefly via some indifferent physics. In life you craft them with such care. Everything matters.
+These chirps have repurcussions, they affect how the other animals behave. Will they love you or hate you, will they join together or destroy one
+another, will they laugh? Your collective achievements and bitter disputes, their laughter, your love affairs. None of it lasts much longer
+than the chirps.
+
+When I think of death I think of _New College_ because the difference between life there and life after was a difference in kind like that.
+It was not, like physical death only sometimes is, a sharp transition. You graduate, move away. You still know some people, keep in touch.
+But eventually it occurs to you that your ever less frequent chatter is like the gossiping among denizens of Thornton Wilder's cemetary.
+When I wonder how it will be to be dead I don't wonder very much because I know it, I think. Experience is irredicible, axiomatic, beyond
+explanation or science. Whatever I am that experiences will in some indeterminate sense continue to experience. But care, care is contingent and fragile, and equilibrium
+balanced on the tip of a single strand of hair. It depends upon memory, also very fragile. I think I won't remember, like now I can hardly
+remember the stream of years of days &mdash; much more rapids than a babbling brook &mdash; that was my time at _New College_.
+
+When I was at _New College_, I was a nationalist. There were politics then and now, and I realized, standing one day in
+[Palm Court](https://michaeljamesfreedman.com/products/palm-court), that I would die for _New College_, for that place, that community, if
+that were somehow called for. I was probably twenty years old, and I understood quite self-consciously how ridiculous that would
+seem to, well, almost everybody. _New College_, after all, is just a college. It is, according to the outside world, a mere means to an end.
+It is preparing us, the story goes, for something much greater.
+
+I knew that's how the world would think of it. But the world is full of idiots. I remembered life before _New College_ and I knew,
+quite correctly, that life afterwards was much more likely to be banal like that than something greater just because now I would have
+a degree and _skillz_.
+
+_New College_ was a stab at utopia. Like a stab, life at _New College_ was sharp and often painful. But we together flew closer
+to the sun than I would ever fly before or since. The purpose of _New College_ wasn't to prepare us for the world, but for us to
+live together more richly and more fully, intellectually and otherwise, than would ever be possible in the world around us.
+If the institution had a role to play in the larger world, it was not to produce more Fulbright Scholars and doctoral students
+and _US News_ rankings. That might be a kind of cover story, the justification for our funding, whatever. Our role was to
+experience an intensity of [conviviality](https://theconvivialsociety.substack.com/) that our society
+can no longer remember or sustain, and carry some spark of that
+memory, some fading ember, when the academic cycle cast us out like dandelion seeds, like balooning spiderlings. Perhaps something
+from the experience would be left in our venom. I hope, dear reader, somewhere in all these words I've written, now and over 16 years,
+just a little bit of that poison has found you.
+
+Ron DeSantis is [trying to transform](https://washingtonmonthly.com/2023/02/15/why-does-ron-desantis-want-to-fix-a-high-ranking-college/)
+_New College_ into [Hillsdale College(https://www.hillsdale.edu/) or whatever. He's an asteroid hitting a planet, pulled by some political gravity, stupid and
+as indifferent to what he is destroying. _New College_ is not a mere "liberal arts college" that is woke or left-wing or whatever.
+It's a liberal arts college like Dr. Who's mode of transport was a telephone booth. Yes, but perhaps a bit more than that. I cannot
+speak to how "woke" it has or hasn't become. I've been dead &mdash; I'm sorry, graduated &mdash; almost thirty years. But I suspect there
+is some continuity, between whatever thrives now on that sunny little campus and the experiment in living I was once a part of.
+
+The dead forget so much and care so little. Time scatters us, numbs us. Yet, whether it is hopeful or tragic, it turns out
+the dead do still care about the end of the world. We can feel just that much pain.
+
+---
+
+Me circa 1993, from some marketing thing produced by the college. Thanks Alice Abarca for having unearthed it.
+The shirt, which Camilla Mortenson and I screened with Gary Jurman's help, fits surprisingly into contemporary
+culture wars. But to pay much attention to that misses every meaningful point.
+
+<img alt="a quote and photo of the author, spewing the same views he spews here, but in 1993" src="##./from-1993-admissions-catalog-via-alice-abarca.jpg" width="100%" />
+
