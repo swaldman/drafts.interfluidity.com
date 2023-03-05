@@ -1,0 +1,115 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "What is fascism?",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-03-05T17:15:00-05:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Living in Florida, I
+[am](https://www.wfla.com/news/politics/florida-bill-would-require-bloggers-who-write-about-governor-to-register-with-the-state/)
+[giving](https://www.nysun.com/article/desantis-ally-in-florida-wants-to-rewrite-landmark-libel-law)
+[some](https://pen.org/florida-book-bans-empty-shelves/)
+[thought](https://www.wesh.com/article/ultimate-cancel-act-florida-democratic-party/43125234)
+to the question of fascism. What is it? Why does it come to be?
+How do its pathologies emerge? What, if any, are its virtues?
+
+Obviously there are legions of academics who write and debate and parade on MSNBC about this stuff.
+I defer to their authority. I'm trying to work stuff out for myself, from my own observations and understanding of the world.
+I expect the result will be incomplete and inadequate.
+
+The use of fascism as an epithet, as a kind of rhetorical "cooties" that discredits whomever can be somehow associated
+with it, prevents us from thinking clearly about a phenomenon whose roots go too deep to
+simply shun away.
+
+Fascism, I think, represents an approach to solving the key problem of modern nation-states: How do we build and sustain a capacity for
+effective social coordination over scales so large that people's interests and identities are likely to be diverse and conflictual?
+
+Liberal approaches take diversity and disagreement as axiomatic. They strive to build institutions of coordination that
+accommodate difference and are resilient to it.
+
+Fascist approaches, on the other hand, see diversity and
+disagreement as obstacles to fruitful coordination that are malleable. If coordination at scale is
+hard because people disagree, what if we could make them disagree less?
+
+Right here a core dispute between liberalism and fascism emerges. The contemporary liberal slogan "diversity is our
+strength" (which fascists signally mock) is based on the idea that with diversity comes a kind of collective intelligence
+or capability. But even at an individual level, intelligence has a Hamlet problem. Intelligent people weigh conflicting
+viewpoints, and may sometimes be slower to act than a person who acts briskly on impulse. Smart people dither.
+
+Most of us would acknowledge
+that, on balance, it is better to weigh multiple perspectives and ideas prior to acting, even though doing so consumes
+time and resources. But we would also concede that there are limits to desirable deliberation. A person may contain multitudes
+so divergent and clamorous that he becomes paralyzed, indecisive.
+
+Liberalism emphasizes the risks of acting unintelligently,
+while fascism emphasizes the risks of failing to act.
+That may be a high-minded dispute, but things get a bit muckier once we drill into how societies render diversity malleable.
+
+To a first &mdash; [I think inadequate!](https://www.interfluidity.com/v2/6632.html) &mdash; approximation, liberal societies can't and don't,
+they accept diversity and celebrate it. Fascist societies, on the other hand,
+are fundamentally characterized by the _means_ they use to engender social consensus, to bind together the
+famous [fasces](https://hyperallergic.com/459504/fasces-fascism-and-how-the-alt-right-continues-to-appropriate-ancient-roman-symbols/).
+
+In particular they
+
+1. Conflate the state with a personalist leader, then sacralize the state;
+
+2. Define enemies, internal and external, who menace the sacred state and leader;
+
+3. Attribute to those enemies any form of dissent that the leader/state deems problematic;
+
+4. Punish those they mark as enemies or collaborators harshly; and
+
+5. Control or suppress media to prevent subversion by enemies.
+
+This can be an effective recipe for encouraging consensus and easing coordination at scale!
+
+The carrot is the cult. Humans
+have a natural inclination to submit to virtues that transcend ourselves, and the sacred
+state embodied in the loving leader is an attractive outlet for this inclination. Most fascists don't perceive themselves
+as villains or sycophants. They perceive themselves as patriots. The sacralized state ceases to be an institution for
+wielding coercive power, but becomes indistinguishable from the _volk_, the virtuous people.[^1]
+
+The stick, of course, is inimicalization: becoming defined as the enemy. You are with us or you are against us. There are no nuances, no third ways. If you are
+against us, you are the enemy. The least you can expect is exile. As Putin [put it](https://metro.co.uk/2022/03/16/russia-putin-issues-warning-to-scum-traitors-who-he-will-spit-out-like-a-midge-16290186/),
+"Any people, and especially the Russian people, will always be able to distinguish the true patriots from the scum and the traitors, and just to spit them out like a midge that
+accidentally flew into their mouths."
+
+If you are an enemy and you do not leave, you will be persecuted. The fascist tendency does not require, or
+even _usually_ result in, persecution to the point of extermination. But that is the direction of the logic. _In extremis_, in crisis,
+fascist orders, like most social orders, will double-down on their logics when they seem to have failed, rather than concede and accept reform
+that discredits the reigning establishment.
+
+Fascism requires its enemies. It is no coincidence that the [man who defined politics around a chasm of friend vs enemy](https://theupheaval.substack.com/p/the-temptations-of-carl-schmitt)
+became the political theorist of the Third Reich. If there are not at first obvious enemies threatening the sacred state, then soon there will be, there must be. They will be invented, discovered, provoked, because
+without the enemy threat, there is insufficient cause and therefore insufficient social capacity to suppress the unruliness that fascism exists to overcome.
+
+The fascist state and the fascist citizen are capable of anything. They are not bound by bourgeois morality, because they are the ones menaced and victimized by enemies internal and external.
+The offenses they commit are always, with a deeper analysis, acts of self-defense. It is the enemy who must bear the moral responsibility.
+
+This attitude creates license, which increases the capacity of a fascist
+order (relative to systems more prone to moral noise) to execute goal-directed, coordinated social action. It explains why fascist state action often seems immoral
+to outsiders but virtuous to insiders.
+
+But while a fascist order may act more freely and more quickly than competitors, it may also act more stupidly. Systems that consider diverse
+perspectives and weigh options carefully have their virtues too.
+
+Regarding enemies, it's worth noting that social arrows usually go both ways, and an undeniable threat that cannot plausibly be described as ginned-up will
+reproduce much of the logic of fascism even in states whose leaderships and publics may not be ideologically inclined to it. Every country at war, when
+the stakes grow sufficiently high, makes an idol of the state and of victory, identifies forms of dissent threatening to the existing state as collaboration
+(intentional or in effect) with the enemy, and persecutes those perceived as actual or likely collaborators. There are [few surprises
+here](https://jacobin.com/2023/02/ukraine-censorship-authoritarianism-illiberalism-crackdown-police-zelensky).
+
+An existential conflict really is (in the
+phrase made famous by Nazi theorist Schmitt) a state of exception. Fascism can be understood as a means of rendering permanent the clarity, conformity, and collective decisiveness
+that publics usually tolerate only when they perceive exceptional threat.
+
+[^1]: "They will never ever control me, and they will never ever, therefore, control you.",
+[says](https://www.politico.com/video/2023/03/04/trump-says-gop-is-never-going-back-to-party-run-by-freaks-850819) Donald Trump.
+"[If you put me back](https://www.nbcnews.com/politics/donald-trump/trump-trolls-ron-desantis-cpac-speech-rcna73385) in White House, their reign is over... In 2016, I declared, 'I am your voice.'
+Today I add, I am your warrior. I am your justice. And for those who have been wronged and betrayed, I am your retribution."
+
