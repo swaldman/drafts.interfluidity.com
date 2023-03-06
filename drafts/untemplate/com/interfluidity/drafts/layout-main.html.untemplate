@@ -1,6 +1,7 @@
 import com.interfluidity.drafts.DraftsSite
 
 import unstatic.PageBase
+import unstatic.ztapir.simple.Attribute.Key.*
 
 given PageBase = PageBase.fromPage(input.renderLocation)
 
@@ -10,6 +11,12 @@ val blog = site.MainBlog
 val feedLoc = blog.rssFeed
 val cssLoc = site.location("css/style.css")
 
+val title =
+  val mbTitle =
+    if input.sourceUntemplates.size == 1 then input.sourceUntemplates.head.checkAttributeKey(`Title`) else None
+  mbTitle.getOrElse("drafts &mdash; interfluidity")
+end title
+
 (input : DraftsSite.MainLayoutInput)[]~()>
 <!DOCTYPE html>
 <html>
@@ -18,7 +25,7 @@ val cssLoc = site.location("css/style.css")
     <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="<( feedLoc.relative )>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="<( cssLoc.relative )>" />
-    <title>drafts &mdash; interfluidity</title>
+    <title><( title )></title>
   </head>
   <body>
     <header>
