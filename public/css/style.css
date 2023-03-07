@@ -1,0 +1,295 @@
+@font-face {
+    font-family: Latin-Modern-Mono-Light;
+    src: url("../font/Latin-Modern-Mono/lmmonolt10-regular.otf") format("opentype");
+}
+@font-face {
+    font-family: Latin-Modern-Mono-Light-Oblique;
+    src: url("../font/Latin-Modern-Mono/lmmonolt10-oblique.otf") format("opentype");
+}
+@font-face {
+    font-family: Latin-Modern-Mono-Light-Bold;
+    src: url("../font/Latin-Modern-Mono/lmmonolt10-bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Latin-Modern-Mono-Light-Bold-Oblique;
+    src: url("../font/Latin-Modern-Mono/lmmonolt10-boldoblique.otf") format("opentype");
+}
+@font-face {
+    font-family: CooperHewitt-Bold;
+    src: url("../font/cooper-hewitt/CooperHewitt-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: CooperHewitt-Light;
+    src: url("../font/cooper-hewitt/CooperHewitt-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: caroni;
+    src: url("../font/caroni/Caroni-Regular.otf");
+}
+
+:root {
+    --title-offset: -1em;
+    --prev-next-color: #DDD;
+    --menu-link-color: #DDD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Latin-Modern-Mono-Light;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+}
+header {
+    flex-shrink: 0;
+    flex-grow:   0;
+    margin-top:    1em;
+    margin-left:  2em;
+    margin-right:  2em;
+    margin-bottom: 0.25em;
+}
+#rss-link-layer {
+    text-align: right;
+}
+#menu-layer {
+    padding-top: 1rem;
+    font-size: 10pt;
+    color: var( --menu-link-color );
+    text-align: center;
+}
+#menu-layer a {
+    color: var( --menu-link-color );
+    text-decoration: none;
+}
+#menu-layer a:visited {
+    color: var( --menu-link-color );
+}
+#menu-layer a:hover {
+    color: black;
+}
+main {
+    flex-shrink: 1;
+    flex-grow:   1;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    /* overflow-x: visible; */ /* any use of overflow breaks left-overhanging title. (?) */
+    /* overflow-y: hidden; */
+    /* border: green solid 1px; */
+}
+b, strong {
+    font-family: Latin-Modern-Mono-Light-Bold;
+    font-weight: normal;
+}
+i, em {
+    /* letter-spacing: -0.015em; */
+    /* I prefer the synthesized slant... */
+    font-family: Latin-Modern-Mono-Light-Oblique;
+    font-style: normal;
+}
+b i, b em, strong i, strong em {
+    /* letter-spacing: -0.05em; */
+    font-family: Latin-Modern-Mono-Light-Bold-Oblique;
+    font-style: normal;
+    font-weight: normal;
+}
+hr {
+    border-top: 1px solid black;
+}
+div.entry-header h1 {
+    position: relative;
+    left: var( --title-offset );
+    /* font-family: Latin-Modern-Mono-Caps; */
+    font-family: CooperHewitt-Bold;
+    font-weight: normal;
+    /* font-family: F25_Bank_Printer; */
+    /* font-family: caroni; */
+    /* text-transform: uppercase; */
+}
+div.entry-header h1 a {
+    /* font-family: Latin-Modern-Mono-Light-Bold; */
+    /* font-family: F25_Bank_Printer; */
+    color: black;
+    text-decoration: none;
+}
+
+div.entry-body a {
+    /* background-color: #FFFF99; */
+    /* text-decoration: #BBFFBB underline; */
+    text-decoration: none;
+    /* color: black; */
+    color: blue;
+    font-family: caroni;
+    font-size: 120%;
+    /* font-family: F25_Bank_Printer; */
+    /*
+      font-family: xxx-1942-report;
+      letter-spacing: -0.125em;
+    */
+}
+div.entry-body a:hover {
+    /* text-decoration: underline; */
+    /* color: black; */
+    /* text-decoration: wavy black underline; */
+    /* text-decoration: orange underline; */
+    /* background-color: yellow; */
+}
+div.entry-body a:hover:before, div.entry-body a:hover:after {
+    color: red;
+}
+div.entry-body a:before {
+    content: "[";
+}
+div.entry-body a:after {
+    content: "]";
+}
+div.entry-body a, div.entry-body a i, div.entry-body a em, div.entry-body a b, div.entry-body a strong, div.entry-body a b i, div.entry-body a b em, div.entry-body a strong i, div.entry-body a strong em, div.entry-body i a, div.entry-body em a, div.entry-body b a, div.entry-body strong a, div.entry-body b i a, div.entry-body b em a, div.entry-body strong i a, div.entry-body strong em a {
+    letter-spacing: 0em;;
+}
+div.entry-body {
+    text-align: justify;
+}
+div.entry-footer a {
+    color: blue;
+}
+div.entry-footer a:visited {
+    color:blue;
+}
+div.entry-footer .post-metainfo {
+    font-size: 9pt;
+    text-align: right;
+}
+div.entry-footer .prev-top-next {
+    font-size: 80%;
+    color: var( --prev-next-color );
+    margin-top: 3em;
+    border-top: 1px solid var( --prev-next-color );
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+}
+div.entry-footer .prev-top-next a {
+    color: var( --prev-next-color );
+    text-decoration: none;
+}
+div.entry-footer .prev-top-next a:hover {
+    color: black;
+}
+div.entry-footer .prev-top-next .prev {
+    width: 45%;
+    text-align: left;
+    margin-left: 3em;
+}
+div.entry-footer .prev-top-next .top {
+    text-align: center;
+}
+div.entry-footer .prev-top-next .next {
+    width: 45%;
+    text-align: right;
+    margin-right: 3em;
+}
+a#rss-link {
+    color: black;
+    text-decoration: none;
+    font-family: Latin-Modern-Mono-Light-Bold;
+    font-weight: normal;
+}
+a#rss-link span {
+    color: #FF8800
+}
+.flexmark .footnotes p {
+    display: inline;
+}
+footer {
+    flex-grow:       0;
+    flex-shrink:     0;
+    margin-top:      4em;
+    padding-top:     4em;
+    padding-bottom:  1em;
+    margin-left:     1em;
+    margin-right:    1em;
+    
+    font-size: 10pt;
+    /* border: red solid 1px; */
+}
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+footer a:hover {
+    color: gray;
+    text-decoration: black underline;
+}
+#left-footer {
+    float: left;
+}
+#right-footer {
+    float: right;
+}
+/* modified from https://medium.com/towards-more-beautiful-web-typography/everything-about-hr-when-to-use-it-and-how-to-style-it-fd17b66573 */
+hr.entry-separator {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: none;
+}
+hr.entry-separator::before {
+    font-size: 100%;
+    content: '<< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+div.archive h1 {
+    position: relative;
+    left: var( --title-offset );
+    font-family: CooperHewitt-Bold;
+    font-weight: normal;
+    font-size: 18pt;
+}
+div.archive dt {
+   font-family: CooperHewitt-Bold;
+   font-weight: normal;
+   font-size: 10pt;
+ }
+div.archive dd ul {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    list-style-type: "- ";
+}
+div.archive dd ul a {
+    color: black;
+    text-decoration: none;
+}
+div.archive dd ul a:visited {
+    color: black;
+}
+div.archive dd ul a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    :root {
+    	--title-offset: 0em;
+    }
+    main {
+        max-width: clear;
+        margin-left: 2em;;
+        margin-right: 2em;;
+    }
+    footer {
+    	min-height: 1.5em; /* bigger on desktop to prevent occlusion by link targets on hover */
+    }
+    hr.entry-separator::before {
+        content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    }
+}
