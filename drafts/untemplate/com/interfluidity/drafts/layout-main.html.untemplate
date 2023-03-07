@@ -11,7 +11,7 @@ val blog = site.MainBlog
 val feedLoc = blog.rssFeed
 val cssLoc = site.location("css/style.css")
 val mainLoc = site.location("/index.html")
-val archiveLoc = site.location(DraftsSite.MainBlog.Archiive.location)
+val archiveLoc = site.location(DraftsSite.MainBlog.Archive.location)
 
 val title =
   val mbTitle =
