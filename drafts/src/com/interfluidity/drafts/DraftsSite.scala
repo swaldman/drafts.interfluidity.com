@@ -47,7 +47,7 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
       layout_main_html(mainLayoutInput).text
 
     object Archive:
-      val location = site.location("/archive")              
+      val location = site.location("/archive.html")              
       case class Input( renderLocation : SiteLocation, entryUntemplatesResolved : immutable.SortedSet[EntryResolved] )
 
       val task = zio.ZIO.attempt {
