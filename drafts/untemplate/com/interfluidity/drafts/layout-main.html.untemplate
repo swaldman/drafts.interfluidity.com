@@ -10,6 +10,8 @@ val blog = site.MainBlog
 
 val feedLoc = blog.rssFeed
 val cssLoc = site.location("css/style.css")
+val mainLoc = site.location("/index.html")
+val archiveLoc = site.location("archive")
 
 val title =
   val mbTitle =
@@ -29,7 +31,12 @@ end title
   </head>
   <body>
     <header>
-      <a id="rss-link" href="<( feedLoc.relative )>"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
+      <div id="rss-link-layer">
+        <a id="rss-link" href="<( feedLoc.relative )>"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
+      </div>
+      <div id="menu-layer">
+	...<a href="<( mainLoc.relative )>">drafts-main</a>...<a href="<( archiveLoc.relative )>">drafts-archive</a>...<a href="https://www.interfluidity.com/">interfluidity-main</a>...
+      </div>	
     </header>
     <main>
       <( input.mainContentHtml )>

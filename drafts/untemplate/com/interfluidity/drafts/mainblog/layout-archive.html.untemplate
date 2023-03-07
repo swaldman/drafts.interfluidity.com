@@ -1,0 +1,42 @@
+import java.time.format.DateTimeFormatter
+import com.interfluidity.drafts.DraftsSite
+import unstatic.PageBase
+import unstatic.ztapir.simple.Attribute.Key.*
+
+> val MonthFormatter = DateTimeFormatter.ofPattern("yyyy'-'MM").withZone(java.time.ZoneId.systemDefault())
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+val entryUntemplatesResolvedByMonthStr =
+  val raw =
+    input.entryUntemplatesResolved.groupBy( eutr => MonthFormatter.format( eutr.entryUntemplate.checkAttributeKey(`PubDate`).getOrElse( throw new Exception("No PubDate on Entry! " + eutr) ) ) )
+  immutable.SortedMap.from( raw )( summon[Ordering[String]].reverse )
+val site = input.renderLocation.site
+
+(input : DraftsSite.MainBlog.Archive.Input)[]~()>
+<div class="archive">
+  <h1>archive</h1>
+
+  <dl>
+<()  
+  entryUntemplatesResolvedByMonthStr.foreach { case ( ms, eutrs ) =>
+()>
+    <dt><( ms )></dt>
+    <dd>
+      <ul>
+<()
+    eutrs.foreach { eutr =>
+      val permalinkLoc = site.location( eutr.entryInfo.permalinkPathSiteRooted )
+      val title        = eutr.entryInfo.mbTitle.getOrElse("(Untitled Post)")
+()>
+        <li><a href="<( permalinkLoc.relative )>"><( title )></a></li>	
+<()
+    }
+()>
+      </ul> 
+    </dd>
+<()
+  }
+()>
+  </dl>
+</div>

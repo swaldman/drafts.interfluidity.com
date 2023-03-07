@@ -36,7 +36,7 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
       import MediaPathPermalink.*
       overridable( yearMonthDayNameDir, ut )
 
-    override def layoutEntry(input: Layout.Input.Entry): String = mainblog.layout_entry_html(input).text
+    override def layoutEntry(input: Layout.Input.Entry) : String = mainblog.layout_entry_html(input).text
 
     // overriding a def, but it's just a constant, so we override with val
     override val entrySeparator : String = partials.entry_separator_html().text
@@ -46,11 +46,27 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
       val mainLayoutInput = MainLayoutInput( input.renderLocation, input.mainContentHtml, input.sourceEntries.map( _.entryUntemplate ) )
       layout_main_html(mainLayoutInput).text
 
+    object Archive:
+      val location = site.location("/archive")              
+      case class Input( renderLocation : SiteLocation, entryUntemplatesResolved : immutable.SortedSet[EntryResolved] )
+
+      val task = zio.ZIO.attempt {
+         val contentsHtml = mainblog.layout_archive_html( Input( location, entriesResolved ) ).text
+         layout_main_html( MainLayoutInput( location, contentsHtml, Nil ) ).text
+      }
+      val endpointBinding = ZTEndpointBinding.publicReadOnlyHtml( location, task, None, immutable.Set("archive") )
+    end Archive
+
+    override def endpointBindings : immutable.Seq[ZTEndpointBinding] = super.endpointBindings :+ Archive.endpointBinding
+      
+  end MainBlog
+
   // avoid conflicts, but...
   //   (1) early items in the lists take precedence over later items
   //   (2) endpoint bindings take precedence over location bindings
   //
-  override val endpointBindingSources : immutable.Seq[ZTEndpointBinding.Source]     = immutable.Seq( MainBlog )
+  override val endpointBindingSources : immutable.Seq[ZTEndpointBinding.Source] = immutable.Seq( MainBlog )
 
 object DraftsSiteGenerator extends ZTMain(DraftsSite, "drafts-site")
+
 

@@ -30,6 +30,7 @@
 :root {
     --title-offset: -1em;
     --prev-next-color: #DDD;
+    --menu-link-color: #DDD;
 }
 
 * {
@@ -48,12 +49,29 @@ body {
 header {
     flex-shrink: 0;
     flex-grow:   0;
-    margin-top:    1.5em;
+    margin-top:    1em;
     margin-left:  2em;
     margin-right:  2em;
-    margin-bottom: 1.5em;
-    text-align:    right;
-    /* border: orange solid 1px; */
+    margin-bottom: 0.25em;
+}
+#rss-link-layer {
+    text-align: right;
+}
+#menu-layer {
+    padding-top: 1rem;
+    font-size: 10pt;
+    color: var( --menu-link-color );
+    text-align: center;
+}
+#menu-layer a {
+    color: var( --menu-link-color );
+    text-decoration: none;
+}
+#menu-layer a:visited {
+    color: var( --menu-link-color );
+}
+#menu-layer a:hover {
+    color: black;
 }
 main {
     flex-shrink: 1;
@@ -228,6 +246,33 @@ hr.entry-separator::before {
     text-align: left;
     white-space: nowrap;
     overflow-x: hidden;
+}
+div.archive h1 {
+    position: relative;
+    left: var( --title-offset );
+    font-family: CooperHewitt-Bold;
+    font-weight: normal;
+    font-size: 18pt;
+}
+div.archive dt {
+   font-family: CooperHewitt-Bold;
+   font-weight: normal;
+   font-size: 10pt;
+ }
+div.archive dd ul {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    list-style-type: "- ";
+}
+div.archive dd ul a {
+    color: black;
+    text-decoration: none;
+}
+div.archive dd ul a:visited {
+    color: black;
+}
+div.archive dd ul a:hover {
+    text-decoration: underline;
 }
 
 
