@@ -106,7 +106,7 @@ i, em {
     font-family: Latin-Modern-Mono-Light-Oblique;
     font-style: normal;
 }
-b i, b em, strong i, strong em {
+b i, b em, strong i, strong em, i b, em b, i strong, em strong {
     /* letter-spacing: -0.05em; */
     font-family: Latin-Modern-Mono-Light-Bold-Oblique;
     font-style: normal;
