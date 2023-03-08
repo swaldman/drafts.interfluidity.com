@@ -40,10 +40,12 @@ given PageBase = PageBase.fromPage(input.renderLocation)
       <article class="<(articleClasses)>">
         <div class="entry-header">
 <()
-  mbTitle.fold("&nbsp;") { title =>
+  if input.presentation != input.blog.Entry.Presentation.Rss then {
+    mbTitle.fold("") { title =>
 ()>
           <h1><a href="<( permalink.relative )>"><( title )></a></h1>
 <()
+    }
   }
 ()>
         </div>
