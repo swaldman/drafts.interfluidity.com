@@ -31,11 +31,11 @@ end title
   </head>
   <body>
     <header>
-      <div id="rss-link-layer">
+      <div id="rss-link-container">
         <a id="rss-link" href="<( feedLoc.relative )>"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
       </div>
-      <div id="menu-layer">
-	...<a href="<( mainLoc.relative )>">drafts-main</a>...<a href="<( archiveLoc.relative )>">drafts-archive</a>...<a href="https://www.interfluidity.com/">interfluidity-main</a>...
+      <div id="menu-container">
+	<a href="<( mainLoc.relative )>">drafts-top</a> | <a href="<( archiveLoc.relative )>">drafts-archive</a> | <a href="https://www.interfluidity.com/">main</a>
       </div>	
     </header>
     <main>
