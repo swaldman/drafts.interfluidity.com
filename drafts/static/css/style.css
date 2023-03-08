@@ -58,7 +58,7 @@ header {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 80px;
-    align-items: end;
+    align-items: center;
 }
 #rss-link-container {
     /*border: 2px solid green;*/
