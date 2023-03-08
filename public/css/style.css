@@ -183,10 +183,12 @@ div.entry-body {
     text-align: justify;
 }
 div.entry-footer a {
-    color: var( --link-blue );
+    /* color: var( --link-blue ); */
+    color: blue; /* we just like the richer blue for this small link */
 }
 div.entry-footer a:visited {
-    color: var( --link-blue );
+    /* color: var( --link-blue ); */
+    color: blue; /* we just like the richer blue for this small link */
 }
 div.entry-footer .post-metainfo {
     font-size: 9pt;
