@@ -12,7 +12,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 [David French](https://www.thebulwark.com/james-madisons-vision-of-pluralism/) argues we can
 "dilute the disruptive power of faction by allowing factions to bloom."
 
-He commends to us James Madison writing
+He commends to us James Madison, writing
 [Federalist No. 10](https://guides.loc.gov/federalist-papers/text-1-10#s-lg-box-wrapper-25493273):
 
 > [T]he greater number of citizens and extent of territory which may be brought within the compass of republican than of democratic government...renders factious combinations less to be dreaded in the former than in the latter. The smaller the society, the fewer probably will be the distinct parties and interests composing it; the fewer the distinct parties and interests, the more frequently will a majority be found of the same party; and the smaller the number of individuals composing a majority, and the smaller the compass within which they are placed, the more easily will they concert and execute their plans of oppression. Extend the sphere, and you take in a greater variety of parties and interests; you make it less probable that a majority of the whole will have a common motive to invade the rights of other citizens; or if such a common motive exists, it will be more difficult for all who feel it to discover their own strength, and to act in unison with each other...
