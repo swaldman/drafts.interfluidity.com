@@ -31,6 +31,7 @@
     --title-offset: -1em;
     --prev-next-color: #DDD;
     --menu-link-color: #DDD;
+    --link-blue: rgb(93,117,222);
 }
 
 * {
@@ -103,6 +104,20 @@ b i, b em, strong i, strong em {
 hr {
     border-top: 1px solid black;
 }
+/*
+blockquote::before {
+    content: url("../image/blockquote-line.png");
+    display: inline;
+}
+*/
+blockquote {
+    font-size: 90%;
+    line-height: 110%;
+    margin-left: 0.0em;
+    padding-left: 2em;
+    background-image: url("../image/blockquote-line.png");
+    background-repeat: no-repeat;
+}
 div.entry-header h1 {
     position: relative;
     left: var( --title-offset );
@@ -125,7 +140,7 @@ div.entry-body a {
     /* text-decoration: #BBFFBB underline; */
     text-decoration: none;
     /* color: black; */
-    color: blue;
+    color: var( --link-blue );
     font-family: caroni;
     font-size: 120%;
     /* font-family: F25_Bank_Printer; */
@@ -151,16 +166,16 @@ div.entry-body a:after {
     content: "]";
 }
 div.entry-body a, div.entry-body a i, div.entry-body a em, div.entry-body a b, div.entry-body a strong, div.entry-body a b i, div.entry-body a b em, div.entry-body a strong i, div.entry-body a strong em, div.entry-body i a, div.entry-body em a, div.entry-body b a, div.entry-body strong a, div.entry-body b i a, div.entry-body b em a, div.entry-body strong i a, div.entry-body strong em a {
-    letter-spacing: 0em;;
+    letter-spacing: 0em;
 }
 div.entry-body {
     text-align: justify;
 }
 div.entry-footer a {
-    color: blue;
+    color: var( --link-blue );
 }
 div.entry-footer a:visited {
-    color:blue;
+    color: var( --link-blue );
 }
 div.entry-footer .post-metainfo {
     font-size: 9pt;
