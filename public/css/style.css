@@ -176,8 +176,9 @@ div.entry-body a:before {
 div.entry-body a:after {
     content: "]";
 }
-div.entry-body a, div.entry-body a i, div.entry-body a em, div.entry-body a b, div.entry-body a strong, div.entry-body a b i, div.entry-body a b em, div.entry-body a strong i, div.entry-body a strong em, div.entry-body i a, div.entry-body em a, div.entry-body b a, div.entry-body strong a, div.entry-body b i a, div.entry-body b em a, div.entry-body strong i a, div.entry-body strong em a {
-    letter-spacing: 0em;
+div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a {
+    font-family: caroni;
+    font-style: oblique;
 }
 div.entry-body {
     text-align: justify;
@@ -234,6 +235,19 @@ a#rss-link span {
 }
 .flexmark .footnotes p {
     display: inline;
+}
+.flexmark .footnotes a.footnote-backref {
+    font-size: smaller;
+}
+.flexmark .footnotes a.footnote-backref:before {
+    content: none;
+}
+.flexmark .footnotes a.footnote-backref:after {
+    content: none;
+}
+.footnotes {
+    font-size: smaller;
+    line-height: 120%;
 }
 footer {
     flex-grow:       0;
