@@ -1,0 +1,154 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Disintermediation",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-03-19T20:40:00-04:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Whenever there is a conversation about [narrow banks](https://www.econlib.org/lyn-alden-on-bank-safety/) or
+[central bank digital currencies](https://www.interfluidity.com/v2/8876.html), the bogeyman of "disintermediation"
+ghoulishly appears, shrieking and wailing about the death and destruction that awaits if any part of our deposits
+and payments system were to be wrested from the cuddly, gentle banks who grant us convenience and prosperity and take
+nothing from us but our ingratitude.
+
+I actively favor disintermediation of _status quo_ banks. I consider the "risk" that, if the public were offered a
+simple, safe alternative, depositors would flee to it, to be like the risk that a better world might in fact be possible.
+That would mean something might change!
+
+Let's understand the issue. Currently, we hold our liquid wealth as "deposits" at commercial banks. Deposits are just
+loans that _we_ make to banks, but they are callable on demand: we can withdraw them as cash, or use them any time to make payments.
+Most deposits are in fact created from loans by our banks. The name "deposit" is intentionally misleading, emphasizing the
+case where you "deposit" hard government cash into the bank, and that's why it owes you something back. In reality deposits
+are IOUs banks conjure at will, as easily as incrementing numbers in an internal database. Banks are constrained in theory
+in the amount of "money" they produce by the risk that account-holders may demand cash, or make payments to (net of receipts from) customers
+of other banks, beyond what the bank has on-hand or can borrow. Banks are constrained in practice by restrictions imposed by regulators,
+because it turns out the theory doesn't work. As long as customers value bank deposits at par &mdash; you accept $1 in
+the bank as worth the same as a green bill in your pocket &mdash; bankers would do best making up as much money as they can to invest,
+selling or borrowing against their investments to raise cash if customers make unexpected demands, walking away from the wreckage
+with profits they've already taken when they can no longer sell or borrow to meet withdrawals. If you want banks to be truly regulated
+by a free-market, then you'll have a shitty payments system, because a dollar "on deposit" at each bank will have to be worth less than a dollar,
+to account for the risk the bank's bets won't actually cover the deposits they owe.
+Each bank's deposits will have its own constantly changing price, whose fairness most customers will be unable to independently evaluate. If you want banks
+to run a smooth payments system where a dollar is a dollar at any bank, then you'll need a state, both to offer guarantees that keep the promised value credible,
+and then to regulate, in order to counter the "heads I win, tails I walk away" incentive that the ability to issue par-valued money begets.
+
+Seems like a lot! Why not just have some institution &mdash; a "narrow bank" if private, the central bank if public &mdash; actually
+just keep green money that we deposit, and we can make payments with that? A dollar would always be worth a dollar, because without
+any need for regulation or concern about tricky incentives. A narrow bank would basically just keep every dollar deposited to it,
+the Fed can issue dollars at will, when it issues back dollars previously deposited it's not increasing the quantity or liquidity
+of money, so there's no new inflation risk. This would be "disintermediation". We'd disintermediate the banks, finally tell them to fuck off.
+Hooray!
+
+But there is a real problem with disintermediation. All of the money banks conjure from thin air to make risky loans, the money
+regulators are endlessly struggling to prevent turning into a heads-I-win-tails-I-walk scam? That is the same money that is loaned
+to you when you get a mortgage to buy your home. It's the same money that finances the loan a business takes to buy its machinery or
+inventory or create that amazing ambiance for your dining pleasure. Those are the banks' risky bets! (Well, they are some of the banks'
+risky bets. Banks make a lot of less sympathetic, not-so-obviously-productive bets too.)
+
+If we _only_ disintermediate, without replacing banks' phrenetic incentive to exploit their money-making franchise and invest in
+stuff, we'll get a lot less aggregate investment. Our civilization will collapse into [goat-herding](https://www.interfluidity.com/v2/2669.html).
+The scare-mongers will have been proven correct.
+
+If we disintermediate (and goat-herding does not appeal), what could replace _status quo_ banks? Do we need to invent something
+untried and revolutionary?
+
+Well, no. It turns out, much of our banking system is undergoing disintermediation as we speak! A week ago, the Federal Reserve
+announced the [Bank Term Funding Program](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312a.htm),
+which will allow
+
+> banks, savings associations, credit unions, and other eligible depository
+> institutions [to borrow] pledging U.S. Treasuries, agency debt and mortgage-backed securities, and other qualifying assets as collateral...valued at par.
+
+I know, dear reader. Finance-speak! The eyes glaze! What does all this mean, in English?
+
+It means that the general public, which usually
+makes the bankers' money machine work by treating bank deposits like money-good-as-cash and letting them sit unwithdrawn, is now withdrawing
+much of its money. If Jane Public is not deserting the banking system entirely for actual cash, then she is piling into one of
+[Citi, JP Morgan Chase, Bank of America, or Wells Fargo](https://fosstodon.org/@interfluidity/110002159996385364), "systematically important
+financual institutions" that we all know are too vast and entrenched for the government to allow depositors to be screwed. These are as risk-free
+good-for-the-money as the government is risk-free-good-for-the-money, because in a pinch the government would rather cover their deposits than deal
+with the hell that would break loose if they didn't.
+
+The big banks are [raking it in](https://markets.businessinsider.com/news/stocks/bank-of-america-deposits-svb-too-big-to-fail-jpmorgan-2023-3)!
+But what about the rest of the banks? They will not, you will notice, collapsing like mayflies at the end of a long summer's day.
+Banks' money-making machinery, and so their investment-making machinery, depends on customers' willingness to leave "their money" in
+the form of the deposits banks invent, rather than immediaately withdrawing it. The money small and midsized banks invented would be suddenly
+uninvented, and all those banks' loans and investments would have to be called or sold in a fire sale, if depositors fled and no one else
+could be persuaded to accept IOUs from these banks as good money. So, the Federal Reserve has stepped in and is replacing fleeing depositors,
+importantly without even asking whether the investments the banks have made are good enough to eventually cover the loan the government,
+instead of the general public, is now making to these banks. That's what "valued at par" means in finance-speak.
+
+The Federal government may lend banks a great deal under its new program, or it may ultimately lend very little. Knowing that the Fed
+will replace fleeing deposits with loans of goverment-issued cash, dollar-for-dollar even against bank investments that have lost value,
+means there is little reason for depositors to actually flee. Anytime they want to withdraw, the government will be there with a dollar
+for the bank to give them.
+
+There is nothing new in any of this. It is the essence of modern banking. If you want a dollar in a bank to be worth as much
+as a dollar in your pocket, the government must, and only the governnment can (because only it can issue dollars in any quantity, at will),
+be willing to replace a bank deposit with a dollar. If deposit insurance were truly limited, all but the smallest businesses
+would not have a reliable payments system. Since the mid-20th-Century, we've maintained the conceit that bank deposits represent private
+"investments" and deposit insurance is "limited" (though you can multiply it through the economically counterproductive busywork of splitting accounts).
+But that has been bullshit all along, because we have wanted an economy in which businesses could use the payments system as a payments system
+without worrying about their "investment" in the bank. The term "too big to fail" is not some new invention from the 2008 financial crisis.
+In the United States, it [begins in the 1970s](https://www.clevelandfed.org/publications/economic-commentary/2017/ec-201717-origins-of-too-big-to-fail),
+as the strict prudential regulation enacted during the Great Depression begins to get whittled away by bankers pushing to make their
+money-printing machine whirr just a little bit faster. Limited deposit insurance has only ever been a thing for small banks,
+where it could be symbolically upheld to promote a useful myth. It has been untenable since the scale of payments by a large fraction of businesses
+came to exceed the level that insured accounts could conveniently provide. Big business simply banks with Citi and JP Morgan to
+be sure their deposit insurance is unlimited. They don't fuck around with hundreds of $250K accounts.
+
+Disintermediation is not a novelty. _Intermediation_ is a fiction. The clear-eyed way to describe our banking system is that
+
+
+
+
+
+
+
+But for our purposes here, we can stick to the intentionally misleading simple case. You deposit money in the bank, the bank
+increments its database of how much it owes you, 
+
+
+
+Another way to put that is to say that deposits are IOUs from our banks to us, but they promise to redeem them for government
+cash whenever they want.
+
+The IOU frame is helpful, because it reminds us that banks can _create_ deposits at will. The name "deposit" is intentionally
+misleading. It suggests you "deposit" something into the bank, then it owes you that thing back on demand. But most deposits are
+never "deposited" at all: they are conjured into existence by loans. If you go to your bank and ask for a $1000 loan (and you being
+you, so fucking awesome, are obviously good for it), what happens is you sign a piece of paper that promises to repay the bank
+on certain terms, including an interest rate, and the bank just increases the number in its database that represents your account
+balance. The paper you sign means you owe the bank some money. The extra balance in the account means the bank owed you some money.
+It's a like-for-like exchange, and no government money was involved. You and the bank both just conjured up some IOUs.
+
+Suppose you use your new "cash" to buy something cool from the store. If the store and you have the same bank, guess what happens?
+You "spend" $500. The bank deducts $500 from your account (a record of how much the bank owes you) and add $500 to the store's account
+(how much the bank owes the store). No government money ever changes hands. Your bank created the "money", you and the store transact
+in it.
+
+Banks can't just create money however they feel like it, though. They are constrained in theory by the fact that you might
+want to withdraw the cash, or you might try to pay someone who banks at a different bank. In either of those cases, your bank
+might have to come up with government-issued money. They face two constraints, liquidity and solvency. Liquidity means they
+should have enough cash on hand to meet the demands of withdrawers, and of payments out to other banks, net of payments the
+bank receives. In any given day &mdash; well, on almost any given day &mdash; the vast majority of bank deposits will be neither withdrawn or
+paid out. So the bank needs to hold as _assets_ (remember deposits are the bank's liabilities, its _debt_) only a little bit
+of government cash, whether the green paper you might withdraw from a teller or the electronic reserves used for interbank
+payments. The rest of the bank's deposits represent _loans the bank has made that it is earning interest on_. The bank may pay some
+interest on our deposits, sure, but because we value the convenience, liquidity-on-demand, and safety-from-armed-robbery that
+keeping our money in the bank provides, in fact we accept a much lower rate of interest than we would on some loan we made as an
+"investment". And that is the heart of the trick. Bank intermediation creates a pool of money bankers can invest paying much less
+than the interest that other investors would require for a loan to a risky investment fund. Which is precisely what a bank is.
+
+Keeping money in a bank might be convenient and keep you safe from armed robbery, but it doesn't keep you safe from a bank failure!
+Since the bank keeps on-hand as cash only a small fraction of hypothetically withdrawable deposits, even a bank that has invested well
+may sometimes face a situation where it has made promises that it cannot immediately keep. In theory, if the bank has invested well,
+that should be no big deal. The bank can just sell its investments (its loans to you and me!) to some other bank or investor, and those
+investments will be worth substantially more than all the deposits the bank owes customers, so just give them a minute or two and they'll
+raise the cash to pay you back (or borrow it using their sterling investments as security).
+
+However, in real life, sometimes banks will have not invested well. (Silicon Valley Bank made some _oopsie!_ bets on interest
+rates.)

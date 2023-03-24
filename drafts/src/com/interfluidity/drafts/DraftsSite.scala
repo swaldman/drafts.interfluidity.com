@@ -61,10 +61,7 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
       
   end MainBlog
 
-  // avoid conflicts, but...
-  //   (1) early items in the lists take precedence over later items
-  //   (2) endpoint bindings take precedence over location bindings
-  //
+  // avoid conflicts, but early items in the lists take precedence over later items
   override val endpointBindingSources : immutable.Seq[ZTEndpointBinding.Source] = immutable.Seq( MainBlog )
 
 object DraftsSiteGenerator extends ZTMain(DraftsSite, "drafts-site")

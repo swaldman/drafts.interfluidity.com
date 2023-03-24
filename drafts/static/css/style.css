@@ -171,9 +171,11 @@ div.entry-body a:hover:before, div.entry-body a:hover:after {
     color: red;
 }
 div.entry-body a:before {
+    font-size: 90%;
     content: "[";
 }
 div.entry-body a:after {
+    font-size: 90%;
     content: "]";
 }
 div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a {
