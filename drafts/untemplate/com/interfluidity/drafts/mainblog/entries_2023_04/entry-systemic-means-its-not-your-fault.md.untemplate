@@ -1,0 +1,49 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Systemic means it's not your fault",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-04-10T18:05:00-04:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Much of the resentment that has condensed onto the term “wokeness” derives, I think, from people's perception that they stand accused, unjustly, of crimes they did not commit:
+
+> _I am not a bigot, but the woke accuse me of "structural racism". I am not responsible for the actions of people long dead who are not me, but they tell me I am "compicit", which is just another word for guilty. No one knows what I have been through, or how hard I have worked, but they insist that I am privileged._
+
+Click-hungry media, both traditional and social, eagerly reinforce the perception that wokeness is about calling out personal sin. Accusations of racism or harassment levied at an identifiable human become *scandal*, which our gossipy primate brains are drawn to irresistibly, as though our own place in the clan's dominance hierarchy hinges precariously upon the outcome.
+
+But "woke”, as Ron DeSantis' General Counsel [helpfully put it](https://floridapolitics.com/archives/574045-in-andrew-warren-suspension-trial-gov-desantis-officials-answer-what-does-woke-mean/), refers to “the belief there are systemic injustices in American society and the need to address them.” *Systemic* means that the injustices *do not* reduce to personal bigotry. It refers to structural factors, which may derive from past bigotry, but which perpetuate injustice, and might do so even despite the real goodwill of everyone alive today.
+
+For example, historical redlining created segregated ghettos and a strong correlation between neighborhood racial composition and home values. Today's loan assessor might be sincerely antiracist. She might be black. But it would still be her job to incorporate observed relationships between location and value into her assessments. Low valuations can be self-fulfilling. Limiting buyers' access to borrowed purchasing power makes home price appreciation less likely in historically black neighborhoods. Our assessor's work would be "colorblind”, but it might nevertheless help perpetuate racist outcomes.
+
+But those outcomes would not, in any personal, ethical, sense, be her *fault*. Obviously, the correlations between race and home value that preceded her could not be her fault. One might argue that, going forward, if she is sincerely antiracist, she has a moral obligation to give effect to her antiracism. She must do her job not merely in a colorblind way, but in a manner that actively counters and helps remedy historical racism.
+
+However, she could not ethically do that on her own. If she were to, say, assess homes in historically black neighborhoods at values derived from comparable properties in white neighborhoods, she would quickly be fired. Her employers would, reasonably, want to ensure that [ultimately public](https://drafts.interfluidity.com/2023/03/21/banks-are-not-private/index.html) funds aren't lent to dramatically overpay for homes that will become the loans’ collateral.
+
+And even if she were not fired, her guerrilla revaluation revolution wouldn’t on its own put a dent in the home-wealth penalty black people in America continue to face. You'd need nearly all the loan assessors, and their employers, to agree that imposing, against experience, valuation at levels set by white-neighborhood-comparables is a good tactic for remedying historical racism, despite the obvious risks and costs of the strategy. In practice, that would only happen if there were systematic signals and incentives to encourage the practice.
+
+A structural problem demands a systematic solutions, usually in the form of public action. It is not an individual's fault, or within an individual's capability to remedy.
+
+I wish that those of us more on the “woke” side of the debate were clearer about this. When we say that racism or other social disparities are “systemic” or “structural”, we are absolving, not condemning, nearly everyone, as individuals.
+
+When Ron DeSantis [describes](https://www.wfla.com/news/pasco-county/florida-is-the-place-where-woke-goes-to-die-desantis-says/) Florida as “where woke goes to die”, he is appealing to a bitter energy fueled by sloppy mischaracterization, and sometimes sloppy practice, of social justice movements. He insinuates that "wokeness” requires that people who are white, or cis, or straight should feel guilty, personally &mdash; and should subordinate their own interests, interpersonally &mdash; to claims made by members of "special” groups.
+
+Contemporary social justice movements are multiple and fractious. Among them there are no doubt people who make such demands. But that is a mistake.
+
+Personal bigotry continues to exist. The political climate in places like Florida is increasing it. When it appears, of course it should be condemned.
+But the insight of scholarship like critical race theory is that continuing injustice is largely not a result of direct, personal bigotry. It is an error, ethically and practically, to emphasize personal and interpersonal accountability when we seek to address problems that are systemic and structural. People like Ron DeSantis want to caricature wokeness as  a movement that indoctrinates children to feel guilty about being a normal (read white) American. That’s not a project most of us would support. DeSantis’ General Counsel’s version, on the other hand — “there are systemic injustices in American society and the need to address them” — is right on.
+
+There are injustices. They are systemic, which means, quite directly, they are not your fault. They are not your kids’ fault. No matter how white or straight or cis you are, you have nothing to apologize for. You owe nobody anything.
+
+But we would have a better country, a prouder country, a safer country, and a richer country, if we could finally fix these problems. You owe nobody anything, but we would sure welcome your help.
+
+Remedying systemic injustice is not a zero-sum game. If getting black kids into Harvard seems to come at the expense of Asian kids, the problem is Harvard, not any of the kids. The way we fix systemic injustice is to build a country in which everyone willing to contribute can succeed, rather than a thunderdome where we clump up into gangs and fight to win access to patronage networks.
+
+If all the places that now seem hopeless, sad, and scary — inner city black neighborhoods, sure, but also “forgotten” white communities — if we invested in making all these places safe and prosperous, then no one anywhere could mock expressions of open patriotism. USA #1! Despite everything, I remain proud to be an American. But I could be prouder. I would like to be.
+
+Systemic injustice is not your fault. But we’d love it if you’d help to fix it.
+
+
