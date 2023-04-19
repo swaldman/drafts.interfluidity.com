@@ -1,7 +1,8 @@
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Taiwan",
 >   "Author"    -> "Steve Randy Waldman",
->   "PubDate"   -> "2023-04-18T23:59:00-04:00",
+>   "PubDate"   -> "2023-04-19T10:30:00-04:00",
+>   "Permalink" -> "/2023/04/18/taiwan/index.html",
 >   // "Anchor"    -> "first-post"
 > )
 
@@ -36,11 +37,3 @@ On questions like how Taiwan's economic and cultural interests should be represe
 Our principled stance should be mutuality. Whatever the parties mutually agree, we are down with. While there is not mutual agreement, the _status quo_ must be preserved. The fundamental position of the United States should be insistance that neither party act unilaterally or coerce the other.
 
 For the forseeable future, no agreement is likely, so the parties will have to be patient. An awkward peace is so much better than the alternative. As decades pass, everything will change, in ways we cannot now foresee. Someday the parties will agree. We should all look forward to that.
-
----
-
-<div style="font-size: smaller; color: #999999;">
-
-_Note: This post was actually published 2023-04-19 at about 10:30 am EDT. But I can't correct the date without breaking already published links. Oops._
-
-</div>
