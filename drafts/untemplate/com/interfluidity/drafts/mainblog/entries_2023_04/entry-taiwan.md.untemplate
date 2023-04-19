@@ -1,0 +1,39 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Taiwan",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-04-18T17:30:00-04:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Taiwan's status has settled into a kind of pissing match between the United States and China. I think this is very bad.
+
+From an American perspective, Xi Jinping's China seems increasingly assertive, impatient, and threatening. US officials publicly worry that China might blockade or invade Taiwan [at any time](https://www.ft.com/content/753bec2b-9c55-49a8-9d34-7c286af505f3).
+
+From a Chinese perspective, the United States seems to be openly flouting its "one China" policy under which the United States [claimed](http://www.taiwandocuments.org/communique03.htm) to have "no intention of infringing on Chinese sovereignty and territorial integrity, or interfering in China's internal affairs, or pursuing a policy of 'two Chinas' or 'one China, one Taiwan.'"
+
+When senior US officials make high-profile public visits to Taiwan, that is perceived almost universally &mdash; within China, but also by American and Western publics &mdash; as supporting a posture of adversarial defiance by Taiwan towards China. [(Vive le Qu&eacute;bec libre!)](https://en.wikipedia.org/wiki/Vive_le_Qu%C3%A9bec_libre) Given increasingly negative perceptions of China's behavior with respect to Xinjiang and Hong Kong, supporting Taiwanese resistance is popular with Western publics and therefore attractive to Western politicians.
+Of course, members of the US Congress and Taiwanese leaders have every right to meet with one another, wherever they wish,
+without regard to China's views on the matter.
+
+That one has a right to do a thing, however, does not imply that it's a righteous thing to do. Asserting ones rights should in general be a last, rather than first, resort. In ordinary life, nearly all of the time, we try to act with sufficient consideration of those our actions might affect that the question of rights never comes up. We assert rights only when someone will object, but we decide to act anyway.
+
+It is important that we can and do assert rights, that we have liberties that can overcome other peoples' objections. But it's also wise, when it is possible, to try to address people's concerns rather than jumping directly to an adversarial assertion of rights. Even when in the end no agreement can be reached and ultimately we do assert rights, the exercise of having made a real attempt &mdash; of expressing some regret rather than just glee when we disregard another's preference &mdash; goes some way towards mitigating the damage.
+
+As readers can tell, I view events like Nancy Pelosi's visit to Taiwan more through a lens of destructive showboating than courageous freedom fighting. I care a great deal about Taiwan's continuing freedom and prosperity, and don't think the United States should in any sense shirk its commitments to the island. But our commitment should be to chart a course that will actually, rather than symbolically, support the welfare of Taiwan. The way relations between the United States and China have spiraled makes a destructive war too likely. The goal of the United States should be live up to our commitments in a way that prevents such a war.
+
+The keystone of the United States' policy with respect to Taiwan should be _mutuality_. Our position should be that we support any change in Taiwan's status so long as it is voluntarily agreed by both China's government and the _de facto_ government of Taiwan. _Voluntarily_ is important. The United States supports Taiwan, militarily and otherwise, only so that it cannot be coerced by China. If, at some point in the future, a convergence occurs so that China and Taiwan become ready to conclude a "peaceful reunification", that would be wonderful. If, in some future, friendly and mutually beneficial cross-strait relations lead China to become less concerned with exerting formal sovereignty over Taiwan and the parties jointly negotiate a more autonomous status for the island, that would be great too.
+
+What the United States should oppose is any unilateral or coercive change in status, by either party. If China were to try to take Taiwan by force, there is little question now, and there should be little question, that the United States would intervene in the island's defense. That would be a catastrophe for all concerned, but the logic of deterrence demands risking catastophe. Especially in the wake of the Ukraine experience, I (like Joe Biden) don't see much benefit in "strategic ambiguity". The worst kind of deterrence is a policy sufficiently uncertain that the party you seek to deter risks adventure, but sufficiently serious that when it does you end up expending treasure or blood or maybe provoking an apocalypse in response. Deterrence strikes me as a Yoda-esque affair. Do, or do not.
+
+Even while we deter China, the United States should make clear, plainly and publicly, that we would not support, would not recognize, and would not defend Taiwan in the event of a unilateral declaration of independence. Does the US ever say this? Seems like an obvious thing. It is not, as China frequently implies, the United States' policy to encourage separatism in Taiwan. The United States should forthrightly and frequently say so.
+
+On questions like how Taiwan's economic and cultural interests should be represented in multilateral organizations and around the world, the United States should encourage negotiation and consensus rather than take sides in symbolic but inflammatory pissing matches. Where China cannot be appeased, the United States should informally intermediate, so that Taiwan's substantive concerns can be addressed even where it lacks a formal role.
+
+Our principled stance should be mutuality. Whatever the parties mutually agree, we are down with. While there is not mutual agreement, the _status quo_ must be preserved. The fundamental position of the United States should be insistance that neither party act unilaterally or coerce the other.
+
+For the forseeable future, no agreement is likely, so the parties will have to be patient. An awkward peace is so much better than the alternative. As decades pass, everything will change, in ways we cannot now foresee. Someday the parties will agree. We should all look forward to that.
+
