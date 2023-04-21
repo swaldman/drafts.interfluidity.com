@@ -1,0 +1,91 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Two parties make us stupid",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-04-21T10:30:00-04:00",
+>   "Permalink" -> "/2023/04/18/taiwan/index.html",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Why do we want democracy anyway?
+
+There are two intertwined goods that we hope democracy will deliver:
+
+1. **Democracy legitimates government action.** If we believe that what our government does has been decided by and for the public as a whole, rather than by and to the advantage of some elite or faction, then we are likely to concede that it's legitimate. We're less likely to resist, whether by quietly defying the law when we can get away with it or overtly struggling against the state.
+
+   Legitimacy is both a _per se_ good and an instrumental good. If we think the system we live under is legitimate, that fact alone makes us feel better about our lives than if we think we think we are coerced by a corrupt and oppressive state. More than that, legitimacy renders us all more willing to behave in ways that make state action more likely to succeed, and so improve social coordination and enhance state capacity.
+
+2. **Democracy enables high quality decision-making.** A tyranny or aristocracy will act with limited access to the values and interests of the public it governs, and will often project its own perspectives and interests on the broader public. So even when it means to act in the public interest, it will fail to do so. No faction has a monopoly on insight, and every faction has blind spots, prejudices, and parochial interests. Democracy &mdash; in theory, at its best &mdash; would recruit the entire public in an intelligent process of deliberation, yielding higher quality decisions than any faction governing alone would arrive at.
+
+These goods are mutually reinforcing. A state that consistently makes high quality decisions will be perceived as more legitimate than one that seems always to err. When state action is widely held to be legitimate, public cooperation will expand the range of choices the government can succeed at executing, enabling a higher quality of decisions than a government whose actions will be stymied by public torpor or active resistence.
+
+Unfortunately, a system that divides the public into two aggressively competing, highly cohesive factions renders an intelligent process of deliberation impossible. It is not hard to understand why.
+
+Intelligent deliberation requires that there exist some agent capable of weighing competing ideas without too much prejudice. It is fine &mdash; it is necessary! &mdash; that there are passionate interests on one side or another of any debate. But passionate interests don't deliberate. They advocate.
+
+You can't make a court only from the prosecution and the defense. Who would listen and synthesize the evidence? The prosecution and defense have their roles to play. But deliberation is only effective when there are judges and juries beholden to neither side, able to consider competing claims on their merits.
+
+Of course we will never achieve perfect neutality, objectivity, fairness, independence in our fallen human world. But these characteristics can exist in importantly different degrees. Institutions that create space for neutral-ish adjudicating parties will be capable of better decisionmaking than institutions under which prejudiced parties simply struggle for the power to impose their own way.
+
+When a society becomes polarized into only two competing factions, each of which takes opposite sides over the set of issues under public contestation, there cease to be neutral-ish parties. Each faction will learn to punish deviance by individuals within its orbit, because dissent on any of the portfolio of positions one faction has adopted weakens the faction as a political coalition. A two-party system risks converging over time into highly disciplined coalitions, because tolerating dissent within a party creates opportunities for the other, much worse, party to exploit.
+
+A two-party system is a zero-sum game. Whatever weakens my side, strengthens the other side. Matters that should be decided with attention to actual facts about the world become subsumed by concerns over who will be helped and who will be hurt by a given position. No issue, individually, can outweigh the catastrophe that would result if the other side achieved greater power, so neither party can afford to consider any issue on its merits at all. The implcations with regard to _who_ will rule wholly outweigh questions of _what_ should best be done.
+
+In a multiparty system, on any given question, there may be factions without much skin in the game. The environmentally-focused Green Party
+may not have strong priors about education reforms, and may not perceive its own electoral prospects as being very connected to that issue.
+If that is so, members of the Green Party can actually consider those questions on the merits, perhaps adjudicating some controversy between
+a labor party committed to teachers' interests as workers and a liberal party trying to maximize efficiencies by minimizing expenditures.
+On any given issue, you'd ideally like the deciding "swing" party to have minimal commitments, to be capable of listening to advocates and
+forming independent judgments.
+
+Multiple parties alone cannot guarantee this, of course. If parties tightly align to form a governing coalition, then our hypthetical Green Party
+might just defer to its coalition partner. And what is formally a two party system need not foreclose the possibility of space for neutral-ish factions.
+In the United States, before our two parties had sorted themselves so well into homogenous, disciplined entities, the existence of "Rockefeller
+Republicans" and conservative Southern Democrats meant that beneath the party brands sat a multiplicity of groups, whose positions in
+controversies often failed to hew to party lines.
+
+Intelligent decisionmaking under democracy is less a matter of the number of formal political
+parties participate and more a question of how fluid coalitions among factions are. If every question is going to be settled in
+Democrats-vs-Republicans terms, you will have a stupid polity. If party discipline is weak and factions shift, so that on any given question
+less interested factions take positions largely on their merits, you might manage an intelligent polity even with only two formal parties.
+
+What matters is that there be sufficient diversity and fluidity within the legislature that the swing vote usually comes from
+factions that has no strong, prior interest in the question considered, and no binding loyalty to any of the more interested
+factions. For any given question, there needs to be a judge and jury, as well as a prosecution and defense, among the legislature.
+
+The political science consensus, I think, is that parliamentary systems under which the executive is selected by the legislature are superior
+to US-style presidential systems. Parliamentary systems reduce the danger of paralyzing, destructive, conflict between legislature and president,
+both of which claim
+a mandate from the people.
+
+The argument I make here runs a bit contrary to this consensus. When a governing coalition must be maintained within
+the legislature, even if there are formally mutiple parties, the parliament risks becoming effectively a two-party chamber, defined by those
+who are in government and those who are in opposition. Under a presidential system, discipline within the legislature need not be maintained
+in order to sustain control of the executive. Parties not attached to strong coalitions can afford more independence of judgment, creating space for
+meaningful fluidity and neutrality inside the legislature.
+
+However, in order to reduce
+conflict between a fluid and deliberative legislature and an externally chosen executive, the president should be elected via a system
+likely to elevate more neutral and diplomatic candidates, rather than committed factionalists.
+
+If I could wave a magic wand, the United States President would be elected by [approval voting](https://electionscience.org/library/approval-voting/), which tends to elevate consensus candidates. The House of Representatives would be chosen by some form of proportional representation, designed
+&mdash; because the structure of the system does determine these things! &mdash; to elevate four to six political parties. Multiplicity of formal party may not guarantee a fluid multiplicity of faction. But it would help encourage it, and break the cul-de-sac of strongly sorted, binary factions
+in which the US is now stuck.
+(Senators, who are charged with representing whole vast states, should also be elected by approval voting. They should be consensus figures, people
+nearly all of their constituents can live with, rather than factionalists who alienate half their publics.)
+
+Our current system and situation render deliberation a sham in the service of factional power. This makes us collectively stupid. Which
+discredits our democracy, and the very idea of democracy.
+
+If you want to save democracy, it's not enough to fight the authoritarians in the other party, whichever party you now identify with.
+We have to reform our electoral system.
+
+---
+
+p.s. I usually recommend [Lee Drutman's book](https://academic.oup.com/book/36918) on this stuff, and see no reason not to recommend it again now.
+
+
+
