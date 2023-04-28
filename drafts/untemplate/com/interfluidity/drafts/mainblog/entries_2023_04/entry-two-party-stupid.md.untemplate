@@ -2,7 +2,7 @@
 >   "Title"     -> "Two parties make us stupid",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-04-21T12:25:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "two-parties-make-us-stupid"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

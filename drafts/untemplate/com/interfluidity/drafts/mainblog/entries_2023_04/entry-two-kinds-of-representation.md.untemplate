@@ -2,7 +2,7 @@
 >   "Title"     -> "Two kinds of representation",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-04-24T16:50:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "two-kinds-of-representation"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

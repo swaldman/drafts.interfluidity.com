@@ -2,7 +2,7 @@
 >   "Title"     -> "State as coordination",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-03-31T22:10:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "state-as-coordination"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
