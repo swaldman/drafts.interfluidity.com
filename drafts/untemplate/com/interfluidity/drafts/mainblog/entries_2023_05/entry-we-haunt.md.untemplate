@@ -10,7 +10,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
 Everywhere the humans have been, and especially everywhere the humans still are, there are ghosts. We haunt.
-There is nothing more fundamental. We leave bits of us &mdash; objects,
+There is nothing more fundamental. We leave bits of us &mdash; artifacts,
 fragments of memory, graffiti, letters, legends &mdash; everywhere that we have been. Those traces
 reanimate, like Sea Monkey eggs poured into brine, among humans who eventually encounter them.
 
