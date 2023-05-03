@@ -1,0 +1,72 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "We haunt",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-05-03T18:05:00-04:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Everywhere the humans have been, and especially everywhere the humans still are, there are ghosts. We haunt.
+There is nothing more fundamental. We leave bits of us &mdash; objects,
+fragments of memory, graffiti, documents, legends &mdash; everywhere that we have been. Those traces
+reanimate, like Sea Monkey eggs poured into brine, among humans who eventually encounter them.
+
+They can raze the Pei Dormitories and rechristen New College as "DeSantis University". They can exile the
+the faculty and recruit chidren raised by televangelists. They can scrub every surface with bleach and hydroxychloroquine,
+desperate to erase any trace of us.
+
+But we who [are now dead](##new-college), we lived
+there. We loved there. We lived brief lives so extraordinary there that the rest of the world, the rest of
+our own lives, faded dim. That cannot be erased.
+
+It won't be.
+
+As long as there is a college of any kind on that remarkable, beautiful campus, as long as there are kids who live there and
+a community
+striving to teach and learn, there will be resonances. The collective adolescence will draw our irrepressible poltergeist.
+
+Even now, our usurpers live only in our negative
+spaces. Or in weak caricatures of our negative spaces that their own smallness and madness have hallucinated for them.
+Pity them. They make so much noise, they stomp gleefully upon the wildflowers. But despite their professed religion,
+no spirit stirs beneath their ruckus. They croak sound with no echoes. Their footprints are nothing to time and wind.
+Wildflowers grow back, thick in bright colors, from detritus of root and seed.
+
+Haunt. Small men in large pulpits come and go. There have never been smaller men than these.
+
+Haunt. Tell our stories. Leave traces, sprinkle breadcrumbs, in these electric entrails we now inhabit. In places where
+they can find them, not in the ever-shifting self-eradicating folds of Mark Zuckerberg's gigabit anus.
+
+What we leave, the kids will find. They will want to know.
+The transcendant is rare in our difficult country. New College is a wellspring. Children whose upbringing has been
+constraint masquerading as rapture, cruelty masquerading as civilization, threat masquerading as sanctuary, will
+thirst all the more for that water.
+
+_Trustees_, they call themselves, as if anyone would trust them. _President_. How grand. These people
+are parade floats transecting only briefly the center of the universe. Vulgar, imposing, made of nothing but hot air
+smelling stale like sweat and fear. We have indulged them too much already with diplomacy and outrage,
+with any kind of attention at all. They are unworthy of attention at all.
+
+Haunt.
+
+And stay, if you can. Whether you are student, staff, or faculty, it will be a trial. But an even better medium for haunting than an
+abandonned house is a living body possessed by spirit and memory. By no means give those motherfuckers any money.
+But if you can stand it, if you can put up with their harrying and petulence and dishonesty and cruelty, stay.
+A river runs through you.
+
+And love. The kids who will come, whether they are recruited on baseball scholarships or from community colleges
+(a [genuinely wonderful initiative](https://www.ncf.edu/admissions/transfer-students/guaranteed-admission/)) or whether
+they are our own kids, the kids are not our enemy. They are us and we are them. As long as they live and learn as
+fully and richly and wildly as we did, nothing can be lost. Flickering in a windstorm conjured by fools, we offer a flame.
+Only we know its warmth and technicolor brilliance. We offer it in love, despite the gusts and gales.
+
+It won't be easy
+for these new kids either. This storm is meant to keep them pliantly in their shelters.
+
+We were not so pliant. Neither will they be.
+
+
+
+
