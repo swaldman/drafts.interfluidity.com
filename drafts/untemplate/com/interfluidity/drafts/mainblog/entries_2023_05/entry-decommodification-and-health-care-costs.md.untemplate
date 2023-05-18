@@ -1,0 +1,110 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Decommodification and health care utilization",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-05-17T20:00:00-04:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+I am listening to [an episode](https://www.leftanchor.com/e/episode-276-the-ends-of-freedom/) of the
+[_Left Anchor_ podcast](https://www.leftanchor.com/). Among other great things, guest
+[Mark Paul](https://markpaulecon.com/) calls not just for universal health care, but for "decommodifying"
+health care.
+
+Health care, he reminds us, is
+[famously](https://web.stanford.edu/~jay/health_class/Readings/Lecture01/arrow.pdf) a festival of market failures.
+Absenting health care provision &mdash; like we exempt, say, national security provision &mdash; entirely from consumer
+markets makes some sense, even from a neoliberal perspective. Regulated markets are how neoliberals usually address
+market failure, but in principle if, say, barriers to informed consumer choice are severe enough, nonmarket provision
+might well be more efficient than relying upon consumer discipline at all.
+
+But if consumers literally bear no cost at all for the health care they receive, won't they overconsume?
+The usual story with "Medicare For All" is that we'd gain some efficiency from eliminating the private
+insurance layer (which costs tremendous complexity and a whole lot of money) but we'd increase
+aggregate medical provision. The presently uninsured would enjoy new care and people who now ration
+their own access for fear of financial burden would make greater use of the system, yielding health benefits.
+But this would also increase demand and cost.
+
+Paul's use of the term "decommodification" had me wondering, however, about what reforms might mean for
+the _supply side_ of health care provision, and how that might affect utilization. As Nick Rowe has pointed out
+many times, the usual condition of under which commodities are provided under capitalism is
+[supplier market power](https://worthwhile.typepad.com/worthwhile_canadian_initi/2010/11/excess-supply-under-monopolistic-competition.html).
+Suppliers are eager to supply. [It is easy](https://worthwhile.typepad.com/worthwhile_canadian_initi/2011/01/the-war-on-demand-and-the-short-side-rule-.html) to buy things, 
+while sales is a difficult job.
+
+This seems
+as true for health care in the United States as it is for other services. We are bombarded by ads for clinics
+and pharmaceutics. Television commercials ask us to try on diagnoses they suggest, and then ask our doctors.
+Our doctors are paid (via a complicated melange of sources) more for each service than what it costs to provide.
+Like shoe-sellers, they do well when they are busy, they go bust when patients cease to come.
+
+John Kenneth Galbraith (via [Chris Dillow](https://stumblingandmumbling.typepad.com/stumbling_and_mumbling/2023/05/what-the-people-want.html)) writes
+
+> The fact that wants can be synthesised by advertising, catalysed by salesmanship and
+> shaped by the discreet manipulations of the persuaders shows that they are not very urgent.
+> A man who is hungry need never be told of his need for food.
+
+Under capitalism a persuasive apparatus emerges to sell us unnecessary baubles. Fine. There are worse things than
+having baubles. But superfluous health care services impose deadweight losses besides the financial transfers they provoke.
+Surgeries are painful and bring risks of complication. Medication has side effects, sometimes very serious. Drugs
+[aggressively sold](https://www.evanhughes.co/the-hard-sell) provoke addictions that destroy lives, families, and communities.
+
+If the ordinary result of commodification under capitalism is imperfect competition favoring sellers and then
+aggressive persuasion to maximize profits, then wouldn't we expect commodified health care to be overutilized?
+Wouldn't we expect the (important! good!) health care produced by the system be offset somewhat by manufacture
+of disease and addiction, matched by provider profits? And isn't this exactly what most of us think we see?
+
+The cost of profit-motivated health-care overutilization is higher than the sum of individual disabilities
+and addiction occasioned by unnecessary care. The phenomenon has a much broader social consequences. It profoundly undermines
+the public's trust in education and expertise.
+
+* The anti-vaxx movement is rendered credible to its adherents almost entirely by the conjecture that the pharmaceutical
+  industry is very interested in getting us to take their products, and less interested in our heath.
+
+* Anti-trans activists, when confronted by the
+  [strong consensus among medical providers](https://juliaserano.medium.com/gender-affirming-care-for-trans-youth-is-neither-new-nor-experimental-a-timeline-and-compilation-b4bb8375d797)
+  in favor of cautious, incremental gender-affirmative care, argue that medical associations are corrupted by providers'
+  interest in a lucrative new care market. _How can you trust these people who are selling us the sterilization of our children?_
+
+A health care system that passes off sometimes debilitating baubles as medical necessities becomes hard to take seriously
+in its advice about what is actually a medical necessity. Which makes it hard for us as a society to come to consensus,
+even when &mdash; as in the case of most vaccines and most trans care &mdash; the medical benefits are very real.
+
+I think that it is certainly true, as the conventional case goes, that "decommodifying" health care would increase
+utilization by people currently discouraged from accessing health care for financial reasons. And to the degree that
+"decommodification" just means health care _gratis_ at the point of service without making deeper changes to the system,
+then that will be the dominant effect.
+
+But what if by "decommodification" we mean something more, if we mean to alter the institutions and incentives surrounding
+health care provision so that there is _not_ a profit motive attached to ever more provision? How much would any
+increase in utilization due to more inclusive access might be offset by a _reduction_ in demand we might describe as
+induced by providers who profit from erring on the side of more provision? Could a decommodified health care system
+find ways of delivering equal or better health outcomes from fewer procedures, visits, and medications, rather than
+just delivering more to more people?
+
+If so, then sure, that increases the political case for wholesale reform, under the banner of "Medicare For All" or whatever.
+Medicare For All may be cheaper than we think, if it helps move us towards buying outcomes rather than procedures.
+
+But more than that, it is impossible to sustain modernity under conditions where the expertise we must rely upon
+is undermined by financial interests.
+This is a [broader problem](https://www.interfluidity.com/v2/7317.html)
+than just medicine. I don't think we'll really address it until we [reduce the sway](https://www.interfluidity.com/v2/5031.html)
+of financial motivation by [reducing](https://www.interfluidity.com/v2/9713.html) [dispersion of outcomes](https://www.interfluidity.com/v2/7629.html).
+(Mark Paul, in the [same podcast](https://www.leftanchor.com/e/episode-276-the-ends-of-freedom/), proposes an income floor _and cap_. Hurrah!)
+
+But medicine is the signal example of expertise in most people's lives. A world in which doctors can't be trusted
+because their financial incentives and patient welfare diverge is a world in which it will be hard for people to trust almost any
+form of professional expertise. We are seeing [measles](https://en.wikipedia.org/wiki/Measles_resurgence_in_the_United_States) again.
+We are seeing [polio](https://www.cnn.com/2022/08/11/health/polio-cdc-rockland-county/index.html).
+[Fascist inimicalization](##what-is-fascism) of sexual
+minorities is rendered plausible to much of the public in part by perceived corruption of experts on whose work we must rely if
+we are to discredit and overcome prejudice.
+
+For reasons beyond accessibility and cost reduction, we need to think about decommodifying medicine. Along with expertise in general.
+
+
+
+

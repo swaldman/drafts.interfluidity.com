@@ -2,7 +2,7 @@
 >   "Title"     -> "What is fascism?",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-03-05T17:15:00-05:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "what-is-fascism"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
