@@ -1,6 +1,7 @@
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Smeagols",
 >   "Permalink" -> "/2023/05/27/smeaguls/index.html",
+>   "Mediadir"  -> "/2023/05/27/smeaguls",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-05-27T00:40:00-04:00",
 >   // "Anchor"    -> "first-post"
