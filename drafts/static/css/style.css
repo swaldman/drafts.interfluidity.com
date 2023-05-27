@@ -233,7 +233,7 @@ a#rss-link {
     font-weight: normal;
 }
 a#rss-link span {
-    color: #FF8800
+    color: #FF8800;
 }
 .flexmark .footnotes p {
     display: inline;
