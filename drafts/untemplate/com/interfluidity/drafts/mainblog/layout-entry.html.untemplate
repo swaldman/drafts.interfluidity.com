@@ -3,7 +3,7 @@ import com.interfluidity.drafts.DraftsSite
 import unstatic.PageBase
 import unstatic.ztapir.simple.Attribute.Key.*
 
-> val PubDateFormatter = DateTimeFormatter.ofPattern("""'['yyyy'-'MM'-'dd' @ 'hh':'mm' 'a' 'zzz']'""").withZone(java.time.ZoneId.systemDefault())
+> val PubDateFormatter = DateTimeFormatter.ofPattern("""'['yyyy'-'MM'-'dd' @ 'hh':'mm' 'a' 'zzz']'""").withZone(DraftsSite.MainBlog.timeZone)
 
 val presentationTypeClass =
   s"presentation-${input.presentation.toString().toLowerCase}"
