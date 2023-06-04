@@ -10,6 +10,8 @@ import unstatic.*, UrlPath.*
 
 import java.nio.file.Path as JPath
 
+import java.time.ZoneId
+
 import untemplate.Untemplate.AnyUntemplate
 
 object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") ):
@@ -26,6 +28,7 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
     override val frontPage = site.location("/index.html")
     override val frontPageIdentifiers = super.frontPageIdentifiers ++ immutable.Set("home","homePage") // since we are using the blog as home
     override val maxFrontPageEntries = Some(5)
+    override val timeZone = ZoneId.of("America/New_York")
     override def entryUntemplates =
       IndexFilter.fromIndex( IndexedUntemplates )
         .inOrBeneathPackage("com.interfluidity.drafts.mainblog")
@@ -34,7 +37,7 @@ object DraftsSite extends ZTSite.SingleRootComposite( JPath.of("drafts/static") 
         .map( _.asInstanceOf[EntryUntemplate] )
     override def mediaPathPermalink( ut : untemplate.Untemplate[?,?] ) : MediaPathPermalink =
       import MediaPathPermalink.*
-      overridable( yearMonthDayNameDir, ut )
+      overridable( yearMonthDayNameDir(timeZone), ut )
 
     override def layoutEntry(input: Layout.Input.Entry) : String = mainblog.layout_entry_html(input).text
 
