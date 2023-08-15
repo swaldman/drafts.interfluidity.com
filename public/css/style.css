@@ -159,6 +159,8 @@ div.entry-body a {
       font-family: xxx-1942-report;
       letter-spacing: -0.125em;
     */
+    position: relative;
+    bottom: -1pt;
 }
 div.entry-body a:hover {
     /* text-decoration: underline; */
