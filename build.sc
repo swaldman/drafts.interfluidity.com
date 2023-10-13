@@ -1,13 +1,12 @@
+import $meta._
+
 import mill._
 import mill.scalalib._
 
-// huge thanks to @lolgab onn the Scala discord!
-import $file.buildCompilationSettings
-
-import $ivy.`com.mchange::untemplate-mill:0.0.4`
+import $ivy.`com.mchange::untemplate-mill:0.1.2-SNAPSHOT`
 import untemplate.mill._
 
-val UnstaticVersion = "0.0.7-SNAPSHOT"
+val UnstaticVersion = "0.2.1-SNAPSHOT"
 
 object Dependency {
   val Unstatic             = ivy"com.mchange::unstatic:${UnstaticVersion}"
