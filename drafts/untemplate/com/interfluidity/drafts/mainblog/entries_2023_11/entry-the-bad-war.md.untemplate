@@ -1,0 +1,51 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "The bad war, like all the wars",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-11-03T23:00:00-04:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+World War II — or rather our misremembering of it — has dangerously distorted our understanding of human affairs.
+
+When we think of World War I, we draw saner lessons. We remember death, futility, the horror of gas and trenches. We can see that whatever its causes were, the consequences of resorting to war so eclipsed them that everybody lost. World War I was supposed to be the war to end all wars, because who would do this again?
+
+World War II was objectively a much more horrible war. Many more people were killed, maimed, displaced than during the first World War. It was “total war”, in which the distinction between combatant and civilian was erased.
+
+Despite all of that, despite the carpetbombing of Dresden and the burning of Tokyo and the two atom bombs, we came out of that war with a notion that it had been “worth it”, that the good guys had defeated the bad guys.
+
+War is never worth it. World War II was perhaps the single worst event in all human history.
+
+That is not to say that the allies should not have fought and won and defeated the Nazis. Of course a counterfactual of capitulation to monsters could be even worse than our current catastrophe of a timeline. What it is to say is that even in 1939, with the literal Hitler gesticulating like a drunken scarecrow before ranks of jackbooted thugs, if there had been any possible means of deterring or preventing the German army’s march, that would have been better, even though it would have left that evil regime in place. Tens of millions of lives would have been spared, inconceivable suffering would have been avoided, and we today might be less stupid.
+
+What about the Jews? No one can say for sure, but I suspect even for them (for us, it’s my own ethnicity however much I flee it), it would have been better. Without the more universal institution of wartime forced-labor camps, the extermination camps that distinguish the Nazi genocide of the Jews from history’s many, so many, “ordinary” genocides might never have been, umm, innovated. The Jews of Germany might have been persecuted, detained and mistreated like the Uighurs of China today, or simply terrorized, randomly murdered, and expropriated until they were driven to emigrate. All of that is horrible. One can take a certain satisfaction that the Nazis were utterly destroyed and discredited. But for the Jews, the cost of that satisfaction was probably not worth the escalation of persecution into an industrial supply chain of forced labor and cyanide gas.
+
+We have whitewashed the war. We had trials at Nuremberg which we called justice. And, to be sure, those who were condemned thoroughly deserved their fates.
+
+But was it “justice” when by the very definitions we were then inventing and formalizing for “war crimes”, many of our own leaders and soldiers could also have been condemned, but were not? It was victor’s justice, which is the only justice war ever brings. We foolishly encased it in a patina of sanctimony which has blinded us ever since to the ineradicable awfulness of war.
+
+War is crime.
+
+There are times when crime is necessary. I would steal bread to feed my child, but I would still become a thief. I would take up arms to defend my country, but I would still become a murderer. Whenever crime is necessary, there has been a profound social failure. The work, the main work to which the human spirit is devoted, organizing ourselves for mutual survival and prosperity, has collapsed.
+
+Yes, war is sometimes necessary. But it is never good. It is the rotten fruit of the very worst human failure.
+
+Political leaders sometimes see war as opportunities for glory. That is obscene. Leaders on whose watch war has emerged should presumptively be scorned, shamed. Whatever the conflict, among states or between factions, that led to war should be adjudicated by any and every other means. The only redemption for leaders so terrible, so miserable, so condemned and condemnable as to allow a war to begin on their watch is to stop the horror quickly, to find ways neither to capitulate nor to fight, but to compete on less destructive terms.
+
+Nothing deformed the United States as a political community more than our victory in World War II. Again, I’m not condemning the fighting or winning of that war, to the degree it could not have been prevented or staunched. We are all criminals for Dresden and Hiroshima, but our adversaries also were criminals, and much worse outcomes were possible than the one we achieved.
+
+But we told ourselves a story of good and evil, we were good and they were evil. We went on for decades imagining ourselves to be comic-book heroes, despite growing body counts in Indochina and North Korea and the Middle East. Our culture is now dominated by literal comic-book universes in which violence against evil is depicted as the way we pursue the good. But propounding evils that merit violence is how the devil farms our souls. Violence multiplies evils. It does not quell them.
+
+Russia thinks of World War II as its good war as well. Its new invasion, it says, is denazification. Maybe if you cannot see the corpse this idolatry has bred in your own mirror, you can see the corpses now multiplying in theirs.
+
+Wars end in exhaustion, misery, and catastrophe, whichever flag last stands. World War II was not a good war. Beyond a certain point, it was necessary to fight it, but the world should never have reached that point. If the war could have been deterred by a less yielding and better armed Chamberlain, it should have been deterred.
+
+Deterred. To be against war unfortunately is not to be against arms. Unfortunately, deterrence is often a precondition for keeping the peace. However, the more deterrence is relied upon, the more catastrophic when it breaks. Deterrence by denial is superior to deterrence by punishment. States should rely as much as is necessary but as little as is possible on threat of reprisal to keep the peace. States should rely as much as is possible on proactively resolving disputes, on maintaining interdependence, but on a mutual and equitable basis that resists [weaponization](https://direct.mit.edu/isec/article/44/1/42/12237/Weaponized-Interdependence-How-Global-Economic). Deterrence is always necessary, but never sufficient.
+
+It is not our turn to take up the fight against fascism and authoritarianism that our grandfathers and great grandfathers won before us. What is ours is to learn the lesson of both the great wars and all the smaller ones, that our first and most important work is to prevent from ever emerging the poisonous choice between capitulation or conflict. Fascism and authoritarianism are defeated by the example and experience of prosperous liberality, which war extinguishes, sometimes temporarily, sometimes permanently.
+
+Peace alone is insufficient to prevent fascism, as our recent experience attests. But war is always fascism’s friend. Civilization is a narrower road than barbarism. Neither of the simple choices, ferocity or passivity, can sustain it. Civilization, like life itself, requires continual attention, adaptation, innovation, improvisation. It’s exhausting work, Sisyphean, thankless. It is so much easier, so much more exhilarating, to relax ones grip and let slip the dogs. Death is easier than life.
+
