@@ -9,7 +9,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-Tony Judt’s [*Postwar*](https://www.penguinrandomhouse.com/books/292994/postwar-by-tony-judt/) includes in its first chapter, the following:
+Tony Judt’s [*Postwar*](https://www.penguinrandomhouse.com/books/292994/postwar-by-tony-judt/) includes in its first chapter the following:
 
 > At the conclusion of the First World War it was borders that were invented and adjusted, while people were on the whole left in place. After 1945 what happened was rather the opposite: with one major exception boundaries stayed broadly intact and people were moved instead...
 >
