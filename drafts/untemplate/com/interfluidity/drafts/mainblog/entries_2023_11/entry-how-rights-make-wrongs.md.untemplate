@@ -1,0 +1,57 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "How rights make wrongs",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-11-15T22:10:00-05:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+There is no way to reconcile
+
+1. a right of existence of two "peoples" who view themselves as distinct and mean to maintain their distinctions;
+
+2. each people's "right" to national self-determination;
+
+3. every individual's right to full enfranchisement within their state;
+
+4. each people's, and every family’s, right not to be dispossessed of or forced from their own homes or lands;
+
+5. a right of any person, or the descendant thereof, to return to the particular geographies from which they or their ancestors were historically dispossessed
+
+If you want to keep [1], [2], and [3], you must abrogate [4] and [5]. That's the two-state solution.
+
+If you want to keep [3], [4], and [5], you must abrogate [1] and [2]. That's the binational liberal democracy solution.
+
+The worst people on both sides of the conflict emphasize all of these rights at once.
+
+Both Israeli settlers and from-the-river-to-the-sea Palestinians cede no ground on [4] and [5].
+
+Likud and Hamas are entirely agreed in their demand for [1]. They are entirely averse to any kind of melting pot assimilation between the two peoples.
+
+Neither side will accept as legitimate colonial rule by some third power. Neither will accept second-class status beneath the other "people”, whether *de jure* (as the stateless Palestinians have endured, but do not accept) or *de facto*, due to demographic outcomes under notionally equal suffrage.
+
+Right [2] is nonnegogtiable, and right [3] is not consistent with [2] unless demographics can be engineered, which would contradict rights [4] and [5] and invite charges of ethnic cleansing.
+
+There is, however, one right that maximalists on both sides of the conflict are mutually willing to compromise upon.
+
+0. The right of human beings to live in peace and safety, and not see their children murdered or made into murderers.
+
+If none of Rights [1] through [5] will be ceded, then Right [0] must give way.
+
+The worst people on both sides of the conflict emphasize rights [1] through [5] all at once.
+
+And so has the “international community”, for decades.
+
+Sanctimonious application of a human rights regime laden with internal tensions and contradictions guarantees that eventually some rights will give way. Maximalists can credibly condemn any proposed compromise as an illegitimate abrogation of rights, and so forestall any action they dislike that might reduce the tensions.
+
+The predictable effect is that some of these rights will give way all at once, in a crisis, provoking what will correctly be perceived as a terrible injustice to one or both of the parties.
+
+On Right [0] there has been a great deal of compromise already. Unfortunately that leaves partisans of both communities even more determined to exercise the other rights.
+
+Right [0] is the only claim that ought ever have been codified into a universal human right. The rest are legitimate aspirations, but human beings and human communities have conflicting, mutually inconsistent aspirations that somehow have to be managed.
+
+Canonicalizing a broad range of such aspirations into "rights" &mdash; which we sanctimoniously promise to uphold (but in practice uphold selectively, because they would be impossible to uphold universally, and of course our selection may not be even-handed) &mdash; has been a bloody, catastrophic, mistake.
+
