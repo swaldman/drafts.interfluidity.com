@@ -1,0 +1,35 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Norms mean you can't pull rank",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2023-12-14T12:20:00-05:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Why does it matter that, as I argued in the [previous post](##no-such-thing-as-international-law), “international law” is not law at all, but international affairs are governed by norms?
+
+It’s important because it changes how we should conduct ourselves completely.
+
+In a courtroom, you can argue points of law and win, even if many people do not like the verdict. When defense and plaintiff meet in a courtroom, they are not trying to persuade one another, or to persuade a broad audience of spectators. They are appealing to the authority of the state. In a legislature, you can "lobby" a small group to change the law. This will durably change how the authority of the state is wielded, even if much of the public finds it horrifying.
+
+With norms, there is nothing like this. There is no authority to appeal to. Norms bind only by a continuing consensus of multiple parties who model, enforce, and reinforce them.
+
+Norms can certainly be codified. I am a great fan of [Miss Manners](https://www.missmanners.com/). Whether those codifications matter at all depends on whether some community continually agrees to be bound by them. When disputes arise, it is never enough to be “right on the merits", whatever you might think that should mean.
+
+In any dispute, it is not just the belligerents that are on trial, but also the norms themselves. The space of putative norms is large and contains contradictions. I condemn you aloud for farting at the dinner party. You condemn me for calling attention to a phenomenon that, Miss Manners will remind us, socially does not exist. [AITA](https://www.reddit.com/r/AmItheAsshole/)? It doesn’t matter which transgression some book says is more serious. The matter is decided by to whom the eyerolls and subtle turning-aways are directed.
+
+The habits of command are counterproductive in a normative context. Humans value their own agency. Badgering people to accept a norm you favor invites defiance. Norms are enforced by mutual consent. You must invite and persuade rather than demand. In any dispute over a putative transgression of norms, you can bribe or threaten to force others to take your side. But then rather than reinforcing the norm you ostensibly were upholding, you have undermined it. The norm you have reinforced is that people behave only transactionally, which is the [gray goo](https://en.wikipedia.org/wiki/Gray_goo) of norms, undoing all others.
+
+In international affairs, we really do want a “rules-based order”. But what those rules are can be no ones to command. Over the past two decades, the United States has collapsed from a soft power to a hard power, has traded persuasion in significant measure by a kind of moral prestige for the crude application of carrots and sticks. Do whatever we say is good or we’ll sanction you.
+
+But hard power is weak power, finite and exhaustible. Only soft power delivers resilience and longevity. As we go forward — those of us who manage to go forward without being murdered or bombed or recruited into some madman’s campaign to murder and bomb — I hope that we can return to soft power. Not unilaterally. Soft power is not zero sum. Our good reputation need not rely upon others having a poor reputation.
+
+“International law” cannot be a substitute for mutually-reinforced norms. International law only has any meaning downstream from such norms. It has no other method of enforcement. A strange mix of idealism and careerism has led us to devote tremendous energy to an edifice of high-minded codification while neglecting the invisible foundation upon which it must rest. The result has been weaponized sanctimony rather than international peace.
+
+We do want a rules-based order. Where are these rules written, asks Vladimir Putin, and who has written them? They are good questions, but there can be no document. Russia and the United States both can bomb and bribe, can make high-minded speeches, write manifestoes, whatever. The United Nations can declare whatever it wants.
+
+But the rules are written in how we collectively behave, not in anything Anthony Blinken or Sergey Lavrov or Wang Yi can proclaim, or that the United Nations might ratify. We can only write the rules together. Those who demand deference rather than earn respect ultimately have the least say in their composition. Unfortunately, anyone can contribute to their decomposition.
+

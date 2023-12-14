@@ -2,7 +2,7 @@
 >   "Title"     -> "There's no such thing as international law",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-12-10T18:15:00-05:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "no-such-thing-as-international-law"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
