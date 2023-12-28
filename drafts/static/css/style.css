@@ -112,6 +112,10 @@ b i, b em, strong i, strong em, i b, em b, i strong, em strong {
     font-style: normal;
     font-weight: normal;
 }
+h1, h2, h3, h4, h5 {
+    font-family: CooperHewitt-Bold;
+    font-weight: normal;
+}
 hr {
     border-top: 1px solid black;
 }
@@ -179,6 +183,12 @@ div.entry-body a:before {
 div.entry-body a:after {
     font-size: 90%;
     content: "]";
+}
+div.entry-body a.anchorlink:before {
+    content: "";
+}
+div.entry-body a.anchorlink:after {
+    content: "";
 }
 div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a {
     font-family: caroni;
