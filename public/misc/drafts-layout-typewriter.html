@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="drafts @ interfluidity">
+    <meta name="keywords" content="Finance, Economics, Politics, Social Affairs, Social Science, interfluidity">
+    <meta name="author" content="Steve Randy Waldman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="feed/index.rss">
+    <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
+    <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
+    <style>
+      :root {
+    --title-offset: -1em;
+    --prev-next-color: #DDD;
+    --menu-link-color: #DDD;
+    --link-blue: rgb(53,67,240);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    flex-shrink: 1;
+    flex-grow:   1;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-top: 2rem;
+    /* overflow-x: visible; */ /* any use of overflow breaks left-overhanging title. (?) */
+    /* overflow-y: hidden; */
+    /* border: green solid 1px; */
+}
+b, strong {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+i, em {
+    /* letter-spacing: -0.015em; */
+    /* I prefer the synthesized slant... */
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+}
+b i, b em, strong i, strong em, i b, em b, i strong, em strong {
+    /* letter-spacing: -0.05em; */
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: normal;
+}
+hr {
+    border-top: 1px solid black;
+}
+blockquote {
+    font-size: 90%;
+    line-height: 110%;
+    margin-left: 0.0em;
+    padding-left: 2em;
+    border-left: 1px solid var( --link-blue );
+}
+div.entry-header h1 {
+    position: relative;
+    left: var( --title-offset );
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+}
+div.entry-header h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+div.entry-body a {
+    text-decoration: none;
+    color: var( --link-blue );
+    position: relative;
+}
+div.entry-body a:hover {
+    color: red;
+}
+div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a {
+    font-style: oblique;
+}
+div.entry-body {
+    text-align: justify;
+    line-height: 150%;
+}
+div.entry-body p {
+  margin-top: 1.125em;
+}
+div.entry-footer a {
+    /* color: var( --link-blue ); */
+    color: blue; /* we just like the richer blue for this small link */
+}
+div.entry-footer a:visited {
+    /* color: var( --link-blue ); */
+    color: blue; /* we just like the richer blue for this small link */
+}
+div.entry-footer .post-metainfo {
+    font-size: 9pt;
+    text-align: right;
+    line-height: 120%;
+}
+a#rss-link {
+    color: black;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+a#rss-link span {
+    color: #FF8800;
+}
+.flexmark .footnotes p {
+    display: inline;
+}
+.flexmark .footnotes a.footnote-backref {
+    font-size: smaller;
+}
+.flexmark .footnotes a.footnote-backref:before {
+    content: none;
+}
+.flexmark .footnotes a.footnote-backref:after {
+    content: none;
+}
+.footnotes {
+    font-size: smaller;
+    line-height: 120%;
+}
+header {
+  border: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #cccccc;
+  font-size: smaller;
+  /* opacity: 0.5; */
+  border-bottom: 2px solid black;
+}
+header i, header em {
+    /* letter-spacing: -0.015em; */
+    /* I prefer the synthesized slant... */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: italic;
+}
+
+footer {
+    flex-grow:       0;
+    flex-shrink:     0;
+    margin-top:      4em;
+    padding-top:     4em;
+    padding-bottom:  1em;
+    margin-left:     1em;
+    margin-right:    1em;
+    
+    font-size: 10pt;
+    /* border: red solid 1px; */
+}
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+footer a:hover {
+    color: gray;
+    text-decoration: black underline;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    :root {
+    	--title-offset: 0em;
+    }
+    main {
+        max-width: clear;
+        margin-left: 2em;;
+        margin-right: 2em;;
+    }
+    footer {
+    	min-height: 1.5em; /* bigger on desktop to prevent occlusion by link targets on hover */
+    }
+    hr.entry-separator::before {
+        content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    }
+}
+
+    </style>  
+    <title>interfluidity drafts: How to regulate AI</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        A <a href="https://drafts.interfluidity.com/2023/12/28/how-to-regulate-ai/index.html">new post</a> by Steve Randy Waldman
+	has been published to <i>interfluidity-drafts</i>. You are subscribed as <code>user@example.com</code>.
+      </p>
+      <p>
+	To unsubscribe, click <a href="http://localhost:8024/v0/subscription/remove?subscriptionId=0&invitation=fake">here</a>.
+      </p>
+    </header>  
+    <main>
+      <article class="presentation-single">
+        <div class="entry-header">
+         <h1><a href="https://drafts.interfluidity.com/2023/12/28/how-to-regulate-ai/index.html">How to regulate AI</a></h1>
+        </div>
+        <div class="entry-body">
+          <article class="presentation-rss">
+ <div class="entry-header">
+ </div>
+ <div class="entry-body">
+  <div class="flexmark markdown">
+   <img src="https://drafts.interfluidity.com/2023/12/28/how-to-regulate-ai/never-held-accountable.jpeg" width="100%" alt="Printed slide, 'A computer can never be held accountable, therefore a computer must never make a management decision.'">
+   <p>Predictably, <em>The New York Times</em> is <a href="https://www.theverge.com/2023/12/27/24016212/new-york-times-openai-microsoft-lawsuit-copyright-infringement">suing</a> Open AI and Microsoft for copyright infringement. OpenAI has used <em>The Times'</em> text to train their large language models. I have no opinion on the legal merits of the case. Courts will try invent some line between fair use and infringement under existing law that balances various interests in this brave new world of LLMs.</p>
+   <p>But I hope that Cogress will act to address the question more holistically and creatively than courts can. Here is my two point plan for what Congress should do:</p>
+   <ol>
+    <li>
+     <p>Congress should declare that big-data AI models do not infringe copyright, but are inherently in the public domain.</p></li>
+    <li>
+     <p>Congress should declare that use of AI tools will be an aggravating rather than mitigating factor in determinations of civil and criminal liability.</p></li>
+   </ol>
+   <h4><a href="https://drafts.interfluidity.com/2023/12/28/how-to-regulate-ai/#congress-should-declare-that-big-data-ai-models-do-not-infringe-copyright-but-are-inherently-in-the-public-domain" id="congress-should-declare-that-big-data-ai-models-do-not-infringe-copyright-but-are-inherently-in-the-public-domain" name="congress-should-declare-that-big-data-ai-models-do-not-infringe-copyright-but-are-inherently-in-the-public-domain" class="anchorlink"></a>Congress should declare that big-data AI models do not infringe copyright, but are inherently in the public domain.</h4>
+   <p>The moral justification for this is clear. Big-data AI models are summarizations of the work of large publics. They are a whole much greater than the sum of the parts. Their value comes from a public much too broad and amorphous to constitute an identifiable party who might license inputs or be compensated.</p>
+   <p>The law should explicitly reject claims like <a href="https://helpx.adobe.com/stock/contributor/help/firefly-faq-for-adobe-stock-contributors.html">Adobe’s</a> that, by training models on only work explicitly licensed to them or in the public domain, they address this concern. Even if every individual input dots the i's and crosses the t's of prior copyright law, modeling very large corpuses of work extracts information not only from the direct inputs summarized, which might in theory be compensated, but from all the inputs and influences to the creators of those direct influences.</p>
+   <p>These models not simply new creative works derivative of particular other works. The modeling process is something new, a tool designed to extract regularities and patterns and ideas that characterize the domains they model as a whole. The training set is a telescope and a microscope. Their object of study is human creation very broadly, and these fruits of human creation can belong only to humanity writ large.</p>
+   <p>In order to immunize themselves from claims of unlawful expropriation, including both old-school copyright claims and new claims on behalf of the public itself, anyone who trains AI models would have an affirmative obligation to publish and place into the public domain both the results of their training — the “weights” — and the structure of the model under which those weights take their meaning, including code, such that people or ordinary skill in the domain could quickly stand up and run new instances of the model.</p>
+   <p>This would, you might object, take away some of the incentive to train large models. It would. But the commercial incentives to develop AI models are already very strong. The Microsofts of the world that want to integrate AI tools into their products can easily afford to fund them as loss leaders. Business communities more broadly, who perceive opportunities to increase productivity or reduce labor costs, would find that pooling resources to train open-source models easily pencils. Academics and the public sector would train public models as well.</p>
+   <p>On the other side of the training set, you might object that putting these models in the public domain does nothing to put food on the table of the creators whose work is ingested to produce them. That is very true. But it is a common result of new technologies that old activities that once were remunerative cease to be so. <a href="https://a16z.com/the-techno-optimist-manifesto/">Marc Andreeson is wrong</a> to imagine that inherent characteristics of technology and capitalism ensure that as some means of subsisting are eliminated, better and more remunerative jobs are sure to replace them because of higher marginal productivity or whatever. At an individual level, many people whose work has been technologically obsoleted suffer harms from which they never fully recover. At a broader level, <a href="https://www.interfluidity.com/v2/1116.html">only the expansion of social democracy</a> has rendered technological development and something like full employment remotely compatible.</p>
+   <p>Widespread use of large-language models will demand a more redistributive state, as much of the public will find these models undermine their (our) current source of market power and therefore ability to command a decent wage. Nevertheless, it remains true that, with decent governance, we are collectively better off when we can all do more with less human work. The right way forward is to continue to let technology make us, in this narrow sense, “richer in aggregate", but use the institution of the state aggressively to ensure that richer in aggregate means all of us live better lives and none of us bestride the narrow world like Elon Musk.</p>
+   <p>AI models do nothing at all to hinder human creativity. For many people, generative AI will enable, has already enabled, new means of creative expression. But what is less scarce is less valuable in commerce. It is not creativity that is threatened, but the creative professions.</p>
+   <p>I don't think we want market forces to turn 90% of today's creative professionals into nurse's assistants, plumbers, and staff for upscale resorts. Art lives not just in its artifacts, but in collaborative relationships between human artists and audiences, and in forms of collaborations where roles of producer and consumer are less distinct than those terms suggest. The value that we derive from creative work is not independent of who produced it and how. Creative work constitutes the symbols and sinews of human communities. It is the substrate, scaffolding, upon which we develop our notions of the sacred.</p>
+   <p>Creativity and capitalism have always sat awkwardly together. They will now sit even more awkwardly. There will be no papering over the divergence between exchange value and value. I don't think we should romanticize the era that is ending. The imperatives of remuneration have recruited beautiful hearts to compellingly sanctify arrangements that are horribly profane. There have been so many beautiful ads.</p>
+   <p>We will all still need to eat. We will be less able to pretend that "free markets" can somehow reconcile meeting that need with performing our highest purposes. The challenge we face has always been political. I think it's neither wise nor virtuous to try to suppress generative AI in order to retain a <em>status quo</em> under which some of us could pretend that it was not.</p>
+   <h4><a href="https://drafts.interfluidity.com/2023/12/28/how-to-regulate-ai/#congress-should-declare-that-use-of-ai-models-is-an-aggravating-rather-than-mitigating-factor-in-determinations-of-civil-and-criminal-liability" id="congress-should-declare-that-use-of-ai-models-is-an-aggravating-rather-than-mitigating-factor-in-determinations-of-civil-and-criminal-liability" name="congress-should-declare-that-use-of-ai-models-is-an-aggravating-rather-than-mitigating-factor-in-determinations-of-civil-and-criminal-liability" class="anchorlink"></a>Congress should declare that use of AI models is an aggravating rather than mitigating factor in determinations of civil and criminal liability.</h4>
+   <p>AI models clearly have a lot of potential uses. But they just as clearly could cause a great deal of harm. AI models can <a href="https://isbn.nu/0553418815">launder</a> what we might otherwise recognize to be invidious discrimination by race or sex. They can render “objective" or “rational” the <a href="https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/">murder of children <em>en masse</em></a>. They can run down pedestrians and then, in their digital confusion, <a href="https://www.freep.com/story/money/cars/general-motors/2023/11/15/gm-general-motors-cruise/71586950007/">drag them for twenty feet</a>.</p>
+   <p>There’s <a href="https://twitter.com/bumblebike/status/832394003492564993">that slide, usually attributed to an IBM presentation from the 1970s,</a> stating “A computer can never be held accountable, therefore a computer must never make a management decision.” No sentence ever has more completely misunderstood the imperatives of management. Managers, who are inevitably made responsible for much more than they can control, constantly, desperately, seek means of escaping accountabilty for the decisions that they calculate will be in their interest. An <a href="https://www.mckinsey.com/">entire, storied industry</a> is based upon serving this compulsion.</p>
+   <p>If the public allows it, the first and most important use of LLMs will be to allow managers, firms, and governments to shirk accountability, either by deferring to the expertise of "objective” models, or by blaming inevitable, regrettable glitches that of course we must accept for the greater good while developing any brilliant new technology.</p>
+   <p>So the public, via the state, must not allow it. Commercial users of AI models will argue that the law should treat occasional “mistakes” resulting from AI model outputs to be unintended and unforeseeable outcomes of ordinary business processes, for which their liability should be minimal. If the self-driving car hits a pedestrian, that is regrettable, but of course there can be no criminal charges, as there might have been for a human driver who dragged a person 20 feet after striking her. If lots of people are wrongfully denied insurance claims by some black-box model, eventually perhaps some class-action lawsuit will succeed and make some lawyers rich and fail to bring back the dead. The firm will pay a financial settlement, a cost of doing business. Of course, if a human had systematically made the same error, and it was in the firm's or their own financial interest, the human might have been convicted of fraud. But a computer is eternally innocent.</p>
+   <p>We should not treat computational models — of any sort, but especially models as unpredictable as LLMs — as legitimate and ordinary decision-making agents in any high-stakes business process. A computer cannot be held accountable, so the law must insist that, by definition, it is never a computer that makes a management decision. If it seems to anyway, and then it errs, the humans who deployed it were presumptively negligent. If it errs systematically in the interest of the firm, its human deployers were presumptively engaged in a conspiracy to defraud.</p>
+   <p>An analogy I like to use is alcohol and driving. One way we could think about a person who causes a fatal car crash while intoxicated is that they did not have their wits about them, they did not intend to do the harm. It was a tragic accident when they were not at their best, so their culpability should be limited.</p>
+   <p>Another way we can think about the same event is that <em>precisely because</em> after drinking a person would foreseeably not have their wits about them, the very act of drinking without making alternative transportation arrangements increases their culpability for the accident. They should have known well in advance of the tragedy itself they were doing something risky. The risk that they took was essential to the crime, not just the fact of the horrific consequence.</p>
+   <p>Each of these framings is legitimate. They just express different social values. If, as a society, we place a very high value on the joys of alcohol-lubricated conviviality and our liberty of automobile-mediated assembly for that purpose, then we might treat intoxication as a mitigating factor in car accidents, and accept their prevalence as a price we pay for a greater good. If we don’t place so high a value on a good time, or we place a much higher value on reducing car accidents, then we would adopt the framing that we have, under which alcohol is an aggravating factor.</p>
+   <p>We face a similar social choice with LLMs. The business automation they might enable should be scored as a social good, to the degree they free humans to do either work only humans can do well or to enjoy greater liberty and leisure. But low-quality work and the risk of laundering fraudulent or unethical practices through an ablution of mysterious technology should be viewed as a grave social costs. There is no such thing as perfect balance. We have to decide whether to err on the side of license — on the theory rapid deployment of these technologies will make us richer and happier and better — or of caution, because we think quality of deployment outweighs any benefit of speed. Fifteen years ago, before our collective experience of social media and surveillance capitalism and platform peony, I would have opted for license. Now, however, I strongly favor caution.</p>
+   <p>Use of these technologies should not be banned, for almost any purpose. But our social presumption should be they are unreliable, experimental, susceptible to difficult to detect forms of abuse and predation by their deployers. Whenever things go wrong, their deployers are innocent until proven guilty only of the fact of deployment. Once it has been established that they have deployed these technologies in consequential roles, they become presumptively responsible, civilly and criminally, for all the harms wrought by systems they deployed but negligently failed to adequately supervise, or worse.</p>
+   <p>That presumption would be rebuttable. If deployers can show that the system they created performs at least as well, caused no more harm than, systems in common use that do not use the technology, then they have not been negligent. Waymo, for example, has <a href="https://www.theverge.com/2023/12/20/24006712/waymo-driverless-million-mile-safety-compare-human">approached autonomous driving</a> with a great deal more caution than competitors Cruise and Tesla, such that in practice its cars have been much safer than human drivers. So long as this is the case, those responsible for deployment of Waymo vehicles should not be held liable, civilly and criminally, for reckless driving following the very few accidents involving its vehicles that do occur. Cruise and Tesla, on the other hand, would not succeed at rebutting a presumption of negligence.</p>
+   <p>The purpose of the proposed legal regime would not be to ban these technologies from business processes. It would be to insist upon their high quality, from a social perspective, and ensure that quality is placed before imperatives that might otherwise lead businesses to profit by externalizing risk and harms.</p>
+  </div>
+ </div>
+ <div class="entry-footer">
+  <div class="post-metainfo">
+   <a href="https://drafts.interfluidity.com/2023/12/28/how-to-regulate-ai/index.html">draft</a> by <b>Steve Randy Waldman</b>
+   <br>
+    [2023-12-28 @ 02:35 PM EST]
+  </div>
+ </div>
+</article>
+        </div>
+      </article>
+  </body>
+</html>  
