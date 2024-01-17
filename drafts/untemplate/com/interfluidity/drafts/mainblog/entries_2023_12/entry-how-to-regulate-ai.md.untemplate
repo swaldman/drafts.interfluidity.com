@@ -13,7 +13,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 Predictably, *The New York Times* is [suing](https://www.theverge.com/2023/12/27/24016212/new-york-times-openai-microsoft-lawsuit-copyright-infringement) Open AI and Microsoft for copyright infringement. OpenAI has used _The Times'_ text to train their large language models. I have no opinion on the legal merits of the case. Courts will try invent some line between fair use and infringement under existing law that balances various interests in this brave new world of LLMs.
 
-But I hope that Cogress will act to address the question more holistically and creatively than courts can. Here is my two point plan for what Congress should do:
+But I hope that Congress will act to address the question more holistically and creatively than courts can. Here is my two point plan for what Congress should do:
 
 1. Congress should declare that big-data AI models do not infringe copyright, but are inherently in the public domain.
 
