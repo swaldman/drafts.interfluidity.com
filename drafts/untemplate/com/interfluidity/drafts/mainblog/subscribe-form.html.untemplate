@@ -1,0 +1,8 @@
+val (which, smiley) = tup
+
+( tup : (String,String) )[]~()>
+    <div class="subscribe-form">
+      <div class="sf-label sf-label-email">E&#x2011;mail:</div><div class="sf-field sf-field-email"><input type="text" name="addressPart"></div>
+      <div class="sf-label sf-label-name">Display Name:</div><div class="sf-field sf-field-name"><input type="text" name="displayNamePart" placeholder="Optional"></div><!-- <div class="sf-note-name">(Optional)</div> -->
+      <div class="sf-label sf-label-submit"><( smiley )></div><div class="sf-submit"><input name="main-submit" value="Subscribe to <( which )>" type="submit"></div>
+    </div>

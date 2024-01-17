@@ -133,7 +133,7 @@ blockquote {
     background-image: url("../image/blockquote-line.png");
     background-repeat: no-repeat;
 }
-div.entry-header h1 {
+div.entry-header h1, div.subscribe-space h1 {
     position: relative;
     left: var( --title-offset );
     /* font-family: Latin-Modern-Mono-Caps; */
@@ -149,7 +149,6 @@ div.entry-header h1 a {
     color: black;
     text-decoration: none;
 }
-
 div.entry-body a {
     /* background-color: #FFFF99; */
     /* text-decoration: #BBFFBB underline; */
@@ -330,7 +329,56 @@ div.archive dd ul a:visited {
 div.archive dd ul a:hover {
     text-decoration: underline;
 }
-
+div.subscribe-form {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content;
+    padding-bottom: 1.5rem;
+}
+div.subscribe-form div.sf-label {
+    font-family: Latin-Modern-Mono-Light-Bold;
+    font-weight: normal;
+    text-align: right;
+    white-space: nowrap;
+    grid-column: 1;
+    padding-right: 0.5em;
+}
+div.subscribe-form div.sf-field input {
+    width: 100%;
+}
+div.subscribe-form div.sf-submit {
+    text-align: center;
+}
+div.subscribe-form div.sf-submit input {
+    width: 100%;
+    font-family: CooperHewitt-Bold;
+}
+div.subscribe-form div.sf-label-email {
+    grid-row: 1;
+}
+div.subscribe-form div.sf-field-email {
+    grid-row: 1;
+    grid-column: 2;
+}
+div.subscribe-form div.sf-label-name {
+    grid-row: 2;
+}
+div.subscribe-form div.sf-field-name {
+    grid-row: 2;
+    grid-column: 2;
+}
+div.subscribe-form div.sf-note-name {
+    grid-row: 2;
+    grid-column: 3;
+}
+div.subscribe-form div.sf-label-submit {
+    grid-row: 3;
+    font-size: 150%;
+}
+div.subscribe-form div.sf-submit {
+    grid-row: 3;
+    grid-column: 2;
+}
 
 
 @media only screen and (max-width: 700px) {

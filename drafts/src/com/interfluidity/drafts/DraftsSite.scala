@@ -50,18 +50,30 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("drafts/sta
       layout_main_html(mainLayoutInput).text
 
     object Archive:
-      val location = site.location("/archive.html")              
+      val location = site.location("/archive.html")
       case class Input( renderLocation : SiteLocation, entryUntemplatesResolved : immutable.SortedSet[EntryResolved] )
 
       val task = zio.ZIO.attempt {
          val contentsHtml = mainblog.layout_archive_html( Input( location, entriesResolved ) ).text
          layout_main_html( MainLayoutInput( location, contentsHtml, Nil ) ).text
       }
-      val endpointBinding = ZTEndpointBinding.publicReadOnlyHtml( location, task, None, immutable.Set("archive") )
+      val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("archive"), resolveHashSpecials = true, memoize = true )
     end Archive
 
-    override def endpointBindings : immutable.Seq[ZTEndpointBinding] = super.endpointBindings :+ Archive.endpointBinding
-      
+    object Subscribe:
+      val location = site.location("/subscribe.html")
+      case class Input( renderLocation : SiteLocation, entryUntemplatesResolved : immutable.SortedSet[EntryResolved] )
+
+      val task = zio.ZIO.attempt {
+         val contentsHtml = mainblog.subscribe_page_html().text
+         layout_main_html( MainLayoutInput( location, contentsHtml, Nil ) ).text
+      }
+      val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("subscribe"), resolveHashSpecials = true, memoize = true )
+    end Subscribe
+
+    override def endpointBindings : immutable.Seq[ZTEndpointBinding] =
+      super.endpointBindings :+ Archive.endpointBinding :+ Subscribe.endpointBinding
+
   end MainBlog
 
   // avoid conflicts, but early items in the lists take precedence over later items
