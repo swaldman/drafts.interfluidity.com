@@ -4,8 +4,8 @@
 
   <p><b>Subscribe to this blog (</b><code><a href="##/index.html">drafts.interfluidity.com</a></code><b>)</b></p>
 
-  <form id="submit-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
-    <input type="hidden" name="subscribableName" value="interfluidity-drafts"><br>
+  <form id="interfluidity-drafts-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
+    <input type="hidden" name="subscribableName" value="interfluidity-drafts">
     <( subscribe_form_html("drafts","&#x1F60E;") )>
   </form>
 
@@ -15,8 +15,8 @@
 
   <p><b>Subscribe to </b><code><a href="https://tech.interfluidity.com/">tech.interfluidity.com</a></code><b></b></p>
 
-  <form id="submit-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
-    <input type="hidden" name="subscribableName" value="interfluidity-tech"><br>
+  <form id="interfluidity-tech-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
+    <input type="hidden" name="subscribableName" value="interfluidity-tech">
     <( subscribe_form_html("tech","&#x1F913;") )>
   </form>
 
@@ -26,8 +26,8 @@
   
   <p>(receive one e-mail with every six new Mastodon posts)</p>
 
-  <form id="submit-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
-    <input type="hidden" name="subscribableName" value="interfluidity-masto-sixpack"><br>
+  <form id="interfluidity-masto-sixpack--form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
+    <input type="hidden" name="subscribableName" value="interfluidity-masto-sixpack">
     <( subscribe_form_html("six packs","&#x1F974;") )>
   </form>
 

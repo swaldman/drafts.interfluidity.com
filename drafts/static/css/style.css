@@ -285,6 +285,9 @@ footer a:hover {
 #left-footer {
     float: left;
 }
+#left-footer a{
+    color: black;
+}
 #right-footer {
     float: right;
 }

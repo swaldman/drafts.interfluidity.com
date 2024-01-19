@@ -42,14 +42,14 @@ end title
       </div>
       <div id="menu-container">
 	<a href="<( mainLoc.relative )>">top</a> | <a href="<( archiveLoc.relative )>">archive</a> | <a href="<( subscribeLoc.relative )>">subscribe</a> | <a href="https://www.interfluidity.com/">main</a>
-      </div>	
+      </div>
     </header>
     <main>
       <( input.mainContentHtml )>
     </main>
     <footer>
       <div id="left-footer">
-	<b>drafts.interfluidity.com</b>
+	<a href="https://drafts.interfluidity.com/"><b>drafts.interfluidity.com</b></a>
       </div>
       <div id="right-footer">
 	<a href="https://www.interfluidity.com/">up to <i>interfluidity</i> main &uarr;</a>
