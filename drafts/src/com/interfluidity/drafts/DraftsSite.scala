@@ -62,7 +62,6 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("drafts/sta
 
     object Subscribe:
       val location = site.location("/subscribe.html")
-      case class Input( renderLocation : SiteLocation, entryUntemplatesResolved : immutable.SortedSet[EntryResolved] )
 
       val task = zio.ZIO.attempt {
          val contentsHtml = mainblog.subscribe_page_html().text
