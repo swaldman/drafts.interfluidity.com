@@ -14,10 +14,10 @@ object Dependency {
 }
 
 object drafts extends UntemplateModule {
-  override def scalaVersion = "3.2.1"
+  override def scalaVersion = "3.3.1"
 
   // supports Scala 3.2.1
-  override def ammoniteVersion = "2.5.6"
+  // override def ammoniteVersion = "2.5.6"
 
   // we'll build an index!
   override def untemplateIndexNameFullyQualified : Option[String] = Some("com.interfluidity.drafts.IndexedUntemplates")
