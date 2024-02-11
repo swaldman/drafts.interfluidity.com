@@ -1,0 +1,134 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Situated versus unsituated virtues",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-02-08T15:30:00-05:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Why is the world like it is right now?
+
+Why does it seem that we are putting more of ourselves than ever before into efforts to help, to make the world
+a better place, but we seem collectively to be growing only more incompetent?
+
+We are, as individuals, the largest, best educated cohort of human beings that have ever lived on Plant Earth.
+Sure, maybe Harvard teaches more woke stuff, or maybe we are manipulated by TikTok and Fox News or whatever.
+There have, nonetheless, never been more humans more capable and skilled at any other moment in human history.
+Todays' graduates of Harvard &mdash; and today's graduates of every State U &mdash; can read and write, perform
+mathematics, and make use of unprecedented technical tools more capably than any generation in history.
+If you are into IQ, the [Flynn Effect](https://en.wikipedia.org/wiki/Flynn_effect) means we are about as smart as we have ever been.
+
+Yet collectively, we are fucking idiots. If I may [quote](https://www.azquotes.com/quote/1407287) Larry Summers, look around.
+
+I want to posit a very simple explanation for much of our aggregate incapacity. We now devote ourselves much more to _unsituated_ rather
+than to _situated_ virtues. But constructive action depends primarily on accomplishing situated activities, which the extremity of
+our dedication to unsituated virtues now undermines.
+
+What do I mean by "situated versus unsituated virtues"? Unsituated virtues are virtues we can all recognize
+based on widely shared information and values. Situated virtues, on the other hand, are legible only within the context of specific institutions
+or circumstances. Only insiders, saturated in real-time institutional knowledge that would be difficult to formalize or communicate broadly, even perceive
+the choice set under which some actions would be virtuous and others destructive.
+
+Racial justice is an unsituated virtue. We all understand why racial justice would be a good thing and is a goal worth
+striving towards, or conversely how it is a shibboleth that woke elites abuse in order to subjugate
+working people and then legitimate that usurpation with tokenistic "diversity". You don't need to actually work in admissions at
+some specific university to understand or participate
+in this debate. The director of admissions at an elite college, the (now deposed) board of the San Francisco Unified School District that
+devoted pandemic year to an ill-starred renaming project, the HR director of any major corporation, all understand the
+project of racial justice on similar terms.
+
+Chris Rufo [famously understood nothing](https://www.theatlantic.com/ideas/archive/2023/03/new-college-florida-ron-desantis-takeover/673556/)
+about my [alma matter](https://drafts.interfluidity.com/2023/02/27/new-college/index.html) before making it
+a battleground over "DEI". He didn't need to. His project is a "long march through" the institutions to counter what
+he perceives as the same long march through from the other side. His worldview leaves no room for the day-to-day,
+invisible-problems-solved, particular-goals-accomplished lifeblood of each institution. They are all just pieces on a vast chessboard,
+enacting a contest legible to all of us who let "politics" become our vocation and entertainment.
+
+"Woke" and "anti-woke" both are pursuits motivated by unsituated virtues. Obviously, to activists within each of these
+projects, the other is not motivated by any virtue at all, but by vice. Whoever is right, whoever is wrong, 
+they share the same fundamental characteristic: They are driven by an "idealism" &mdash; or a "grift", whatever &mdash; that is
+not tightly tethered to the particularities and details of the institutions they seek to alter. Their project is overarching.
+It supercedes little details. They may eventually have to attend to idiosynchracies in order to bend those institutions
+to their will, but the direction of the bending is determined long prior to that attention.
+
+Another unsituated virtue is making money. Like woke and antiwoke, whether in some broad sense you consider making money
+virtuous or vicious is besides the point. It is a virtue in the sense that it is a thing many of us individually and collectively
+pursue. We behave as though making money, and making more money, would be a good thing. We certainly try to achieve it.
+
+The "shareholder value revolution" that took root in the 1970s was explicitly and proudly a project intended to subordinate
+situated virtues (which economists disparaged as "agency costs") to the unsituated virtue of profit maximization.
+The theory was that profit maximization promotes economic efficiency and social good, so whatever firms do that is not conspicuously
+profit maximization &mdash; any way they attend unnecessarily to internal, invisible projects and concerns &mdash; can only
+constitute waste. By incentivizing managers to focus solely on externally legible shareholder value &mdash; and ripping away
+cash flows that might otherwise "burn a hole in managers' pockets" &mdash; the revolutionaries sought to make the real world fit
+a simple economic model under which perfectly competitive profit maximization yields at least Pareto optimal outcomes, if not
+a true maximization of [welfare](https://www.interfluidity.com/v2/5149.html).
+
+This project was rich with an irony its protagonists mostly failed to notice. Politically they allied themselves
+with the Friedrich Hayeks of the world. But Hayek's enthusiasm for market mechanisms was [based precisely on humility](https://www.econlib.org/library/Essays/hykKnw.html)
+about what disembodied wise outsiders
+could possibly know about a world in which welfare-relevant information is radically and illegibly dispersed.
+
+The shareholder value
+revolutionaries were not driven by humility. They were sure that an absurdly stylized model connecting immaculate profit-maximizing firms, share prices, and
+social welfare was all they needed to understand. They had no compunction about imposing the crudest incentives as strongly as
+possible for precisely the purpose of overwhelming any invisible, illegible, particular concerns that might interfere with the project
+of maximizing near-term &mdash; and therefore long-term, because our protagonists believed markets "efficient" &mdash; share prices.
+And so we emerged with leaner, more efficient, firms. Like [Boeing](https://www.vox.com/money/24052245/boeing-corporate-culture-737-airplane-safety-door-plug).
+
+Our poisonous overdedication to unsituated virtues is now structural. It is inseparable from the very transactional kind of society we've let usurp the banner of liberalism.
+Which was the chicken and which was the egg I don't know. But employers no longer offer anything like a lifetime career ladder, while the most skilled professionals often defer, or
+indeed never take on, very
+long-term institutional commitments. At a personal level, I'm deeply attached to continual reinvention and nomadism.
+But into what kind of institutions, what kind of societies, do all we nomads compose? And how does that liberty
+[affect those less well-placed](https://www.interfluidity.com/v2/8392.html) to pick-up stakes and reinvent themselves when things go awry?
+
+The incentives of the portable professional are quite different than those of a dedicated lifer.
+Our careers flit between many firms in the private sector, or many roles and positions in nonprofits or public service.
+Skills we develop pursuing situated virtues aren't necessarily portable. They don't translate easily into resumé items.
+Whatever deep institutional know-how we develop is rendered obsolete with our next pivot.
+A school board member can use her racial justice activism as a springboard for all kinds
+of other roles. It constitutes achievement legible to sympathetic outsiders. If she devotes the same energy to quietly
+organizing conversations, resolving internal disputes, facilitating consensus, all of which contributes to excellences in
+education provision that may or may not show up in standardized testing? From the outside all she has been is a
+faceless bureaucrat. She might receive a glowing reference, from a crony.
+
+So individually, rationally, we look for overlaps between whatever our organizational roles might be and externally legible, unsituated
+virtues. But by seeking the kinds of achievements that help build our personal brands, we quietly deform institutions that we constitute, and starve them
+of the kind of work whose dividends are more subtle and collective. We end up with
+very brilliant people occupying all the roles of very dysfunctional organizations. Increasingly we find ourselves quite explicitly letting pursuit of
+unsituated virtues override the more specific purposes and goals of the institutions we participate in.
+(See [New College](https://www.tampabay.com/opinion/2023/03/04/florida-new-college-what-we-lose-when-we-ignore-stewardship-competence-column/),
+the [Audubon Society](https://www.politico.com/news/2020/11/12/audubon-society-claims-intimidation-threats-436215), etc.)
+
+This story has a lot of parallels, and touches on a lot of themes I've written about before.
+
+* "Situated versus unsituated virtues" is an institutional analog to [extrinsic vs intrinsic motivation](https://www.interfluidity.com/v2/8511.html).
+
+* I think increasing reliance on [hard information rather than soft information has destroyed the unique role](https://drafts.interfluidity.com/2023/03/26/banks-should-fail-much-more-often/index.html)
+  banks used to play in economic and social development. Abjuring soft information in pursuit of scale has rendered banks little more than crony-capitalist too-big-to-fail gatekeepers
+  between citizens and the use of state money.
+  Soft information is information that cannot easily be made universally legible and verifiable. Acting on soft-information is necessarily a situated virtue.
+
+* The financial analog of a very transactional social liberalism is the cult of liquidity,
+  which is the [antithesis of investor commitment](https://www.interfluidity.com/posts/1209978923.shtml). Perhaps firms are better
+  run and managed with investors who must devote some attention and voice to the management of firms they invest in, rather than
+  investors all of whom imagine they can costlessly exit if the firm is mismanaged, or who simply diversify away any care.
+
+Sometime in the 1980s, I think, David Letterman had on some MENSA person who was allegedly the smartest person in the world.
+So, he asked, why haven't you cured cancer?
+
+We have all become that person. More or better education, always the liberal cure-all, is beside
+the point. It's our institutions that are illiterate, not the individuals who people them.
+
+Garett Jones wrote a tweet that, more than a decade ago, I [characterized](https://www.interfluidity.com/v2/4218.html) as "the single most insightful economics tweet of all time".
+He wrote
+
+> Workers mostly build organizational capital, not final output. This explains high productivity per ‘worker’ during recessions.
+
+Jones has since deleted this tweet. It was probably already out of date when he penned it.
+Times have changed, and not for the better.
+
