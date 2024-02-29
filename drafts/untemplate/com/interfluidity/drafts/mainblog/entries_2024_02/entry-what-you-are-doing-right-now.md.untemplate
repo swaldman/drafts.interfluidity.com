@@ -1,0 +1,54 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "What you are doing right now",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-02-29T10:50:00-05:00",
+>   // "Anchor"    -> "first-post"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Since not long after Donald Trump was elected in 2016, there has been this
+[meme](https://www.democraticunderground.com/?com=view_post&forum=1002&pid=10905966)
+[going](https://www.benjaminlcorey.com/who-would-you-have-been-in-nazi-germany-the-same-person-you-are-now/)
+['round](https://www.facebook.com/WeActRadio/posts/if-youve-ever-wondered-what-you-would-do-during-the-rise-of-nazi-germany-well-no/2854473587935899/)
+among liberals, something to the effect of "If you've ever wondered what you would do during the rise of Nazi Germany, it is what you are doing right now."
+
+The implication, of course, is that Trumpism and the fascism lurking beneath it places us
+in a position analogous to Germans in say 1933.
+
+I have no argument with the point. There is something to it.
+
+However, it is at best a kind of loose analogy. It's pattern matching deployed to persuade people of
+the moral stakes of a situation, and to identify which actors are right, and which are much worse than merely wrong.
+
+Germany (or German-occupied Poland) in _1943_ rather than 1933 presents an even more
+morally evocative touchstone for comparisons.
+
+_If you've ever wondered what you would do during the rise of Nazi Germany, it is what you are doing right now._
+
+In Gaza, trapped innocents are being killed in large numbers.
+
+Perhaps the comparison is unfair. The Nazis never tried to warn their victims with pamphlets and "roof knocking"
+to get out of harms way. Hamas provoked the current conflict with mass atrocity in ways the Jews of Germany never did. No country could
+be expected simply to tolerate an enclave ruled by terrorists who openly promise to repeat their atrocities again and again and again.
+
+All of that is true.
+
+Trumpists of course can also draw a lot of true and important distinctions between their movement
+and the actual literal Nazis of Germany 1933.
+
+The power of the analogy is too cut through the nuance and expose it as sophistry. This will always seem unfair when you are
+on the side whose defense requires nuance.
+
+Whether in God's eye the nuanced position is right or wrong, here on Earth moral intuitions are blunt instruments.
+Generally people will side with a penned-in defenseless population getting murdered, regardless of the bigger picture.
+As a heuristic, that doesn't seem so terrible.
+
+_If you've ever wondered what you would do during the rise of Nazi Germany, it is what you are doing right now._
+
+People who make these kinds of remarks seem so certain they know who the Nazis are. But it could be us, too.
+The Nazis didn't think they were the Nazis, in the way we mean it now. Whenever we consider ourselves part of a
+group so inherently righteous we are immune, we become particularly susceptible to slipping into the role.
+
