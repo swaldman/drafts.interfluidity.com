@@ -12,7 +12,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 Why has the stock market been so ebullient?
 
 Even by very forgiving measures like price-to-earnings,
-which presupooses [extraordinary profit margins](https://fred.stlouisfed.org/series/A466RD3Q052SBEA) will be permanent,
+which presupposes [extraordinary profit margins](https://fred.stlouisfed.org/series/A466RD3Q052SBEA) will be permanent,
 stocks are [overvalued](https://twitter.com/jessefelder/status/1768625428292599882).
 
 The question is academic to me now. The recent rally has wiped me out, replacing my short position with a shirtless one.
