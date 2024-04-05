@@ -51,7 +51,7 @@
 
   <form id="interfluidity-microblogs-weekly-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
     <input type="hidden" name="subscribableName" value="interfluidity-microblogs-weekly">
-    <( subscribe_form_html("microblogs weekly","&#1F633;") )>
+    <( subscribe_form_html("microblogs weekly","&#x1F633;") )>
   </form>
 
   <p><b>Subscribe to everything, weekly</b><br>
