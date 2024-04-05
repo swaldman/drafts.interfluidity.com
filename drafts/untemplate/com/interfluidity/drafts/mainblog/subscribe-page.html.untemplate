@@ -38,6 +38,22 @@
   
   <hr style="width: 30%">
 
+  <p><b>Subscribe to longform, weekly</b><br>
+  (receive all longform interfluidity posts in one weekly digest)</p>
+
+  <form id="interfluidity-longform-weekly-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
+    <input type="hidden" name="subscribableName" value="interfluidity-longform-weekly">
+    <( subscribe_form_html("weekly","&#x1F60A;") )>
+  </form>
+
+  <p><b>Subscribe to microblogs, weekly</b><br>
+  (receive all longform interfluidity posts in one weekly digest)</p>
+
+  <form id="interfluidity-microblogs-weekly-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
+    <input type="hidden" name="subscribableName" value="interfluidity-microblogs-weekly">
+    <( subscribe_form_html("weekly","&#1F633;") )>
+  </form>
+
   <p><b>Subscribe to everything, weekly</b><br>
   (receive all interfluidity blog and microblog posts in one weekly digest)</p>
 
