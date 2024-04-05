@@ -46,6 +46,8 @@
     <( subscribe_form_html("longform weekly","&#x1F60A;") )>
   </form>
 
+  <hr style="width: 30%">
+
   <p><b>Subscribe to microblogs, weekly</b><br>
   (receive all interfluidity microblog posts in one weekly digest)</p>
 
@@ -53,6 +55,8 @@
     <input type="hidden" name="subscribableName" value="interfluidity-microblogs-weekly">
     <( subscribe_form_html("microblogs weekly","&#x1F633;") )>
   </form>
+
+  <hr style="width: 30%">
 
   <p><b>Subscribe to everything, weekly</b><br>
   (receive all interfluidity blog and microblog posts in one weekly digest)</p>
