@@ -47,7 +47,7 @@
   </form>
 
   <p><b>Subscribe to microblogs, weekly</b><br>
-  (receive all longform interfluidity posts in one weekly digest)</p>
+  (receive all interfluidity microblog posts in one weekly digest)</p>
 
   <form id="interfluidity-microblogs-weekly-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="GET">
     <input type="hidden" name="subscribableName" value="interfluidity-microblogs-weekly">
