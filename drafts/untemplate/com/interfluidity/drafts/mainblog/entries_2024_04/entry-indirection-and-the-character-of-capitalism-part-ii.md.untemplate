@@ -1,7 +1,7 @@
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Indirection and the character of capitalism (Part II)",
 >   "Author"    -> "Steve Randy Waldman",
->   "PubDate"   -> "2024-04-09T15:00:00-04:00",
+>   "PubDate"   -> "2024-04-11T10:30:00-04:00",
 >   // "Anchor"    -> "first-post"
 > )
 
@@ -17,8 +17,10 @@ salable for M'.
 
 Our indirect capitalist has basically one meaningful lever that she can exert down the chain of control, which we've
 called the squeeze. She can try to encourage greater efficiency by insisting that the layers beneath her remain
-"lean", with a minimum of surplus cash and a maximum of financial pressure. Her indiscriminate austerity can
-in some cases lead to real efficiency improvements. But she has no way to titrate the squeeze. She cannot even be aware of the
+"lean", with a minimum of surplus cash and a maximum of financial pressure.
+
+Her indiscriminate austerity can in some cases lead to real efficiency improvements.
+But she has no way to titrate the squeeze. She cannot even be aware of the
 subtleties of the core business process, and the relationships that support it. So it becomes likely that the
 austerity she imposes will lead to foolish economies, forcing the underlying business to prioritize
 short-term, "hard" cash flow over "soft" intangibles like relationships, reputation, maintenance and development of skills,
