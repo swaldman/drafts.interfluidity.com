@@ -2,7 +2,7 @@
 >   "Title"     -> "Indirection and the character of capitalism (Part I)",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-04-04T20:10:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "indirection-capitalism-i"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
