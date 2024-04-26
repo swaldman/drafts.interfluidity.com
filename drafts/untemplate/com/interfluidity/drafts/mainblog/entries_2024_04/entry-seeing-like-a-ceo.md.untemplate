@@ -2,7 +2,7 @@
 >   "Title"     -> "Seeing like a CEO",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-04-14T12:10:00-04:00",
->   //"Anchor"    -> "unassigned"
+>   "Anchor"    -> "seeing-like-a-ceo"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
@@ -32,7 +32,7 @@ activities like basic research, whose connection to revenue was too loose to rel
 A thing to notice about this style of management is that you don't need to know anything about GE's particular businesses or
 technical processes to understand it. Welch's prescriptions reflected a form of economic rationality that is universally accessible,
 that could be taught in business school and tried anywhere. In my own little lingo, they reflect
-[unsituated virtues](https://drafts.interfluidity.com/2024/02/11/situated-versus-unsituated-virtues/index.html).
+[unsituated virtues](##situated-vs-unsituated-virtues).
 
 But if you think the one weird trick to managing highly technical cutting-edge business processes at scale
 is a checklist of B-school bromides, you might just be mistaken. Basic research is very difficult to value.

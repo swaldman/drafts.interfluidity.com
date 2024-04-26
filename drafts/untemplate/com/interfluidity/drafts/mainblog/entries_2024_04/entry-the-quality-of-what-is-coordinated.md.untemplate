@@ -1,0 +1,81 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "The quality of what is coordinated",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-04-25T16:20:00-04:00",
+>   //"Anchor"    -> "unassigned"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+We argue a lot over how to manage social coordination.
+Market or state? Integrated within a large firm, or outsourced and bid?
+
+I think we pay too much attention to how we coordinate, and too little attention to the quality of what is
+coordinated.
+
+We do pay attention to quality at the most micro level. When the objects of coordination are individuals, we go on about "education" constantly.
+I don't think education is our problem. We are more and better educated than we ever have been.
+
+But the units that we actually coordinate, when we argue about state and market and the boundaries of firms, are not
+for the most part individuals. They are [meso-level](https://undsoc.org/2012/06/09/are-there-meso-level-social-causes/)
+entities &mdash; firms or divisions of firms, government offices or non-profit organizations, churches
+or "social movements" (networked groups of people acting in common purpose).
+
+All of these institutions are eventually composed
+of individuals, of course. All rabbits are eventually composed of atoms. In theory perhaps you could
+deduce a rabbit's behavior from a complete understanding of its constitutive atoms. But in practice, to do anything
+meaningful with rabbits you will have to concede them their rabbithood, and make sense of them at that level.
+That they are almost entirely oxygen, hydrogen, carbon, and nitrogen will not get you very far. Similarly,
+you will not make useful sense of social affairs if you restrict your analysis to the characteristics
+of individual humans.
+
+Our firms and business units, our government offices and nonprofit organizations, our churches and social
+movements are performing poorly. I don't think the problem is so much that the market isn't working or the state isn't working,
+or that our mix of coordinating mechanisms is out of kilter.
+It's that the quality of what we are coordinating is bad.
+
+I hesistate to point this out, for fear I may encourage a new wave of grifters and management consultants to
+sell fixes. God save us. There is no "treatment" we can subject to random trials that will remedy this, one firm or organization at a time.
+The problem is systemic.
+Deployment of ideas so universal and straightforward they can be sold as "rational", "scientific", and "evidenced-based" is what did us in in the first place. 
+We model firms as profit maximizing, so let's rejigger them
+to really become monomaniacal profit and shareholder-value machines, and mark every other aspiration
+contesting within these complex human organisms as an "agency cost" to be eliminated.
+Corruption is bad, and when we allow human discretion based on anything other
+than reviewable hard information &mdash; "evidence" &mdash; it becomes difficult to distinguish
+wisdom from corruption. So we ban wisdom, and demand every decision be justifiable on the most simplistic and legible grounds.
+
+We desperately require &mdash; and we do desperately require! &mdash; a society more just across racial, gender, and other
+identity fault lines. A bit oddly, identity categories are so universally recognized that identity demographics constitutes hard information.
+So whatever else an organization is up to, concerns about demographic balance crosscut and constrain whatever scope remains
+for internal discretion. To admit this isn't to say that racial discrimination is okay, any more than it is to say corruption is okay.
+It is to say that the approach we've taken to addressing these problems &mdash; having outside institutions police internal decisionmaking &mdash;
+imposes costs in organization quality. Perhaps there are [other approaches](https://www.interfluidity.com/v2/8654.html)
+that would be more effective with fewer downsides.
+
+As internal quality declines, organizations turn to [scale and market power](##indirection-capitalism-ii) to ensure survival despite
+their deficiencies. Their dysfunction becomes everybody's problem more than their own.
+
+Our impulse when something is malfunctioning is to subject it to more intensive supervision and control.
+Often that is a mistake. It renders the thing we are correcting more constrained and more brittle than it otherwise
+might have been. If in fact the supposed malfunction was adaptive given the circumstances of the thing, and those circumstances
+remain unchanged, then imposing greater constraint will leave it seeking to malfunction in the same way, just able to do so
+less effectively. The thing is left crippled, rather than functional.
+
+A better solution is to change the circumstances under which the malfunction was adaptive. High tax rates on
+corporate [payouts](https://www.interfluidity.com/v2/7065.html) and [earnings](https://www.interfluidity.com/v2/8575.html)
+render firms [less obsessively profit maximizing](https://www.interfluidity.com/v2/9713.html). Ecosystems made up of smaller organizations in competition with one another
+render corrupt decisionmaking less costly to outsiders (by narrowing the scope of its effect), and more costly to the organization
+itself (as corruption yields competitive disadvantage). [Rewarding integration](https://www.interfluidity.com/v2/7451.html)
+rather than policing and punishing discrimination relieves decision-making within organizations of constraint while incentivizing
+organizations to deliver a social good that we urgently require.
+
+I have views on grand questions like the balance between market and state. Those arguments turn stale and stereotyped very
+quickly. Across ideological fault lines, however, perhaps we might find a bit of consensus that we face problems not
+just in how we coordinate, but in the quality of what is coordinated.
+
+
+
+

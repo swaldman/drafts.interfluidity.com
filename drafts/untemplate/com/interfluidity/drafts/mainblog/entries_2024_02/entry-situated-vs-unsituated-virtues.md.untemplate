@@ -2,7 +2,7 @@
 >   "Title"     -> "Situated versus unsituated virtues",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-02-11T14:10:00-05:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "situated-vs-unsituated-virtues"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
