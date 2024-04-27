@@ -1,8 +1,9 @@
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "The quality of what is coordinated",
 >   "Author"    -> "Steve Randy Waldman",
->   "PubDate"   -> "2024-04-25T16:20:00-04:00",
->   //"Anchor"    -> "unassigned"
+>   "PubDate"   -> "2024-04-26T13:00:00-04:00",  // date and time were originally misstated to day prior to publication
+>   "Permalink" -> "/2024/04/25/the-quality-of-what-is-coordinated/index.html", // preserved permalink after correcting publication date
+>   "Anchor"    -> "quality-of-what-is-coordinated" 
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
@@ -76,6 +77,8 @@ I have views on grand questions like the balance between market and state. Those
 quickly. Across ideological fault lines, however, perhaps we might find a bit of consensus that we face problems not
 just in how we coordinate, but in the quality of what is coordinated.
 
+---
 
+**Update:** See also [The limits of Death Star thinking](https://hypertextjournal.substack.com/p/the-limits-of-death-star-thinking) by Jennifer Pahlka (Thank you [Steve Roth](/2024/04/25/the-quality-of-what-is-coordinated/index.html)!)
 
 
