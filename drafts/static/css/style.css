@@ -246,6 +246,12 @@ a#rss-link {
 a#rss-link span {
     color: #FF8800;
 }
+/*
+.flexmark sup:has( .footnote-ref ) {
+    font-size: 75%;
+    vertical-align: 20%;
+}
+*/
 .flexmark .footnotes p {
     display: inline;
 }

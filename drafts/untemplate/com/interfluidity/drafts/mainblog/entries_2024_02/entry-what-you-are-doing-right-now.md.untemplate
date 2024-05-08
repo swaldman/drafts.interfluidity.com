@@ -2,7 +2,7 @@
 >   "Title"     -> "What you are doing right now",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-02-29T10:50:00-05:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "what-you-are-doing-right-now"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
