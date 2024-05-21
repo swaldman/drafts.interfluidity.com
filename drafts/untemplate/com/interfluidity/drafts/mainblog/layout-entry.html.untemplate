@@ -1,19 +1,17 @@
-import java.time.format.DateTimeFormatter
 import com.interfluidity.drafts.DraftsSite
 import unstatic.PageBase
 import unstatic.ztapir.simple.Attribute.Key.*
 
-> val PubDateFormatter = DateTimeFormatter.ofPattern("""'['yyyy'-'MM'-'dd' @ 'hh':'mm' 'a' 'zzz']'""").withZone(DraftsSite.MainBlog.timeZone)
-
 val presentationTypeClass =
   s"presentation-${input.presentation.toString().toLowerCase}"
 
+val blog = input.blog
 val info = input.info
 val resolved = input.sourceEntry
 val ut = resolved.entryUntemplate
 val permalink = resolved.permalink
 val entryAnchor = ut.checkAttributeKey(`Anchor`)
-val articleClasses = presentationTypeClass + entryAnchor.fold("")(anchor => "uid-" + anchor)
+val articleClasses = presentationTypeClass + entryAnchor.fold("")(anchor => " uid-" + anchor)
 val mbTitle  = info.mbTitle
 val authors = info.authors
 val authorsString =
@@ -26,7 +24,7 @@ val authorsString =
         authors.splitAt(sz-1)
       init.mkString(", ", ", ", "") + last.head
 val pubDate = ut.checkAttributeKey(`PubDate`).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
-val timestamp = PubDateFormatter.format(pubDate)
+val timestamp = blog.dateTimeFormatter.format(pubDate)
 
 val mbPrevPermalinkLoc = input.previousEntry.map( _.permalink )
 val prevTitle = input.previousEntry.flatMap( _.entryInfo.mbTitle ).getOrElse("previous")
