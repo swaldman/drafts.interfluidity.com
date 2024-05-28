@@ -2,7 +2,7 @@
 >   "Title"     -> "We haunt",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-05-03T18:05:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "we-haunt"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

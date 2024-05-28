@@ -1,0 +1,128 @@
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Masculine virtues",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-05-28T17:15:00-04:00",
+>   //"Anchor"    -> ???
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+David Austin Walsh [expressed frustration](https://x.com/Gurdur/status/1794781436471640276) with how difficult
+he has found landing a tenure-track position as an academic historian. He implied being "white dude" was
+one source of disadvantage in his search.
+
+That is a sensitive claim. The requisite, almost _pro forma_, scandal
+ensued. Walsh offered [an apology](https://x.com/DavidAstinWalsh/status/1795029033777787327), emphasizing
+perceptively the real source of his problem. Good positions in academia have been made scarce, cannibalized by the
+temporary and contingent roles into which Walsh himself has been slotted. In a game of musical chairs, it is an
+analytical error to blame any advantage of other players (real, perceived, or misperceived) for
+the difficulty of finding a seat. The recriminations just amuse the people who take away the chairs.
+
+There is a kind of irony in scabs
+lamenting the decline of good union jobs, except that academics have flattered themselves to be something above
+and apart from mere labor. Academics are society's true meritocrats, each one a self-made hero. The neoliberalization of
+the academy was sealed when faculty reconceived themselves as market victors rather than a guild or,
+in the more modern term, a labor union. Assistant, associate, full, adjunct, post-doc, graduate instructor, these are
+just a lot of words to describe a [two-tier](https://www.washingtonpost.com/outlook/2018/08/30/how-two-tier-unions-turn-workers-against-each-other/)
+[labor](https://www.thenation.com/article/archive/how-two-tier-union-contracts-became-labors-undoing/)
+[contract](https://www.tdu.org/how_two_tier_contracts_hurt_workers_and_weaken_unions).
+
+("Scab" is too cruel a word to describe Walsh and all the other adjuncts and postdocs who are
+victims of a dissolution of worker power they collectively help to perpetuate but did not author.
+I don't know if anyone has invented an epithet for high-seniority workers who acquiesce to
+two-tier labor arrangements, but there ought to be a bitter one. It is a deeper form of betrayal,
+and typically made under less duress, than "scab".)
+
+Anyway, tempest met teapot. So of course
+Chris Rufo had chime in. He [wrote to](https://x.com/DavidAstinWalsh/status/1795186440701120831) Walsh:
+
+> There is a redemption arc available to you: tell the truth about DEI and academic corruption. The answer is
+> not to grovel harder &mdash; self-abasement is repellent to all factions &mdash; but to take a courageous stand against the
+> institutions that have gone astray. Everyone knows that you would have easily earned a faculty position even
+> ten years ago, but the powers that be are pushing through underqualified "race and gender scholars" in all of
+> the humanities departments. Your professional path as the "white male ally" has reached the terminus. Why not
+> tell the truth?
+
+I find this so amusing. I feel I just have to share.
+
+Our dear friend Chris Rufo seems to believe as a "truth about DEI and academic corruption" that attempts
+to increase diversity in academia have led to a decline in standards and faculty quality.
+
+Chris Rufo should
+know! He is no mere onlooker. Rufo is the great protagonist of the reconstruction of
+[my](##new-college)
+[own](##we-haunt)
+_alma mater_,
+[New College of Florida](https://www.ncf.edu/), which the gentleman is
+[restoring to its role](https://www.nytimes.com/2023/07/27/opinion/christopher-rufo-diversity-desantis-florida-university.html)
+under "the classical liberal tradition...produc[ing] scholarship in pursuit of the true, the good and the beautiful."
+
+Chris Rufo would never try to tilt scales in hiring or recruitment to favor some crass ascriptive identity like
+race or gender.
+
+Oh [wait](https://www.nytimes.com/2023/08/14/opinion/columnists/gender-studies-ron-desantis-florida.html).
+
+> Rather than reviving some traditional model of academic excellence, then, it looks as though
+> New College leaders are simply trying to replace a culture they find politically hostile with
+> one meant to be more congenial. The end of gender studies and the special treatment given to
+> incoming athletes are part of the same project, masculinizing a place that had been heavily
+> feminist, artsy and queer. When I spoke to Rufo last weekend, he offered several explanations
+> for New College’s new emphasis on sports, including the classical idea that a healthy body
+> sustains a healthy mind. But an important part of the investment in athletics, he said, is
+> that it is a way to make New College more male and, by extension, less left wing.
+>
+> In the past, about two-thirds of New College’s students were women. "This is a wildly out-of-balance
+> student population, and it caused all sorts of cultural problems,” said Rufo. Having so many more women
+> than men, he said, turned New College into “what many have called a social justice ghetto." The new
+> leadership, he said, is “rebalancing the ratio of students” in the hopes of ultimately achieving gender parity.
+>
+> But gender parity is not necessarily compatible with a pure academic meritocracy, which Rufo claims to prize.
+
+Earlier in the piece, Michelle Goldberg points out...
+
+> Rufo speaks a lot about academic excellence and the virtues of a classical liberal education.
+> But as Steven Walker of The Sarasota Herald-Tribune
+> [reported](https://www.heraldtribune.com/story/news/education/2023/07/27/new-college-of-florida-pursues-student-athletes-at-academic-cost-richard-corcoran/70445567007/)
+> in a damning July story, the incoming class recruited by the new administration has lower average grades, SAT scores and ACT scores than last year’s class.
+> "Much of the drop in average scores can be attributed to incoming student-athletes who, despite scoring worse on average, have earned a disproportionate number of
+> the school’s $10,000-per-year merit-based scholarships," wrote Walker.
+
+I think we all have to concede, Rufo has proven his point. Attempts to remake a college in crass demographic terms can
+indeed be "corrupt" in the sense of elevating those of "lesser merit" by someone's contestable criteria over
+people who would be "more deserving" under those measures. And, this kind of ideologically motivated social
+engineering can be deeply intertwined with [astonishing](https://www.wusf.org/education/2024-04-12/richard-corcoran-200k-bonus-new-college-of-florida)
+[patronage](https://ncfcatalyst.com/the-changing-image-of-new-college/) and [careerism](https://floridapolitics.com/archives/629209-david-rancourt-joins-new-college-as-dean-of-students/).
+
+Rufo and his movement seem particularly wedded to rehabilitating masculine virtues, which I unironically
+applaud. There is indeed a crisis that demands redress surrounding masculinity. Whether we like it or not,
+males are and will continue to be nearly half of the population. They, like every other minority, deserve to be
+integrated in all of our institutions. We should acknowledge that
+the mere fact college-student populations are disproportionately female need not reflect
+invidious discrimination. Differences in outcome may reflect real differences in aptitude, interest, or ability.
+But we should treat skeptically claims that groups which underperform today must always underperform due to
+something inherent in their natures. Sometimes these outcomes reflect systemic, even _structural_, inhospitabilties
+entrenched in the institutions where members of the group seem to underperform. If a better developed athletics program helps
+make differently gendered students feel more at home at New College, then I am all for it.
+
+Along with that, I'd encourage embracing the positive aspects of masculinity, ideals like courage, chivary, and self-reliance.
+
+A man, for example, when he openly picks a fight, he lands his blows but he accepts that a few blows might also land upon him.
+At least perhaps glancingly, if at all, [upon his shoe](https://www.youtube.com/watch?v=0WUjgjN7Ssw)).
+
+A man fights his own battles.
+He does not [womanishly call in some overweening authority](https://x.com/realchrisrufo/status/1677411849468547072),
+in order to absolutely crush a much, much weaker enemy half his age, in a fight he himself initiated.
+
+A man expects
+resistence in battle. He accepts it, respects it, even when it is his mission to defeat it.
+
+[Magnanimity](https://x.com/socialistlegacy/status/1690062620508803073)
+under circumstances where you have completely won, where the full power and authority of the state is yours to command,
+might _not_ subsist in needlessly driving a helpless and defeated enemy
+[from their home and community](https://www.tampabay.com/news/education/2023/08/10/charges-dropped-against-new-college-student-accused-spitting-trustee/).
+
+I do wish the project of restoring masculine virtues much greater success than it has thus far enjoyed.
+
+
