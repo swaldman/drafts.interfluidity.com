@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'RobotoCondensed';
+    src: url('../font/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'RobotoCondensedItalic';
+    src: url('../font/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf');
+}
+@font-face {
     font-family: Latin-Modern-Mono-Light;
     src: url("../font/Latin-Modern-Mono/lmmonolt10-regular.otf") format("opentype");
 }
@@ -182,6 +190,13 @@ div.entry-body a:before {
 div.entry-body a:after {
     font-size: 90%;
     content: "]";
+}
+div.entry-body a.bracketless:before {
+    content: "";
+}
+div.entry-body a.bracketless:after {
+    font-size: 90%;
+    content: "";
 }
 div.entry-body a.anchorlink:before {
     content: "";
@@ -387,6 +402,30 @@ div.subscribe-form div.sf-label-submit {
 div.subscribe-form div.sf-submit {
     grid-row: 3;
     grid-column: 2;
+}
+
+table.flexmark-table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.flexmark-table td, table.flexmark-table th {
+    font-family: 'RobotoCondensed';
+    border: 1px solid;
+    padding: 3px;
+}
+table.flexmark-table td {
+    font-variation-settings: "wght" 400;
+}
+table.flexmark-table th {
+    color: white;
+    background-color: black;
+    font-variation-settings: "wght" 700;
+}
+
+.great-tax-con table.flexmark-table td:first-of-type {
+    font-variation-settings: "wght" 500;
+    background-color: lightgray;
 }
 
 
