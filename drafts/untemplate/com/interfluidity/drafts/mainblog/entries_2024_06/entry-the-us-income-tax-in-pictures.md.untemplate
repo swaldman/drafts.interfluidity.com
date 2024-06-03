@@ -174,7 +174,7 @@ Perhaps it's time we reseal the portal.
 [_Mathematica_ notebook](##./notebook-us-income-tax-in-pictures.nb) (or as a [PDF](##./notebook-us-income-tax-in-pictures.pdf)).
 The data is [here](##./mfj-with-std-deduction.csv). Or go straigh to the source,
 [mfj.csv](https://github.com/chrisvwx/taxFoo.jl/blob/main/incomeTax/mfj.csv)
-in Chris Peel's git repository, which also includes [animations](https://github.com/chrisvwx/taxFoo.jl) of our evolving tax schedules.
+in Chris Peel's git repository. Chris' repository also includes [animations](https://github.com/chrisvwx/taxFoo.jl) of our evolving tax schedules.
 Chris based his calculations on [data from the Tax Foundation](https://taxfoundation.org/data/all/federal/historical-income-tax-rates-brackets/).
 
 </div>
