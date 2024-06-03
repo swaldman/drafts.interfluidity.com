@@ -23,7 +23,7 @@ First, here's the full history of effective US tax rates as a single surface.
 
 Click for a larger view! Or play with an [interactive version](https://www.wolframcloud.com/obj/2b0afc69-4a37-439f-998c-ac3b55d4fec2) online!
 
-Our data is rates for married households, filing jointly. The rates are computed from ordinary income rates only, so
+Our data is rates for married households, filing jointly. The numbers are computed from ordinary income rates only, so
 they will be overstated for high income households, who enjoy a great deal of tax-advantaged capital income. All dollar amounts
 are CPI-adjusted 2024 dollars.
 
