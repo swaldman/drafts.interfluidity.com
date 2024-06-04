@@ -1,5 +1,5 @@
 #!/bin/bash
 
-./mill drafts.run "$@"
+./mill run "$@"
 
 

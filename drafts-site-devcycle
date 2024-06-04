@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./mill -w drafts.runBackground serve --verbose
+./mill -w runBackground serve --verbose
 

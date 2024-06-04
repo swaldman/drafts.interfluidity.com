@@ -14,7 +14,7 @@ import java.time.ZoneId
 
 import untemplate.Untemplate.AnyUntemplate
 
-object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("drafts/static") ):
+object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") ):
   override val serverUrl : Abs    = Abs("https://drafts.interfluidity.com/")
   override val basePath  : Rooted = Rooted.root
 

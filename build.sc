@@ -13,7 +13,7 @@ object Dependency {
   val UnstaticZTapir       = ivy"com.mchange::unstatic-ztapir:${UnstaticVersion}"
 }
 
-object drafts extends UntemplateModule {
+object drafts extends RootModule with UntemplateModule {
   override def scalaVersion = "3.3.1"
 
   // supports Scala 3.2.1
