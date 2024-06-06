@@ -80,6 +80,7 @@ if input.presentation == input.blog.Entry.Presentation.Single then {
 
             </div>
           </div>
+          <( layout_update_history_html( input ) )>
 <()
 } // if
 ()>

@@ -1,0 +1,31 @@
+import com.interfluidity.drafts.DraftsSite.MainBlog
+
+val updateRecordsForDisplay = input.blog.updateRecordsForDisplay(input.asInstanceOf[input.blog.Layout.Input.Entry])
+
+val liElems =
+  updateRecordsForDisplay.map: urfd =>
+    val ts = urfd.finalMinorRevisionRelative.fold(input.blog.dateTimeFormatter.format(urfd.timestamp))(fmrr => s""" <a href="${fmrr}">${input.blog.dateTimeFormatter.format(urfd.timestamp)}</a>""") 
+    val a = s"""<li><span class="update-timestamp"><i>${ts}</i></span> &mdash; ${urfd.description.getOrElse("No description.")}"""
+    val b = urfd.diffRelative.fold("")(dr => s""" (<a href="${dr}">diff</a>)""")
+    val c = "</li>"
+    a + b + c
+end liElems
+
+(input : MainBlog.Layout.Input.Entry)[]~()>
+<()
+  if liElems.size > 1 then { // we don't want to display initial-publication only update histories
+()>
+<div id="update-history" class="update-history">
+  <h3 class="update-history-title">
+    <a id="major-updates"></a>Major revisions:
+  </h3>
+  <ul>
+    <( liElems.mkString("\n") )>
+  </ul>
+  <div class="update-history-note">Timestamps represent "major", substantative revisions. There may have been subsequent typo fixes and language
+  reworkings within a major revision, after the time displayed. For a more complete and fine-grained update history,
+  you can view the <a href="https://github.com/swaldman/drafts.interfluidity.com/commits/main/">git repository commit history</a>.</div>
+</div>
+<()
+  }
+()>

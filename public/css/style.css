@@ -34,6 +34,10 @@
     font-family: caroni;
     src: url("../font/caroni/Caroni-Regular.otf");
 }
+@font-face {
+    font-family: 'GabrieleD';
+    src: url("../font/gabriele/gabriele-d.ttf");
+}
 
 :root {
     --title-offset: -1em;
@@ -423,11 +427,29 @@ table.flexmark-table th {
     font-variation-settings: "wght" 700;
 }
 
-.great-tax-con table.flexmark-table td:first-of-type {
-    font-variation-settings: "wght" 500;
-    background-color: lightgray;
+.update-history-note {
+    font-size: smaller;
+    line-height: 100%;
 }
 
+.old-draft {
+    background-color: ##F3EDDA;
+    color: #8E9FD9;
+    font-family: 'GabrieleD', 'courier';
+}
+.old-draft #top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: yellow;
+    text-align: center;
+    font-family: 'RobotoCondensed', 'Arial', 'Helvetica', sans-serif;
+    font-variation-settings: "wght" 500;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black;
+}
 
 @media only screen and (max-width: 700px) {
     :root {

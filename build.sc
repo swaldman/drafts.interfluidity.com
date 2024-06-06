@@ -26,7 +26,7 @@ object drafts extends RootModule with UntemplateModule {
     var out = untemplate.Customizer.empty
 
     if (key.inferredPackage.indexOf("mainblog")>=0 && key.inferredFunctionName.startsWith("entry_")) {
-      out = out.copy(extraImports=Seq("unstatic.*","com.interfluidity.drafts.DraftsSite.MainBlog"))
+      out = out.copy(extraImports=Seq("unstatic.*","com.interfluidity.drafts.DraftsSite.MainBlog","unstatic.ztapir.simple.UpdateRecord"))
     }
 
     // to customize, examine key and modify the customer

@@ -10,9 +10,22 @@
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
     <link rel="stylesheet" href="../../../../css/style.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const regex = /(^.*)\-oldcommit\-[0-9A-Fa-f]+\.html/;
+          const match = window.location.pathname.match(regex);
+          if (match) {
+              const b  = document.querySelector("body");
+              const tb = document.getElementById("top-banner");
+              b.classList.add("old-draft");
+              tb.innerHTML = "You are looking at an old, superceded version of this page. For the current version, please <a href=\"" + match[1] + ".html\">click here</a>.";
+          }
+       });
+    </script>
     <title>Decommodification and health care utilization</title>
   </head>
   <body>
+    <div id="top-banner"></div>
     <header>
       <div id="rss-link-container">
         <a id="rss-link" href="../../../../feed/index.rss"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>

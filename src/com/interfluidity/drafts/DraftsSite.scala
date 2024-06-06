@@ -39,6 +39,10 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
       import MediaPathPermalink.*
       overridable( yearMonthDayNameDir(timeZone), ut )
 
+    override val revisionBinder : Option[RevisionBinder] = Some( RevisionBinder.GitByCommit(DraftsSite, JPath.of("."), siteRooted => Rel("public/").embedRoot(siteRooted)) )
+
+    override val diffBinder : Option[DiffBinder] = Some( DiffBinder.JavaDiffUtils(DraftsSite) )
+
     override def layoutEntry(input: Layout.Input.Entry) : String = mainblog.layout_entry_html(input).text
 
     // overriding a def, but it's just a constant, so we override with val
