@@ -435,6 +435,18 @@ table.flexmark-table th {
     font-size: smaller;
     line-height: 100%;
 }
+.update-prepend ul {
+    font-family: 'RobotoCondensed';
+    font-variation-settings: "wght" 400;
+    font-size: smaller;
+    list-style-type: "➣";
+    padding: 0;
+    margin: 0;
+}
+.update-prepend ul li {
+    padding-left: 0.25em;
+    margin-left: 1em;
+}
 
 body.old-draft {
     padding-top: 1em;
