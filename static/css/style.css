@@ -38,6 +38,10 @@
     font-family: 'GabrieleD';
     src: url("../font/gabriele/gabriele-d.ttf");
 }
+@font-face {
+    font-family: 'GabrieleBad';
+    src: url("../font/gabriele/gabriele-bad.ttf");
+}
 
 :root {
     --title-offset: -1em;
@@ -432,16 +436,32 @@ table.flexmark-table th {
     line-height: 100%;
 }
 
-.old-draft {
-    background-color: ##F3EDDA;
-    color: #8E9FD9;
-    font-family: 'GabrieleD', 'courier';
+body.old-draft {
+    padding-top: 1em;
+    background-color: #F3F5DA;
+    color: #6E7FD9;
+    font-family: 'GabrieleD', 'Courier';
 }
-.old-draft #top-banner {
+body.old-draft .entry-body a {
+    color: #aa8888;
+}
+body.old-draft .entry-body a:visited {
+    color: #aa8888;
+}
+body.old-draft .entry-header h1 a {
+    color: #aa8888;
+    font-family: 'GabrieleBad', 'Courier';
+}
+body.old-draft .entry-header h1 a:visited {
+    color: #aa8888;
+    font-family: 'GabrieleBad', 'Courier';
+}
+body.old-draft #top-banner {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
+    color: black;
     background-color: yellow;
     text-align: center;
     font-family: 'RobotoCondensed', 'Arial', 'Helvetica', sans-serif;
