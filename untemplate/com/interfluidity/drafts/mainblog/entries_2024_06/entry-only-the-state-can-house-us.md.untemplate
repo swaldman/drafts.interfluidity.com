@@ -1,0 +1,228 @@
+> val updateHistory =
+>   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Only the state can house us",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-06-07T15:05:00-04:00",
+>   //"UpdateHistory" -> updateHistory,
+>   //"Sprout"        -> true,
+>   "Anchor"    -> "only-the-state-can-house-us"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Towards the end of a generally excellent piece on housing, Hamilton Nolan [writes](https://www.hamiltonnolan.com/p/housing-is-the-economy)
+
+> [I]f your response to that is “hey let’s just build public housing units for all 400,000 people,”
+> that sure sounds nice, but brother I am here to tell you that there are only 177,000 total NYC public
+> housing units right now, and that represents the sum total of all that have been produced in the city’s
+> history, and they don’t even fund the ones that exist adequately right now. So practically speaking,
+> saying “just build public housing” is the equivalent of saying “just give everyone magical castles.”
+> It is a nice goal but it ain’t happening any time soon and in the meantime, everyone needs
+> affordable housing. To reiterate: the only long term path to bringing housing prices down to an
+> affordable level is by building enough housing supply to meet total demand. Build more. Much more.
+
+I fully endorse that last bit. _The only long term path to bringing housing prices down to an
+affordable level is by building enough housing supply to meet total demand. Build more. Much more._
+
+Indeed.
+
+But I disendorse Nolan's attitude regarding publicly built housing. State-led development is the only solution
+to our housing catastrophe. We will figure that out, sooner or later. We will be much, much better off if
+we can figure it out sooner.
+
+The problem with YIMBY-ness has never been that they are wrong to focus on housing scarcity in the
+places people want to live as perhaps the most destructive economic ill in our economy. They are right
+about that!
+
+Their error has always been a pollyanna-ish idea that _if only_ we would lift legal constraints we can easily
+understand to be unjust &mdash; exclusionary zoning whose roots are in racial segregation! &mdash; private
+markets would just resolve this problem and we would all be better off.
+
+But NIMBY-ness, as Nolan perceptively describes earlier in the piece, is endogenous to prosperous density:
+
+> In cities where many people want to live, but which fail to build enough new housing every year to keep
+> up with demand, housing prices rapidly reach levels only affordable to the rich. The middle class leaves
+> the expensive cities. They move to less expensive cities, where they constitute an influx of new residents,
+> and they are resented by the existing residents of those cities, who see their own housing prices rise as a
+> result of the influx. Instead of rapidly building a lot of new housing to account for the influx, residents
+> typically channel their resentment into a determination to keep everything as it is, which means a continuing
+> lack of adequate new housing construction, which only serves to drive up rents and home prices further. And
+> the cycle continues, from one city to the next to the next. People leave San Francisco because it’s too
+> expensive and they move to Denver and then they make Denver too expensive and then those people move to
+> Boise and make Boise too expensive and then those people move to your small town. Uh oh! You will teach them
+> a lesson, by organizing your neighbors to fight against the damn new luxury condo building they want to build
+> downtown. Eventually your town will become too expensive as well.
+>
+> We need to build more housing. If your city is too expensive it is because there is not enough housing to meet
+> the demand. Build more housing. Stop being selfish.
+
+Note that your town doesn't need to already have zoning laws historically rooted in racial segregation.
+It will invent them, or it will invent something else,
+because the people who bought homes they love in neighborhoods they
+love, upon whose character they have based their security and lifestyle, into whose financial value they have
+leveraged their net worth by several times over, will not stand for leaving those assets to the vicissitudes of
+private home developers.
+
+And then there are basic facts of physics and geography. Infill of existing density is challenging
+and costly. Infrastructure must be retrofit. Even if eventually there will be room for so many more,
+current residents may need to be displaced (and may in practice never become part of that many more).
+Greenfields grow ever more distant from the drivers of demand. Together, these factors
+[render housing supply curves "convex"](https://onlinelibrary.wiley.com/doi/full/10.1111/1540-6229.12490).
+(ht [Tyler Cowen](https://marginalrevolution.com/marginalrevolution/2024/05/what-does-it-look-like-to-build-more-housing.html))
+In English, what that means is that price increases translate less and less to housing quantity increases
+as metropolitan areas grow, regardless of the regulatory regime.
+
+When you are trying to rely upon the market to solve your problem, and then your advice is "stop being selfish",
+perhaps you should [encounter the wisdom of Alan Greenspan](https://www.newyorker.com/news/george-packer/end-of-an-era-2-greenspans-world-view-fails-him)
+
+> I made a mistake in presuming that...self-interests...were best capable... I have found a flaw.
+> I don’t know how significant or permanent it is. But I have been very distressed by that fact.
+
+Private markets are based on selfishness. This idea that developers will be motivated by avarice to do just what you
+want, but homeowners suspend avariciousness with respect to the asset at the very core of their lives?
+Good luck with that.
+
+The YIMBY movement has succeeded, like Max Weber's
+[proverbial](https://www.goodreads.com/quotes/70587-politics-is-a-strong-and-slow-boring-of-hard-boards)
+strong and [slow boring](https://www.slowboring.com/p/yimbys-keep-winning) of hard boards, in making some real progress in
+some particular places. I will concede that, between [liberalization of ADU construction](https://www.hcd.ca.gov/policy-and-research/accessory-dwelling-units)
+and the astonishing "[builder's remedy](https://smdp.com/2024/04/03/californias-most-controversial-housing-law-could-get-a-makeover/)",
+California has gone farther than I ever imagined it would towards coercing localities to build even against the
+strong opposition of local government's best enfranchised constituents. It isn't nothing.
+It's a quite extraordinary political achievement.
+And I don't doubt that it helps, at the margin, for a while.
+
+But the core problem we face is much bigger than land-use. It is geographic inequality. We have created
+a country in which too few patches of geography are associated with vastly better opportunities and amenities than
+all the other places. As with individual inequality, some of this is "natural". Some people are taller than other
+people, and will have better chances in the NBA. Some places are lovelier and more temperate than other places.
+But the actual inequality we are struggling with is not due substantially to these differences, but to our social
+arrangements. There are plenty of lovely places in the United States that could remarkable and desirable cities.
+That they don't is a social outcome, not the result of any natural law.
+
+So long as just a few places offer so much more amenity, liveliness, and economic opportunity than everywhere else,
+supply growth in those already built-out
+places will nowhere near match the tsunami of demand they face from people who would migrate there if they could.
+The deep flaw in YIMBY-ism is that problem they accurately highlight is orders of
+magnitude larger than what the solutions they identify, promote, and support can plausibly address. Yet the medicine they propose is divisive and painful
+to people in established, lived communities, and
+tend to serve
+the better-off in favor of the worse-off, as
+market-based solutions usually do. Regulatory caveats intended to counter gentrification, exhortations to upzone places that are
+affluent and coveted rather than communities poorer and already precarious are well and good. But they cannot overcome the
+basic physics of market action, _to each according to his purchasing power, from each according to his desperation_.
+
+Even if YIMBYs got all the legal reform they wanted, if all residential construction was by-right and developers had free reign, it's not at all
+clear much housing abundance would result. We've already discussed the factors that overdetermines "convex supply curves", under any regulatory regime.
+Then there are economic factors beyond regulation.
+The YIMBY dream is that, if regulatory constraints were lifted, swarms of home developers would engage in ruinous competition to build, driving down the price
+of the goods they produce and sell. In our contemporary, highly consolidated, economy, how many industries work like this?
+
+Let's hear from [Logan Mohtashami of HousingWire](https://www.housingwire.com/articles/why-we-cant-build-our-way-out-of-this-hot-housing-market/),
+whom I think it is fair to characterize as a perpetual bull on the US private sector:
+
+> Unless the government steps in to build when new home sales demand gets soft, we will not add homes to the builders’ demand algorithm.
+> Builders have learned to tightly control inventory by retreating from construction when demand becomes slack. Building more homes is
+> bad business during weaker times... We won’t see the construction boom that people want because the builders are here to make money;
+> they’re not here to fix the low inventory issues of the existing home sales market, which is their main rival for demand.
+>
+> This is why I have stressed before if you want a construction boom, the federal government will need to step in with deficit financing.
+
+In general, firms prefer to producing small quantities at high prices, rather than large quantities at low prices, if they
+can get away with it. For now, for the most part, they get away with it. If you want to be a YIMBY optimist, you have to hope
+not only for _ixnaying_ exclusionary zoning and environmental reviews and all of that malarky. You will need Lina Khan's very devoted
+attention to your municipality, in a domain which by its nature is unusually prone to consolidation. Urban construction always
+requires locality-specific capabilities and connections, and the people who have those are susceptible to being bought out.
+(I know. Don't be selfish.)
+
+What YIMBYs get wrong is the actual nature of the scarcity they need to overcome. You cannot will not, overcome the
+scarcity of San Francisco. What you can over come is the scarcity of _San Franciscoes_. If you create more demand drivers, more places
+where it becomes desirable to live, where important [agglomeration effects](https://research.upjohn.org/cgi/viewcontent.cgi?article=1256&context=reports)
+take hold, you reset the picture. All of a sudden, there are greenfields very near your demand driver, which you
+can develop at efficient density without colonizing established neighborhoods. Eventually, established neighborhoods in older desirable places will
+redevelop themselves, in ways their own selfish residents determine, as desirable alternatives elsewhere
+become competitive threats.
+
+[_California Forever_](https://www.cbsnews.com/sacramento/news/california-forever-promises-new-solano-county-investments/) notwithstanding,
+the private sector is not going to throw around capital in sufficient quantity in places where there's not already a good business case to build,
+that is, where there's not already an obvious, preexisting demand driver.
+
+One of my favorite paragraphs I ever wrote is [this one](https://www.interfluidity.com/v2/6846.html):
+
+> It’s a cliché that the government builds “bridges to nowhere” that the private sector never would build. That’s true.
+> And it’s a credit to the public sector. Bridges to nowhere are what turn nowheres into somewheres.
+> We need many, many more bridges to nowhere.
+
+Turning nowheres into somewheres is a role of the state. It is not an easy role, by any measure. Of course there have been, and will be,
+failures, boondoggles. You could have tens of billions of dollars worth of boondoggle annually and it wouldn't measure anywhere
+near the social cost of housing dysfunction in the contemporary United States. All successful enterprises involve failures along the way, and
+until we [develop public sector institutions more tolerant of that](https://drafts.interfluidity.com/2024/05/11/industrial-policy-and-ecosystems/index.html),
+we'll continue to impoverish ourselves and fall behind in geopolitical competition.
+
+If you want to know how I propose we do this, read [_Microcities_](https://www.interfluidity.com/v2/8772.html).
+
+But of course there are a wide variety of
+possible approaches, and people much, much smarter than me in the world. Before you come at me with your pessimism, yes, Milton Keynes was
+[tragically conceived](https://www.theguardian.com/cities/2016/may/03/struggle-for-the-soul-of-milton-keynes)
+at the height of automotive exuberance and there are things we should regret about it. But it is a
+[broadly successful metropolis now](https://www.miltonkeynes.co.uk/news/people/milton-keynes-chosen-for-sunday-times-best-place-to-live-guide-for-first-time-ever-4554727).
+Ordos, China's most famous "ghost city", is booming after the Chinese state [intervened](https://asia.nikkei.com/Spotlight/Society/China-s-largest-ghost-city-booms-again-thanks-to-education-fever)
+with the "artificial" demand driver of competitive schools.
+
+States can do these things.
+Neither Milton Keynes nor Ordos strike me as the best models to emulate. But in their imperfection they
+remind us, cities can be made. Even when made not so well, they can thrive, become fine places to
+live and work. Next time, we'll make them better.
+
+New cities can house people. And they will, sooner or later.
+
+In 2018, Saoirse Gowan and Ryan Cooper wrote
+[_A Plan to Solve the Housing Crisis Through Social Housing_](https://www.peoplespolicyproject.org/project/a-plan-to-solve-the-housing-crisis-through-social-housing/):
+
+> Sweden, which undertook perhaps the most aggressive public housing plan of any country relative to its size,
+> provides one high-water mark. The Swedish government set a goal of building 1 million new units in the mid-1960s
+> when the population was only 8 million (or about the same size as New York City). Despite a few setbacks and problems,
+> this goal was achieved in less than a decade – indeed it was so successful that Sweden had an oversupply of affordable
+> housing for decades afterward.
+>
+> We suggest that 10 million new municipal housing units would be a viable 10-year goal. That is well short of a scaled-up
+> version of the Swedish program, but still quite aggressive. We do not anticipate a U.S. affordable housing oversupply being
+> a significant risk in the medium term.
+
+I know, right? Laugh. In America, we know social housing as public housing, as _the projects_ and we know how that goes.
+We have not built 10M new units.
+
+The problem of housing scarcity has only grown worse. As Nolan reminds us, what was once a pathology of San Francisco, Los Angeles,
+New York, has metastasized. Boise has become aspirational too. I'd argue that this is the main reason why younger people (some older ones too!) are
+pessimistic about the US economy. Housing in the places people want to live is impossibly expensive. The dream of a chill,
+secure middle-class life in a safe and lively place with good schools is out of reach.
+
+So far, the housing apocalypse has been a boiling-frog game of musical chairs. The housing situation has worsened in
+increments, and the losers each round have been the least well-off. That is precisely the sort of problem the American
+political system is built to ignore. We blame the losers, and segregate ourselves from them. (Until, of course, we
+find it is our turn to lose.)
+
+But climate shocks are already beginning to change this. Well enfranchised, safely middle-class Americans are going to
+find themselves uprooted from homes they purchased as the foundation of their security, some directly by catastrophe,
+most by [burgeoning insurance costs](https://www.nytimes.com/interactive/2024/05/13/climate/insurance-homes-climate-change-weather.html).
+We are already in a phase of socialized denial, which we have institutionalized as state-backed insurers of last resort.
+Very soon, we will see one of those insurers outmatched by nature. Bailouts will be arranged.
+
+From that
+moment on, the fiscal calculus will have turned. State-led housing development will no longer be a matter of handouts
+to losers, supported out of the self-regarding pity by liberals, subject to the criticism and derision by conservatives.
+State-led development will be the only means we have of rehousing millions of hard-working families over a limited period of time.
+Our ability to do it well &mdash; to construct new, safer, places where people will genuinely want to live &mdash;
+will go a long way to deciding whether our collective future is dark or bright.
+
+"Social housing" not a pie-in-the-sky project. It's an inevitability. We already face a deep and terrible housing crisis. The time to get good
+at building new communities, to exercise state capacity we will desperately need, to experiment and endure failures
+we must learn from, is now.
+
+
+
