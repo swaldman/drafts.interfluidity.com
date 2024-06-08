@@ -3,10 +3,10 @@ import $meta._
 import mill._
 import mill.scalalib._
 
-import $ivy.`com.mchange::untemplate-mill:0.1.3-SNAPSHOT`
+import $ivy.`com.mchange::untemplate-mill:0.1.3`
 import untemplate.mill._
 
-val UnstaticVersion = "0.3.1-SNAPSHOT"
+val UnstaticVersion = "0.3.1"
 
 object Dependency {
   val Unstatic             = ivy"com.mchange::unstatic:${UnstaticVersion}"
@@ -14,7 +14,7 @@ object Dependency {
 }
 
 object drafts extends RootModule with UntemplateModule {
-  override def scalaVersion = "3.3.1"
+  override def scalaVersion = "3.3.3"
 
   // supports Scala 3.2.1
   // override def ammoniteVersion = "2.5.6"
