@@ -53,7 +53,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 <p>No, <i>New Yorker</i> cartoon, the democratic public should not try to fly the plane. But the pilot, for his part, must fly it to the place the passengers contracted to go.</p>
 
 <p>If some kind of science fiction catastrophe were to occur, and the plane must divert to a final destination from which rebooking will not be an option, then taking a vote of the passengers would absolutely be the right thing to do.
-If, when the pilot presents the destinations they have fuel enough to reach, she leaves out places she would disprefer... Well, she might get away with it. Or she might not.</p>
+If, when the pilot presents the destinations they have fuel enough to reach, she leaves out places she would disprefer... Well, she might get away with it! Or she might not.</p>
 
 <p>Regardless, it would be a sin.</p>
 
