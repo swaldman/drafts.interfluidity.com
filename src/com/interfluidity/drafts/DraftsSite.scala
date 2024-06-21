@@ -61,7 +61,7 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
          val contentsHtml = mainblog.layout_archive_html( Input( location, entriesResolved ) ).text
          layout_main_html( MainLayoutInput( location, contentsHtml, Nil ) ).text
       }
-      val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("archive"), resolveHashSpecials = true, memoize = true )
+      val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("archive"), resolveHashSpecials = true )
     end Archive
 
     object Subscribe:
@@ -71,7 +71,7 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
          val contentsHtml = mainblog.subscribe_page_html().text
          layout_main_html( MainLayoutInput( location, contentsHtml, Nil ) ).text
       }
-      val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("subscribe"), resolveHashSpecials = true, memoize = true )
+      val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("subscribe"), resolveHashSpecials = true )
     end Subscribe
 
     override def endpointBindings : immutable.Seq[ZTEndpointBinding] =

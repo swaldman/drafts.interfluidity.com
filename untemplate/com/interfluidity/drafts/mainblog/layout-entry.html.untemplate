@@ -33,7 +33,7 @@ val mbNextPermalinkLoc = input.nextEntry.map( _.permalink )
 val nextTitle = input.nextEntry.flatMap( _.entryInfo.mbTitle ).getOrElse("next")
 
 val mbPriorRevisionLoc = blog.priorRevisionSiteRooted(info.asInstanceOf[blog.Entry.Info]).map( site.location ) // compiler fails to track blog == MainBlog
-val mbSproutRssLoc = if info.sprout then Some( site.location( info.sproutFeedSiteRooted ) ) else None
+val mbSproutRssLoc = info.mbSproutInfo.map( si => site.location( si.sproutFeedSiteRooted ) )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
 
