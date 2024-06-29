@@ -8,7 +8,7 @@
 >   "PubDate"   -> "2024-06-20T20:15:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
->   "Anchor"    -> "state-capacity-and-authoritarianism"
+>   //"Anchor"    -> "state-capacity-and-authoritarianism"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

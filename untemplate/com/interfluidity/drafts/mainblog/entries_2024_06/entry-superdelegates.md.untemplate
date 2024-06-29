@@ -1,0 +1,129 @@
+> val updateHistory =
+>   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Superdelegates",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-06-29T16:30:00-04:00",
+>   //"UpdateHistory" -> updateHistory,
+>   //"Sprout"        -> true,
+>   //"Anchor"    -> "state-capacity-and-authoritarianism"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Perhaps Joe Biden is determined, for the best reasons or the worst, to be the Democratic Party's candidate
+for President,
+[despite](https://www.nytimes.com/2024/06/28/opinion/biden-election-debate-trump.html)
+[misgivings](https://www.nytimes.com/2024/06/29/opinion/biden-trump-debate-danger.html)
+[engendered](https://www.nytimes.com/2024/06/28/opinion/biden-democrats-debate.html)
+[by](https://www.nytimes.com/2024/06/28/opinion/joe-biden-tom-friedman.html)
+[his](https://www.nytimes.com/2024/06/28/opinion/presidential-debate-trump-biden-2024.html)
+[recent](https://www.nytimes.com/2024/06/25/opinion/joe-biden-drop-out.html)
+[debate](https://www.nytimes.com/live/2024/06/25/opinion/thepoint?smid=url-share#krugman-biden-must-withdraw)
+[performance](https://www.vox.com/politics/357876/biden-trump-debate-cnn-won-step-down-atlanta).
+If that is the case, Joe Biden will be the Democratic Party's candidate for President.
+He won the Democratic Party's primary election.
+
+Perhaps Joe Biden is not so determined. If that is the case, you may never, ever know it.
+
+As old and stumbling as Joe Biden may have appeared on that debate stage, the Biden _administration_ has comported
+itself with tremendous intelligence. Should it entertain a change of leadership, let's imagine
+that it will do so with the same intelligence. What would that look like?
+
+First, over the next few weeks, expect any possibility of a change of leadership to be mocked, rejected, ruled out entirely, in every public communication.
+This weekend's mini rebellion among pundits and Democratic Party has-beens
+will be crushed. Joe Biden may be too old, he may not be the candidate
+we'd want for this critical election, but he will be the only candidate we have.
+
+All of us who do not want a
+second Trump administration will fall back into line. He has, in fact, been the best domestic policy President
+since Lyndon Johnson. Compare him to the alternative, not the almighty, we will say. It is not
+the doddering old man we are electing, but the remarkable administration that has somehow conjured itself around
+him.
+
+It won't be an easy sell to the politically detached swing voters [who decide](https://www.interfluidity.com/v2/7687.html) US Presidential elections.
+A personal or symbolic connection to an imagined heroic leader may be more accessible than remarkable arcana like this
+adminstration's [FTC](https://www.ftc.gov/about-ftc/commissioners-staff/lina-m-khan),
+[NLRB](https://www.epi.org/publication/bidens-nlrb-restoring-rights/),
+[CFPB](https://pluralistic.net/2024/06/10/getting-things-done/#deliverism), or its [SAVE plan](https://studentaid.gov/announcements-events/save-plan).
+Nevertheless the excellence of those accomplishments will have the benefit of being true, and it will be all we have.
+
+Why, if Biden is considering withdrawing, will his administration completely rule out the possibility of his
+withdrawing? Because if there is continued, credible, will-he-won't-he chatter of withdrawing, that itself will
+weaken him and render his continued candidacy less tenable. And in order to successfully withdraw,
+he must withdraw from a position of strength rather than weakness within the Democratic Party firmament.
+Any succession must be a negotiated succession, and Joe Biden is his own [BATNA](https://corporatefinanceinstitute.com/resources/valuation/what-is-batna/).
+
+As the Biden Administration quietly discusses a potential replacement ticket, ambitious strivers will try
+to preen and threaten their way onto it. It must always be credible for the administration just to walk away
+and stick with Plan A. Disappointed shadow candidates will be tempted to appeal to the public, via their
+duly elected representatives on the opinion pages of _The New York Times_.
+The administration must make clear that in response to that sort of perfidy, it would shut the whole
+thing down, and double-down on Joe Biden's status as the default and inevitable Democratic
+nominee for President.
+
+The stupidest idea widely mooted is for an "open convention". Obviously, pundits love the idea.
+We can have a new fast-paced horserace to supplant this current one, which smells like mothballs and stale poop.
+But just because a game show is good television does not mean it is a good way to choose a nominee.
+
+An "open convention" would have no meaningful democratic legitimacy. No one actually voted for the delegates
+who will appear at the Democratic Party convention. Democrats voted for whomever was pledged to Joe Biden.
+Which particular humans show up on the convention floor gets determined by processes that are not meaningfully
+democratic. Those processes may seem "random", but they are not, they have all kinds of systematic biases towards
+certain kinds of enthusiasts and operatives that are not remotely representative of Democratic Party rank-and-file.
+Choice by convention delegates is not some defensible sort of [sortition](https://equalitybylot.com/introduction-to-sortition-government-by-jury/) by the back door.
+
+The only person with any democratic mandate to choose a successor to Joe Biden as Democratic Party nominee
+is Joe Biden himself, who won a Democratic Party primary open to the public at-large.
+
+Putting aside endlessly contestable arguments about democratic legitimacy, the whole point of switching
+horses is risk management. The only reason Joe Biden would and should step down is if he is sure
+his replacement would have a much stronger shot of winning in the general election. Throwing the dice on an
+unpredictable disorganized contest, one that might well become bitterly divisive and even inspire rioting
+or violence at a Chicago Democratic Party convention, would not meet that bar.
+
+By the time of the convention, the identity of the Democratic nominee will be a _fait accompli_.
+Not-really-elected delegates will not decide, and should not decide. There are two supedelegates.
+They will decide.
+
+The first superdelegate, of course, is Joe Biden himself. The second superdelegate is Kamala Harris.
+No change of ticket can occur without Harris' enthusiastic endorsement.
+
+One way that might happen is to put Harris herself at the head of the ticket. That 
+might be a reasonable option! But observers underestimate Harris by presuming that she herself &mdash; me! me! me! &mdash;
+is the only alternative that she would endorse. Harris ran in a Presidential primary, and withdrew
+quickly when she realized the electoral stars would not align for her.
+
+The Biden-<i>Harris</i> Administration
+will study the politics of potential tickets as best it can.
+There may be some degree of bias, some
+tendency to overestimate the strengths and underestimate the deficiencies of a Harris-led ticket.
+But _some_ degree of bias will be a limited degree of bias. If the Biden-Harris Administration comes
+internally to a conclusion that a different candidate would have a much stronger shot, Harris is not such an egotist
+that she will risk throwing the country to Donald Trump in exchange for a lottery ticket to become President.
+Of course, Harris
+will negotiate a cabinet position for herself, or a quiet promise of favorable consideration should a vacancy arise on the Supreme Court.
+But she will not stand implacably in the way of whomever the administration determines to be the strongest contender.
+
+The most likely outcome of all of this is just what it was before the miserable debate.
+Most likely, the general election will be a contest between Donald Trump and Joe Biden.
+Biden might be implacably opposed to any replacement. Or, he may be open to stepping down,
+but this delicate, Democratic-Party-internal dance to annoint a credible successor
+might break down. Some narcissist the administration decides against could take
+his case to the opinion pages. If there's too much of that, the administration will fall back to the inevitable
+and deny it ever seriously considered making a change.
+
+But if ambitious Democrats prove willing to abide a discreet selection process, it is quite possible
+that the only two people who can choose their own successor will do so.
+
+Paradoxically, the more inevitable a Biden-Harris ticket comes to seem over the next few weeks,
+the more possible the emergence of an alternative becomes. But in no case is it very likely.
+
+
+
+
+
