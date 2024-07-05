@@ -1,0 +1,81 @@
+> val updateHistory =
+>   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "If the issue was the lawfare",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-07-05T19:05:00-04:00",
+>   //"UpdateHistory" -> updateHistory,
+>   //"Sprout"        -> true,
+>   //"Anchor"    -> "state-capacity-and-authoritarianism"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+An apology for the [Enabling Act](https://encyclopedia.ushmm.org/content/en/article/the-enabling-act) that the Supreme Court
+has [judicially inserted into American law](##no-longer-a-liberal-democracy) goes like this:
+
+> By prosecuting a former President, Democrats opened a Pandora's Box under which every ex-President
+> would be prosecuted by their rivals upon retirement, crippling the office, and discouraging high-quality candidates
+> from seeking it. The Supreme Court had to prevent this.
+
+Let's say this was your honest concern, and you are John Roberts.
+
+You are not trying to render the Executive unaccountable. You want accountability,
+but some form of accountability that would not invite political show trials of the highest-profile
+figure of the opposing political party.
+
+That might be a reasonable thing to try to do!
+
+But if this was your motivation, the decision you would craft would look nothing like [_Trump v. United States_](https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf).
+
+Sure, you might grant a pretty broad immunity to the President, as this decision does.
+
+But you would not grant impenetrable deference to the President's pardon power. You would _encourage_, rather than foreclose, judicial
+inquiry into the motivation for pardons. Pardons for crimes ordered or encouraged or intended to serve the interest of the President would be
+invalid.
+
+The President would be immune. His _subordinates_, however, would not be. They would still have reason to refuse
+unlawful orders. At the very least, they would demand legal cover before following deeply questionable orders
+(like [Obama got](https://www.aclu.org/sites/default/files/assets/2014-06-23_barron-memorandum.pdf) before icing a US citizen in a drone strike).
+
+This is the accountabilty equilibrium we created after the Nixon Administration. Yes, Ford pardoned Nixon. Nixon got to live
+the rest if his days as an _eminence grise_ and a free man.
+
+But many of his subordinates were imprisoned &mdash;
+[H. R. Haldeman](https://en.wikipedia.org/wiki/H._R._Haldeman),
+[John Ehrlichman](https://en.wikipedia.org/wiki/John_Ehrlichman),
+[Charles Colson](https://en.wikipedia.org/wiki/Charles_Colson),
+[John Mitchell](https://en.wikipedia.org/wiki/John_N._Mitchell),
+[G. Gordon Liddy](https://en.wikipedia.org/wiki/G._Gordon_Liddy),
+[James W. McCord Jr.](https://en.wikipedia.org/wiki/James_W._McCord_Jr.), [John Dean](https://en.wikipedia.org/wiki/John_Dean),
+[Dwight Chapin](https://en.wikipedia.org/wiki/Dwight_Chapin), [Herbert Kalmbach](https://en.wikipedia.org/wiki/Herbert_W._Kalmbach).
+
+Had [_Trump v. United States_](https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf) been the law in 1972, all of these men could have been
+peremptorily pardoned. No judicial inquiry could have been made into the motivations for those pardons. No criminal liability could attach
+to the President for making them. No subpeonas could penetrate a hermetic wall of silence, since any contempt charges could be
+pardoned as well.
+
+[_Trump v. United States_](https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf) doesn't just grant the President immunity.
+It takes the heavily litigated notion of "executive privilege", renders it unjudiciable, extends it as far and wide as the President wishes
+to extend it, with no remedy, no consideration of other interests, no hope ever of piercing it.
+
+In its own words, [_Trump v. United States_](https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf) is about encouraging "bold",
+"unhesitating", "energetic", "vigorous" action by the President. John Roberts could have sought to balance the public's interest in an
+effective Executive with the public's interest that the President "take Care that the Laws be faithfully executed". He could have whispered into the Constitution
+the post-Richard-Nixon balance. He chose not to.
+
+John Roberts and his henchmen are very familiar with this history. What they chose to whisper into the Constitution was
+a _remedy_ for the accountability that the Nixon administration faced. They chose quite deliberately
+not merely to immunize the President, but to create an unaccountable Executive, whose breadth is as wide and encompassing as the President chooses
+by exercise of the power to pardon.
+
+
+
+
+
+
+
