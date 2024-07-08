@@ -1,12 +1,12 @@
 > val updateHistory =
->   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
+>   UpdateRecord("2024-07-07T20:10:00-04:00", Some("""Long update re erroneous categorization of "commanding the Armed Forces", some corrections and elaborations in the main post."""), Some("a1271e955d452aa1ba2f8019170be7026a54f07d")) ::
 >   Nil
 >
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "No longer a liberal democracy",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-07-03T21:30:00-04:00",
->   //"UpdateHistory" -> updateHistory,
+>   "UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
 >   "Anchor"    -> "no-longer-a-liberal-democracy"
 > )
@@ -26,10 +26,12 @@ so conveniently and readily accessible, that all notional limits to government p
 a determined President, with almost no risk of being held accountable.
 
 In a nutshell, the decision claims that the President has "conclusive and preclusive constitutional authority" over
-"commanding the Armed Forces of the United States" and "pardons for offenses against the United States".
+<s>"commanding the Armed Forces of the United States" and</s> "pardons for offenses against the United States".
 
 > [T]he nature of Presidential power entitles a former President to absolute immunity from criminal prosecution for actions
 > within his conclusive and preclusive constitutional authority.
+
+_(See [update below](#no-longer-a-liberal-democracy-update-2024-07-07).)_
 
 A President, the decision pretends, remains accountable for "unofficial acts". For "official acts" beyond his
 "conclusive and preclusive constitutional authority", the President enjoys "at least a presumptive
@@ -61,10 +63,16 @@ Their answer, of course, was no. If Trump had ordered them to do so, it would ha
 If he insisted, he would have risked imprisonment. If they had acted, so would they.
 
 Today, if a President orders the armed forces to shoot at protesters, it would still be an unlawful order.
-But Trump would enjoy absolute, unreviewable, immunity for giving it.
+<s>But Trump would enjoy absolute, unreviewable, immunity for giving it.</s>
+But Trump would enjoy "at least presumptive immunity", and perhaps absolute immunity, for giving it.
+If the order was
+made informally, in the context of discussions with the subordinates with whom he collaborates in official acts,
+the decision renders it extraordiarily unlikely any judicial process could intervene to discover it.
 
 It would still be unlawful for his subordinates to act upon the
-order. But Trump could promise to pardon subordinates who act. He could fire subordinates who refuse.
+order. But the President could promise to pardon subordinates who act. He could fire subordinates who refuse.
+The decision places both the pardon power and the President's "unrestricted power to remove the most important of his subordinates"
+beneath a shield of absolute immunity.
 
 Obviously, this would be, should be, illegitimate. A President is required by the Constitution to "take Care that the Laws be faithfully executed"
 as much as he is empowered as Commander-in-Chief. But on Monday, the Supreme Court plainly and explicitly placed the latter before the former.
@@ -155,6 +163,91 @@ eliminate &mdash; _Marbury v. Madison_.
 
 But that is all for the future. The Supreme Court set the world aflame on Monday. If you haven't noticed the heat,
 if you don't notice the blisters already forming on your skin very soon, then we are all going to burn.
+
+---
+
+<div style="font-size: 80%; line-height: 110%;">
+
+**Update 2024-07-07:** <span id="no-longer-a-liberal-democracy-update-2024-07-07"></a> Today I sat for a careful read of the
+[full packet of syllabus and decision and concurrences and dissents](https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf) 
+issued by the Supreme Court for _Trump v. United States_.
+
+In my origial piece, I erred when I claimed the majority named "commanding the Armed Forces of the United States"
+a "conclusive and preclusive" power of the President.
+
+The majority cites "commanding the Armed Forces" in the following context:
+
+> Article II of the Constitution provides that “[t]he executive Power shall be vested in a President of the United
+> States of America.” §1, cl. 1. The President’s duties are of
+> “unrivaled gravity and breadth.” Trump v. Vance, 591 U. S.
+> 786, 800 (2020). They include, for instance, commanding
+> the Armed Forces of the United States; granting reprieves
+> and pardons for offenses against the United States; and appointing public ministers and consuls, the Justices of this
+> Court, and Officers of the United States.
+
+But the decision later says of Presidential authority derived from explicit enumeration in the Constitution that it is only "_sometimes_ 'conclusive and preclusive'". (My emphasis.)
+
+The decision does explicitly place the pardon power among as among the President's conclusive and preclusive authorities.
+But I was wrong to assert that it places "commanding the Armed Forces" under its new, automatic and unreviewable, absolute immunity category.
+It might! It might not!
+
+"Commanding the armed forces" is definitely an official act, and as such the decision grants an immunity that is "at least presumptive" and perhaps absolute:
+
+> At least with respect to the President’s exercise of
+> his core constitutional powers, this immunity must be absolute. As for his remaining official actions, he is also entitled to immunity.
+> At the current stage of proceedings in this case, however, we need not and do not decide whether
+> that immunity must be absolute, or instead whether a presumptive immunity is sufficient.
+
+The Court has not decided yet whether commanding the armed forces is a "core constitutional power", or whether _all_ of a President's official
+actions enjoy immunity absolute immunity.
+
+Suppose we are lucky, and commanding the armed forces is subject only to "at least presumptive immunity".
+
+As Justice Jackson emphasizes,
+
+> The majority... provides no guidance as to when,
+> how, or why the President’s “presumptive” immunity for
+> noncore official acts might be rebutted, saying only that applying the criminal law to a President’s acts must pose “no
+> ‘dangers of intrusion on the authority and functions of the
+> Executive Branch.’”
+
+Justice Jackson views the majority as basically placing any criminal accountability for a President's official acts
+at the discretion of the Supreme Court. She also emphasizes that the complex gating procedure the decision enshirines
+renders any criminal accountability of a President much more unlikely and uncertain than it had been previously,
+diminishing the deterrent to bad acts criminal accountability is supposed to provide.
+
+Justice Sotomayor is even more pessimistic about any prospect of Presidential
+accountability at all under the decision.
+
+> Whether described as presumptive or absolute,
+> under the majority’s rule, a President’s use of any official
+> power for any purpose, even the most corrupt, is immune
+> from prosecution. That is just as bad as it sounds, and it is
+> baseless...
+>
+> The majority purports to keep us in suspense as to whether this
+> immunity is absolute or presumptive, but it quickly gives
+> up the game. It explains that, “[a]t a minimum, the President must . . . be immune from prosecution for an official
+> act unless the Government can show that applying a criminal prohibition to that act would pose _no ‘dangers of intrusion_ on the authority and functions of the Executive
+> Branch.’” _Ibid._ (emphasis added). No dangers, none at all.
+> It is hard to imagine a criminal prosecution for a President’s
+> official acts that would pose no dangers of intrusion on Presidential authority in the majority’s eyes.
+
+I am glad that "commanding the Armed Forces of the United States" has not yet been adjudicated to be &mdash; or not to be &mdash; a "core constitutional authority" already
+protected by absolutely immunity. It's current status is _at least presumptively immune but perhaps absolutely immune_, with how one would, or whether one could,
+pierce and rebut presumptive immunity not defined.
+
+I can't say I'll be sleeping much easier.
+
+Let's let Justice Thomas have the last word:
+
+> In this case, there has been much discussion about ensuring that a President “is not above the law.” But, as the
+> Court explains, the President’s immunity from prosecution
+> for his official acts _is_ the law.
+
+Good night.
+
+</div>
 
 [^1]: My elipses elide "to protect our country", by which Miller meant [banning](https://www.whitehouse.gov/presidential-actions/executive-order-protecting-nation-foreign-terrorist-entry-united-states/)
 people from several predominantly Muslim countries from entering the United States. If you think Miller meant to limit substantialness and unquestionability to some
