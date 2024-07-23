@@ -1,0 +1,81 @@
+> val updateHistory =
+>   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "UBI and labor supply",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-07-22T21:10:00-04:00",
+>   //"UpdateHistory" -> updateHistory,
+>   //"Sprout"        -> true,
+>   //"Anchor"        -> "state-capacity-and-authoritarianism"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+What do UBI proponents expect would be the effect of a UBI on labor supply?
+
+Let me show you a few slides from 
+[my 2015 presentation](https://www.interfluidity.com/uploads/2015/09/ethereumsv-ubi-talk-light-reedit.pdf)
+on the subject.
+
+---
+
+<a href="##./ethereumsv-ubi-talk-light-reedit-17.png" class="bracketless"><img width="100%" src="##./ethereumsv-ubi-talk-light-reedit-17.png"></a>
+
+---
+
+<a href="##./ethereumsv-ubi-talk-light-reedit-18.png" class="bracketless"><img width="100%" src="##./ethereumsv-ubi-talk-light-reedit-18.png"></a>
+
+---
+
+<a href="##./ethereumsv-ubi-talk-light-reedit-19.png" class="bracketless"><img width="100%" src="##./ethereumsv-ubi-talk-light-reedit-19.png"></a>
+
+---
+
+<a href="##./ethereumsv-ubi-talk-light-reedit-20.png" class="bracketless"><img width="100%" src="##./ethereumsv-ubi-talk-light-reedit-20.png"></a>
+
+---
+
+<a href="##./ethereumsv-ubi-talk-light-reedit-21.png" class="bracketless"><img width="100%" src="##./ethereumsv-ubi-talk-light-reedit-21.png"></a>
+
+---
+
+Suppose, [completely hypothetically](https://www.openresearchlab.org/findings), you ran a small RCT on UBI.
+(ht [Morgan Warstler](https://x.com/morganwarstler/status/1815479501427712049))
+
+Then there would be
+no meaningful
+
+> increase in labor demand (as a policy choice, or potentially as a direct effect of the UBI if demand is unmanaged) [to]
+restore[] the original quantity of work provided, but at significantly higher wages.
+
+(Fourth slide above.)
+
+So what you would expect is to be stuck at the second diagram reproduced above.
+You would see a some reduction of the quantity of labor supplied, rather than the
+desired effect of an unchanged quantity of labor supplied, but at somewhat higher wages
+(the third diagram).
+
+To the degree that a basic income [increases](https://www.openresearchlab.org/findings/entrepreneurship)
+[entrepreneurial intentions](https://www.interfluidity.com/v2/5066.html), that might, by a completely separate mechanism,
+also appear
+as an immediate-term reduction in employment and income, while recipients reduce labor force
+participation to devote time to enterprises not yet paying off.
+
+Hypothetically speaking, a two percentage point difference in employment and
+1.3 hour per week average reduction in work hours &mdash; with both effects often indistinguishable within a 90%
+confidence interval, probably
+always indistinguishable within a more conventional 95% confidence interval, &mdash; might strike one as a surprisingly
+small effect for a $1000 per month basic income pilot.
+
+Which might be a shame! It would suggest only a modest wage increase under a genuinely universal basic income,
+assuming full-employment macro policy.
+
+But, at least directionally, it would suggest increased wages for a constant quantity of labor supplied.
+
+And recipients would enjoy the _per se_ benefits of an extra $1000 a month, taken in some mix of cash and time for
+education, leisure, or entrepreneurship.
+
