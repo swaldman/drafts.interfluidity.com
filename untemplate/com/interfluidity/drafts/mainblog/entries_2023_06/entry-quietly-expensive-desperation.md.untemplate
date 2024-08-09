@@ -2,7 +2,7 @@
 >   "Title"     -> "Quietly expensive desperation",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-06-04T10:00:00+03:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "quietly-expensive-desperation"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
