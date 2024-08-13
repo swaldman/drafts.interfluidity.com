@@ -2,7 +2,7 @@
 >   "Title"     -> "Banks should fail much more often",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-03-26T19:20:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "banks-should-fail-much-more-often"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

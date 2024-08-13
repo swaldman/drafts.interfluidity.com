@@ -2,7 +2,7 @@
 >   "Title"     -> "Thick antitrust",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-02-24T12:25:00-05:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "thick-antitrust"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
@@ -57,7 +57,7 @@ of sustainable "alpha". When we encourage scale,
 we may gain efficiencies, but we accept tacit liabilities, including the cost of vigilant supervision
 and the much greater cost of forseeable failures of that supervision. It's a balance.
 
-For many activities, it's better simply to render firm-level scale uneconomical. Of course we want the "network effects"
+For many activities, it's better simply to render firm-level scale uneconomical. Of course we want "network effects"
 on the internet. Network effects are why we built the internet in the first place, duh. But we want the value that comes from interconnection
 to accrue to participants of the network broadly, rather than being captured within a few very fortunate firms. Precisely because network
 effects are so strong on the internet, we should seek regulation that favors enterprise at smaller scales. The value of the network
@@ -100,7 +100,7 @@ There's been wide-ranging debate on the concept of "information fiduciaries", in
 Jonathan Zittrain](https://www.theatlantic.com/technology/archive/2016/10/information-fiduciary/502346/). Balkin and Zittrain
 argue that we can make our peace with the megaplatforms that have become both indispensible and intolerable by 
 imposing upon them a framework of legal obligations under which they'd be required they put users' interests
-before their own in their handling of the data we entrust to
+before their own in handling the data we entrust to
 them.
 
 Critics, [including](https://harvardlawreview.org/2019/12/a-skeptical-view-of-information-fiduciaries/)
