@@ -16,7 +16,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
 Price regulation is [in the ether](https://apnews.com/article/kamala-harris-price-gouging-ban-inflation-65dc8844bb41159d76886f752b6cab28).
-I find the "debate", such as it is, stupid. It seems obvious to me that some forms of price regulation, under some circumstances,
+I find the "debate", such as it is, stupid. Some forms of price regulation, under some circumstances,
 can be
 [helpful](https://www.interfluidity.com/v2/9416.html) or even
 [necessary](https://jwmason.org/slackwire/in-praise-of-profiteering/).
