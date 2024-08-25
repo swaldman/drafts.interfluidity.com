@@ -15,7 +15,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-Both Donald Trump and Kamala Harris have promised "No Tax On Tips". Tax experts [generally argue it's a bad idea](https://www.npr.org/transcripts/1197968182). Whatever rules you invent to cabin what counts as a nontaxable tip, people will work pretty cleverly to reclassify their own income as that in order to avoid having to pay taxes.
+Both Donald Trump and Kamala Harris have promised "No Tax On Tips". Tax experts [generally argue it's a bad idea](https://www.npr.org/transcripts/1197968182). Whatever rules you invent to cabin what counts as a nontaxable tip, people will work pretty cleverly to reclassify their own income as that to avoid paying taxes.
 
 "No Tax On Tips" is intended to help lower-income service workers &mdash; waiters and bartenders, perhaps manicurists and hairstylists &mdash; not, say, hedge fund managers who are, arguably, also in a "service" occupation. Yet, in the discussions I've encountered, the presumption is the "tax" referred to is the income tax.
 
