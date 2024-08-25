@@ -1,0 +1,49 @@
+> val updateHistory =
+>   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "No which tax on tips? Let it be FICA.",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-08-25T19:50:00-04:00",
+>   //"UpdateHistory" -> updateHistory,
+>   //"Sprout"        -> true,
+>   //"Anchor"        -> ???
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Both Donald Trump and Kamala Harris have promised "No Tax On Tips". Tax experts [generally argue it's a bad idea](https://www.npr.org/transcripts/1197968182). Whatever rules you invent to cabin what counts as a nontaxable tip, people will work pretty cleverly to reclassify their own income as that in order to avoid having to pay taxes.
+
+"No Tax On Tips" is intended to help lower-income service workers &mdash; waiters and bartenders, perhaps manicurists and hairstylists &mdash; not, say, hedge fund managers who are, arguably, also in a "service" occupation. Yet, in nearly all discussions I've encountered, the presumption is the "tax" referred to is the income tax.
+
+But that's idiotic! Low-end tipped workers pay far more tax on their tips as [FICA taxes](https://www.irs.gov/taxtopics/tc751) — the employee portion of Social Security and Medicare taxes — than they do as income taxes. So if the intention is to help low-end service workers, we should interpret the pledge as referring to Federal payroll taxes, and *not* to the income tax. This would not be welching on the promise candidates have made. It would fulfill the promise more completely, by offering more relief to the groups targeted than income tax relief would.
+
+A "no FICA tax on tips" pledge does not entirely prevent gaming of the tax system to avoid the tax. But, when combined with occupational limitations and penalties for fraudulent claims, it will prevent nearly all gaming of the proposal by higher income people. At higher incomes, the vast majority of ones  Federal tax burden is the income tax. The higher ones income, the lower the relative burden of Federal payroll taxes. High income people won't risk criminal liability for fraud to evade a small fraction of the taxes they face.
+
+If the employee-side FICA tax on tips were simply eliminated, that would harm the solvency of the Social Security and Medicare trust funds, and reduce the benefits tipped workers could expect to receive. Fortunately, we've already addressed this problem on the employer-side, so we know what to do.
+
+There is already a FICA [Tip](https://www.crfb.org/blogs/tax-break-down-fica-tip-credit) [Credit](https://home.treasury.gov/system/files/131/FICA-Tip-Credit.pdf) that food-service employers can claim against the FICA taxes they pay on tips. (The credit was enacted as a means of increasing employers' motivation to ensure that tip income is reported.) The FICA Tip Credit is an income tax credit, granted after contributions have already been mad to the trust fund. So it does not affect trust fund contributions.
+
+Suppose we do the following:
+
+1. Leave tips notionally taxable as they are.
+
+2. Enact a refundable, employee-side FICA Tip Credit for the full amount of Federal payroll taxes due on applicable tips.
+
+3. As we did with the expanded Child Tax Credit, have the IRS remit payments of the tax credit monthly. Funds would be disbursed directly to the Social Security and Medicare trust funds, on each employee's behalf.
+
+4. Do not withhold FICA taxes from tips.
+
+Pay stubs would show total Social Security and Medicare taxes due, then the credit for FICA taxes on tips, reducing the total withheld.
+ 
+Tipped employers would get paid the full value of their tips, without any Federal payroll tax deducted.
+If their incomes are high enough to be subject to income tax withholding, they would still suffer that. But that's small potatoes for lower income workers.
+
+Overall, lower income workers would enjoy much bigger paychecks than they would have under a "no income tax on tips" interpretation.
+
+Workers would experience no penalty in terms of future Social Security and Medicare benefits from the program.
+
+And it just wouldn't be worth it for high-income workers to try to fashion themselves cosmetolologists for a small tax benefit and large risk of jail time.
