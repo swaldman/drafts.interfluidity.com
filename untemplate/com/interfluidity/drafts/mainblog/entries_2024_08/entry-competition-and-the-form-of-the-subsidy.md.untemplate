@@ -8,7 +8,7 @@
 >   "PubDate"   -> "2024-08-24T19:30:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
->   //"Anchor"        -> ???
+>   "Anchor"          -> "form-of-the-subsidy"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

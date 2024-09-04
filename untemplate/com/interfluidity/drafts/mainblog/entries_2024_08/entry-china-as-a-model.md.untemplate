@@ -8,7 +8,7 @@
 >   "PubDate"   -> "2024-08-13T12:35:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
->   //"Anchor"        -> ???
+>   "Anchor"          -> "china-as-a-model"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
