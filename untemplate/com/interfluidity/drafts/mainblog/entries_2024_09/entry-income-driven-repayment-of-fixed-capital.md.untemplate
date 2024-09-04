@@ -5,7 +5,7 @@
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Income driven repayment of fixed capital",
 >   "Author"    -> "Steve Randy Waldman",
->   "PubDate"   -> "2024-09-04T12:35:00-04:00",
+>   "PubDate"   -> "2024-09-04T12:50:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
 >   "Anchor"          -> "income-driven-repayment-of-fixed-capital"
@@ -19,7 +19,7 @@ High-fixed-cost industries are [difficult to reconcile](##form-of-the-subsidy) w
 
 In introductory economics textbooks, pricing power is imagined to result from firms exiting the market until industrywide capacity constraints bring marginal cost above average variable costs. For industries whose fixed costs derive from durable capital, this story [doesn't actually work](https://jwmason.org/slackwire/in-praise-of-profiteering/), because built capital survives firm exit and remains exploitable by new (or bankruptcy-reorganized) firms.
 
-Industry pricing power derived from limited capacity is also undesirable. It leaves society without the option to expand production quickly when circumstances or preferences shift, like after a pandemic.
+Industry pricing power derived from limited capacity is also just undesirable. It leaves society without the option to expand production quickly when circumstances or preferences shift, like after a pandemic.
 
 In an uncertain world, option value is real value. We want our industries in a state of "overcapacity", capable of  inexpensively expanding production, rather than resort to price-rationing of constrained supply, should demand sharply increase.
 
