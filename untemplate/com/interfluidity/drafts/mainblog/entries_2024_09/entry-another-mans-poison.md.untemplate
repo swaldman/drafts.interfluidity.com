@@ -15,7 +15,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-I don't think a sovereign or social wealth fund is a thing one can intelligently be "for" or "against". It's like being asked to take a position on chlorine. I'm against chlorine if the proposal is I should breathe it. I'm very much for chlorine as part of a water purification process. You really do need to be more specific. 
+I don't think a sovereign wealth fund is a thing one can intelligently be "for" or "against", generically. It's like being asked to take a position on chlorine. I'm against chlorine if the proposal is I should breathe it. I'm for chlorine as part of a water purification process. You really do need to be more specific.
 
 There are versions of social wealth funds that I'd oppose, others about which I'd be enthusiastic. I did a [talk on the subject several years ago](https://t.co/GIs4TKGnV8), if you have an hour to kill.
 
