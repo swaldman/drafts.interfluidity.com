@@ -1,12 +1,12 @@
 > val updateHistory =
->   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
+>   UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
 >   Nil
 >
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Another man's poison",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-09-12T02:30:00-04:00",
->   //"UpdateHistory" -> updateHistory,
+>   "UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
 >   //"Anchor"          -> ???
 > )
@@ -47,3 +47,15 @@ If you think it is a good thing to let the "miracle of compound growth" cumulate
 If, however, you think letting compound growth continually expand the advantage of the already wealthy is not great, if you dislike living in a society whose economic, political, and cultural life is increasingly [vandalized and held for ransom by mad billionaires](https://zirk.us/@interfluidity/113117432692163672), then perhaps it would desirable to divert equity returns away from "the citizenry" and towards purposes whose benefits will be much more widely shared.
 
 The state, of course, is corrupt as fuck. But in its worst corruption, nothing that the state does at scale results in benefits as lopsidedly plutocratic as the dollar distribution of investment returns when they compound in private hands.
+
+---
+
+<div style="font-size: smaller;">
+
+**Update 2024-09-13:** For the record, I would not support a social wealth fund that was financed by the state issuing debt or money to buy up stock in ordinary times, despite the (fragile unless state-supported) claim that "the expected rate of return of the US stock market is [higher](https://archive.is/o/1kax3/https://en.wikipedia.org/wiki/Equity_premium_puzzle) than the US government’s borrowing rate". That would create windfall profits for the bloated and parasitic finance sector, and it would give back some of its distributional benefits by bidding up the price of equities which, for the forseeable future, would remain primarily in the hands of the privately rich.
+
+I would support an equity-holding social wealth fund financed from progressive new taxation. Taxes that kick in only at high income brackets divert flows that would otherwise have been devoted almost entirely to purchasing portfolio assets. A social wealth fund financed with such flows thus represents a rotation of demand for these assets from the private to the public sector, rather than a new bid that would accelerate increases in the price or rate of issuance of financial assets.
+
+Under rare circumstances, I might support debt-finance purchase of securities into an SWF, at collapsed prices and excellent forward-looking valuations, as a component of macrostability interventions. There are always devils in details, but here there are also devils in suits, Wall-Streeters who'd love to use the Federal government as a gigantic source of dumb money, to earn commisions from, and to offload crap to. Overall I treat suggestions to use new debt issuance rather than taxation of private-sector financial asset purchasers very cautiously.
+
+</div>
