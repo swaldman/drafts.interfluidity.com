@@ -1,0 +1,77 @@
+> val updateHistory =
+>   //UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Abundance is overcapacity",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-09-17T16:55:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Sprout"        -> true,
+>   //"Anchor"          -> ???
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Ezra Klein [called it](https://www.nytimes.com/2021/09/19/opinion/supply-side-progressivism.html#) "supply-side progressivism". Derek Thompson [called for](https://www.theatlantic.com/ideas/archive/2022/01/scarcity-crisis-college-housing-health-care/621221/) an "abundance agenda".
+
+If you hold liberal, progressive values and you want a better world, your project will be much easier when the economy is objectively delivering for people and opening up possibilities, rather than when politics seems like a zero-sum game and we are fighting to divide an inadequate pie.
+
+I agree, and applaud the impulse. Abundance is good *per se*, and it is also good for us in moral terms. Fascism [subsists off of scarcity](##fascism-as-triage). The [atrocities](https://www.nytimes.com/2023/11/11/us/politics/trump-2025-immigration-agenda.html) it demands are justifiable to human beings of ordinary virtue only as a matter of grim necessity, because it is us or them.
+
+Klein and Thompson offer a variety of ideas about why abundance seems to elude us. There's a lot of emphasis on ways public policy hinder abundance. Permitting barriers thwart new housing and infrastructure. We sabotage industrial policy with "[everything bagel](https://www.nytimes.com/2023/04/02/opinion/democrats-liberalism.html)" demands, asking firms we subsidize to offer union jobs and child care and other goods that, however laudable, create costs that undermine the core goal of building capable, competitive industries.
+
+Promoting an "abundance faction", [Robert Saldin and Steven Teles](https://www.niskanencenter.org/the-rise-of-the-abundance-faction/) write
+
+> The state that America built in the 1960s and 1970s was, at its heart, regulative. From civil rights to environmental protection, its animating obsessions were things that it wanted to _prevent_ from happening, such as racial and gender discrimination, nuclear disasters, highways through central cities, industrial accidents, dangerous toys, and environmental pollution. While much of this regulation was geared to private action, a great deal of it came to apply to the public sector as well. From the creation of compliance divisions inside of firms to the expansion of standing to sue to rules on public participation in government decision-making, the state that we created a half-century ago had the effect of displacing or slowing down the parts of organizations — public and private — focused on the delivery of goods and services. The aggregate effect of that state has been a widely diffused expectation that more or less everything that operates in physical space will take an extraordinary and unpredictable amount of time and be disappointing and uninspiring in its results.
+
+All of these authors make excellent points, some of which withstand criticism, some of which I think do not.
+
+But it is a bit dispiriting, 40+ years after the election of Ronald Reagan, that so often the explanation for Amerisclerosis boils down to "deregulation has never really been tried."
+
+Really? If the Reagan revolution and its enthusiastic embrace by Democrats and Republicans under Clinton, Obama, and both Bush administrations were not sufficient to make deregulation great, is it plausible that a deregulatory bipartisan "abundance faction" is the "new" way forward?
+
+Perhaps these ideas that first came into vogue in the late 1970s do not capture the whole story. Perhaps it is not, or not just, the public sector that thwarts the great abundance machine of American capitalism. Perhaps the machine is flawed. It thwarts itself. Perhaps its very design incorporates elements that promote scarcity rather than abundance.
+
+If so, if we understand how, we can tinker with that design, and fix the problem. We needn't overthrow capitalism, or socialize the means of production. There are many possible capitalisms. We could choose a better version.
+
+Under capitalism, a firm can achieve pricing power — the ability to raise prices without losing customers — in a variety of different ways. It can produce at higher quality than its rivals, for example.
+
+But how do *whole industries* achieve pricing power? If an excellent firm can command higher prices by virtue of quality, what defines the baseline price the firm gets to exceed?
+
+In competitive industries with only variable costs, the cost of inputs provides a floor.
+But in industries that require expensive fixed capital, especially highly competitive industries, firms must tacitly coordinate.
+
+They coordinate not to control prices, nor to restrict output that their factories could produce, but simply not to build so many factories. If there are too many factories — "overcapacity" in the lingo — competition will bring prices below what producers require to recover the cost of building the factories. This phenomenon of firms tacitly coordinating to limit total industry capacity has a name, "[capital discipline](https://www.woodmac.com/blogs/energy-pulse/capital-discipline-raises-questions-about-us-oilfield-services/)".
+
+Is "capital discipline" illegal? I don't know. I suspect it'd be hard to punish. It's one thing to prosecute a monopolist for refusing to produce at capacity, preferring to raise prices. It's quite another to prosecute a firm in a competitive industry for choosing not to invest, for not building a new factory, because the firm fears that if it does add capacity, prices might drop below what would allow it to recoup its costs. Prosecuting that seems like a stretch, even if the firm's existing factories are running flat-out and its goods are selling profitably.
+
+Further, under our current capitalism, whether it is legal or not, capital discipline is *necessary*. Except in extraordinary circumstances, we expect firms to thrive or die on their own revenues, with no state subsidy. Yet firms are also supposed to compete vigorously and let price approach marginal cost. In high fixed-cost industries, the only way to reconcile these two admonitions is to ensure that capacity is constrained at an industry level. If we had an antitrust so stringent that it prosecuted capital discipline, every firm in every high-fixed-cost industry would go bust.
+
+You often hear business commentators opine that an industry "needs to consolidate", for "efficiency". If you ask, those commentators will usually say it's because there are [technical economies of scale](https://www.interfluidity.com/v2/8882.html) that smaller firms cannot fully exploit.
+
+But technical economies of scale exhaust themselves long before the degree of consolidation that is common and considered "efficient" in the contemporary United States. What people really mean by "efficient consolidation" is an industry sufficiently consolidated that its firms, competing vigorously, can survive full business cycles without going bust for failing to cover their high fixed costs. Efficiency, in this sense, is managed scarcity.
+
+You can see, then, that there might be some tendency between *this version* of capitalism and an abundance agenda. So long as the economy we imagine is one in which unaided, purely private firms are expected both to vigorously compete and to survive, then high-capital industries must engineer scarce capacity.
+
+Yes, yes, those bastards. Perhaps they overengineer scarce capacity. They do have shareholders to please, executives to enrich. 
+
+But even if they did not, even if firms' goal was to just barely recoup their fixed costs, they would have to engineer scarce capacity. Then we wonder why this great machine of American capitalism fails to yield "abundance".
+
+What do we even mean by "abundance"?
+
+We don't mean "glut". Glut is when firms produce more goods than customers will buy, and see them collect as inventory. That's not what we're after. Sure, for some critical goods, we might want to some kind of buffer stock. But then we'd pay to buy and store the goods, like the Strategic Petroleum Reserve.
+
+I'd posit that when we ask for abundance, what we want is *inexpensive price elastic supply*. We don't want more goods produced than are demanded for purchase. But we do want new demand to be accommodated with an expansion of quantity, rather than rationed with an increase in price. We don't want excess goods. We want spare, slack, production capacity.
+
+In other words, we want the resting state of American industry *not* to be just enough capacity, efficiently used. We want excess capacity, inefficiently unused. The cost of this "inefficiency" is overcome by a benefit both private and social — the ability of firms to ramp up production at stable prices should conditions change.
+
+The core of an abundance agenda, I posit, would be to reshape American capitalism so that *overcapacity*, rather than capacity nearly fully employed, becomes the norm. At desirable overcapacity, the marginal cost of a new unit would sit approximately at the minimum of firms' marginal cost schedule, well below the level where costs meaningfully rise.
+
+Firms can't do this on their own. Under capitalism, the means of production are in private hands, but production is always a public-private partnership. That firms use public roads and rely upon public regulation does not render our economy socialist.
+
+An abundance economy should rely upon private firms competing aggressively, pursuing for pricing power through quality and innovation, rather than by engineering scarcity. But if we want industries to eschew capital discipline, if we want firms to deploy capacity at levels that would undo the pricing power scarce capacity yields, the public sector will have to subsidize capital deployment.
+
+The public sector should [do just that](##income-driven-repayment-of-fixed-capital).

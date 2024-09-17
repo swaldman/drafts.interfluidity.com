@@ -2,7 +2,7 @@
 >   "Title"     -> "Fascism as triage",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-08-14T22:15:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "fascism-as-triage"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
