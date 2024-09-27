@@ -1,0 +1,54 @@
+> val updateHistory =
+>   //UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Industrial policy without national champions",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-09-27T12:55:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Sprout"        -> true,
+>   "Anchor"          -> "abundance-is-overcapacity"
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Last Weekend [Adam Ozimek](https://x.com/modeledbehavior) and the [Economic Innovation Group](https://eig.org/) hosted an "Econtwitter IRL" meetup at [Decades](https://www.decadeslancaster.com/) in Lancaster, PA, a wonderful veue Ozimek cofounded. I'm isolated these days. I am very grateful to Ozimek for bringing together an online community I really value but that usually feels distant.
+
+During that event, [Cardiff Garcia](https://x.com/cardiffgarcia) did a fascinating interview with [Paul Krugman](https://www.nytimes.com/column/paul-krugman), at the end of which [Joe Wiesenthal](https://x.com/TheStalwart) asked a critical question: The United States, under Joe Biden, is  embarking on an aggressive program of industrial policy even as it pursues increasingly vigorous antitrust enforcement. Aren't there tensions between these goals? Responding to an antitrust investigation of NVIDIA, Dylan Matthews [asked](https://x.com/ddayen/status/1831426752616525856), "Here you have a tremendously successful national champion in a strategically critical industry. Is that exactly what you want[?]"
+
+It's a good question!
+
+South Korea, an industrial policy success story, famously elevated a small number of "chaebols", who dominate that economy [to this day](https://www.nytimes.com/2023/12/18/business/chaebol-south-korea.html). Japan's successful [MITI](https://en.wikipedia.org/wiki/Ministry_of_International_Trade_and_Industry) gave the world automobile champions like Toyota and industrial conglomerates like Yamaha. Smaller countries may have no other choice than to endow national champions, oversized whales in their domestic economies, in order to achieve [technical economies of scale](https://www.interfluidity.com/v2/8882.html) necessary to compete in world markets.
+
+But industrial policy often fails, and usually when it fails, it does so for very simple reasons of political economy. All industrial policy requires that the state subsidize firms, one way or another. But successful industrial policy demands that states also force firms to compete, so the subsidy becomes invested in efficient production, rather than simply captured by shareholders. Here's [Vivek Chibber](https://www.bloomberg.com/news/articles/2024-09-26/vivek-chibber-on-what-it-takes-to-make-industrial-policy-succeed):
+
+> In country after country after country, you found [firms] hanging on to the subsidies and the general import-substitution long after everyone realized, ‘Look, we've reached about as far as we can go with the subsidy side, now we need to push these guys into competition.’ Long after they understood that, they stuck with a self-defeating policy.
+> 
+> The question is, why? And the answer is political. Basically, it's this: what all the economists assumed was a government and a state that's essentially free...and powerful enough...to tell firms to do whatever it wants them to do, and they're going to step into line. But the fact is, in any modern industrial capitalist economy, these firms who you're trying to push into exports are also the people with the most political power, the most political influence. They have the lobbyists, they have all the money, they fund elections, and they run the economy.
+>
+> So here's the trap you were in. You gave them a bunch of free money and now you are asking to give up that free money and go into essentially shark infested waters. And country after country, what most of them said was, ‘Nah, we're not going to do it. Actually, we like it just the way it is.’ And, since we fund all the politicians, whoever gets into power, we're going to make sure they keep plowing this money towards us.
+
+A national champion is at best a double-edged sword. It has the resources to become a world-class competitor, if those resources are allocated adroitly rather than captured as cash flow to shareholders. But those same resources enable it to [specialize in exploiting market and political power, rather than in any technical facet of production](https://drafts.interfluidity.com/2024/04/11/indirection-and-the-character-of-capitalism-part-ii/index.html). 
+
+Without competition to inform and discipline a "champion" while it is an infant — competing mostly in domestic markets, often under tariff protection — it may have no way even to learn how to excel at world-class production. The skills required to buy the loyalty of politicians, on the other hand, are accessible, reliable, and widely distributed.
+
+The largest economy to succeed at industrial policy is China. What the [Chinese example](##china-as-a-model) teaches is that, at least for large economies, there is no need to risk capture by national champions. Instead of targeting a few, particular firms for subsidy, one targets a competitive domestic industry, and funds a whole menagerie.
+
+In 2022, China's leading manufacturer of photovoltaic modules [produced](https://www.pvtime.org/top-10-chinese-module-suppliers-shipped-over-240gw-globally-in-2022/) less than 16% of industry output.
+The top four manufacturers accounted for less than 60% of production.
+Brad Setser [points out](https://x.com/Brad_Setser/status/1837992271741882653) that in China's "capex heavy steel sector…every province has its own local champion". China bestrides the planet like a colossus in both of these industries, but there are no national champions to be found.
+
+China's experience suggests one can use the conditions of funding to affirmatively structure the market in ways that ensure continuing competition, rather than rely solely on after the fact policing by antitrust authorities. China's subsidies come via provincial governments, whose officials require their champions remain local. In the US, firms might simply be forbidden contractually from selling equity or assets to rivals or roll-ups. 
+
+However protected the domestic players might be from more advanced foreign competitors, competition in the domestic economy generates innovation and know-how. Despite subsidy, no domestic firm can rest on its laurels.
+
+As competition brings the quality and efficiency of production towards world-market standards, it becomes politically plausible to reduce trade barriers, placing the now adolescent industry in global competition. Reducing tariffs won't destroy jobs at firms that produce competitively. Firms confident they can compete often lobby *for* open borders, because they gain access to a much larger global market by ceding some access to their own smaller pond.
+
+So, for larger economies, there is no tension between industrial policy and antitrust. On the contrary, they are essential complements. Successful industrial policy requires that subsidized domestic firms vigorously compete.
+
+National champions are a bad idea. Like athletic champions, they inevitably grow old. A vibrant capitalism (like a vibrant political system) depends on older incumbents ceding dominance to upstarts. Productivity growth is a process of small increments as stalwart firms iterate, but also great leaps as dissidents [jump ship from staid incumbents](https://www.cbsnews.com/news/ftc-chair-lina-khan-wants-to-keep-fighting-non-competes-60-minutes/) and recombine industry know-how in novel, creative, threatening ways. National champions interfere with this process. They prove capable at discouraging rivals. They defend their turf, until their inevitable collapse &mdash; this too must pass &mdash; means collapse of a whole nation's industry rather than a passing of the baton.
+
+We require industrial policy. But we should eschew, even dismantle, "national champions".
