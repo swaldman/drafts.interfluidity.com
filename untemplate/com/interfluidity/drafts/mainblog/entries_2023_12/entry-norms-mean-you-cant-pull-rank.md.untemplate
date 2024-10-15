@@ -2,7 +2,7 @@
 >   "Title"     -> "Norms mean you can't pull rank",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-12-14T12:20:00-05:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "norms-mean-you-cant-pull-rank"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

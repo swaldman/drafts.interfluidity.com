@@ -2,7 +2,7 @@
 >   "Title"     -> "National self-determination is a vicious idea",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-10-13T10:35:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "national-self-determination-is-a-vicious-idea"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
