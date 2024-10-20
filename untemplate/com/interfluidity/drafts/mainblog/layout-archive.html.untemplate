@@ -32,7 +32,7 @@ val site = input.renderLocation.site
       
       val uidComment =
         mbUid match
-          case Some(uid) => s" <!-- UID: $uid -- >
+          case Some(uid) => s" <!-- UID: $uid -- >"
           case None      => ""
 ()>
         <li><a href="<( permalinkLoc.relative )>"><( title )></a></li><( uidComment )>
