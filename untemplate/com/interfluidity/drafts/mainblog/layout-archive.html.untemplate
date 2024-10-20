@@ -28,8 +28,14 @@ val site = input.renderLocation.site
     eutrs.foreach { eutr =>
       val permalinkLoc = site.location( eutr.entryInfo.permalinkPathSiteRooted )
       val title        = eutr.entryInfo.mbTitle.getOrElse("(Untitled Post)")
+      val mbUid        = Anchor.caseInsensitiveCheck(eutr)
+      
+      val uidComment =
+        mbUid match
+          case Some(uid) => s" <!-- UID: $uid -- >
+          case None      => ""
 ()>
-        <li><a href="<( permalinkLoc.relative )>"><( title )></a></li>	
+        <li><a href="<( permalinkLoc.relative )>"><( title )></a></li><( uidComment )>
 <()
     }
 ()>
