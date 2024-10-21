@@ -17,7 +17,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 A while back I wrote that [two parties make us stupid](##two-parties-make-us-stupid).
 
-Effective public deliberation requires a neutral-ish population who can help adjudicate. For any matter of public concern, there should be a sizable group whose interest in the question flows only through a broad public interest, rather than from some parochial stake in the outcome.
+Effective public deliberation requires a neutral-ish population who can help adjudicate. For any matter of public concern, there should be a sizable group whose interest in the question flows only through a broad public interest, rather than from any parochial stake in the outcome.
 
 In the courtroom, we choose juries randomly from the public, rather than letting the prosecution and the defense stand their own jurors. We understand that if we let each team hire six jurors, nearly every jury would be hung. There'd be little point in holding a trial. Partisan jurors would not base their verdicts primarily on a good-faith evaluation of the evidence presented. They'd deliver the verdicts they were hired to deliver. If we want a defendant to be judged without prejudice on the merits of the cases presented at trial, we need neutral-ish jurors with little skin in the game.
 
