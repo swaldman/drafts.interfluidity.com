@@ -2,7 +2,7 @@
 >   "Title"     -> "How to understand approval voting",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-03-28T10:20:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "how-to-understand-approval-voting"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
