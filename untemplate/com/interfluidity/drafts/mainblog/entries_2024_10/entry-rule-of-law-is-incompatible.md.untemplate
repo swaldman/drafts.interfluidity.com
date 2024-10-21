@@ -15,7 +15,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-A while back wrote that [two parties make us stupid](##two-parties-make-us-stupid).
+A while back I wrote that [two parties make us stupid](##two-parties-make-us-stupid).
 
 Effective public deliberation requires a neutral-ish population who can help adjudicate. For any matter of public concern, there should be a sizable group whose interest in the question flows only through a broad public interest, rather than from some parochial stake in the outcome.
 
