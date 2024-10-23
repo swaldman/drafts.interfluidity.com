@@ -135,4 +135,13 @@ if input.presentation == input.blog.Entry.Presentation.Single then {
 } // if
 ()>
       </article>
+<()
+if input.presentation == input.blog.Entry.Presentation.Single then {
+()>
+  <div class="bottom-form">
+      <p><b>Subscribe to this blog (</b><code><a href="##/index.html">drafts.interfluidity.com</a></code><b>)</b></p>
 
+      <( subscribe_to_this_blog_form_html() )>
+  </div>
+<()
+}

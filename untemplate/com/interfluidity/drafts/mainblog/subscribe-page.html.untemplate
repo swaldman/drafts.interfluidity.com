@@ -4,10 +4,7 @@
 
   <p><b>Subscribe to this blog (</b><code><a href="##/index.html">drafts.interfluidity.com</a></code><b>)</b></p>
 
-  <form id="interfluidity-drafts-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
-    <input type="hidden" name="subscribableName" value="interfluidity-drafts">
-    <( subscribe_form_html("drafts","&#x1F60E;") )>
-  </form>
+  <( subscribe_to_this_blog_form_html() )>
 
   <hr>
 

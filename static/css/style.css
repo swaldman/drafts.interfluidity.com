@@ -346,6 +346,11 @@ a#rss-link span {
     font-size: smaller;
     line-height: 120%;
 }
+.bottom-form {
+    padding-top: 4em;
+    /* border: 2px solid green; */
+    margin-bottom: -6em;
+}
 footer {
     flex-grow:       0;
     flex-shrink:     0;
