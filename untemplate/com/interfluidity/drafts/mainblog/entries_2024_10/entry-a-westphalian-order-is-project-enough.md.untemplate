@@ -1,5 +1,5 @@
 > val updateHistory =
->   //UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
 >   Nil
 >
 > val UntemplateAttributes = immutable.Map[String,Any] (
@@ -8,7 +8,7 @@
 >   "PubDate"   -> "2024-10-15T15:50:00-04:00",
 >   "UpdateHistory" -> updateHistory,
 >   //"Sprout"      -> true,
->   //"Anchor"       -> "abundance-is-overcapacity"
+>   "Anchor"       -> "a-westphalian-order-is-project-enough"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

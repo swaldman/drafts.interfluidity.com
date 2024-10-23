@@ -14,7 +14,7 @@ object Dependency {
 }
 
 object drafts extends RootModule with UntemplateModule {
-  override def scalaVersion = "3.3.3"
+  override def scalaVersion = "3.3.4"
 
   // supports Scala 3.2.1
   // override def ammoniteVersion = "2.5.6"

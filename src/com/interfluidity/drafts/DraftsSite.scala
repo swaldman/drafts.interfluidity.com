@@ -10,9 +10,11 @@ import unstatic.*, UrlPath.*
 
 import java.nio.file.Path as JPath
 
-import java.time.ZoneId
+import java.time.{Instant,ZoneId}
 
 import untemplate.Untemplate.AnyUntemplate
+
+import SimpleBlog.SyntheticUpdateAnnouncementSpec
 
 object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") ):
   override val serverUrl : Abs    = Abs("https://drafts.interfluidity.com/")
@@ -42,6 +44,8 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
     override val revisionBinder : Option[RevisionBinder] = Some( RevisionBinder.GitByCommit(DraftsSite, JPath.of("."), siteRooted => Rel("public/").embedRoot(siteRooted)) )
 
     override val diffBinder : Option[DiffBinder] = Some( DiffBinder.JavaDiffUtils(DraftsSite) )
+
+    override val syntheticUpdateAnnouncementSpec : Option[SyntheticUpdateAnnouncementSpec] = Some( SyntheticUpdateAnnouncementSpec( "Update-o-Bot", Instant.parse("2024-10-22T12:00:00.00Z") ) )
 
     override def layoutEntry(input: Layout.Input.Entry) : String = mainblog.layout_entry_html(input).text
 

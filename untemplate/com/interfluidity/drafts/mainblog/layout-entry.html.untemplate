@@ -11,7 +11,8 @@ val site = input.site
 val resolved = input.sourceEntry
 val ut = resolved.entryUntemplate
 val permalink = resolved.permalink
-val articleClasses = presentationTypeClass + info.mbAnchor.fold("")(anchor => s" uid-${anchor}")
+val synthetic = ut.UntemplateSynthetic
+val articleClasses = presentationTypeClass + info.mbAnchor.fold("")(anchor => s" uid-${anchor}") + (if synthetic then " synthetic" else "")
 val mbTitle  = info.mbTitle
 val authors = info.authors
 val authorsString =
@@ -39,6 +40,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : DraftsSite.MainBlog.Layout.Input.Entry)[]~()>
       <article class="<(articleClasses)>">
+      <div class="entry-header-body-footer">
         <div class="entry-header">
 <()
   if input.presentation != input.blog.Entry.Presentation.Rss then {
@@ -89,13 +91,23 @@ given PageBase = PageBase.fromPage(input.renderLocation)
         </div>
         <div class="entry-footer">
           <div class="post-metainfo">
+<()
+  if synthetic then {
+()>
+            <div class="synthetic-note"><strong>This is an automatically generated post.</strong></div>
+<()
+  }
+()>
             <a href="<( permalink.relative )>">draft</a> by <b><( authorsString )></b><br/><( timestamp )>
           </div>
+        </div>
+      </div> <!-- entry-header-body-footer -->
+  
 <()
 if input.presentation == input.blog.Entry.Presentation.Single then {
 ()>
-          <div class="prev-top-next">
-            <div class="prev">
+        <div class="prev-top-next">
+          <div class="prev">
 <()
   mbPrevPermalinkLoc.foreach { prevLoc =>
 ()>
@@ -103,11 +115,11 @@ if input.presentation == input.blog.Entry.Presentation.Single then {
 <()
   } // mbPrevPermalinkLoc
 ()>
-            </div>
-            <div class="top">
-                <a href="<( input.blog.frontPage.relative )>">&uarr;&uarr;&uarr;</a>
-            </div>
-            <div class="next">
+          </div>
+          <div class="top">
+              <a href="<( input.blog.frontPage.relative )>">&uarr;&uarr;&uarr;</a>
+          </div>
+          <div class="next">
 <()
   mbNextPermalinkLoc.foreach { nextLoc =>
 ()>
@@ -116,12 +128,11 @@ if input.presentation == input.blog.Entry.Presentation.Single then {
   } // mbNextPermalinkLoc
 ()>
 
-            </div>
           </div>
-          <( layout_update_history_html( input ) )>
+        </div>
+        <( layout_update_history_html( input ) )>
 <()
 } // if
 ()>
-        </div>
       </article>
 

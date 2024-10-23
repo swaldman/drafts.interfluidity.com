@@ -1,16 +1,21 @@
 import java.time.format.DateTimeFormatter
 import com.interfluidity.drafts.DraftsSite
 import unstatic.PageBase
+import unstatic.ztapir.simple.SimpleBlog
 import unstatic.ztapir.simple.Attribute.Key.*
 
 > val MonthFormatter = DateTimeFormatter.ofPattern("yyyy'-'MM").withZone(java.time.ZoneId.systemDefault())
 
 given PageBase = PageBase.fromPage(input.renderLocation)
 
+def notUpdateAnnouncement( er : DraftsSite.MainBlog.EntryResolved) =
+  SyntheticType.caseInsensitiveCheck( er.entryUntemplate ) != Some(SimpleBlog.SyntheticType.UpdateAnnouncement.toString)
+
 val entryUntemplatesResolvedByMonthStr =
-  val raw =
-    input.entryUntemplatesResolved.groupBy( eutr => MonthFormatter.format( eutr.entryUntemplate.checkAttributeKey(`PubDate`).getOrElse( throw new Exception("No PubDate on Entry! " + eutr) ) ) )
-  immutable.SortedMap.from( raw )( summon[Ordering[String]].reverse )
+  val filtered = input.entryUntemplatesResolved.filter( notUpdateAnnouncement )
+  val unsorted =
+    filtered.groupBy( eutr => MonthFormatter.format( eutr.entryUntemplate.checkAttributeKey(`PubDate`).getOrElse( throw new Exception("No PubDate on Entry! " + eutr) ) ) )
+  immutable.SortedMap.from( unsorted )( summon[Ordering[String]].reverse )
 val site = input.renderLocation.site
 
 (input : DraftsSite.MainBlog.Archive.Input)[]~()>
@@ -36,7 +41,7 @@ val site = input.renderLocation.site
           case None      => ""
       end uidComment
 ()>
-        <li><a href="<( permalinkLoc.relative )>"><( title )></a></li><( uidComment )>
+        <li><a class="archive-item" href="<( permalinkLoc.relative )>"><( title )></a></li><( uidComment )>
 <()
     }
 ()>

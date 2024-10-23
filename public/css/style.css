@@ -219,6 +219,61 @@ div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a
 div.entry-body {
     text-align: justify;
 }
+article.synthetic em, article.synthetic i {
+    font-family: CooperHewitt-Light;
+    font-style: oblique;
+}
+article.synthetic b, article.synthetic strong {
+    font-family: CooperHewitt-Bold;
+    font-style: unset;
+}
+/*
+  XXX: Adding a small padding-top to this seems to cause padding for a whole new line
+       of text to be added, so we just nudge the header down with relative positioning.
+       Ick!
+*/
+article.synthetic div.entry-header-body-footer {
+    font-family: CooperHewitt-Light;
+    font-size: 90%;
+    padding-left: 1em;
+    padding-right: 0.75em;
+    padding-bottom: 0.25em;
+    border-left: 5px solid black;
+    background-color: #eeeeee;
+}
+article.synthetic div.entry-header {
+    font-family: CooperHewitt-Bold;
+    position: relative;
+    top: 5px;
+}
+article.synthetic div.entry-header h1 {
+    left: 0;
+}
+article.synthetic div.entry-body a {
+    color: var( --link-blue );
+    font-family: CooperHewitt-Light;
+    font-size: unset;
+    position: unset;
+    bottom: unset;
+}
+article.synthetic div.entry-body a i {
+    text-decoration: underline;
+    font-family: CooperHewitt-Light;
+    font-style: normal;
+}
+article.synthetic div.entry-body a:before {
+    content: "";
+}
+article.synthetic div.entry-body a:after {
+    content: "";
+}
+article.synthetic div.entry-body blockquote {
+    font-family: CooperHewitt-Bold;
+    background-image: unset;
+}
+article.synthetic div.synthetic-note {
+    float: left;
+}
 div.entry-footer a {
     /* color: var( --link-blue ); */
     color: blue; /* we just like the richer blue for this small link */
@@ -231,7 +286,7 @@ div.entry-footer .post-metainfo {
     font-size: 9pt;
     text-align: right;
 }
-div.entry-footer .prev-top-next {
+.prev-top-next {
     font-size: 80%;
     color: var( --prev-next-color );
     margin-top: 3em;
@@ -240,22 +295,22 @@ div.entry-footer .prev-top-next {
     display: flex;
     flex-direction: row;
 }
-div.entry-footer .prev-top-next a {
+.prev-top-next a {
     color: var( --prev-next-color );
     text-decoration: none;
 }
-div.entry-footer .prev-top-next a:hover {
+.prev-top-next a:hover {
     color: black;
 }
-div.entry-footer .prev-top-next .prev {
+.prev-top-next .prev {
     width: 45%;
     text-align: left;
     margin-left: 3em;
 }
-div.entry-footer .prev-top-next .top {
+.prev-top-next .top {
     text-align: center;
 }
-div.entry-footer .prev-top-next .next {
+.prev-top-next .next {
     width: 45%;
     text-align: right;
     margin-right: 3em;
@@ -354,6 +409,7 @@ div.archive dd ul {
 div.archive dd ul a {
     color: black;
     text-decoration: none;
+    white-space: nowrap;
 }
 div.archive dd ul a:visited {
     color: black;
@@ -488,7 +544,7 @@ body.old-draft #top-banner {
     	--title-offset: 0em;
     }
     main {
-        max-width: clear;
+        max-width: unset;
         margin-left: 2em;;
         margin-right: 2em;;
     }
