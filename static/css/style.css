@@ -556,7 +556,7 @@ body.old-draft #top-banner {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
     #left-footer {
         float: unset;
         text-align: right;
