@@ -555,3 +555,10 @@ body.old-draft #top-banner {
         content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
     }
 }
+
+@media only screen and (max-width: 400px) {
+    #left-footer {
+        float: unset;
+        text-align: right;
+    }
+}
