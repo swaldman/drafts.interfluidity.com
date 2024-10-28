@@ -23,9 +23,9 @@ end title
 
 (input : DraftsSite.MainLayoutInput)[]~()>
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="description" content="drafts @ interfluidity">
     <meta name="keywords" content="Finance, Economics, Politics, Social Affairs, Social Science, interfluidity">
     <meta name="author" content="Steve Randy Waldman">
