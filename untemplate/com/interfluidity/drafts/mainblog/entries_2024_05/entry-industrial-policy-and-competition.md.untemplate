@@ -1,7 +1,23 @@
+> val related =
+>   import unstatic.ztapir.simple.Related
+>   val items =
+>     Related.Item( "##china-as-a-model",                             title = Some("China as a model") )                             ::
+>     Related.Item( "##form-of-the-subsidy",                          title = Some("Competition and the form of the subsidy") )      ::
+>     Related.Item( "##income-driven-repayment-of-fixed-capital",     title = Some("Income driven repayment of fixed capital") )     ::
+>     Related.Item( "##abundance-is-overcapacity",                    title = Some("Abundance is overcapacity") )                    ::
+>     Related.Item( "##industrial-policy-without-national-champions", title = Some("Industrial policy without national champions") ) ::
+>     Nil
+>   Related(
+>     base = "Related",
+>     category = Some("here"),
+>     items = items
+>   )
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Industrial policy and ecosystems",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-05-11T14:50:00-04:00",
+>   "Related"   -> related,
 >   "Anchor"    -> "industrial-policy-and-ecosystems"
 > )
 
@@ -166,16 +182,6 @@ The goal is not to earn an investment profit, or to hide financial
 underperformance in positive-but-less-than-market returns we can pretend are still profit. The goal is 
 to jumpstart decentralized, competitive ecosystems in high value, tradable sectors.
 Which is worth a fiscal cost.
-
----
-
-**Related articles:**
-
-* [China as a model](##china-as-a-model)
-* [Competition and the form of the subsidy](##form-of-the-subsidy)
-* [Income driven repayment of fixed capital](##income-driven-repayment-of-fixed-capital)
-* [Abundance is overcapacity](##abundance-is-overcapacity)
-* [Industrial policy without national champions](##industrial-policy-without-national-champions)
 
 
 

@@ -2,12 +2,28 @@
 >   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
 >   Nil
 >
+> val related =
+>   import unstatic.ztapir.simple.Related
+>   val items =
+>     Related.Item( "##industrial-policy-and-ecosystems",             title = Some("Industrial policy and ecosystems") )             ::
+>     Related.Item( "##china-as-a-model",                             title = Some("China as a model") )                             ::
+>     Related.Item( "##form-of-the-subsidy",                          title = Some("Competition and the form of the subsidy") )      ::
+>     Related.Item( "##abundance-is-overcapacity",                    title = Some("Abundance is overcapacity") )                    ::
+>     Related.Item( "##industrial-policy-without-national-champions", title = Some("Industrial policy without national champions") ) ::
+>     Nil
+>   Related(
+>     base = "Related",
+>     category = Some("here"),
+>     items = items
+>   )
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Income driven repayment of fixed capital",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-09-04T12:50:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
+>   "Related"         -> related,
 >   "Anchor"          -> "income-driven-repayment-of-fixed-capital"
 > )
 
@@ -66,13 +82,3 @@ But our mechanism is open and straightforward. It does not rely upon loans that 
 "Income-driven repayment of fixed capital" would constitute a transparent means of providing subsidized finance to strategic industries in a manner that encourages competition, capacity, and quality. 
 
 [^1]: Given the low expected profitability of typical firms, the share of any amortizing loans in the financing mix should be low, if we intend for Mistress Market to cull only the worst perfomers. All of these loans would be secured by the capital goods purchased. Failed firms would surrender the capital goods back to the state, which would not offer them cheaply to new entrants, but either scrap them or offer them to new firms on comparable repayment terms, in order to maintain cost parity and the terms of competition established.
-
----
-
-**Related articles:**
-
-* [Industrial policy and ecosystems](##industrial-policy-and-ecosystems)
-* [China as a model](##china-as-a-model)
-* [Competition and the form of the subsidy](##form-of-the-subsidy)
-* [Abundance is overcapacity](##abundance-is-overcapacity)
-* [Industrial policy without national champions](##industrial-policy-without-national-champions)

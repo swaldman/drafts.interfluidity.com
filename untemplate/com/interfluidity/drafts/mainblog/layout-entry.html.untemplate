@@ -1,6 +1,7 @@
 import com.interfluidity.drafts.DraftsSite
 import unstatic.PageBase
-import unstatic.ztapir.simple.Attribute.Key.*
+import unstatic.ztapir.simple.Attribute.Key
+import unstatic.ztapir.simple.Related
 
 val presentationTypeClass =
   s"presentation-${input.presentation.toString().toLowerCase}"
@@ -24,7 +25,7 @@ val authorsString =
       val (init, last) =
         authors.splitAt(sz-1)
       init.mkString(", ", ", ", "") + last.head
-val pubDate = ut.checkAttributeKey(`PubDate`).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
+val pubDate = Key.`PubDate`.caseInsensitiveCheck(ut).getOrElse( throw new Exception("Attribute PubDate required, not found: " + resolved) )
 val timestamp = blog.dateTimeFormatter.format(pubDate)
 
 val mbPrevPermalinkLoc = input.previousEntry.map( _.permalink )
@@ -35,6 +36,11 @@ val nextTitle = input.nextEntry.flatMap( _.entryInfo.mbTitle ).getOrElse("next")
 
 val mbPriorRevisionLoc = blog.priorRevisionSiteRooted(info.asInstanceOf[blog.Entry.Info]).map( site.location ) // compiler fails to track blog == MainBlog
 val mbSproutRssLoc = info.mbSproutInfo.map( si => site.location( si.sproutFeedSiteRooted ) )
+
+val related =
+  Key.Related.caseInsensitiveCheck(ut) match
+    case None      => ""
+    case Some( r ) => Related.defaultRenderSingleOrMulti( site, input.renderLocation.siteRootedPath, Some(input.info.mediaPathSiteRooted), r )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
 
@@ -106,6 +112,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 <()
 if input.presentation == input.blog.Entry.Presentation.Single then {
 ()>
+        <( related )>
         <div class="prev-top-next">
           <div class="prev">
 <()

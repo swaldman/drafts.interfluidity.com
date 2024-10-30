@@ -2,12 +2,28 @@
 >   //UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
 >   Nil
 >
+> val related =
+>   import unstatic.ztapir.simple.Related
+>   val items =
+>     Related.Item( "##industrial-policy-and-ecosystems",             title = Some("Industrial policy and ecosystems") )             ::
+>     Related.Item( "##china-as-a-model",                             title = Some("China as a model") )                             ::
+>     Related.Item( "##form-of-the-subsidy",                          title = Some("Competition and the form of the subsidy") )      ::
+>     Related.Item( "##income-driven-repayment-of-fixed-capital",     title = Some("Income driven repayment of fixed capital") )     ::
+>     Related.Item( "##abundance-is-overcapacity",                    title = Some("Abundance is overcapacity") )                    ::
+>     Nil
+>   Related(
+>     base = "Related",
+>     category = Some("here"),
+>     items = items
+>   )
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Industrial policy without national champions",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-09-27T12:55:00-04:00",
 >   "UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
+>   "Related"         -> related,
 >   "Anchor"          -> "industrial-policy-without-national-champions"
 > )
 
@@ -52,14 +68,3 @@ So, for larger economies, there is no tension between industrial policy and anti
 National champions are a bad idea. Like athletic champions, they inevitably grow old. A vibrant capitalism (like a vibrant political system) depends on older incumbents ceding dominance to upstarts. Productivity growth is a process of small increments as stalwart firms iterate, but also great leaps as dissidents [jump ship from staid incumbents](https://www.cbsnews.com/news/ftc-chair-lina-khan-wants-to-keep-fighting-non-competes-60-minutes/) and recombine industry know-how in novel, creative, threatening ways. National champions interfere with this process. They prove capable at discouraging rivals. They defend their turf, until their inevitable collapse &mdash; this too must pass &mdash; means collapse of a whole nation's industry, rather than a passing of the baton.
 
 We require industrial policy. But we should eschew, even dismantle, "national champions".
-
----
-
-**Related articles:**
-
-* [Industrial policy and ecosystems](##industrial-policy-and-ecosystems)
-* [China as a model](##china-as-a-model)
-* [Competition and the form of the subsidy](##form-of-the-subsidy)
-* [Income driven repayment of fixed capital](##income-driven-repayment-of-fixed-capital)
-* [Abundance is overcapacity](##abundance-is-overcapacity)
-

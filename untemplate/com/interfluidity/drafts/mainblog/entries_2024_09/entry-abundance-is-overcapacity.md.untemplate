@@ -2,12 +2,28 @@
 >   //UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
 >   Nil
 >
+> val related =
+>   import unstatic.ztapir.simple.Related
+>   val items =
+>     Related.Item( "##industrial-policy-and-ecosystems",             title = Some("Industrial policy and ecosystems") )             ::
+>     Related.Item( "##china-as-a-model",                             title = Some("China as a model") )                             ::
+>     Related.Item( "##form-of-the-subsidy",                          title = Some("Competition and the form of the subsidy") )      ::
+>     Related.Item( "##income-driven-repayment-of-fixed-capital",     title = Some("Income driven repayment of fixed capital") )     ::
+>     Related.Item( "##industrial-policy-without-national-champions", title = Some("Industrial policy without national champions") ) ::
+>     Nil
+>   Related(
+>     base = "Related",
+>     category = Some("here"),
+>     items = items
+>   )
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Abundance is overcapacity",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-09-17T16:55:00-04:00",
 >   "UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
+>   "Related"         -> related,
 >   "Anchor"          -> "abundance-is-overcapacity"
 > )
 
@@ -75,13 +91,3 @@ Firms can't do this on their own. Under capitalism, the means of production are 
 An abundance economy should rely upon private firms competing aggressively, pursuing pricing power through quality and innovation, rather than by engineering scarcity. But if we want industries to eschew capital discipline, if we want firms to deploy capacity at levels that would undo the pricing power scarce capacity yields, the public sector will have to subsidize capital deployment.
 
 The public sector should [do just that](##income-driven-repayment-of-fixed-capital).
-
----
-
-**Related articles:**
-
-* [Industrial policy and ecosystems](##industrial-policy-and-ecosystems)
-* [China as a model](##china-as-a-model)
-* [Competition and the form of the subsidy](##form-of-the-subsidy)
-* [Income driven repayment of fixed capital](##income-driven-repayment-of-fixed-capital)
-* [Industrial policy without national champions](##industrial-policy-without-national-champions)
