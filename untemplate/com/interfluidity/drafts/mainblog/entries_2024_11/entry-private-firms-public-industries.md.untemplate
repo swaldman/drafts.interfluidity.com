@@ -15,7 +15,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-If socialism is public ownership of the means of production and capitalism is private ownership of the means of production, then what is "social democracy" or a "mixed economy"? The factory is either owned by the state, or it is not. Where is the middle ground?
+If socialism is public ownership of the means of production and capitalism is private ownership of the means of production, then what is "social democracy", a "mixed economy"? The factory is either owned by the state, or it is not. Where is the middle ground?
 
 There are lots of answers to this question, many reasonable and not mutually exclusive. Some production can be performed by state-owned firms while other production is performed by private firms. Firms can be jointly owned, through a mix of private shareholdings and shares held on behalf of the state. Firms may be notionally private while the state synthesizes a partial ownership position, deriving cash flows by taxing the firm and exercising control through regulation. In most contemporary economies, we observe all three of these forms of mixing, in varying degrees.
 
