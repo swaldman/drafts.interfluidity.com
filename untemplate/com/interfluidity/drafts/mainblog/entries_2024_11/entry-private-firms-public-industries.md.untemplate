@@ -1,0 +1,52 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"     -> "Private firms, public industries",
+>   "Author"    -> "Steve Randy Waldman",
+>   "PubDate"   -> "2024-11-01T11:20:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Sprout"      -> true,
+>   //"Anchor"      -> ???
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+If socialism is public ownership of the means of production and capitalism is private ownership of the means of production, then what is "social democracy" or a "mixed economy"? The factory is either owned by the state, or it is not. Where is the middle ground?
+
+There are lots of answers to this question, many reasonable and not mutually exclusive. Some production can be performed by state-owned firms while other production is performed by private firms. Firms can be jointly owned, through a mix of private shareholdings and shares held on behalf of the state. Firms may be notionally private while the state synthesizes a partial ownership position, deriving cash flows by taxing the firm and exercising control through regulation. In most contemporary economies, we observe all three of these forms of mixing, in varying degrees.
+
+I want to propose a different way of thinking about the question. **In a mixed economy, we should consider *firms* to be substantially private, but *industries* to be a province of the public.**
+
+Firms are concrete. We transact with them, we work for them, we buy shares in them. But from a public perspective, what we care about is industries as a whole. If a firm is badly run, it may go bankrupt. That may be difficult for its private owners, but it is not the state's concern. What matters to the state is that, if this one goes under, that one takes over, or new ones appear. What matters to the state is that through all the churn and competition, the public remains continuously served. That is a characteristic of the industry, rather than of the firms that happen constitute it at a given moment.
+
+Of course, as individuals, we have preferences and relationships with particular firms. But as a public, we are basically indifferent to firms, when industries are well arranged. It is the industries that we rely upon.
+
+This sounds dismissive of firms, even mean. But it is this characteristic that renders it practical to think of firms as private at all! If the welfare of the broad public hangs directly on particular firms, then private control of those firms is [not private in its consequences](https://drafts.interfluidity.com/2023/03/31/state-as-coordination/index.html). In a democracy, then, management of such firms could not be left to some narrow, self-interested group of owners. Only the publicness of industries reconciles private ownership of firms with democratic control.
+
+What does it mean, in practice, to say that industries are public? It means first and foremost that defining market structure is a province of the state, and the structure so defined must preserve the publicness of the industry. The state must guard the frontier between firm and industry.
+
+Suppose a great and wonderful firm emerges, a fountain of efficiency that spews consumer welfare, whose shareholders content themselves with little. Absent state intervention, the firm, on its genuine merits, drives all of its competitors out of business. The public is delighted.
+
+The state must not tolerate that, any more than it would tolerate the emergence of a benevolent dictatorship with hereditary succession. The new king may be public spirited! He may insist that his ministers consult excessively with citizens, to ensure that his rule balances and takes into account the preferences of all! He may teach his son to follow in his footsteps! But his son may prove less wise or virtuous or capable. That is why we insist upon political democracy.
+
+The very best firms begin like our benevolent king. Eventually, inevitably, they age into craven princelings. We structure the institutions of government to take the impermanence of virtue into account. We distinguish permanent roles from the transient tenures of humans who occupy them. We allocate roles by a mix of meritocratic competition and public consent, and then insist upon periodically reallocating them. We work to attract new talent and groom successors.
+
+Industries rule us as much as any other organ of the state. A demand the food industry makes as a condition of your child's nutrition is just as irresistible as anything a police officer might require at the point of a gun. It is the state's duty to manage police forces to ensure they exercise only the minimal coercion necessary to enforce the law. It is the state's duty to structure each industry, so that it demands as little as is practicable to supply a full range of goods and services, while consistently innovating in both process and product. Private firms seek to maximize profit. Public industries must be architected to enable firms to enjoy ordinary “accounting” profit, while keeping the contest for "excess” profit challenging. Excess profit should be transient and aligned with improvements that trickle up permanently to the level of the industry.
+
+Like Federal lands, every industry is a public trust that requires active stewardship. Read this [wonderful piece](https://washingtonmonthly.com/2024/10/29/train-drain/) by Phillip Longman about the railroad industry, describing a history in which the state stepped up to its obligation, and then stepped down, with catastrophic results.  (ht [David Roberts](https://x.com/drvolts/status/1851697278463177067))
+
+It is not enough for the state merely to counter monopoly &mdash; although the state should, must, aggressively counter monopoly. As Sanjukta Paul [has emphasized](https://prospect.org/economy/double-standard-antitrust-law/), "economic coordination of one kind or another is inevitable", because it is necessary. Absent an affirmative alternative structure, the emergence of one or a few dominant firms is simultaneously what antitrust law mans to prevent, and yet the only path to orderly efficiency antitrust law leaves available, because collusion between firms is unlawful but coordination within firms is normal. "Break 'em up" is only the beginning of the state's role. The state must provide rules of a game under which they can, and must, stay broken up, with each firm succeeding or failing on its merits while the industry as a whole thrives and delivers for the public.
+
+Industrial policy is all the rage these days and it should be. Forty years we wandered in a desert of delusion. We pretended we could have no policy and "the market" would choose for us the best and most optimal way. We are learning the hard way that what we do not manage we in fact [concede to others who do](https://x.com/michaelxpettis/status/1839192665109217386).
+
+But before we get into the business of choosing which firms to subsidize, we must ensure they are embedded in well arranged industries. We must make affirmative choices about the market structure we intend. We must define what constitutes the commodities bought, sold, and priced. We must design a tax and regulatory environment under which competing, profit-maximizing private firms will compose to the structure we desire.
+
+Of course policy’s twin is unintended consequence. We will err. But no invisible hand can do this work for us. We have to do our best.
+
+It is perpetually the work of the state — our work as a democracy — to define for each of our industries the market structure we desire, to design and then continually revisit policies in order to ensure the structure we target is roughly what prevails.
+
+And it is perpetually the work of the state to police the frontier between private firm and public industry. We must punish firms who trespass merely for dispossessing us, however much, for the moment, we might admire the goods and services they produce.
