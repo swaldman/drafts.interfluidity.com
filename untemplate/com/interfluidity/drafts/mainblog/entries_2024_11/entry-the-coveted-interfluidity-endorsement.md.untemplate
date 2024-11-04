@@ -1,0 +1,55 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "The coveted interfluidity endorsement",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2024-11-04T15:45:00-05:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Sprout"      -> true,
+>   //"Anchor"        -> ???
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+So, tomorrow is Election Day. Perhaps you've already voted, one way or another. If so, good for you. If not, and you are an eligible US citizen, please vote.
+
+Voting is not, actually, the essence of our democracy. The essence of our democracy is the respect we have for one another, day by day, one by one, as equal citizens, whose values, interests, and perspectives we mutually thirst to understand. No expert can see the world through your eyes. Plutocrats spend billions of dollars mostly to avoid having to walk a millimeter in your shoes. In a certain respect, the true enemy of democracy is pride. It requires tremendous humility to let other people's experience and ideas and hopes and grievance have play, in our own minds, in our political institutions, on equal terms with our own. No matter rich you are or how much you know, when it comes to the values and interests of any other person, you cannot and do not know better.
+
+Our electoral system in the United States is poorly arranged. I devote a [whole](##state-capacity-and-authoritarianism) [lot](##how-to-understand-approval-voting) of [ink](##two-kinds-of-representation) here to how we might fix it.
+Nevertheless, elections, such as they are, are an important institutional embodiment of our democratic ethos. In practical terms they are much of what, at least ideally, gives real-world consequence to the democratic ethos we aspire to live every day.
+
+You should vote for whomever you choose to vote for. I cannot, and would not, gainsay your understanding of the world, dear reader. But if you want to know my views, this election — perhaps for the first time in my life — I will "vote blue no matter who" up and down the ballot, even with some enthusiasm.
+
+You don't need yet another pundit to tell you that the political formation Donald Trump has conjured around his damaged human soul is fascist. It is, if that word has any [meaning](##what-is-fascism).
+
+But the people who support Donald Trump are, for the most part, very far from fascists. We live in times when nearly all of us feel belittled and ripped off, threatened by forces beyond our control. Most Trump supporters mean to cast their vote against the know-it-alls and corporations they have come to believe — correctly in my view — now illegitimately dominate our collective lives.
+
+But Donald Trump is himself a plutocrat, not a counter to corporate and monied interests. He doesn't soak the rich when in government. Your annoying manager is rich and pays you dirt and treats you like shit even while she mouths all kinds of platitudes about tolerance and antiracism and bullshit. Of course she is voting for the Democrats. Any enemy of hers, you think, is your friend, and she sure hates Donald Trump. But her real enemy is a union that gives you the power to tell her to fuck off. Donald Trump will crush the least possibility of a such a unions while he plays dress-up as garbageman and fry cook.
+
+As I said, I am voting for Kamala Harris and Tim Walz and Debbie Mucarsel-Powell and Whitney Fox with real enthusiasm this time. I have "voted blue no matter who" before, but it was a hold-your-nose kind of thing. Joe Biden — working with Bernie Sanders and Elizabeth Warren, I think — has changed that.
+
+I've been disheartened by people with whom I usually find common cause acting as if it's some nearly hopeless, sisyphean task to try to move the Democratic Party an inch when, under Joe Biden, the Democrats really did struggle to enact an extraordinary Build Back Better agenda. Despite failing, managed to get some remarkable things done. We got the CHIPS act and rehabilitation of industrial policy as a thing we have to take responsibility for, rather than pretend not to have. We got the Inflation Reduction Act, which despite its stewardship by a mustache-twirling fossil-fuel villain, smuggled into being extraordinary green energy subsidies, and represents the first time the US policy apparatus has moved beyond conjectural and expressive "pledges" about global warming to actions that will have real effect. It's not enough! But it isn't nothing. Our current Supreme Court is [illegitimate, villainous, and traitorous](##no-longer-a-liberal-democracy). It has done everything it could to prevent the Biden Administration from reducing student debt burdens past and future. (Biden's blocked [SAVE plan](https://www.whitehouse.gov/briefing-room/statements-releases/2023/08/22/fact-sheet-the-biden-harris-administration-launches-the-save-plan-the-most-affordable-student-loan-repayment-plan-ever-to-lower-monthly-payments-for-millions-of-borrowers/) would be effing extraordinary!) Yet the Administration has worked strategically to circumvent the mock justices who still pretend they can interpret the Constitution for us, and gotten a lot of onerous past debts eliminated.
+
+On foreign policy, the Biden Administration has been a catastrophe. There is no sugarcoating that. From the shambolic withdrawal from Afghanistan that inevitably invited future mischief, to failing to deter the invasion of Ukraine, to abetting a genocide in Gaza, the Biden Administration foreign policy team has lurched this way and that, from no-more-forever-war-peacenik impulses at the beginning of its term to butt-hurt give-war-a-chance neocon idiocy towards the end, each time looking for isolated "wins" rather than hewing to a coherent strategy. (No, "democracy vs autocracy" does not constitute a coherent strategy.) I think we are all looking forward to turning a page on Biden's foreign policy.
+
+We'll turn a page no matter what. There is no information — zero, none — in Kamala Harris' refusal to put daylight between herself and the current administration. She plainly decided that, in the context of a bitter election, any "debate" that puts a wedge between her supporters and those more invested in Biden's foreign policy choices would divide and demoralize her coalition. The only information — *only,* whatever tea leaves you pretend to have read — we have about foreign policy under a Kamala administration is that she won't tell us. (She probably does not yet know herself.) I am fairly sure she would be better than Donald Trump. Even Joe Biden has been better than Donald Trump.
+
+_(Sure, there were "no wars under Trump" if you don't count crushing ISIS and ramping up drone wars and arming the Saudis and completely hiding the extraordinary carnage of all of these operations from public view. But Donald Trump planted the seeds for the Afghanistan debacle by sidelining, undermining, emasculating the Afghan government that was our ally, then negotiating an agreement to withdraw and betray all of those we had promised to protect, a terrible agreement which Biden chose to fulfill rather than abrogate. Trump's Administration did do more to deter Russia in Ukraine than Obama's had, but with a perfunctoriness and half-heartedness made clear in the grounds for Trump's first impeachment. The sad fact is, no American President truly believed Russia would reopen World War II with a full-scale land invasion of Ukraine until it became clear, under the Biden Administration, after Afghanistan, that it would.)_
+
+I am hoping that Kamala Harris is a continuation of the Biden Administration on domestic policy, and a break from the Biden Administration on foreign policy. Why do I give the Democrats credit for the former, while overlooking the discredit, the shame really, of the latter?
+
+The fact of the matter is I have [no idea](##what-if-we-are-not-among-the-elect) what Kamala Harris will do, and neither do you. But the Biden Administration serves as an existence proof, that in fact the Democratic Party is not a mere conspiracy of its corporate wing to neutralize any progress towards civilization and social democracy. Harris could prove to be a regression, back to the awful Obama, Clinton version of the Democrats. She could prove to be a younger, more vigorous champion of social democracy, following in Joe Biden's footsteps but sprinting farther. She could stumble into the war with Iran that Biden and Binyamin Netanyahu have placed us on the verge of. She could champion a principled, [Westphalian](##a-westphalian-order-is-project-enough), basis for a new foreign policy consensus, over the (understandable!) wails of those who would (correctly!) understand it as a retreat from 1990s-era hopes of universalizing human rights. Only the future will tell what Kamala Harris will do.
+
+We have a pretty good idea what Donald Trump will do, globally and domestically. None of it is any good. A real shot at making progress is far better than a near certainty of moral and practical catastrophe under Donald Trump.
+
+Yes, I will be voting _against_ Donald Trump and his toadies and enablers. But I also think a Harris Administration really might continue the best and shed the worst of the Biden Administration. She might continue Biden's tradition of giving social democrats a real voice rather than corralling us in a [veal pen](https://web.archive.org/web/20091209012024/http://fdlaction.firedoglake.com/2009/08/07/rahm-goes-apeshit-on-liberals-in-the-veal-pen/). Democratic majorities in the House and Senate, the bigger the better, would help enable a Harris Administration to actually move us towards a more civilized society, rather than cave to corporate interests and tout the "accomplishment".
+
+So I will vote, enthusiastically, for Kamala Harris and Tim Walz and Debbie Mucarsel-Powell and Whitney Fox. I hope that you too will vote blue no matter who, this time around.
+
+Perhaps you disagree. This is all just me, the world as it I see. Tomorrow will pass, and I will still be eager to understand how you, dear reader, make sense of all this.
+
+However you see the world and your place in it, whatever your values and calculations about how best to steward them through our very imperfect democratic institutions, I do hope you will take some time out of your day tomorrow to participate, to vote, if you have not done so already.
