@@ -1,0 +1,44 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "What does it mean to have no kings?",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2024-11-13T15:25:00-05:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Sprout"      -> true,
+>   //"Anchor"        -> ???
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+I think most people misunderstand what constitutional democracy is all about.
+
+A constitutional democracy is not a system in which a king or aristocracy stands periodically before a popular plebiscite. You do not live in a constitutional democracy if, every eight years, you reaffirm the autocrat, even if the reaffirmation is not coerced, even if it reflects genuine support (whatever that might mean in the context of a media environment that the autocrat controls).
+
+Under the US Constitution, the President is not supposed to be king. Congress is not a ruling aristocracy.
+
+The point of a constitution in a constitutional democracy is to define a web of procedures and relationships that constructs a whole quite distinct from any of its parts. State action should result from deliberation and contestation in which *all* interests and values held by members of the polity play a role.
+
+Melting pot is the metaphor, not battleground. We construct a common mind together, an “artificial intelligence” that none of us dominate or control, but within which all of us have some influence.
+
+Of course we frequently disagree with one another. Our common mind must sometimes choose between mutually exclusive courses of action. So in that sense, some of us win, some of us lose, love is a battlefield.
+
+But even when we lose, we condition the results. Our arguments that haven’t won the day contribute to risk management, as “winners” of the argument address our concerns as much as possible consistent with the project we have chosen. No one has been excluded or locked out. Choices have been made, not by some of us against the will of others, but by all of us together, even as some will be delighted by those choices and others bitterly disappointed.
+
+Ideally this “mind” is constantly working, and frequently acting across a wide range of concerns. We all “win some” and “lose some”, not every two years in occasional elections, but every day and week. The mind is wise because it aggregates and weighs the experience of all of us who compose it. We accord it legitimacy, we “trust” it, because we see our own values and interests reflected in the portfolio of choices it delivers, even though we all “lose” frequently with respect to particular choices. “Turn-taking” should be as fine-grained as possible.
+
+Obviously this is none of our experience of contemporary American government, or of contemporary American life. We are sharply divided into two tribes, many of whose members see themselves as substantially sharing values and interests which the other tribe viciously opposes. We share no common mind. Each group wrestles to control the state in bitter, zero-sum contests. Every two years we fight over which tribe will be aristocrats, and which tribe subjects. Every four years we have a grand fight over who will be king.
+
+We constitute together no wise common mind. Deliberation gives way to propaganda, a necessary evil given all the lies the other guys are telling. Losers get shut out, rather than see their insights incorporated into our common project. We become collectively incapable of coherent, adaptive, effective action. The actions we take are rendered ill-informed and cartoonish as we become intoxicated by our own side’s propaganda.
+
+We are where we are. But it’s worth taking a moment to remember that this is not our system working as intended. This is dysfunction, pathology, atrocity. Constitutional democracy in which we are ruled by none and all, in which state action emerges from a common mind we together constitute, is possible, achievable. It has nowhere ever been perfect, but it has often here and elsewhere been better.
+
+We are on the verge of giving way to cynicism and reverting to tyranny as a more practical and capable, if brutal, form of government.
+
+I’d rather we understand how and why we’ve simplified, calcified, infantilized ourselves into absurd, moronic factions, and work to undo. We actually can improve the institutions by which we collectively deliberate and choose and act. 
+
+Constitutional democracy remains possible. You, dear reader, have your own values, interests, and perspectives. For me, I am quite sure constitutional democracy would be far superior to the *status quo* to which we’ve devolved, much better than the brash alternatives all the strivers and grifters tout and shout in [clashing cacophonies of bitter enthusiasm](https://www.youtube.com/watch?v=7S5TIQCdPZI).
