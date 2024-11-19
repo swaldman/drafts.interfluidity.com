@@ -1,0 +1,136 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Plutocracy as a positive ideal",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2024-11-19T12:40:00-05:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Sprout"      -> true,
+>   //"Anchor"        -> ???
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+*This post is dedicated to John Roberts.*
+
+---
+
+People I talk to whose worldview is close to mine often profess a sense of bafflement:
+
+*I mean, they are just destroying this country. It's one thing to want to win, to want to run the place. But what's the point of ruling a country if you turn it into a cesspool of corruption?*
+
+The "[Iron Law of Institutions](http://www.tinyrevolution.com/mt/archives/001705.html)", propounded by [Jon Schwarz](https://bsky.app/profile/schwarz.bsky.social), offers one potential answer.
+
+I want to offer a less cynical explanation. Perhaps where we see corruption, our opponents see virtue. Is "influence peddling"
+such a problem if the peddlars are, well, a good influence?
+
+We tend to see collective action problems, tragedies of the commons,
+self-interested, transactional decisions composing to catastrophes no one could want.
+
+What if to our opponents
+these outcomes are not catastrophes at all, but great successes, a righting of wrongs?
+
+### A republic if you can keep it
+
+From the moment of the American founding, our "republican form of government" has been Janus-faced.
+
+To most of us, in most of our civics classes, a "republic" just means representative democracy. Unqualified "democracy", direct democracy, doesn't scale. It suffers from information problems, as high-quality lawmaking requires more attention and expertise than can be expected of ordinary citizens, if we are to have lives and a prosperous economy as well.
+
+In a "republican" system, rather than participate directly in lawmaking, our information problem is simplified to periodically electing full-time professionals who will faithfully represent our values and interests in the lawmaking process. Fundamentally, the system remains democratic. We've just settled upon a more practical, effective structure for government of the people, by the people, for the people than pretending we can run legislatures millions of citizens strong.
+
+But the republican form of government makes an appeal to a quite distinct tradition, also strong at the American founding.
+
+Under this second tradition, all men are not equal in real life, regardless what they were when our Creator endowed them. Some men are fit to rule. Other men and women are fit to serve.
+
+In a well-ordered nation, the best men must rule. This is an edict not of any parochial interest or self-dealing faction, but of nature itself. It serves the interest of all.
+
+A slave may have no control over his circumstance, yet be much better off than if he did, when his betters order a world in which his labor contributes to a prosperity that, in due measure, he also enjoys.
+
+Whatever it is called — "Congress", "Parliament" — the republican form of government vouchsafes a kind of aristocracy. The great virtue of a republic, in this tradition, is that it attaches to this aristocracy institutions of notional consent, easing the burden leaders always face of persuading the ruled to submit to those who rightfully rule them.
+
+The US Constitution was the Barack Obama of its time, fresh-faced and inspirational and sufficiently vague that different factions could project their own hopes onto its form. Idealists inclined to democracy could scry within it an improvement on the Athenian tradition. Entitled men who fancied themselves practical saw clever machinery for manufacturing consent in rule of the country by its natural rulers.
+
+We frequently discuss very particular deformities framers of the Constitution adopted to ensure its ratification — "equal suffrage" of the states (and therefore radically unequal suffrage of citizens) in the Senate, counting slaves as three-fifths persons, the odd formula behind the electoral college. But the republican form of government itself — is it a [duck or a rabbit](https://www.independent.co.uk/news/science/duck-and-rabbit-illusion-b1821663.html)? is the dress [gold or blue](https://slate.com/technology/2017/04/heres-why-people-saw-the-dress-differently.html) — was the Constitution's main trick, allowing political opponents to rally together behind one political document they interpreted quite differently.
+
+Ever since, of course, we have been fighting over just what kind of document it is. On paper a duck and a rabbit may be contrived to take a single form, but in life the two animals behave distinctly.
+
+### Money as a martial virtue
+
+Traditionally aristocratic lineages distinguished themselves in war. Men who were natural rulers held land, taxed peasants, raised armies for their own glory or to serve the even greater glory of the king. Men who held and taxed land, or who won the debt and favor of the king, became noblemen and ruled, as God and nature intended.
+
+By the American founding, commerce was already vying with conquest as a source of wealth and power. Nevertheless, suffrage under the early Constitution was [usually restricted](https://www.colonialwilliamsburg.org/learn/deep-dives/who-voted-in-early-america/) to men who owned land, a reflex of deference to the natural ruling class.
+
+Following the Industrial Revolution, however, the notion that land ownership uniquely demarcated the best and most capable became both normatively and practically unsustainable. Surely the claim to greatness of some ranch owner paled in comparison to the conquests of an industrialist like John Rockefeller. Just as surely, men like Rockefeller had the means to ensure that their interests would not be subordinated to those of some gentry that fancied itself Jeffersonian.
+
+Proponents of aristocratic republicanism are not, have never been, mere throwback feudalists. Like all living traditions, aristocratic republicanism has adapted with the times. Rather than land, the marker of right-to-rule has become increasingly recast as wealth, money. In centuries past, men proved their mettle on horseback with lance or rifle. Now men contest for greatness on the terrain of business. In either case, the best men, those worthy of rule, are the winners.
+
+This has nothing whatsoever to do with your dorky economics textbook. The basis for deference to winners isn't because they must have provided goods and services at higher quality or lower prices than their rivals. It's because they fucking won. The more unfair the contest, the more impressive the victory.
+
+Business is the successor to the pillage and conquest that created duchies, kingdoms, empires. What of the theories of Friedrich Hayek? Milton Friedman? Bandits who style themselves kings have always hired balladeers to recast their pillage as glory unto God, service to the greater good. Even now, now more than ever, they extravagantly groom these jesters and fools.
+
+Antitrust is abhorrent to this tradition. Antitrust is for slaves. When the Huns poured from the steppes and overtook Europe, could the defenders lay one hand horizontally across their other held vertically, call "time out" and demand that the referees inspect the rulebook? No. They fucking fought and fucking died. Or else they killed, held their patch of land and therefore continued to rule.
+
+People contending to become masters in this fallen world of slaves recognize no higher authority. The idea is abhorrent. They themselves are the highest authority, or else they are a corpse.
+
+### Lineage
+
+Emperors do not concede their domains must crumble when frailty overtakes their skin and bones. The quality that martial or business conquest reveals, in which inheres the right to rule, must subsist, then, not in individuals but in families, lineages.
+
+You can put this in terms as dweeby as you want. Just like they hire their Milton Friedmans, they hire their Charles Murrays and Arthur Jensens, balladeers who sing a different key. Men who rule are not "following the science" evidence about genes and DNA and heritability. It simply is an axiom they require, that the unit of analysis for human quality should be lineage rather than person. They have clever slaves who can write up the textbooks.
+
+You have your axioms. They have theirs. Don't imagine that you fool yourself any less when you choose the foundations for your version of "reason".
+
+In any case, to understand the behavior of aristocratic republicans, you must understand that among them, excellence and awfulness, capability and cravenness, are characteristics of families rather than individuals. A just political order weighs and sorts whole lineages, rather than particular individuals. Inheritance is just, because it is the lineage, not the person, that conquers, accumulates, and so *earns* the spoils of conquest.
+
+Every family will have its black sheep, its morons, its fail-sons and squanderers. All of that is just noise, the private business of great families to address. Usurpers and strivers who trade in gossip about such characters in order to contest the status of the lineage should be crushed.
+
+### The constitutional order
+
+From the perspective of aristocratic republicans, the purpose of the Constitutional order is to durably and reliably elevate the best to rule, while cloaking that coronation as the result of "democratic contestation", reflecting the "consent of the governed".
+
+But there is always the danger that the forms of democratic contestation might give way to substance, to an order in which mobs of lesser men and women  grasp the reins of power and do mischief &mdash; not least to their own interests, as unsuited men elevated to rule inevitably do.
+
+So there must be a kind of dance. On the one hand, the forms of institutions must be sufficiently "democratic" or at least "legitimate" to cultivate the voluntary submission upon which a peaceful, prosperous order depends. On the other hand, the institutions should not be so "democratic" as to permit among the unworthy more than token representation inside the halls of power.
+
+Suppose there were some kind of council, a chamber in which [robed wise men](https://www.supremecourt.gov/about/justices.aspx), fine-tuned and reconfigured the institutions only vaguely sketched on the several pages of the American Constitution.
+
+Congress must be elected. Inadequate vigor on the part of the council's predecessors has rendered universal formal suffrage a *fait accompli*. The Senate as well as the House is now directly elected. Perhaps in time these errors can be reversed, but holding actions are required now. The best men — recognizable as the richest men — must rule, despite institutions that insist on formal equality for all.
+
+What would you do?
+
+If there must be elections, you might [ensure that the best have influence over those elections](https://supreme.justia.com/cases/federal/us/558/310/) as [mighty as they can muster](https://supreme.justia.com/cases/federal/us/572/185/).
+
+Elections are managed at the state level, and some states are, unfortunately, run by governments beholden to the other republican tradition, villainous mob democracy.
+
+But some states are not. States that are run under virtuous, aristocratic republicanism — if they given [freedom to manage how elections are run](https://supreme.justia.com/cases/federal/us/570/529/), or to [strategically define electoral districts](https://supreme.justia.com/cases/federal/us/588/18-422/) — will vigorously use those powers to elevate men suited to rule (or men and women who can be counted upon to do those men's bidding).
+
+States that rule in the democratic republican tradition will refrain from use these powers with full, cold-eyed vigor as a counterweight. To do so would be to violate and undermine the very democratic norms they are besotted to protect. Idealists, not warriors, they are hobbled. (Idiots. Fools. How could one trust such men to rule?)
+
+With great effort, considering several decades of backsliding, elections have been reoriented towards what the founders (at least those in the aristocratic republican tradition) intended — plebiscites that imbue legitimacy to rule by natural rulers.
+
+But the republic is large, messy. Some states are still run by usurpers, idealists, communists, "democrats". Unworthy men and women will, unfortunately sometimes be elected, and placed in positions where they can do real harm to the interests of the republic, even to interests they would understand as their own, if they were not so unworthy.
+
+So it is important that the best men retain channels of informal influence, by which they can guide and tutor men and women who rise above their station. They must be permitted to [reward](https://supreme.justia.com/cases/federal/us/603/23-108/) the [best](https://www.propublica.org/article/clarence-thomas-scotus-undisclosed-luxury-travel-gifts-crow) and [worst](https://supreme.justia.com/cases/federal/us/598/21-1158/) alike for acting correctly.
+
+When the Constitution was debated, the danger of mob rule that elections might pose was well understood by men in the aristocratic republican tradition. They calculated that, between the institutional safeguards ("checks and balances") within the new Constitution and care in the administration of elections, the mob could be simultaneously co&#246;pted and kept at bay. There have been some difficult decades, but patriots are now well on their way to restoring that balance. Elections are less and less a threat.
+
+Men who seek election are usually ambitious and vain. That is providential, because such men can be bought by those who have proven suited actually to rule, by achieving and sustaining great wealth.
+
+Over the past few decades, however, a new threat has emerged, one that was not foreseen by the founding generation. A "professional civil service" &mdash; peopled by men of modest ambition but tremendous pride, confident in false moral and social theories &mdash; has arrogated to itself much of the state's capacity to govern. By virtue of their limited ambition and dangerous theories, this class of people is somewhat resistant to remunerative tutelage by their betters.
+
+Fortunately, these "professionals" are very devoted to the notion of service in the context of paid employment. Establishment of a [revolving door](https://therevolvingdoorproject.org/) between professional roles in government and "private sector" jobs arranged in their interest can usefully serve to educate them.
+
+Nevertheless, as a class, they remain vexatious and dangerous.
+
+Happily, this class can be cast as illegitimate under *both* the aristocratic and democratic republican traditions, by virtue of being insulated from the influence both of money and elections. As at the founding, adherents of these two grand traditions, marinated in the best understanding of the matter money can buy, can converge upon a common goal — routing the influence of "unelected bureaucrats".
+
+We are now well on our way to [neutralizing](https://supreme.justia.com/cases/federal/us/603/22-451/) [this](https://supreme.justia.com/cases/federal/us/603/22-1008/) [pox](https://protectdemocracy.org/work/trumps-schedule-f-plan-explained/).
+
+Yea and truly, we are finally restoring the American founding.
+One side of it, that is.
+
+Duck or rabbit, gold or blue. In the end, there can be only one.
