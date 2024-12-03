@@ -2,20 +2,7 @@
 >   //UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
 >   Nil
 >
-> val related =
->   import unstatic.ztapir.simple.Related
->   val items =
->     Related.Item( "##industrial-policy-and-ecosystems",             title = Some("Industrial policy and ecosystems") )             ::
->     Related.Item( "##china-as-a-model",                             title = Some("China as a model") )                             ::
->     Related.Item( "##form-of-the-subsidy",                          title = Some("Competition and the form of the subsidy") )      ::
->     Related.Item( "##income-driven-repayment-of-fixed-capital",     title = Some("Income driven repayment of fixed capital") )     ::
->     Related.Item( "##industrial-policy-without-national-champions", title = Some("Industrial policy without national champions") ) ::
->     Nil
->   Related(
->     base = "Related",
->     category = Some("here"),
->     items = items
->   )
+> val uid = "abundance-is-overcapacity"
 >
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Abundance is overcapacity",
@@ -23,8 +10,8 @@
 >   "PubDate"   -> "2024-09-17T16:55:00-04:00",
 >   "UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
->   "Related"         -> related,
->   "Anchor"          -> "abundance-is-overcapacity"
+>   "Related"         -> com.interfluidity.drafts.Relateds.chinaIndustrialPolicyExcluding( uid ),
+>   "Anchor"          -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
