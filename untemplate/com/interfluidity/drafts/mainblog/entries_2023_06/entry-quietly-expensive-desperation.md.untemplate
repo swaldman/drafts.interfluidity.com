@@ -12,7 +12,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 Kevin Drum [takes note](https://jabberwocking.com/us-warships-cost-at-least-twice-as-much-as-they-should/) of a
 [CNN piece](https://www.cnn.com/2023/06/02/asia/japan-south-korea-naval-shipbuilding-intl-hnk-ml-dst/index.html),
 which points out that Japan can build warships at one-half to one-third of the cost of United-States-built ships.
-Drum is, reasonably, skeptical of the explanation advanced in the piece, that stricted
+Drum is, reasonably, skeptical of the explanation advanced in the piece, that stricter
 contract terms largely explain the price difference. He asks, "[I]s our procurement really so screwed up that
 we pay twice as much for basically the same ship?"
 
