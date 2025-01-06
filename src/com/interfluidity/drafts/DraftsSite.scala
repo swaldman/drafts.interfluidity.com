@@ -20,7 +20,7 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
   override val serverUrl : Abs    = Abs("https://drafts.interfluidity.com/")
   override val basePath  : Rooted = Rooted.root
 
-  case class MainLayoutInput( renderLocation : SiteLocation, mainContentHtml : String, sourceUntemplates : immutable.Seq[AnyUntemplate] = immutable.Seq.empty )
+  case class MainLayoutInput( renderLocation : SiteLocation, mainContentHtml : String, sourceUntemplates : immutable.Seq[AnyUntemplate] = immutable.Seq.empty, singleItemRssSpec : Option[SingleItemRssSpec] = None )
 
   object MainBlog extends SimpleBlog:
     override type Site = DraftsSite.type
@@ -58,7 +58,13 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
 
     // here the blog shares the sites main overall layout
     override def layoutPage(input: Layout.Input.Page): String =
-      val mainLayoutInput = MainLayoutInput( input.renderLocation, input.mainContentHtml, input.sourceEntries.map( _.entryUntemplate ) )
+      val singleItemRssSpec =
+        if input.sourceEntries.length == 1 then
+          val info = input.sourceEntries.head.entryInfo
+          info.singleItemRssSiteRooted.map( siteRooted => SingleItemRssSpec( siteRooted, info.mbTitle ) )
+        else
+          None
+      val mainLayoutInput = MainLayoutInput( input.renderLocation, input.mainContentHtml, input.sourceEntries.map( _.entryUntemplate ), singleItemRssSpec )
       layout_main_html(mainLayoutInput).text
 
     object Archive:

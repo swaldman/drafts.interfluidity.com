@@ -73,6 +73,7 @@ end title
     <( allItemFeedLink )>
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
+    <( input.singleItemRssSpec.map( _.htmlLinkAlternateRelative(input.renderLocation.siteRootedPath) ).getOrElse("") )>
     <link rel="stylesheet" href="<( cssLoc.relative )>">
     <script>
       document.addEventListener("DOMContentLoaded", function() {
