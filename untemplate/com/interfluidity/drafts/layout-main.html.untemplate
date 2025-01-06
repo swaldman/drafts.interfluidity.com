@@ -15,6 +15,12 @@ val iconLoc = site.location("/icon")
 val archiveLoc = DraftsSite.MainBlog.Archive.location
 val subscribeLoc = DraftsSite.MainBlog.Subscribe.location
 
+val mbAllItemFeedLoc = blog.allItemFeedSiteRooted.map( aifsr => site.location( aifsr ) )
+val allItemFeedLink =
+  mbAllItemFeedLoc.fold("")( aifl =>
+    s"""<link rel="alternate" type="application/x-all-item-rss+xml" title="drafts.interfluidity.com - all items" href="${aifl.absolutePath}">"""
+  )
+
 val title =
   val mbTitle =
     if input.sourceUntemplates.size == 1 then input.sourceUntemplates.head.checkAttributeKey(`Title`) else None
@@ -64,6 +70,7 @@ end title
     <!-- end icons / favicons -->
 
     <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="<( feedLoc.relative )>">
+    <( allItemFeedLink )>
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
     <link rel="stylesheet" href="<( cssLoc.relative )>">
