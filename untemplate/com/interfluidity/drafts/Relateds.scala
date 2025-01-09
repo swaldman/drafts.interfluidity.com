@@ -16,3 +16,18 @@ object Relateds:
       category = Some("here"),
       items = items.filter( item => ("##" + excludeUid) != item.href )
     )
+  def housingExcluding( excludeUid : String ) : Related =
+    val items =
+      Related.Item( "https://www.interfluidity.com/v2/3036.html", title = Some("Zoning laws and property rights") )        ::
+      Related.Item( "https://www.interfluidity.com/v2/6287.html", title = Some("Home is where the cartel is") )            ::
+      Related.Item( "https://www.interfluidity.com/v2/6487.html", title = Some("There’s no substitute for a substitute") ) ::
+      Related.Item( "https://www.interfluidity.com/v2/8772.html", title = Some("Microcities") )                            ::
+      Related.Item( "##only-the-state-can-house-us",              title = Some("Only the state can house us") )            ::
+      Related.Item( "##yimboree",                                 title = Some("Yimboree") )                               ::
+      Related.Item( "##it-isnt-sprawl-if-its-dense",              title = Some("It isn't sprawl of it's dense") )          ::
+      Nil
+    Related(
+      base = "Related",
+      category = Some("here"),
+      items = items.filter( item => ("##" + excludeUid) != item.href )
+    )

@@ -4,7 +4,7 @@
 >   "Title"     -> "Industrial policy and ecosystems",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-05-11T14:50:00-04:00",
->   "Related"   -> com.interfluidity.drafts.Relateds.chinaIndustrialPolicyExcluding( uid ),
+>   "Related"   -> Relateds.chinaIndustrialPolicyExcluding( uid ),
 >   "Anchor"    -> uid
 > )
 
