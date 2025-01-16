@@ -221,6 +221,7 @@ div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a
 }
 div.entry-body {
     text-align: justify;
+    text-wrap: pretty;
 }
 article.synthetic em, article.synthetic i {
     font-family: CooperHewitt-Light;
@@ -574,6 +575,10 @@ body.old-draft #top-banner {
     }
     hr.entry-separator::before {
         content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    }
+    div.entry-body {
+      hyphens: auto;
+      hyphenate-limit-chars: 7;
     }
 }
 
