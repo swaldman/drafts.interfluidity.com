@@ -3,13 +3,15 @@ import unstatic.ztapir.simple.Related
 object Relateds:
   trait Abstract:
     def Items : Seq[Related.Item]
-    def excluding( excludeUid : String ) : Related =
+    val DefaultCategory : String = "here"
+    def excluding( excludeUid : String, category : String = DefaultCategory ) : Related =
       Related(
         base = "Related",
-        category = Some("here"),
+        category = Some(category),
         items = Items.filter( item => ("##" + excludeUid) != item.href )
       )
   object ChinaIndustrialPolicy extends Abstract:
+    override val DefaultCategory = ("industrial policy")
     val Items =
       Related.Item( "##industrial-policy-and-ecosystems",             title = Some("Industrial policy and ecosystems") )             ::
       Related.Item( "##china-as-a-model",                             title = Some("China as a model") )                             ::
@@ -20,6 +22,7 @@ object Relateds:
       Related.Item( "##private-firms-public-industries",              title = Some("Private firms, public industries") )             ::
       Nil
   object Housing extends Abstract:
+    override val DefaultCategory = ("housing")
     val Items =
       Related.Item( "https://www.interfluidity.com/v2/3036.html", title = Some("Zoning laws and property rights") )        ::
       Related.Item( "https://www.interfluidity.com/v2/6287.html", title = Some("Home is where the cartel is") )            ::
@@ -29,3 +32,13 @@ object Relateds:
       Related.Item( "##yimboree",                                 title = Some("Yimboree") )                               ::
       Related.Item( "##it-isnt-sprawl-if-its-dense",              title = Some("It isn't sprawl of it's dense") )          ::
       Nil
+  object HardInformationSoftInformation extends Abstract:
+    override val DefaultCategory = ("hard information, soft information")
+    val Items =
+      Related.Item( "https://www.interfluidity.com/v2/933.html", title = Some("Monday at the Treasury: an overlong exegesis") )          ::
+      Related.Item( "##banks-should-fail-much-more-often",       title = Some("Banks should fail much more often") )                     ::
+      Related.Item( "##situated-vs-unsituated-virtues",          title = Some("Situated versus unsituated virtues") )                    ::
+      Related.Item( "indirection-capitalism-ii",                 title = Some("Indirection and the character of capitalism (Part II)") ) ::
+      Related.Item( "seeing-like-a-ceo",                         title = Some("Seeing like a CEO") )                                     ::
+      Nil
+
