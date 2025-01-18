@@ -1,8 +1,11 @@
+> val uid = "seeing-like-a-ceo"
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Seeing like a CEO",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-04-14T12:10:00-04:00",
->   "Anchor"    -> "seeing-like-a-ceo"
+>   "Related"   -> Relateds.HardInformationSoftInformation.excluding(uid),
+>   "Anchor"    -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

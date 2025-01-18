@@ -1,8 +1,11 @@
+> val uid =  "indirection-capitalism-ii"
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Indirection and the character of capitalism (Part II)",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-04-11T10:30:00-04:00",
->   "Anchor"    -> "indirection-capitalism-ii"
+>   "Related"   -> Relateds.HardInformationSoftInformation.excluding(uid),
+>   "Anchor"    -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
