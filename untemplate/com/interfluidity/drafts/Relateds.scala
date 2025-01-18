@@ -38,7 +38,7 @@ object Relateds:
       Related.Item( "https://www.interfluidity.com/v2/933.html", title = Some("Monday at the Treasury: an overlong exegesis") )          ::
       Related.Item( "##banks-should-fail-much-more-often",       title = Some("Banks should fail much more often") )                     ::
       Related.Item( "##situated-vs-unsituated-virtues",          title = Some("Situated versus unsituated virtues") )                    ::
-      Related.Item( "indirection-capitalism-ii",                 title = Some("Indirection and the character of capitalism (Part II)") ) ::
-      Related.Item( "seeing-like-a-ceo",                         title = Some("Seeing like a CEO") )                                     ::
+      Related.Item( "##indirection-capitalism-ii",               title = Some("Indirection and the character of capitalism (Part II)") ) ::
+      Related.Item( "##seeing-like-a-ceo",                       title = Some("Seeing like a CEO") )                                     ::
       Nil
 
