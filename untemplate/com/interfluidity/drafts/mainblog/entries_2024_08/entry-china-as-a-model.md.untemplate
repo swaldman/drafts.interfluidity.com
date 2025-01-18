@@ -10,7 +10,7 @@
 >   "PubDate"   -> "2024-08-13T12:35:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
->   "Related"         -> com.interfluidity.drafts.Relateds.chinaIndustrialPolicyExcluding( uid ),
+>   "Related"         -> Relateds.ChinaIndustrialPolicy.excluding( uid ),
 >   "Anchor"          -> uid
 > )
 

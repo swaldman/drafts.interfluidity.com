@@ -1,8 +1,16 @@
 import unstatic.ztapir.simple.Related
 
 object Relateds:
-  def chinaIndustrialPolicyExcluding( excludeUid : String ) : Related =
-    val items =
+  trait Abstract:
+    def Items : Seq[Related.Item]
+    def excluding( excludeUid : String ) : Related =
+      Related(
+        base = "Related",
+        category = Some("here"),
+        items = Items.filter( item => ("##" + excludeUid) != item.href )
+      )
+  object ChinaIndustrialPolicy extends Abstract:
+    val Items =
       Related.Item( "##industrial-policy-and-ecosystems",             title = Some("Industrial policy and ecosystems") )             ::
       Related.Item( "##china-as-a-model",                             title = Some("China as a model") )                             ::
       Related.Item( "##form-of-the-subsidy",                          title = Some("Competition and the form of the subsidy") )      ::
@@ -11,13 +19,8 @@ object Relateds:
       Related.Item( "##industrial-policy-without-national-champions", title = Some("Industrial policy without national champions") ) ::
       Related.Item( "##private-firms-public-industries",              title = Some("Private firms, public industries") )             ::
       Nil
-    Related(
-      base = "Related",
-      category = Some("here"),
-      items = items.filter( item => ("##" + excludeUid) != item.href )
-    )
-  def housingExcluding( excludeUid : String ) : Related =
-    val items =
+  object Housing extends Abstract:
+    val Items =
       Related.Item( "https://www.interfluidity.com/v2/3036.html", title = Some("Zoning laws and property rights") )        ::
       Related.Item( "https://www.interfluidity.com/v2/6287.html", title = Some("Home is where the cartel is") )            ::
       Related.Item( "https://www.interfluidity.com/v2/6487.html", title = Some("There’s no substitute for a substitute") ) ::
@@ -26,8 +29,3 @@ object Relateds:
       Related.Item( "##yimboree",                                 title = Some("Yimboree") )                               ::
       Related.Item( "##it-isnt-sprawl-if-its-dense",              title = Some("It isn't sprawl of it's dense") )          ::
       Nil
-    Related(
-      base = "Related",
-      category = Some("here"),
-      items = items.filter( item => ("##" + excludeUid) != item.href )
-    )
