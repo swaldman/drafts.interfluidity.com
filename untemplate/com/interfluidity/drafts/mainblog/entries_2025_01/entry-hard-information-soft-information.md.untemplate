@@ -18,9 +18,9 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-I use the term "soft information" [quite](##seeing-like-a-ceo) [a](##situated-vs-unsituated-virtues) [lot](##banks-should-fail-much-more-often), but I think it's unclear to readers what I mean by that, and what "hard information" would by contrast mean.
+I use the term "soft information" [quite](##seeing-like-a-ceo) [a](##situated-vs-unsituated-virtues) [lot](##banks-should-fail-much-more-often), but I think it's unclear to readers what I mean, and what "hard information" would by contrast mean.
 
-"Hard information" (think "hard data") is often taken to mean true or accurate or reliable information. That is very much not what I mean when I use the term. Usually when I am writing about hard and soft information, I am advocating greater reliance upon soft information, or lamenting our institutions' inability to make use of it. That'd be pretty dastardly, if by hard information I meant good information and by soft information I meant bad.
+"Hard information" (think "hard data") is often taken to imply true or accurate or reliable information. That is very much not what I intend when I use the term. Usually when I am writing about hard and soft information, I am advocating greater reliance upon soft information, or lamenting our institutions' inability to make use of it. That'd be pretty dastardly, if by hard information I meant good information and by soft information I meant bad.
 
 My definition of "soft information" comes out of the banking literature I once studied as an abortive grad student in finance. It's kind of a puzzle, I was taught, that banks even exist. Finance types, or at least finance types of the still very neoliberal aughts, treated markets as the best information aggregators the humans ever invented. Loans are marketable. When you and I want a loan, why don't we just issue a kind of personal, commercial paper, and let potential lenders bid on the debt, establishing our market interest rate?
 
