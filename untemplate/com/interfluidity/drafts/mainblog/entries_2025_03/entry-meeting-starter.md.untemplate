@@ -1,0 +1,39 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "meeting-starter"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Meeting Starter",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-03-02T15:55:00-05:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.HardInformationSoftInformation.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Republican Representative and Senators are standing around with their hands in their pockets while Elon Musk unlawfully and unconstitutionally decimates the United States government, under the imprimatur of Donald Trump.
+
+When Republican members of Congress meet with their constituents, the public [expresses](https://www.nbcnews.com/politics/congress/town-halls-republicans-feel-heat-trump-musks-firing-cutting-spree-rcna193164) a certain, um, lack of delight with the current state of affairs. The growing discontent has spurred these honorable leaders to bold action. They increasingly [resolve](https://nymag.com/intelligencer/article/gop-to-avoid-town-halls-after-viral-angry-voter-exchanges.html) [no longer](https://www.rollingstone.com/politics/politics-news/republican-leaders-advise-lawmakers-avoid-town-halls-1235280854/) [to conduct](https://www.nbcnews.com/politics/congress/house-republicans-town-halls-blowback-trump-cuts-rcna193766) open, public meetings where constituents might confront them.
+
+In-person, human-to-human meetings are the heart of democratic governance. Much of why Americans have become so cynical about democracy is there are so few opportunities to participate in forums that put our representatives directly within earshot of us, and us them.
+
+I think it's a mistake that we let our humble servants, our hired hands, set the terms of when and whether they will deign to meet with us. When we want to meet, they ought to show up and speak to us. They have one job.
+
+Here's an idea: Suppose that we create public websites on which constituents and organizations can propose public meetings. It would be the responsibility of the proposer to price out a suitable venue, support staff, any catering, etc. Constituents could then reserve seats, pledging if they can afford it to cover their portion of the cost.
+
+But constituents would be encouraged to pledge more than simply the cost of their own seats. The excess would first subsidize seats of those who can't afford a paid admission, then to create a "goodwill surplus".
+
+The goodwill surplus would be donated. But not to the Congressperson's campaign. We have too much of that kind of legalized bribery already. The surplus would be donated to the *government that our representative serves*. For a member of the US Congress, the surplus would be donated to the US Treasury. For a meeting requested with a city councilperson, the surplus would be donated to the city budget.
+
+Citizens have no way to compel representatives to take our meetings. If we are unwilling to bribe them with campaign donations, they usually decline. But with "meeting starter" websites, the asks and responses would be public and visible. Declining meetings with substantial goodwill surpluses would amount to *directly costing taxpayers money*.
+
+Suppose a hundred citizens publicly ask for a meeting, proposing a reasonable venue during a recess of their chamber, offering a goodwill surplus of a few thousand dollars for an hour and a half of their time. The representative can still say no. But she will have shirked the core obligation of her job, and she will have cost taxpayers those several thousand dollars as well.
+
+That provides pretty clear evidence what kind of public servant she is, which voters might take into consideration at the next election.
