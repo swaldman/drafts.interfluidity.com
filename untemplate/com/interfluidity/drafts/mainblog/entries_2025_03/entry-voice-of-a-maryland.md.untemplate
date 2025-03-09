@@ -1,0 +1,51 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "voice-of-a-maryland"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Voice of a Maryland",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-03-09T14:00:00-05:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.HardInformationSoftInformation.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+It's time for state governments to overtly and generously stand-up media organizations.
+
+The death of local newspapers is much bemoaned, but that ecosystem which was once the beating heart of our public square is dead nonetheless.
+
+I've long supported reforms along the lines [Dean Baker suggests](https://www.thenation.com/article/society/billionaires-wont-save-local-news-heres-what-will/), letting citizens earmark public funds to media organizations they support.
+But we are in an emergency occasioned in large part by plutocratic control over media. We need to change the media environment rapidly and directly.
+
+A mode of governance &mdash; you know, like liberal democracy &mdash; cannot survive without a media ecosystem in which the case for that mode of governance is full-throatedly and vigorously offered, along side more critical views. Outlets like Fox Media, X, and Facebook are mouthpieces for authoritarian plutocrats. They use opposing views to only launder the thumb they place on the scale. Outlets like The New York Times, ABC, CBS, CNN are corporate interests themselves. They rely upon the goodwill of regulators for getting mergers through and for other treats and goodies. 
+
+Very few prestigious, influential outlets will make a muscular case for social democracy, or even for what used to be "centrist" liberalism, when a vindictive Federal government seeks to suppress and discredit these views. In theory, of course, the Federal government cannot discriminate against corporate media on the basis of viewpoint. Ha. It will trivial for political appointees to invent pretexts that hide the connection between editorial position and adverse regulatory treatment. Plutocrats control the commercial marketplace of ideas now, either directly or by credible threat.
+
+It would not be a huge financial burden on state governments to run news organizations on the scale of the major dailies that their cities used to host. States have First Amendment rights against the Federal government. They have every right to speak, to provide news from their own editorial perspective, to communicate what they are doing and their case for why they are doing it.
+
+"State media" might be blatantly propagandist, little Pravdas for whatever the governor is doing. But that sort of media probably would not attract much of an audience or engender much respect. Far better models would be [Voice of America](https://en.wikipedia.org/wiki/Voice_of_America) and [Radio Free Europe](https://en.wikipedia.org/wiki/Radio_Free_Europe/Radio_Liberty), which are high quality, largely independent, news organizations, whose editorial perspectives are shaped by US interests. We could have fifty diverse but capable news organizations very quickly under this model.
+
+Of course, Texas would have its news organization as much as Maryland would. Red state outlets might well adopt the editorial perspective of Fox News, OANN, Newsmax, etc. That's fine. They have every right. But our news ecosystem is already saturated with that viewpoint, so the addition of these new voices would do little new harm.
+
+Our news ecosystem is starving for voices that make the affirmative case for high quality government, extensive public goods provision, pooling resources ad working together to build a more just and prosperous society. Some of the publicly funded blue-state outlets might take on this role. The marginal benefit to social democrats would be much greater than the marginal benefit to plutocrats.
+
+US states, like corporations, also depend on the Federal government. Won't their coverage be warped by the same pressures that turn corporate outlets into tongue-tied pussycats?
+
+To a degree, perhaps. But the Trump Administration already overtly discriminates in favor of red jurisdictions and treats blue states with hostility. From a blue state's perspective, the marginal cost of pissing plutocrats off just a bit more than their baseline intent to destroy and subdue is low. Majorities of voters in their states sincerely want media that describe the world plainly and are unapologetic about supporting democratic values.
+
+Plus, the existence of state media might open new avenues for states to *defend* against politically motivated discrimination against blue states. I don't know whether it's legal for the Federal government to discriminate between states on the basis of electoral outcomes, but it is certainly unconstitutional for it to discriminate on the basis of a state's speech. The thin-skinned narcissists who run the Federal government will predictably, inevitably, constantly lose their shit over stuff blue-state media outlets say. States then could argue that any petty and punitive kneecappings are in retaliation for speech and constitute unlawful viewpoint discrimination. It might or might not succeed. I'm as [cynical](https://drafts.interfluidity.com/2024/07/03/no-longer-a-liberal-democracy/index.html) about the current Supreme Court as anyone. But at the margin, outspoken state media may help more than hurt blue states that will be targeted no matter what they do.
+
+The traditional, liberal case against overt state media is that it would be overweening. State subsidy would confer so great an advantage over private speech that government might dominate the marketplace of ideas &mdash; not on the merit of those ideas, but by virtue of relentlessness and sheer volume. Neutrality among citizens is an important value that liberal states laudibly seek to uphold. But neutrality presupposes basic equality between the citizens that constitute the public square. That prerequisite is no longer in place. In a much more equal society, it might make sense for states to largely opt out of direct participation in media. In a tremendously unequal society, however, the speech that is overweening is speech purchased by plutocrats. In a world of Elon Musk, Jeff Bezos, and Citizens' United, "neutrality" is a sham. The value we must lean upon is pluralism. The liberal remedy to bad speech is more speech. For that to work, the more speech must be loud enough to be heard above the din. Fifty US states can provide both pluralism and volume.
+
+We are in an emergency. The survival of meaningful democracy in the United States, the hope for any kind of civilized society, is under severe threat. Private media are largely captured by fascists. A unique strength of the United States is its strong federalism. State governments could unilaterally and quickly restore an ecosystem of vibrant, diverse media with substantial capability and reach.
+
+Let's do this.
+
