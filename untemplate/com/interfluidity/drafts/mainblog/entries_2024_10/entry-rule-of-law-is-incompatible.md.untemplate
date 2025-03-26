@@ -8,7 +8,7 @@
 >   "PubDate"   -> "2024-10-21T13:35:00-04:00",
 >   "UpdateHistory" -> updateHistory,
 >   //"Sprout"      -> true,
->   //"Anchor"       -> "abundance-is-overcapacity"
+>   "Anchor"       -> "rule-of-law-is-incompatible-two-parties"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
