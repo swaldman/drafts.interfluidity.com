@@ -347,6 +347,21 @@ a#rss-link span {
     vertical-align: 20%;
 }
 */
+
+/* sup hack modified from https://stackoverflow.com/questions/1530685/how-can-i-keep-consistent-line-height-with-superscript-elements */
+sup {
+    vertical-align: top;
+    font-size: 75%;
+}
+.flexmark a.footnote-ref:before {
+    content: none;
+}
+.flexmark a.footnote-ref:after {
+    content: none;
+}
+.flexmark a.footnote-ref {
+    font-family: Latin-Modern-Mono-Light;
+}
 .flexmark .footnotes p {
     display: inline;
 }
