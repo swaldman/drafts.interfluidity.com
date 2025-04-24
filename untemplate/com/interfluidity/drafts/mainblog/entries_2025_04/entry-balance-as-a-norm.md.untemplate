@@ -1,0 +1,185 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "balance-as-a-norm"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Balance as a norm",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-04-24T18:30:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.HardInformationSoftInformation.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+My previous [two](##if-we-weren't-idiots-bop-edition) [pieces](##keynesian-compromise) &mdash; and probably more to come! &mdash; have
+argued in favor of reimposing a strong international norm of balanced trade.
+
+My friend [Steve Roth](https://wealtheconomics.substack.com/) pointed me this morning to
+[a piece](https://www.ft.com/content/568cf53a-5191-49b7-b9e9-c0969ada1ec6) by the always excellent Martin Sandbu, which argues the
+contrary, that the case for trade balance is overstated. I responded with a [logorrheic BlueSky thread](https://bsky.app/profile/interfluidity.com/post/3lnkyfolfd22g),
+which I reproduce for posterity below.
+
+Where I think Sandbu and I agree is that there is nothing magic about the number zero. Many of the benefits attributed to balance can
+be achieved while running a modest surplus or a modest deficit. Enforcing balance as a never-to-be-violated constraint would be impossible and
+overly draconian. In any given year, nearly all economies will run at least a small surplus or deficit. Zero is an infinitessimal target.
+
+But what I insist is that a _**norm**_ of international balance is desirable. Most countries should be very near balance, especially over
+a several year cycle.
+The international trading system should encourage the development and use of tools _**on the capital side of their balance of payments**_
+by which countries can bring their own trade towards balance.
+
+Countries should _not_ resort to tariffs for this purpose. Tariffs may &mdash; or may not! &mdash; have some
+role to play with respect to industrial policy, but they are poorly suited to promoting balance. Tariffs discourage balanced and unbalanced trade
+indiscriminitely, where capital-side interventions can target imbalance directly. Tariffs are costly and complex to enforce, are perceived by trading partners as hostile,
+and are unusually susceptible to corruption. They are a poor tool, as we can observe in real time.
+
+But countries running large, persistent surpluses or deficits should be subject to a rebuttable presumption they are doing something wrong.
+We've collectively erred by tolerating and frankly encouraging persistent and growing imbalances in the trading system. I hope we survive the error.
+
+The international trading system should be managed under the presumption that ownership of each country's productive capital is domestic,
+so that domestic governments are free to regulate, rather than forced to cede control to investor-protection mechanisms enshrined in treaties,
+managed by technocrats whose interests may be at variance with domestic publics'. In a world of balanced trade, a presumption of domestic ownership can mostly be true.
+In a world of unbalanced trade, it cannot be.
+
+Anyway, what follows is my [long BlueSky thread](https://bsky.app/profile/interfluidity.com/post/3lnkyfolfd22g), "rolled-up" and lightly edited, and then a few paragraphs of extra commentary:
+
+> I agree with [@martinsandbu.ft.com](https://bsky.app/profile/did:plc:wtvbzsaag7emwfosujh3rojv)
+> on the jobs case! Manufacturing (like production in general) is not a jobs program. The wealthier we get,
+> the more paid work will migrate to services we value for very human-specific reasons, relationships,
+> care, trust, insight, just the pleasure of interaction.
+>
+> But I think Sandbu was a bit slippery in migrating from the general case to the weaker jobs case.
+> What we want from manufacturing is not jobs, but capabilities: “We” need to be capable of making
+> and doing things, and the only way to build and sustain and improve that kind of capacity is doing.
+>
+> Why do “we” need to be capable of doing these things? The obvious shut-down-conversation case is
+> “national security”, but the broader cases are national resilience and technological capability.
+> The last but not least case is conflict avoidance.
+>
+> The traditional liberal case that interdependence breeds peace has failed spectacularly and famously
+> over and over. Today we live in an era of [@himself.bsky.social](https://bsky.app/profile/did:plc:a3h6mkohqeiu6xl4fnrwuk4t)’s
+> and [@abenewman.bsky.social](https://bsky.app/profile/did:plc:yjtio5stpthpfgh36chkbv3o)'s
+> ["weaponized interdependence"](https://direct.mit.edu/isec/article/44/1/42/12237/Weaponized-Interdependence-How-Global-Economic).
+>
+> Peace is better served by reducing the vital-national-interest-ness of cross-border entanglements
+> than by magnifying those and hoping the cost of breaking anything overwhelms inevitable strife.
+>
+> And all of this is before we consider the financial side of unbalanced trade. The US has been a
+> bit of a special case, pre-now, because of the centrality of the dollar and the apparently inexhaustible willingness
+> of trading partners to hold USD assets, even through weakening-dollar periods.
+>
+> But trade imbalance often presages financial crises, both domestic and international. Or sometimes orderly
+> devaluations. But the more market participants anticipate devaluations, shockingly, the less there is actual
+> trade imbalance. The anticipation disciplines the trade.
+
+> The last bit worth considering is who “we” are in this story. Must it be a nation-state? Is the EU one “we”
+> or many countries? Why can Florida run a persistent trade deficit with other states? (I imagine it does,
+> not sure.) Why was that a bigger problem for Greece?
+>
+> I think the answers here have to be textured. for resilience and national security, “friendshoring” might be
+> sufficient. Indeed, from a resilience perspective, you want to diversify across domestic and foreign supply,
+> as well as among different foreign suppliers.
+>
+> As [@martinsandbu.ft.com](https://bsky.app/profile/did:plc:wtvbzsaag7emwfosujh3rojv) suggests in the piece
+> and in a reply, there’s nothing special about balance, the arbitrary zero point, for national security or resilience.
+> Unbalanced friendshoring may be fine, with sufficiently reliable friends.
+>
+> But to say there’s nothing special about zero doesn’t mean it’s fine to stray arbitrarily negative for indefinite
+> periods of time. If you are going for resilience by diversification, you do want a meaningful domestic component
+> to your portfolio. Too negative too long and you’ll lose that.
+>
+> The main, most important thing (for a large, diversified economy with geopolitical pretensions) is to maintain
+> generalized capacity, or “metacapacity”, and that requires substantial, continuous doing and improving of things
+> in the world you value and rely upon.
+>
+> (Hypothetically a trade deficit country whose paper is coveted abroad could use its fiscal flexibility to run a
+> kind of noncommercial industrial university system, maintaining, building, innovating capabilities that could be
+> scaled up should terms of trade shift. Whether this could “work” without the feedback of market discipline is,
+> I think, an open question, but it’d obviously be hard to get right, and hard politically to sustain.)
+
+> The place where that zero point of balance is not in fact arbitrary is the financial side.
+>
+> “Friendshoring” might assist with resilience and national security with sufficiently good friends, but durably
+> unbalanced trade means someone is accumulating promises from a “friend” whose economy may be shifting from the
+> tradables that might repay them.
+>
+> Again, quantities matter. A country can run a small deficit relative to its growth indefinitely, and
+> the potential burden of accumulated promises will remain modest. Even on the finance side, the zero point
+> isn’t magic, we shouldn’t make a fetish of it.
+>
+> But if the scale of accumulated promises is growing relative to the deficit economy, that’s going to yield problems
+> if it continues indefinitely, perhaps even do damage to that “friend” assumption in friendshoring.
+>
+> That’s why I think the “we” ultimately has to be defined by fiscal union. Florida can run its deficits, because
+> we gradually and as a matter of course redistribute to fill in the holes in net worth it would otherwise yield.
+>
+> ("We" in that last meaning other states, the rest of the fiscal union including surplus states.)
+>
+> The EU can become more relaxed about its internal trade balances if it builds up similar redistributive and
+> mutual insurance mechanisms between states.
+>
+> If we end up with some persistent deficit countries, but with deficits small enough to be overwhelmed by growth,
+> that’s fine.
+>
+> But letting zero be the normative attractor serves that cause of “small enough to be overwhelmed by growth”.
+>
+> Without that norm, we find ourselves untethered, making excuses, eventually in crises &mdash; internally due to lost capability,
+> and externally due to accumulating promises that will become one party’s terrible burden or another party’s unfair loss.
+>
+> ---
+>
+> **Addendum:** I want to be very clear that I think Trump’s tariffs are hideously stupid, even though overall balance
+> is a thing the US legitimately should work toward.
+>
+> I’d propose a [foreign payouts tax](##if-we-weren't-idiots-bop-edition) to help us grope towards balance.
+
+That's it for my thread! A few more comments...
+
+Sandbu [suggests](https://www.ft.com/content/568cf53a-5191-49b7-b9e9-c0969ada1ec6)
+
+> the current level of the US
+> current account — just [over 3 per cent of GDP](https://fred.stlouisfed.org/series/USAB6BLTT02STSAQ) — should not be unsustainable for an economy that can count on nominal
+> growth of 4 per cent over the long term and enjoys global reserve currency status ([if it can keep it](https://www.ft.com/content/73294414-8cdc-4298-a46a-e548253c90c0)).
+
+I think this is a lot too sanguine. GDP may not be the right denominator. We want to compare the current account deficit against a measure of the economy's
+capacity to produce tradables. The US current account deficit is [now more than a third](https://fred.stlouisfed.org/graph/?g=1IvEZ)
+of its total exports. Maybe that would be okay if we were sure this fraction would be stable. But since the 2014,
+exports [have been growing more slowly](https://fred.stlouisfed.org/graph/?g=1IvFf) than GDP.
+It seems worthwhile to remedy that going forward.
+
+Sandbu is correct that, by any measure, the US current account deficit was larger during the mid-aughts.
+In those days, optimists could console themselves with
+["dark matter"](https://web.archive.org/web/20100703052023/http://www.hks.harvard.edu/var/ezp_site/storage/fckeditor/file/pdfs/centers-programs/centers/cid/publications/faculty/wp/124.pdf),
+a name given to the discrepancy between the US' very large current account deficit and its stable NIIP ("<a href="https://www.investopedia.com/terms/n/net-international-investment-position-niip.asp" class="bracketless">net international investment position</a>").
+
+Unfortunately, that stability has disappeared in the intervening years. The US NIIP has deteriorated sharply whether measured in [absolute terms](https://fred.stlouisfed.org/graph/?g=1IvFY),
+as [a fraction of GDP](https://fred.stlouisfed.org/graph/?g=1IvG0), or as [a fraction of exports](https://fred.stlouisfed.org/graph/?g=1IvLd).
+
+This "deterioration" is due in part to the US' persistent current account deficit, but also due to what seemed like good news for America. Since the financial crisis,
+US assets (and so US assets in foreigners' hands) outperformed foreign assets (and so foreign assets in US hands), causing the net value of assets foreigners hold to grow
+even faster than the growth suggested by the assets they receive from unbalanced trade. Call this "dark antimatter"!
+
+Whether due to good news or bad, the value foreign holders
+expect their US asset holdings to deliver has been growing, much much faster than the US tradables economy or the US economy writ large. The probability of
+disappointing those who've placed a high value on US promises, one way or another, is likely also growing.
+
+We are faced with the fundamental financial-side cost
+of international imbalance. If a country's persistent current account deficits are not corrected by other means, they will eventually be corrected by some kind of disappointment of foreign assetholders.
+Those episodes of disappointment can be quite dangerous, to the deficit country, to the human race.
+
+We are in a rather terrifying moment. The right thing to do would be to bring leaders of goodwill together in something like a new Bretton Woods conference,
+to agree upon a fair path back toward balance that minimizes disruption and supports the growth of all parties.
+
+I wish I had more faith in our current leadership.
+
+
+
+
+
