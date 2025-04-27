@@ -351,7 +351,7 @@ a#rss-link span {
 /* sup hack modified from https://stackoverflow.com/questions/1530685/how-can-i-keep-consistent-line-height-with-superscript-elements */
 sup {
     vertical-align: top;
-    font-size: 75%;
+    font-size: 65%;
 }
 .flexmark a.footnote-ref:before {
     content: none;
@@ -361,6 +361,9 @@ sup {
 }
 .flexmark a.footnote-ref {
     font-family: Latin-Modern-Mono-Light;
+}
+.flexmark .footnotes li {
+    margin-bottom: 0.5rem;
 }
 .flexmark .footnotes p {
     display: inline;
