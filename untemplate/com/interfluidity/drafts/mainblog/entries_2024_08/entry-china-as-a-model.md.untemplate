@@ -10,7 +10,8 @@
 >   "PubDate"   -> "2024-08-13T12:35:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
 >   //"Sprout"        -> true,
->   "Related"         -> Relateds.ChinaIndustrialPolicy.excluding( uid ),
+>   "Related"         -> unstatic.ztapir.simple.Related.Multi( Seq(Relateds.ChinaIndustrialPolicy.excluding( uid ), Relateds.TradeCapitalAccountProtectionism.excluding( uid ) ), None ),
+>   //"Related"         -> Relateds.ChinaIndustrialPolicy.excluding( uid ),
 >   "Anchor"          -> uid
 > )
 

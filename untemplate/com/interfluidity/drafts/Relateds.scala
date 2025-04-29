@@ -42,5 +42,18 @@ object Relateds:
       Related.Item( "##seeing-like-a-ceo",                                       title = Some("Seeing like a CEO") )                                          ::
       Related.Item( "##hard-information-soft-information-groupthink-corruption", title = Some("Hard information, soft information, groupthink, corruption") ) ::
       Nil
+  object TradeCapitalAccountProtectionism extends Abstract:
+    override val DefaultCategory = ("trade and capital-account protectionism")
+    val Items =
+      Related.Item( "https://www.interfluidity.com/v2/26.html",                  title = Some("Global Imbalances — Warren Buffett’s Cap & Trade") )            ::
+      Related.Item( "https://www.interfluidity.com/v2/53.html",                  title = Some("Countering currency manipulation with high deficit spending") ) ::
+      Related.Item( "https://www.interfluidity.com/v2/67.html",                  title = Some("Two Cheers for Bernanke’s Speech on Trade") )                   ::
+      Related.Item( "https://www.interfluidity.com/v2/540.html",                 title = Some("""Fixing “global imbalances” in three easy steps""") )          ::
+      Related.Item( "https://www.interfluidity.com/v2/753.html",                 title = Some("Revaluing China") )                                             ::
+      Related.Item( "##china-as-a-model",                                        title = Some("China as a model") )                                            ::
+      Related.Item( "##if-we-weren't-idiots-bop-edition",                        title = Some("If we weren't idiots, Balance of Payments edition") )           ::
+      Related.Item( "##keynesian-compromise",                                    title = Some("Balance as a norm") )                                           ::
+      Related.Item( "##how-can-taxing-foreign-investors-balance-trade",          title = Some("How can taxing foreign investors balance trade?") )             ::
+      Nil
 
 

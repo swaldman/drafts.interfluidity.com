@@ -279,10 +279,12 @@ article.synthetic div.synthetic-note {
     float: left;
 }
 div.related {
-    margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid black;
     font-size: 90%;
+}
+div.related:first-child {
+    margin-top: 2rem;
+    border-top: 1px solid black;
 }
 div.related ul {
     margin-top: 0;
