@@ -28,7 +28,7 @@ Why not? Because negative numbers exist.
 
 Suppose we want to drive the sum *x + y* to zero.
 
-One way we can do that is try let *x* and *y* be positive numbers, and try to make them as small as possible. Another approach is to let *x* be as big a positive number as we want, and to try to drive *y* towards negative *x*!
+One way we can do that is to let *x* and *y* be positive numbers, and try to make them as small as possible. Another approach is to let *x* be as big a positive number as we want, and to try to drive *y* towards negative *x*!
 
 The second approach is what we want from trade.
 
