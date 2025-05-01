@@ -1,0 +1,84 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "overall-but-not-bilateral-balance"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Overall but not bilateral balance",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-04-30T20:15:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.TradeCapitalAccountProtectionism.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Talking trade, I find that people I speak to like that I'm willing to call out the Trump administration as idiotic for trying to bring every bilateral trade relationship into balance.
+
+But, *sotto voce*, my interlocutors often don't quite get how I can strongly favor a [norm](##balance-as-a-norm) of [balanced](##keynesian-compromise) [trade](##if-we-weren't-idiots-bop-edition) while mocking attempts to balance individual trade relationships. Isn't any country's overall trade deficit or surplus the sum of its "bilateral" surpluses with individual trade partners? Yes it is!
+
+So if we want to drive the deficit or surplus to zero, doesn't that mean we have to drive each component toward zero? Absolutely not.
+
+Why not? Because negative numbers exist.
+
+Suppose we want to drive the sum *x + y* to zero.
+
+One way we can do that is try let *x* and *y* be positive numbers, and try to make them as small as possible. Another approach is to let *x* be as big a positive number as we want, and to try to drive *y* towards negative *x*!
+
+The second approach is what we want from trade.
+
+Let's consider an example.
+
+Let's imagine there are three countries, Industria, Ironia, and Oceania.
+
+* The Industrians produce manufactured goods, but they require a lot of iron ore. 
+
+* The Ironians mine lots of iron ore, but they care very little for manufactured goods. They love, love, love sushi though.
+
+* Oceania has the world's preeminent fisheries, and they really want cutting edge trawlers and yachts.
+
+So, the Industrians buy $100B of ore from Ironia. The Ironians buy $100B of fish from Oceania. The Oceanians buy $100B of boats from Industria.
+
+None of the "bilateral" relationships among these countries are balanced:
+
+* The Industrians have a $100B trade deficit with Ironia! They buy iron ore, but sell nothing to those hippies.
+
+* The Ironians have a $100B trade deficit with Oceania! They buy fish, but the fisherman have no use for iron ore.
+
+* The Oceanians have a $100B trade deficit with Industria! They buy so many boats, but the Industrians break out in hives if they ingest even a nibble of seafood.
+
+None of their bilateral relationships are balanced, but all three of these countries stand in "overall" balance!
+
+By convention, we let surpluses be positive numbers and deficits be negative numbers:
+
+* Industria's deficit with Ironia is offset by a surplus with Oceania.  Industria's trade account looks like<br>&nbsp;&nbsp;
+  +100 (Oceania) + -100 (Industria) = 0 (Balance!).
+
+* Ironia's deficit with Oceania is offset by a surplus with Industria. Ironia's trade account looks like<br>&nbsp;&nbsp;
+  +100 (Industria) + -100 (Oceania) = 0 (Balance!)
+
+* Oceania's deficit with Industria is offset by a surplus with Ironia. Oceania's trade account looks like<br>&nbsp;&nbsp;
+  +100 (Ironia) + -100 (Industria) = 0 (Balance!)
+
+In the real world, of course, there are hundreds of countries, each one of which can have positive or negative balance with any trading partner.
+
+There is only one way all those countries could be in universal bilateral balance. Each pair would have to buy exactly what it sells from each trading partner. This is the international-trade equivalent of barter, there can only be trade when there is a "double coincidence of wants" between countries.
+
+There are an infinite number of ways, however, that every country could be in *overall* balance while individual trade relationships are permitted to be arbitrarily positive or negative.
+
+If we think of markets, at their best, as mechanisms that search for mutual gain, then a universal bilateral balance constraint leaves very little terrain to be searched.
+
+A constraint of *overall but not bilateral* balance leaves an endless landscape for markets to explore. Even as it rules out an also endless, but I claim [dangerous and usually undesirable](##keynesian-compromise), terrain of unbalanced trade relationships.
+
+---
+
+Some nitpicks:
+
+1. I don't, in fact, argue that there should be an absolute and inviolable overall balance constraint. I claim that overall balance should be a norm, countries ought to seek to be near there. But any country's overall balance will never perfectly be zero. And sometimes, for particular reasons, countries will have good reason to deviate from balance. I don't claim we should forbid that. I claim we should insist that it be justified and limited in time and extent, on both sides of the imbalance. And that countries should have [high quality tools they can unilaterally deploy](##how-can-taxing-foreign-investors-balance-trade) to bring themselves out of overall deficit.
+
+2. I'm writing in terms of "trade balance", but more technically what I mean is "international balance" or "current account balance". The "trade balance" is sometimes taken to refer only to trade in goods. I'm including services as well as goods in the trade we are trying to balance. And there are other, usually small, items besides trade that contribute to a country's "current account" balance, including net income from international investments, and transfers, like remittances from migrants to their home country.
