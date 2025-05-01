@@ -52,7 +52,8 @@ object Relateds:
       Related.Item( "https://www.interfluidity.com/v2/753.html",                 title = Some("Revaluing China") )                                             ::
       Related.Item( "##china-as-a-model",                                        title = Some("China as a model") )                                            ::
       Related.Item( "##if-we-weren't-idiots-bop-edition",                        title = Some("If we weren't idiots, Balance of Payments edition") )           ::
-      Related.Item( "##keynesian-compromise",                                    title = Some("Balance as a norm") )                                           ::
+      Related.Item( "##keynesian-compromise",                                    title = Some("Keynesian Compromise") )                                        ::
+      Related.Item( "##balance-as-a-norm",                                       title = Some("Balance as a norm") )                                           ::
       Related.Item( "##how-can-taxing-foreign-investors-balance-trade",          title = Some("How can taxing foreign investors balance trade?") )             ::
       Related.Item( "##overall-but-not-bilateral-balance",                       title = Some("Overall but not bilateral balance") )                           ::
       Nil
