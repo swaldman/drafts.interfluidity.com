@@ -56,6 +56,7 @@ object Relateds:
       Related.Item( "##balance-as-a-norm",                                       title = Some("Balance as a norm") )                                           ::
       Related.Item( "##how-can-taxing-foreign-investors-balance-trade",          title = Some("How can taxing foreign investors balance trade?") )             ::
       Related.Item( "##overall-but-not-bilateral-balance",                       title = Some("Overall but not bilateral balance") )                           ::
+      Related.Item( "##the-asset-side-of-the-balance-sheet",                     title = Some("The asset side of the balance sheet") )                         ::
       Nil
 
 
