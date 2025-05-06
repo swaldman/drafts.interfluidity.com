@@ -1,0 +1,69 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "the-asset-side-of-the-balance-sheet"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "The asset side of the balance sheet",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-05-06T11:35:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   "Related"       -> Relateds.TradeCapitalAccountProtectionism.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+President Trump [made the following remark](https://www.nbcnews.com/politics/trump-administration/read-full-transcript-president-donald-trump-interviewed-meet-press-mod-rcna203514) this weekend:
+
+> We were losing hundreds of billions of dollars with China. Now we’re essentially not doing business with China. Therefore, we’re saving hundreds of billions of dollars. Very simple.
+
+This claim has been [widely mocked](https://bsky.app/profile/justinwolfers.bsky.social/post/3loh27vphm725), because most of us understand that "buying stuff" and "losing money" are not the same thing. The hundreds of billions of dollars Trump says we were "losing" to China refers to our [bilateral trade deficit](https://www.statista.com/statistics/939402/us-china-trade-deficit/) with that country. That's how much more of their stuff we bought than they bought from us. So that's the amount we sent them money instead of stuff. But we got a lot of stuff for our money!
+
+If US trade were in [overall balance](##overall-but-not-bilateral-balance), Trump's point would have been satisfyingly wholly stupid. Suppose that we export to Brobdingnag goods whose value far exceeds what we import from those [gigantic bastards](https://www.meisterdrucke.us/fine-art-prints/English-School/89876/Gulliver-in-Brobdingnag.html). If the money we accept to make up the difference fully offsets the money we pay to China, we come out even financially. We suffer no financial cost due to patterns of trade.
+
+Unfortunately, Brobdingnag and our trade surplus with them do not exist. The US does run an overall trade deficit. We receive goods and services for every penny of that trade deficit. But we also do in fact lose financial net worth, year after year. Directly or indirectly, financial net worth is transferred from trade deficit countries to trade surplus countries.[^1]
+
+So is that "bad"? It depends!
+
+Think of a business that borrows to buy a factory. Financial net worth is transferred from the business to the factory builder. But if the factory is going to enable the company to make and sell goods at a profit that, over time, will more than cover the cost of the factory, including any interest on the loans, then that's just good business! Any loss of financial net worth will be temporary.
+
+But if the same business borrows so that its CEO can throw lavish parties, it's not such good business. Unless the parties serve some amazing marketing function, no asset will be gained to offset the loss of financial net worth in the spending. The business will just be poorer going forward, even if some of the people who operate the business have a nice time and feel really good for a while.
+
+I find the debate around Trump's interventions to be unsatisfying, because this question of the quality of the assets purchased is ignored. Yes, of course, Trump is stupid to equate the loss of financial net worth associated with a trade deficit to just "losing money". It is spending money. But whether spending money is sustainable and desirable depends on how much you are spending and what you are spending on.
+
+It's not enough to say that the individual purchasers who buy stuff from abroad think that they are getting their money's worth with each purchase. It is the job of a government to observe how the behavior of citizens composes, and to alter laws and regulations when, frequently, choices understandable at the individual level compose to unsustainable or undesirable outcomes at the national level.
+
+If the US is running its trade deficit because citizens are importing capital goods to produce tradable goods and services whose export should eventually more than cover their cost, that would be a virtuous trade deficit!
+
+If citizens are importing capital goods from which we will never recover the current trade deficit, but whose products will replace or offset the value of consumables currently imported, that'd be fine too. There'd be a period of loss of financial net worth, but it would be finite, and then our national balance sheet would stabilize.
+
+But if citizens in aggregate are spending financial net worth just importing consumables, in ways that don't develop capacity to increase exports or reduce imports going forward, then we have questions to address about sustainability.
+
+If the scale of deficit is small enough, it might be okay! Our economy might grow fast enough to overwhelm even a continually growing loss of financial net worth.
+
+But if the scale of the deficit is larger than the economy's growth can reliably be assumed to match, and if there's no plain dynamic by which the deficit purchases will ultimately repay or at least extinguish themselves, then there might in fact be a problem.
+
+It's not as simple as "we're losing hundreds of billions of dollars". Of course not. We're buying stuff. But when we are buying stuff, in life and in business and as nations, it's important to think about what we are buying, whether it is worth it, and whether it's sustainable.
+
+The answer to those questions might, as of three months ago, have been yes, it was worth it, and it was sustainable! My answer would have been no, we were buying too many consumables, we were building too little tradables capacity, we were too near levels of deficit that could spiral faster than economic growth could reliably stabilize.
+
+There's [a real argument](https://www.ft.com/content/568cf53a-5191-49b7-b9e9-c0969ada1ec6) about this! Perhaps it is my side that is mistaken!
+
+But the fact that we are buying stuff, spending money rather than just losing money, is not a sufficient answer. We have to talk about what we are buying, how much, and why.
+
+None of this is to rehabilitate Trump's tariffs which are, to use a technical term, [fucking stupid](https://drafts.interfluidity.com/2025/04/01/if-we-werent-idiots-balance-of-payments-edition/index.html).
+
+If we decide that the trade deficit should be addressed at a policy level, we might start with industrial policy, *qua* the [Biden](https://en.wikipedia.org/wiki/CHIPS_and_Science_Act) [Administration](https://en.wikipedia.org/wiki/Inflation_Reduction_Act), shifting economic output (and in turn inputs purchases) towards tradables production. We might also begin to assert control over our international balance directly, via diplomatic normalization of, and then gradual application of, tools like a [foreign payouts tax](##how-can-taxing-foreign-investors-balance-trade).
+
+Gradual. Let's give the last word to [Mr. Keynes](https://jmaynardkeynes.ucc.ie/national-self-sufficiency.html):
+
+> [T]hose who seek to disembarrass a country of its entanglements should be very slow and wary. It should not be a matter of tearing up roots but of slowly training a plant to grow in a different direction.
+
+<br>
+
+[^1]: Really from current account deficit countries to current account surplus countries, but let's not be pedantic. Usually trade dominates the current account. In exceptional cases we may have to discuss less usual considerations.

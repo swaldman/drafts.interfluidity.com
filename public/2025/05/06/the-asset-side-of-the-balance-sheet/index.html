@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="drafts @ interfluidity">
+    <meta name="keywords" content="Finance, Economics, Politics, Social Affairs, Social Science, interfluidity">
+    <meta name="author" content="Steve Randy Waldman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icons / favicons -->
+
+    <!-- we just want the squared-corner image with no overlays for traditional favicon uses at tiny sizes -->
+    <!-- swaldman added, ick, firefox scales down the biggest size for its tab icon, so we use the graphic we want for small sizes as the largest... -->
+    <link rel="icon" type="image/png" sizes="500x500" href="../../../../icon/interfluidity-wave-blank-square-500x500.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../icon/interfluidity-wave-blank-square-32x32.png">     <!-- swaldman added, for standard favicon size -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../icon/interfluidity-wave-blank-square-16x16.png">     <!-- swaldman added, for standard favicon size -->
+    <link rel="icon" type="image/png" href="../../../../icon/interfluidity-wave-blank-square-57x57.png">                   <!-- swaldman added, for small icons by default -->
+
+    <!-- at bigger sizes, we overlay a bit of text -->
+    <!-- icons as recommened by https://mathiasbynens.be/notes/touch-icons -->
+    <!-- For Chrome for Android: -->
+    <link rel="icon" sizes="192x192" href="../../../../icon/interfluidity-wave-drafts-192x192.png">
+    <!-- For iPhone 6 Plus with @3× display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../../../../icon/interfluidity-wave-drafts-180x180.png">
+    <!-- For iPad with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../icon/interfluidity-wave-drafts-152x152.png">
+    <!-- For iPad with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../icon/interfluidity-wave-drafts-144x144.png">
+    <!-- For iPhone with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../../../icon/interfluidity-wave-drafts-120x120.png">
+    <!-- For iPhone with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../icon/interfluidity-wave-drafts-114x114.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../../../icon/interfluidity-wave-drafts-76x76.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../icon/interfluidity-wave-drafts-72x72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../../../icon/interfluidity-wave-blank-square-57x57.png">
+
+    <!-- end icons / favicons -->
+
+    <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="../../../../feed/index.rss">
+    <link rel="alternate" type="application/x-all-item-rss+xml" title="drafts.interfluidity.com - all items" href="https://drafts.interfluidity.com/all-item-feed/index.rss">
+    <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
+    <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
+    <link rel="alternate" type="application/x-single-item-rss+xml" title="The asset side of the balance sheet" href="index.rss">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const regex = /(^.*)\-oldcommit\-[0-9A-Fa-f]+\.html/;
+          const match = window.location.pathname.match(regex);
+          if (match) {
+              const b  = document.querySelector("body");
+              const tb = document.getElementById("top-banner");
+              b.classList.add("old-draft");
+              tb.innerHTML = "You are looking at an old, superceded version of this page. For the current version, please <a href=\"" + match[1] + ".html\">click here</a>.";
+          }
+       });
+    </script>
+    <title>The asset side of the balance sheet</title>
+  </head>
+  <body>
+    <div id="top-banner"></div>
+    <header>
+      <div id="rss-link-container">
+        <a id="rss-link" href="../../../../feed/index.rss"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
+      </div>
+      <div id="menu-container">
+	<a href="../../../../index.html">top</a> | <a href="../../../../archive.html">archive</a> | <a href="../../../../subscribe.html">subscribe</a> | <a href="https://www.interfluidity.com/">main</a>
+      </div>
+    </header>
+    <main>
+      <article class="presentation-single uid-the-asset-side-of-the-balance-sheet">
+ <div class="entry-header-body-footer">
+  <div class="entry-header">
+   <h1><a href="index.html">The asset side of the balance sheet</a></h1>
+  </div>
+  <div class="entry-body">
+   <div class="flexmark markdown">
+    <p>President Trump <a href="https://www.nbcnews.com/politics/trump-administration/read-full-transcript-president-donald-trump-interviewed-meet-press-mod-rcna203514">made the following remark</a> this weekend:</p>
+    <blockquote>
+     <p>We were losing hundreds of billions of dollars with China. Now we’re essentially not doing business with China. Therefore, we’re saving hundreds of billions of dollars. Very simple.</p>
+    </blockquote>
+    <p>This claim has been <a href="https://bsky.app/profile/justinwolfers.bsky.social/post/3loh27vphm725">widely mocked</a>, because most of us understand that "buying stuff" and "losing money" are not the same thing. The hundreds of billions of dollars Trump says we were "losing" to China refers to our <a href="https://www.statista.com/statistics/939402/us-china-trade-deficit/">bilateral trade deficit</a> with that country. That's how much more of their stuff we bought than they bought from us. So that's the amount we sent them money instead of stuff. But we got a lot of stuff for our money!</p>
+    <p>If US trade were in <a href="../../../04/30/overall-but-not-bilateral-balance/index.html">overall balance</a>, Trump's point would have been satisfyingly wholly stupid. Suppose that we export to Brobdingnag goods whose value far exceeds what we import from those <a href="https://www.meisterdrucke.us/fine-art-prints/English-School/89876/Gulliver-in-Brobdingnag.html">gigantic bastards</a>. If the money we accept to make up the difference fully offsets the money we pay to China, we come out even financially. We suffer no financial cost due to patterns of trade.</p>
+    <p>Unfortunately, Brobdingnag and our trade surplus with them do not exist. The US does run an overall trade deficit. We receive goods and services for every penny of that trade deficit. But we also do in fact lose financial net worth, year after year. Directly or indirectly, financial net worth is transferred from trade deficit countries to trade surplus countries.<sup id="fnref-1"><a class="footnote-ref" href="#fn-1">1</a></sup></p>
+    <p>So is that "bad"? It depends!</p>
+    <p>Think of a business that borrows to buy a factory. Financial net worth is transferred from the business to the factory builder. But if the factory is going to enable the company to make and sell goods at a profit that, over time, will more than cover the cost of the factory, including any interest on the loans, then that's just good business! Any loss of financial net worth will be temporary.</p>
+    <p>But if the same business borrows so that its CEO can throw lavish parties, it's not such good business. Unless the parties serve some amazing marketing function, no asset will be gained to offset the loss of financial net worth in the spending. The business will just be poorer going forward, even if some of the people who operate the business have a nice time and feel really good for a while.</p>
+    <p>I find the debate around Trump's interventions to be unsatisfying, because this question of the quality of the assets purchased is ignored. Yes, of course, Trump is stupid to equate the loss of financial net worth associated with a trade deficit to just "losing money". It is spending money. But whether spending money is sustainable and desirable depends on how much you are spending and what you are spending on.</p>
+    <p>It's not enough to say that the individual purchasers who buy stuff from abroad think that they are getting their money's worth with each purchase. It is the job of a government to observe how the behavior of citizens composes, and to alter laws and regulations when, frequently, choices understandable at the individual level compose to unsustainable or undesirable outcomes at the national level.</p>
+    <p>If the US is running its trade deficit because citizens are importing capital goods to produce tradable goods and services whose export should eventually more than cover their cost, that would be a virtuous trade deficit!</p>
+    <p>If citizens are importing capital goods from which we will never recover the current trade deficit, but whose products will replace or offset the value of consumables currently imported, that'd be fine too. There'd be a period of loss of financial net worth, but it would be finite, and then our national balance sheet would stabilize.</p>
+    <p>But if citizens in aggregate are spending financial net worth just importing consumables, in ways that don't develop capacity to increase exports or reduce imports going forward, then we have questions to address about sustainability.</p>
+    <p>If the scale of deficit is small enough, it might be okay! Our economy might grow fast enough to overwhelm even a continually growing loss of financial net worth.</p>
+    <p>But if the scale of the deficit is larger than the economy's growth can reliably be assumed to match, and if there's no plain dynamic by which the deficit purchases will ultimately repay or at least extinguish themselves, then there might in fact be a problem.</p>
+    <p>It's not as simple as "we're losing hundreds of billions of dollars". Of course not. We're buying stuff. But when we are buying stuff, in life and in business and as nations, it's important to think about what we are buying, whether it is worth it, and whether it's sustainable.</p>
+    <p>The answer to those questions might, as of three months ago, have been yes, it was worth it, and it was sustainable! My answer would have been no, we were buying too many consumables, we were building too little tradables capacity, we were too near levels of deficit that could spiral faster than economic growth could reliably stabilize.</p>
+    <p>There's <a href="https://www.ft.com/content/568cf53a-5191-49b7-b9e9-c0969ada1ec6">a real argument</a> about this! Perhaps it is my side that is mistaken!</p>
+    <p>But the fact that we are buying stuff, spending money rather than just losing money, is not a sufficient answer. We have to talk about what we are buying, how much, and why.</p>
+    <p>None of this is to rehabilitate Trump's tariffs which are, to use a technical term, <a href="https://drafts.interfluidity.com/2025/04/01/if-we-werent-idiots-balance-of-payments-edition/index.html">fucking stupid</a>.</p>
+    <p>If we decide that the trade deficit should be addressed at a policy level, we might start with industrial policy, <em>qua</em> the <a href="https://en.wikipedia.org/wiki/CHIPS_and_Science_Act">Biden</a> <a href="https://en.wikipedia.org/wiki/Inflation_Reduction_Act">Administration</a>, shifting economic output (and in turn inputs purchases) towards tradables production. We might also begin to assert control over our international balance directly, via diplomatic normalization of, and then gradual application of, tools like a <a href="../../../04/27/how-can-taxing-foreign-investors-balance-trade/index.html">foreign payouts tax</a>.</p>
+    <p>Gradual. Let's give the last word to <a href="https://jmaynardkeynes.ucc.ie/national-self-sufficiency.html">Mr. Keynes</a>:</p>
+    <blockquote>
+     <p>[T]hose who seek to disembarrass a country of its entanglements should be very slow and wary. It should not be a matter of tearing up roots but of slowly training a plant to grow in a different direction.</p>
+    </blockquote>
+    <br>
+    <div class="footnotes">
+     <hr>
+     <ol>
+      <li id="fn-1">
+       <p>Really from current account deficit countries to current account surplus countries, but let's not be pedantic. Usually trade dominates the current account. In exceptional cases we may have to discuss less usual considerations.</p><a href="#fnref-1" class="footnote-backref">↩</a></li>
+     </ol>
+    </div>
+   </div>
+  </div>
+  <div class="entry-footer">
+   <div class="post-metainfo">
+    <a href="index.html">draft</a> by <b>Steve Randy Waldman</b>
+    <br>
+    2025-05-06 @ 11:35 AM EDT
+   </div>
+  </div>
+ </div><!-- entry-header-body-footer -->
+ <div class="related">
+  <div class="related-title">
+   Related — trade and capital-account protectionism
+  </div>
+  <ul class="related-list">
+   <li><a href="https://www.interfluidity.com/v2/26.html">Global Imbalances — Warren Buffett’s Cap &amp; Trade</a></li>
+   <li><a href="https://www.interfluidity.com/v2/53.html">Countering currency manipulation with high deficit spending</a></li>
+   <li><a href="https://www.interfluidity.com/v2/67.html">Two Cheers for Bernanke’s Speech on Trade</a></li>
+   <li><a href="https://www.interfluidity.com/v2/540.html">Fixing “global imbalances” in three easy steps</a></li>
+   <li><a href="https://www.interfluidity.com/v2/753.html">Revaluing China</a></li>
+   <li><a href="../../../../2024/08/13/china-as-a-model/index.html">China as a model</a></li>
+   <li><a href="../../../04/01/if-we-werent-idiots-balance-of-payments-edition/index.html">If we weren't idiots, Balance of Payments edition</a></li>
+   <li><a href="../../../04/20/keynesian-compromise/index.html">Keynesian Compromise</a></li>
+   <li><a href="../../../04/24/balance-as-a-norm/index.html">Balance as a norm</a></li>
+   <li><a href="../../../04/27/how-can-taxing-foreign-investors-balance-trade/index.html">How can taxing foreign investors balance trade?</a></li>
+   <li><a href="../../../04/30/overall-but-not-bilateral-balance/index.html">Overall but not bilateral balance</a></li>
+  </ul>
+ </div>
+ <div class="prev-top-next">
+  <div class="prev">
+   ← <a href="../../../04/30/overall-but-not-bilateral-balance/index.html">Overall but not bilateral balance</a>
+  </div>
+  <div class="top">
+   <a href="../../../../index.html">↑↑↑</a>
+  </div>
+  <div class="next">
+  </div>
+ </div>
+</article>
+<div class="bottom-form">
+ <p><b>Subscribe to this blog (</b><code><a href="../../../../index.html">drafts.interfluidity.com</a></code><b>)</b></p>
+ <form id="interfluidity-drafts-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
+  <input type="hidden" name="subscribableName" value="interfluidity-drafts">
+  <div class="subscribe-form">
+   <div class="sf-label sf-label-email">
+    E‑mail:
+   </div>
+   <div class="sf-field sf-field-email">
+    <input type="text" name="addressPart">
+   </div>
+   <div class="sf-label sf-label-name">
+    Display Name:
+   </div>
+   <div class="sf-field sf-field-name">
+    <input type="text" name="displayNamePart" placeholder="Optional">
+   </div><!-- <div class="sf-note-name">(Optional)</div> -->
+   <div class="sf-label sf-label-submit">
+    😎
+   </div>
+   <div class="sf-submit">
+    <input name="main-submit" value="Subscribe to drafts" type="submit">
+   </div>
+  </div>
+ </form>
+</div>
+    </main>
+    <footer>
+      <div id="left-footer">
+	<a href="https://drafts.interfluidity.com/"><b>drafts.interfluidity.com</b></a>
+      </div>
+      <div id="right-footer">
+	<a href="#top-banner">up to top &uarr;</a>
+      </div>
+    </footer>
+  </body>
+</html>
