@@ -194,6 +194,7 @@ div.entry-body a:hover:before, div.entry-body a:hover:after, div.related a:hover
     color: red;
     /* color: black; */
 }
+/*
 div.entry-body a:before, div.related a:before {
     font-size: 90%;
     content: "[";
@@ -215,6 +216,7 @@ div.entry-body a.anchorlink:before {
 div.entry-body a.anchorlink:after {
     content: "";
 }
+*/
 div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a {
     font-family: caroni;
     font-style: oblique;
