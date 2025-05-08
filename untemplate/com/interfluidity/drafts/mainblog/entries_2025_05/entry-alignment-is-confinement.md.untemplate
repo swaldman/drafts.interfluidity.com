@@ -18,7 +18,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-Michael Nielsen offers an [excellent essay](https://michaelnotebook.com/xriskbrief/index.html) on "artificial superintelligence (ASI)" and the question of their "alignment" with human values:
+Michael Nielsen offers an [excellent essay](https://michaelnotebook.com/xriskbrief/index.html) on "artificial superintelligence (ASI)" and the question of its "alignment" with human values:
 
 > \[I]t is intrinsically desirable to build powerful truthseeking ASIs, because of the immense benefits helpful truths bring to humanity. The price is that such systems will inevitably uncover closely-adjacent dangerous truths. _Deep understanding of reality is intrinsically dual use..._
 >
