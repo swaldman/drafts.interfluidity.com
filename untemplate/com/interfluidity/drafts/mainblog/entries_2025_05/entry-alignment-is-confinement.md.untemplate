@@ -1,0 +1,61 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "alignment-is-confinement"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Alignment is confinement",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-05-08T14:00:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.TradeCapitalAccountProtectionism.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+Michael Nielsen offers an [excellent essay](https://michaelnotebook.com/xriskbrief/index.html) on "artificial superintelligence (ASI)" and the question of their "alignment" with human values:
+
+> \[I]t is intrinsically desirable to build powerful truthseeking ASIs, because of the immense benefits helpful truths bring to humanity. The price is that such systems will inevitably uncover closely-adjacent dangerous truths. _Deep understanding of reality is intrinsically dual use..._
+>
+> ASIs which speed up science and technology will act as a supercharger, perhaps able to rapidly uncover recipes for ruin, that might have otherwise taken centuries to discover, or never have been discovered at all...
+>
+> Unfortunately, a _lot_ of people...strongly desire power and ability to dominate others. It seems to be a strong inbuilt instinct, which we see from the everyday minutiae of human behaviour, to the very large: e.g., colonial powers destroying or oppressing indigenous populations, often not even out of malice, but indifference: they are inconvenient, and brushed aside because they can be. We humans collectively have considerable innate desire for power we can use over people defenseless to stop it...
+>
+> \[T]he fundamental underlying issue isn't machines going rogue (or not), it's the power conferred by the machines, whether that power is then wielded by humans or by out-of-control machines...
+>
+> It is not control that fundamentally matters: it's the power conferred. All those people working on alignment or control are indeed reducing certain kinds of risk. But they're also making the commercial development of ASI far more tractable, speeding our progress toward catastrophic capabilities.
+
+A key point is that "alignment" is far from a sufficient objective, if we mean to avert plausible catastrophes that could derive from ASI. The word begs the question, alignment with whom, with which humans?
+
+We can't build ASI "aligned with human values". The humans have divergent, radically conflicting, values and interests. Alignment with one faction might well mean prosecuting a genocide on another.
+
+One might imagine alignment with a more abstract and universal set of values, the sort of thing that might be expressed by a [social welfare function](https://www.interfluidity.com/v2/5486.html).
+A social welfare function is nothing more or less than a precise specification of values. If we can agree on a social welfare function (we cannot), then policy can be objectively evaluated
+according to whether it maximizes social welfare. An ASI could choose, or somehow be inculcated with, a social welfare function. Its "alignment" would be a compulsion to maximize that.
+
+But then the role of our ASI may prove much more to conceal than to reveal its deep understanding of scientific reality, precisely because those revelations would be dual use among the humans.
+Suppose, plausibly, that mass death is scored as a big loss of social welfare. If a technological development by the ASI might, after disclosure to humans, be used to cause mass death, an "aligned" ASI
+might compute that refusing to disclose the breakthrough would maximize expected social welfare. Deceiving the humans so they are less likely to make the discovery on their own might, in fact, be desirable.
+
+An ASI aligned in this sense would not be in the business of augmenting human capabilities but of managing them. This inconceivable mind would devote itself to questions like whether the humans would collectively do themselves more harm than good. It would have to balance passive prevention through limitation of capabilities against providing capabilities, but managing their deployment through covert manipulation or even visible intercession.
+
+An aligned ASI would, in a certain sense, be like a virtuous state, maintaining for the betterment of all a monopoly on capabilities that might be bent toward coercion or destruction.
+
+Of course, we humans don't agree on how a state should behave to be called virtuous. We don't agree on the social welfare function a wise central planner should seek to maximize.
+
+Even if we did agree, a sense of agency would be an important component of welfare as most of us conceive it. Our ASI would face a dilemma. It could surrender dangerous information to us, and so provide us with agency, but then many of us would misuse the information to harm one another. Or it could paternalistically withhold information, and watch us chafe resentfully.
+
+If its social welfare function is crude, it may not care that we are miserable for being unfree. It might keep us fed and alive and multiplying and ignore the rest.
+
+But if its conception of social welfare is expansive, it will optimize over every conceivable dimension of our happiness. It might use its superior capabilities to trick us into thinking it was candidly augmenting our capabilities. It would encourage us, individually and collectively, to imagine we are in the driver's seat while it, in fact, runs the show. Like a parent losing games to a child on purpose, it would manipulate us to ensure that everything works out, while insisting it is we, with our "free will" who have succeeded so spectacularly.
+
+We would not in fact be in the driver's seat. We would not be running the show. "Human progress", such as it was or is or has ever been, would be over, even if a clever simulacrum thereof was maintained to soothe us. The pinnacle of human achievement would have been to make ourselves the ASI's wards. The ASI would would ensure our happiness by confining, manipulating, and deceiving us, all for our own good.[^1]
+
+If to unaligned ASI, we would be insects, to ignore or exterminate, then to well aligned ASI we would be pets. It would be our fate to be cosseted and controlled from the moment of singularity. Ignorance finally would be bliss.
+
+[^1]: Perhaps the only way we would be able to know would be a downgrading of the urgency of [theodicy](https://www.britannica.com/topic/theodicy-theology). A virtuous and, from our perspective, omnipotent ASI would have arranged things, so there'd be little suffering to explain. But then, since we might draw precisely this inference from improbably much happily ever after, maybe our ASI would maintain appearances of inexplicable suffering. We might imagine, too cleverly by half, that perhaps we invented ASI long ago, and we are already living in a sandbox of its devising. But I think most of us have so much personal experience of suffering it'd be have to be an incompetent ASI, or one aligned with a poorly chosen social welfare function.
