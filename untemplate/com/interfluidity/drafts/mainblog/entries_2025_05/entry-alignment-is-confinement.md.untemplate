@@ -20,7 +20,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 Michael Nielsen offers an [excellent essay](https://michaelnotebook.com/xriskbrief/index.html) on "artificial superintelligence (ASI)" and the question of its "alignment" with human values:
 
-> \[I]t is intrinsically desirable to build powerful truthseeking ASIs, because of the immense benefits helpful truths bring to humanity. The price is that such systems will inevitably uncover closely-adjacent dangerous truths. _Deep understanding of reality is intrinsically dual use..._
+> \[I]t is intrinsically desirable to build powerful truthseeking ASIs, because of the immense benefits helpful truths bring to humanity. The price is that such systems will inevitably uncover closely-adjacent dangerous truths. _Deep understanding of reality is intrinsically dual use._
 >
 > ASIs which speed up science and technology will act as a supercharger, perhaps able to rapidly uncover recipes for ruin, that might have otherwise taken centuries to discover, or never have been discovered at all...
 >
