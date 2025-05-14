@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="drafts @ interfluidity">
+    <meta name="keywords" content="Finance, Economics, Politics, Social Affairs, Social Science, interfluidity">
+    <meta name="author" content="Steve Randy Waldman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icons / favicons -->
+
+    <!-- we just want the squared-corner image with no overlays for traditional favicon uses at tiny sizes -->
+    <!-- swaldman added, ick, firefox scales down the biggest size for its tab icon, so we use the graphic we want for small sizes as the largest... -->
+    <link rel="icon" type="image/png" sizes="500x500" href="../../../../icon/interfluidity-wave-blank-square-500x500.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../icon/interfluidity-wave-blank-square-32x32.png">     <!-- swaldman added, for standard favicon size -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../icon/interfluidity-wave-blank-square-16x16.png">     <!-- swaldman added, for standard favicon size -->
+    <link rel="icon" type="image/png" href="../../../../icon/interfluidity-wave-blank-square-57x57.png">                   <!-- swaldman added, for small icons by default -->
+
+    <!-- at bigger sizes, we overlay a bit of text -->
+    <!-- icons as recommened by https://mathiasbynens.be/notes/touch-icons -->
+    <!-- For Chrome for Android: -->
+    <link rel="icon" sizes="192x192" href="../../../../icon/interfluidity-wave-drafts-192x192.png">
+    <!-- For iPhone 6 Plus with @3× display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../../../../icon/interfluidity-wave-drafts-180x180.png">
+    <!-- For iPad with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../icon/interfluidity-wave-drafts-152x152.png">
+    <!-- For iPad with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../icon/interfluidity-wave-drafts-144x144.png">
+    <!-- For iPhone with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../../../icon/interfluidity-wave-drafts-120x120.png">
+    <!-- For iPhone with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../icon/interfluidity-wave-drafts-114x114.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../../../icon/interfluidity-wave-drafts-76x76.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../icon/interfluidity-wave-drafts-72x72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../../../icon/interfluidity-wave-blank-square-57x57.png">
+
+    <!-- end icons / favicons -->
+
+    <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="../../../../feed/index.rss">
+    <link rel="alternate" type="application/x-all-item-rss+xml" title="drafts.interfluidity.com - all items" href="https://drafts.interfluidity.com/all-item-feed/index.rss">
+    <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
+    <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
+    <link rel="alternate" type="application/x-single-item-rss+xml" title="A conversation with Kevin Erdmann" href="index.rss">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const regex = /(^.*)\-oldcommit\-[0-9A-Fa-f]+\.html/;
+          const match = window.location.pathname.match(regex);
+          if (match) {
+              const b  = document.querySelector("body");
+              const tb = document.getElementById("top-banner");
+              b.classList.add("old-draft");
+              tb.innerHTML = "You are looking at an old, superceded version of this page. For the current version, please <a href=\"" + match[1] + ".html\">click here</a>.";
+          }
+       });
+    </script>
+    <title>A conversation with Kevin Erdmann</title>
+  </head>
+  <body>
+    <div id="top-banner"></div>
+    <header>
+      <div id="rss-link-container">
+        <a id="rss-link" href="../../../../feed/index.rss"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
+      </div>
+      <div id="menu-container">
+	<a href="../../../../index.html">top</a> | <a href="../../../../archive.html">archive</a> | <a href="../../../../subscribe.html">subscribe</a> | <a href="https://www.interfluidity.com/">main</a>
+      </div>
+    </header>
+    <main>
+      <article class="presentation-single uid-a-conversation-with-kevin-erdmann">
+ <div class="entry-header-body-footer">
+  <div class="entry-header">
+   <h1><a href="index.html">A conversation with Kevin Erdmann</a></h1>
+  </div>
+  <div class="entry-body">
+   <div class="flexmark markdown">
+    <p><a href="https://kevinerdmann.substack.com/">Kevin Erdmann</a> came to speak at a <a href="https://floridapolicyproject.com/florida-housing-summit/">conference</a> not far from where I live, and we met for an all-too-brief conversation. I'd describe Kevin as a broadly center-right economist with some unique, even heterodox, views about housing. I came away from our brief conversation with a better understanding of his ideas. I thought I'd briefly write up some of what I gleaned.</p>
+    <p>Many of us, when we look at cities like San Francisco or LA or New York, tell a <a href="../../../../2024/06/13/yimboree/index.html">story</a> for why prices are so high that centers outsized demand. These cities are, in Erdmann's terminology, "closed access", meaning zoning rules and other constraints render it difficult for them to expand housing supply quickly. But constrained supply alone doesn't make for high prices. There has to be demand to match. It's common among economists to talk about "superstar cities", places where "agglomeration effects" mean people can be unusually productive, and so unusually well paid, and so enjoy an unusually high level of urban amenities. That's why, we suggest, these places are in demand. Many more people would like to live there than the limited housing supply can accommodate, so homes, whether purchased or rented, become price-rationed.</p>
+    <p>Kevin sometimes provocatively <a href="https://x.com/KAErdmann/status/1799484069702721862">suggests</a> this story is <a href="https://kevinerdmann.substack.com/p/expensive-cities-arent-attractive-6b9">wrong</a>. He asks, how can San Francisco and LA be in high demand when, on net, people are leaving those cities, migrating to places with cheaper, more abundant housing?</p>
+    <p>The answer that I, and I think most economists, would give is that demand isn't about people but dollars. Household size shrinks in desirable cities precisely because a lot of dollars attached to wealthy people bid for housing, and wealthy people use the housing they buy to host fewer people per square foot. Since square footage in these cities grows only very sluggishly, the effect of all these dollars attached to a few-ish wealthy people is to push people out of the cities, precisely because these cities are in high demand by luxury buyers.</p>
+    <p>I don't think Kevin entirely disputes this story. But he thinks it occludes a more universal and important dynamic. He emphasizes that cities over time generate their own growing demand for housing, independently of their attractiveness to potential migrants. People live and raise families as part of textured, interconnected communities. As kids grow up, they form new households, a majority of which will want to remain attached to those communities. "Closed access" cities grow expensive <em>independently of external demand,</em> because supply cannot rise to meet this endogenous demand for new households. Prices climb, because the marginal buyer is the most affluent of these new households, while residents of even lower-amenity housing are extremely reluctant to sell. Selling would mean displacement and ultimately exile from their community. So the children of the wealthy struggle to buy housing even in neighborhoods of much lower incomes than the ones they were raised in. The price-to-income ratio in those lower income neighborhoods skyrockets, indicating housing stress, sometimes imposing it directly via channels like property tax.</p>
+    <p>Neighborhoods "gentrify" not because the city is so desirable to outsiders, but because among long-time residents and their children, a game of musical chairs takes hold in which people cede their spot only slowly and with great reluctance. Focusing on the glamor of "superstar" cities distracts us from this fundamental dynamic, which doesn't depend upon unusual amenities or wages or "agglomeration effects".</p>
+    <p>This painful dynamic could be avoided, of course, if supply could keep pace with cities' endogenous growth. But Kevin adds a qualitative dimension to this problem, usually expressed solely in terms of quantity. It's not just that there aren't enough houses. Even in more "open access" cities, where housing supply can expand via "sprawl", contemporary urban planning norms deprive lower-income families of amenities and community.</p>
+    <p>Kevin describes urban density as an "inferior good", economics-speak for a good people buy less and less of as their incomes grow. Think of porridge as kind of the basic foodstuff of the poor in Victorian novels. On the one hand, maybe it's not the best food in the world. As people grow wealthy, they buy fresh fruit and meats and vegetables. On the other hand, because it is cheap and calorific, porridge could be extremely valuable to people who don't have the money to spare! Poor people spend a large share of their food budget on porridge, while richer people spend very little.</p>
+    <p>Suppose a well-meaning rich person looked at the blandness of porridge and lobbied the government to ban the product. The poor <em>should</em> eat meat and fruit and fresh vegetables just like the rich! They'd be healthier! MAHA!</p>
+    <p>Our activist might think they were doing a good thing, but in fact they'd be condemning the people they mean to help to starvation, as the poor simply could not afford the calories they need in these more expensive forms.</p>
+    <p>Kevin points out that dense, lower-income cityscapes offer a lot of opportunities and amenities to their residents. You might have a lot of people living in "SROs" (single-room occupancy, think boarding houses with shared bathrooms), or families crammed into small apartments. But with high density, no one needs a car to get to shopping or services. There may be opportunities to work within a few blocks. Residents come to know each other. They become potential collaborators in entrepreneurship and providers of mutual aid to one another.</p>
+    <p>An analogy might be dormitory living at a university. Sure, the living space might be small and basic, or worse. But that "deprivation" is arguably more than compensated by the people close at hand and the amenities of the university. Many of us, when we look back at college life, don't think of ourselves as having been impoverished by tight quarters, but of having been enriched by community and activity. It's cliché to refer to college as "the best years of my life" for a reason.</p>
+    <p>Density has a lot of proponents these days, but many of us have as our lodestar a kind of affluent density, the upscale districts of a European city. Kevin wants us to revisit the downscale density we've spent decades disdaining. "Urban renewal is negro removal," James Baldwin <a href="https://www.youtube.com/watch?v=htY_e2vUgYI">famously observed</a>, and we eliminated once thriving communities in the name of ending "blight".</p>
+    <p>Downscale communities will have disagreeable aspects. The soup kitchens will all be there, and none of us feel great when we are forced to observe that people rely upon soup kitchens. If the very same people with the very same poverty are very widely dispersed, there may be soup kitchens nowhere. It might look to the affluent like the problem of hunger is "solved". But in fact, people would just be going hungry without help.</p>
+    <p>A similar dynamic might hold for concerns about criminality: Did downscale dense neighborhoods "breed" criminality, or do people in difficult circumstances turn to crime, so density increases crime per square mile but not necessarily crime overall, holding the difficulty of circumstances constant?</p>
+    <p>In any case, like social reformers banning porridge, we've dramatically scaled back downscale density. Boarding houses are not so common in cities, and are not favored by zoning laws. The less well-off live more like the rich, widely dispersed in a built environment dependent upon cars.</p>
+    <p>Only the not-so-rich live spread along arterials and among strip malls, rather than enjoying leafy suburbs with a cute town center this way, big-box stores that way, each a short drive away in the SUV. The not-so-rich are forced to bear the high economic burden of maintaining a car, or else the often impossible burden in time and unpredictability of relying on public transportation in America. Eliminating the bustling, poorer neighborhoods where affluent people saw social pathology and blight eliminated sociability and opportunity that outsiders <a href="https://bookshop.org/p/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed-james-c-scott/8526763?ean=9780300246759&amp;next=t">could not perceive</a>.</p>
+    <p>It would be best, of course, if instead of relying on porridge, we organized abundance and distribution sufficient that everyone really could eat fresh meat, fruit, vegetables, fine cheeses. It would be best if, rather than somehow re-engineering a resurgence of the "blight" or "ghettoes" we carelessly erased, we could build <a href="https://www.larchlab.com/">dense mixed-use districts full of bright, large apartments</a>, which the affluent and less affluent alike could afford and enjoy. A much better world really is possible.</p>
+    <p>But Kevin is not wrong, I think, to point out that, in the meantime, we've made the world and our cities much worse — and we've made the problem of growth, whether endogenous or due to outside demand, more insoluble — by failing to see the good in places where there were lots of human problems only because there were lots of human beings.</p>
+   </div>
+  </div>
+  <div class="entry-footer">
+   <div class="post-metainfo">
+    <a href="index.html">draft</a> by <b>Steve Randy Waldman</b>
+    <br>
+    2025-05-14 @ 05:05 PM EDT
+   </div>
+  </div>
+ </div><!-- entry-header-body-footer -->
+ <div class="related">
+  <div class="related-title">
+   Related — housing
+  </div>
+  <ul class="related-list">
+   <li><a href="https://www.interfluidity.com/v2/3036.html">Zoning laws and property rights</a></li>
+   <li><a href="https://www.interfluidity.com/v2/6287.html">Home is where the cartel is</a></li>
+   <li><a href="https://www.interfluidity.com/v2/6487.html">There’s no substitute for a substitute</a></li>
+   <li><a href="https://www.interfluidity.com/v2/8772.html">Microcities</a></li>
+   <li><a href="../../../../2024/06/07/only-the-state-can-house-us/index.html">Only the state can house us</a></li>
+   <li><a href="../../../../2024/06/13/yimboree/index.html">Yimboree</a></li>
+   <li><a href="../../../../2024/06/20/it-isnt-sprawl-if-its-dense/index.html">It isn't sprawl of it's dense</a></li>
+  </ul>
+ </div>
+ <div class="prev-top-next">
+  <div class="prev">
+   ← <a href="../../08/alignment-is-confinement/index.html">Alignment is confinement</a>
+  </div>
+  <div class="top">
+   <a href="../../../../index.html">↑↑↑</a>
+  </div>
+  <div class="next">
+  </div>
+ </div>
+</article>
+<div class="bottom-form">
+ <p><b>Subscribe to this blog (</b><code><a href="../../../../index.html">drafts.interfluidity.com</a></code><b>)</b></p>
+ <form id="interfluidity-drafts-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
+  <input type="hidden" name="subscribableName" value="interfluidity-drafts">
+  <div class="subscribe-form">
+   <div class="sf-label sf-label-email">
+    E‑mail:
+   </div>
+   <div class="sf-field sf-field-email">
+    <input type="text" name="addressPart">
+   </div>
+   <div class="sf-label sf-label-name">
+    Display Name:
+   </div>
+   <div class="sf-field sf-field-name">
+    <input type="text" name="displayNamePart" placeholder="Optional">
+   </div><!-- <div class="sf-note-name">(Optional)</div> -->
+   <div class="sf-label sf-label-submit">
+    😎
+   </div>
+   <div class="sf-submit">
+    <input name="main-submit" value="Subscribe to drafts" type="submit">
+   </div>
+  </div>
+ </form>
+</div>
+    </main>
+    <footer>
+      <div id="left-footer">
+	<a href="https://drafts.interfluidity.com/"><b>drafts.interfluidity.com</b></a>
+      </div>
+      <div id="right-footer">
+	<a href="#top-banner">up to top &uarr;</a>
+      </div>
+    </footer>
+  </body>
+</html>
