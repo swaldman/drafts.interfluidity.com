@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./mill -w runBackground serve --verbose
+./millw -w runBackground serve --verbose
 

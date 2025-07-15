@@ -1,5 +1,5 @@
 #!/bin/bash
 
-./mill run "$@"
+./millw run "$@"
 
 
