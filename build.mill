@@ -1,6 +1,6 @@
-//| mill-version: 1.0.0
+//| mill-version: 1.0.3
 //| mill-jvm-version: 17
-//| mvnDeps: ["com.mchange::untemplate-mill:0.2.0-SNAPSHOT"]
+//| mvnDeps: ["com.mchange::untemplate-mill:0.3.0-SNAPSHOT"]
 //+---------------------------------------------------------------
 
 package build
@@ -19,6 +19,9 @@ object Dependency {
 
 object `package` extends UntemplateModule {
   override def scalaVersion = "3.3.6"
+
+  override def untemplateSourcesFolders = super.untemplateSourcesFolders :+ "entries"
+  override def untemplateSourcesPrefixPackagesFromModuleDir : Map[String,String] = Map("entries" -> "com.interfluidity.drafts.mainblog")
 
   // we'll build an index!
   override def untemplateIndexNameFullyQualified : Option[String] = Some("com.interfluidity.drafts.IndexedUntemplates")
