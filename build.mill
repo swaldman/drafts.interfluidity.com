@@ -12,12 +12,11 @@ import untemplate.mill.*
 
 val UnstaticVersion = "0.4.0-SNAPSHOT"
 
-object Dependency {
+object Dependency:
   val Unstatic             = mvn"com.mchange::unstatic:${UnstaticVersion}"
   val UnstaticZTapir       = mvn"com.mchange::unstatic-ztapir:${UnstaticVersion}"
-}
 
-object `package` extends UntemplateModule {
+object `package` extends UntemplateModule:
   override def scalaVersion = "3.3.6"
 
   override def untemplateSourcesFolders = super.untemplateSourcesFolders :+ "entries"
@@ -26,12 +25,11 @@ object `package` extends UntemplateModule {
   // we'll build an index!
   override def untemplateIndexNameFullyQualified : Option[String] = Some("com.interfluidity.drafts.IndexedUntemplates")
 
-  override def untemplateSelectCustomizer: untemplate.Customizer.Selector = { key =>
+  override def untemplateSelectCustomizer: untemplate.Customizer.Selector = key =>
     var out = untemplate.Customizer.empty
 
-    if (key.inferredPackage.indexOf("mainblog")>=0 && key.inferredFunctionName.startsWith("entry_")) {
+    if key.inferredPackage.indexOf("mainblog")>=0 && key.inferredFunctionName.startsWith("entry_") then
       out = out.copy(extraImports=Seq("unstatic.*","com.interfluidity.drafts.*","com.interfluidity.drafts.DraftsSite.MainBlog","unstatic.ztapir.simple.UpdateRecord"))
-    }
 
     // to customize, examine key and modify the customer
     // with out = out.copy=...
@@ -39,15 +37,13 @@ object `package` extends UntemplateModule {
     // e.g. out = out.copy(extraImports=Seq("draft.*"))
 
     out
-  }
 
-  override def mvnDeps = Task {
+  override def mvnDeps = Task:
     super.mvnDeps() ++
       Seq (
         Dependency.Unstatic,
         Dependency.UnstaticZTapir,
       )
-  }
-}
+
 
 
