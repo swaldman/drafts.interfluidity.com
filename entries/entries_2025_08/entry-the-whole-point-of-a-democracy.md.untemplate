@@ -1,0 +1,166 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "the-whole-point-of-a-democracy"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "The whole point of a democracy",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-08-20T13:50:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+I've been following with interest an argument between John Ganz and Eric Levitz, both of whom are
+writers I admire, on the role of polling in American politics. (See [Ganz](https://www.unpopularfront.news/p/against-polling),
+[Levitz](https://www.vox.com/politics/458175/democrats-polls-immigration-moderation), [Ganz](https://www.unpopularfront.news/p/against-vulgar-positivism).)
+
+I'm on Ganz's side of the argument. I don't begrudge individual candidates who use private polling
+to help shape at the margin how they compete. But using polling at a systemic level,
+having a political party that defines and redefines itself in dialogue with public polling (and private
+donors) is corrosive to the project of electoral democracy.
+
+Levitz starts at the wrong place, and so ends up at the wrong conclusion. The unstated background is
+that we live in a country where there are the fascists and the Democrats, so we want the Democrats to
+win elections. The task before us is not to participate effectively in a larger system, a democracy,
+of which we (whoever we are) can only be one faction of many, but to see to it that Democrats in particular
+win elections. Questions of who we want to be or what we want to do are secondary. We must win elections, we must defeat the fasists, first.
+We have an instrumental task before us. We should use the tools that will help us most effectively
+accomplish that task.
+
+He then points out, accurately, that people who are active in politics are atypical and
+unrepresentative, so our intuitions about what voters might want are unreliable. (David Shor deserves a
+tip of the hat here.) We are at risk of motivated reasoning, of imagining that whatever _we_ support,
+because _we_ are sure it would be good, is what the electorate would vote for. We require an objective guide
+to discipline us, to help us get things right, in this preordained task of winning elections &mdash; not necessarily
+to accomplish anything in particular, but so that the fascists do not. Polling, as flawed as it is, is the best tool we
+have.
+
+Levitz's error is to imagine that it's possible to separate the background conditions under which all this
+makes sense from the approach that he advises. That there are
+the fascists and the Democrats, and we'd strongly prefer the Democrats to win elections so that the fascists
+do not, is not some eternal, preexisting fact about the world. Over many cycles, the interaction of America's two political parties created this reality.
+The approach to politics that Levitz advises, I would argue,
+helped to create it, and is unlikely to undo it.
+
+Levitz, for a moment, kind of recognizes this in [his piece](https://www.vox.com/politics/458175/democrats-polls-immigration-moderation):
+
+> the actual dispute between Ganz and the popularists is not about whether public opinion can change,
+> but about how much scope _Democratic politicians_ have to reshape the views of swing voters — which
+> is to say, voters who do not particularly trust Democratic politicians.
+
+Why do voters so distrust Democratic politicians? What is the Democratic Party "brand", ever since Bill
+Clinton overthrew the settled commitments of the party, hired Dick Morris, and triangulated?
+
+I claim the helplessness and haplessness and electoral weakness of the Democratic Party
+_derives_ in large part from party leaders taking the approach Levitz is so keen to defend. There really
+is no such thing as the Democratic Party anymore. The party's fortunes are just a referendum on how much
+the public hates Republicans at any given moment. Fortunately, Republicans govern so terribly that, while
+elections have been free and fair, even an empty suit, "Generic Democrat", has often been competitive.
+
+To be fair, I should point out that Republicans are not so different. In order to help Donald Trump win,
+the Republican Party set aside its commitment to abortion-is-murder ideology, and to policies that would
+follow from that ideology, like a national abortion ban. America's two-party system renders it structurally
+untenable for either party to abstain entirely from shifting with the winds of public opinion.
+
+However. Say what you will about MAGA Republicans, there is some actual content to their agenda that is solid and
+settled, that they will pursue regardless public opinion, donor outrage, and everything else.
+The public doesn't like detention camps and mass deportation. But that's
+the very heart of what MAGA is and they'll move Heaven and Earth to do it. My view is this tenacity, this
+transparent committedness, is a large part of why they won, even though _what_ they were committed to was never popular.
+
+In the American political system, the marginal voter who decides Presidential elections is the voter least
+interested in, most aloof from, the matters over which the two parties plainly contest. If, like me,
+the concerns that drive you are inequality and a commitment to social democracy, you voted for Democrats
+(as I did). If you are a businessperson whose interest in politics is primarily about getting taxed and
+regulated less, you voted for Republicans.
+
+The people "in the middle" aren't people with "moderate"
+views on these issues. They are people who just don't think or care about them. It's not that they are inherently apolitical.
+It's just that whatever concerns might move them are not matters of active contestation between the parties.
+
+An example in the
+recent presidential cycle is Gaza. People whose core political concern was the plight of the Palestinians
+didn't have a clear choice in the election.
+The two parties, the two Presidential candidates, did not draw plain, strong, lines between their positions.
+These people, many of whom might have been reliable Democrats when other issues were top-of-mind for them,
+became "marginal voters", who might have voted either way or not at all &mdash; not because they didn't care, but
+because they perceived their core political concern to be unaddressed by either party.
+
+Gaza-focused "uncommitted" voters were a small fraction of the electorate. But the whole strata that
+constitutes "the marginal voter" has this in common &mdash; that whatever the two parties are actively contesting,
+it is not what they most care about. To comitted partisans, it feels like we are governed by aliens or chaos
+monkeys or coin flips, because _we_ see very important stakes and then electoral outcomes that make no sense
+given the gravity of what will be lost. But the marginal voter does not see so much at stake. Things will be fine
+either way, she thinks, or &mdash; much more commonly, alas &mdash; it's all going to hell whichever of these assholes
+gets elected. Her vote is based on other things. Parasocial attachment,
+I've [argued](https://drafts.interfluidity.com/2024/11/08/its-the-parasocials-stupid/index.html), is a big determinant
+of how these people actually vote.
+
+But another big determinant, I think, is _candor_.
+Before you can even evaluate candidates or parties "on the issues", before it even makes sense to do so,
+you have to believe there is some straightforward relationship between how they present themselves, what they
+actually believe, and what they would do. A candidate who promises things you'd love but who is merely
+pandering to you and would not in fact work to make those things happen is not even right. A candidate who
+won't tell you what they really think or what they would do is hard to evaluate, and in a deep
+sense is doing something discreditable, committing a kind of crime against democracy, by failing to meet
+the basic preconditions under which electoral democracy makes sense.
+
+I think the marginal voter often votes, whether for a person, or a movement, or a political party,
+on the basis of perceived candor. If I am right, then the
+technocratic instrumentalism that Levitz advises will prove, has already proved, self-defeating, on its own terms.
+And that technocratic instrumentalism, intended in opposition to fascism and therefore in the service of democracy,
+is itself a kind of subversion of democracy.
+
+The whole point of a democracy is that no one can know what a public truly wants, both in the weak
+sense of subjectively wanting and the stronger sense of what would be in the public's
+interest. Democracy is precisely the project of constructing institutions not to measure or act upon
+some nonsensical notion of the public will, but to constitute a thing that the public recognizes
+_ex post_ as its will &mdash; or at least does not rebel against as completely antithetical to its will &mdash; and
+that delivers in practice outcomes that render at least passably contented an always fractious and divided collectivity.
+
+If the true public will existed as a thing that could just be measured and
+correctly known, we'd have no need for democracy, at least not for anything like electoral democracy.
+"Consultative democracy", in which experts simply measure the true will of the public and acted correctly
+on its behalf, would be the obviously superior system. But the true public will does not exist. We have
+to construct, to constitute, one of many possible versions of it ourselves. How we constitute it will determine who we collectively are, how we will
+collectively understand ourselves going forward, how we act, whether we will live well or poorly or outright destroy
+ourselves.
+
+Public polling as a project, beyond very narrow and bespoke applications, is fundamentally the
+[homonculous theory](http://pespmc1.vub.ac.be/HOMUNCUL.html) of democracy. It presumes that behind the
+complicated mess of democracy there's some "truer" procedure that we can measure our democracy against.
+It's a denial of the
+human condition &mdash; that we fundamentally cannot know what or how collectively to act or even how we
+"want" collectively to act, yet we must nevertheless act, together, in time and in the world. We
+must grope in the darkness to invent institutions, and then only afterwards see whether they function
+well or poorly in the world, and then do our best to adjust.
+
+Representative democracy requires ideologues, sincere partisans, people genuinely committed to a way of
+going forward. That renders it possible for elections to constitute a representative body of such partisans to deliberate on affairs of state and make laws.
+Political parties reshaping themselves on the basis of polling
+renders the whole process nonsensical, a kind of infinite regress. It deprives the public of meaningful
+choice in the name of giving it what it wants.
+
+The United States has a [shitty electoral system](https://www.interfluidity.com/v2/7687.html). It is
+structurally incapable of providing the public adequate choice, of offering voters a wide range of
+sincere partisans from which to constitute the legislature, the mini-public that governs.
+
+Nevertheless,
+much of the public does understand that voting for people who have no settled views but are only pandering
+for your votes is not really voting for anyone or anything at all. The more poll-tested a candidate is,
+inherently the less worthy. We are living in the aftermath of the public insisting that it's better to
+vote for people you can trust to be who they claim to be and act accordingly than to just have no idea and
+let the insiders have at.
+
+There's no such thing as the true public will. Nevertheless, perhaps polyannishly, I'll claim the American public does not,
+in fact, really favor the American Nazis. But the marginal voter, the weird sliver of the public that decides
+American Presidential elections, did favor the American Nazis over the who-the-fuck-knows-they're-just-triangulating party.
+I don't think we'll overthrow the Nazis by listening and hedging and triangulating more.
