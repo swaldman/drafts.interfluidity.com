@@ -5,20 +5,38 @@
   <meta name="description" content="drafts @ interfluidity">
   <meta name="keywords" content="Finance, Economics, Politics, Social Affairs, Social Science, interfluidity">
   <meta name="author" content="Steve Randy Waldman">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- icons / favicons --> <!-- we just want the squared-corner image with no overlays for traditional favicon uses at tiny sizes --> <!-- swaldman added, ick, firefox scales down the biggest size for its tab icon, so we use the graphic we want for small sizes as the largest... -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icons / favicons -->
+  <!-- we just want the squared-corner image with no overlays for traditional favicon uses at tiny sizes -->
+  <!-- swaldman added, ick, firefox scales down the biggest size for its tab icon, so we use the graphic we want for small sizes as the largest... -->
   <link rel="icon" type="image/png" sizes="500x500" href="icon/interfluidity-wave-blank-square-500x500.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/interfluidity-wave-blank-square-32x32.png"><!-- swaldman added, for standard favicon size -->
-  <link rel="icon" type="image/png" sizes="16x16" href="icon/interfluidity-wave-blank-square-16x16.png"><!-- swaldman added, for standard favicon size -->
-  <link rel="icon" type="image/png" href="icon/interfluidity-wave-blank-square-57x57.png"><!-- swaldman added, for small icons by default --> <!-- at bigger sizes, we overlay a bit of text --> <!-- icons as recommened by https://mathiasbynens.be/notes/touch-icons --> <!-- For Chrome for Android: -->
-  <link rel="icon" sizes="192x192" href="icon/interfluidity-wave-drafts-192x192.png"><!-- For iPhone 6 Plus with @3× display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icon/interfluidity-wave-drafts-180x180.png"><!-- For iPad with @2× display running iOS ≥ 7: -->
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/interfluidity-wave-drafts-152x152.png"><!-- For iPad with @2× display running iOS ≤ 6: -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/interfluidity-wave-drafts-144x144.png"><!-- For iPhone with @2× display running iOS ≥ 7: -->
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/interfluidity-wave-drafts-120x120.png"><!-- For iPhone with @2× display running iOS ≤ 6: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/interfluidity-wave-drafts-114x114.png"><!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icon/interfluidity-wave-drafts-76x76.png"><!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/interfluidity-wave-drafts-72x72.png"><!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="icon/interfluidity-wave-blank-square-57x57.png"><!-- end icons / favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/interfluidity-wave-blank-square-32x32.png">
+  <!-- swaldman added, for standard favicon size -->
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/interfluidity-wave-blank-square-16x16.png">
+  <!-- swaldman added, for standard favicon size -->
+  <link rel="icon" type="image/png" href="icon/interfluidity-wave-blank-square-57x57.png">
+  <!-- swaldman added, for small icons by default -->
+  <!-- at bigger sizes, we overlay a bit of text -->
+  <!-- icons as recommened by https://mathiasbynens.be/notes/touch-icons -->
+  <!-- For Chrome for Android: -->
+  <link rel="icon" sizes="192x192" href="icon/interfluidity-wave-drafts-192x192.png">
+  <!-- For iPhone 6 Plus with @3× display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icon/interfluidity-wave-drafts-180x180.png">
+  <!-- For iPad with @2× display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icon/interfluidity-wave-drafts-152x152.png">
+  <!-- For iPad with @2× display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/interfluidity-wave-drafts-144x144.png">
+  <!-- For iPhone with @2× display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icon/interfluidity-wave-drafts-120x120.png">
+  <!-- For iPhone with @2× display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/interfluidity-wave-drafts-114x114.png">
+  <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icon/interfluidity-wave-drafts-76x76.png">
+  <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/interfluidity-wave-drafts-72x72.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="icon/interfluidity-wave-blank-square-57x57.png">
+  <!-- end icons / favicons -->
   <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="feed/index.rss">
   <link rel="alternate" type="application/x-all-item-rss+xml" title="drafts.interfluidity.com - all items" href="https://drafts.interfluidity.com/all-item-feed/index.rss">
   <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
@@ -55,21 +73,16 @@
     <form id="interfluidity-drafts-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
      <input type="hidden" name="subscribableName" value="interfluidity-drafts">
      <div class="subscribe-form">
-      <div class="sf-label sf-label-email">
-       E‑mail:
-      </div>
+      <div class="sf-label sf-label-email">E‑mail:</div>
       <div class="sf-field sf-field-email">
        <input type="text" name="addressPart">
       </div>
-      <div class="sf-label sf-label-name">
-       Display Name:
-      </div>
+      <div class="sf-label sf-label-name">Display Name:</div>
       <div class="sf-field sf-field-name">
        <input type="text" name="displayNamePart" placeholder="Optional">
-      </div><!-- <div class="sf-note-name">(Optional)</div> -->
-      <div class="sf-label sf-label-submit">
-       😎
       </div>
+      <!-- <div class="sf-note-name">(Optional)</div> -->
+      <div class="sf-label sf-label-submit">😎</div>
       <div class="sf-submit">
        <input name="main-submit" value="Subscribe to drafts" type="submit">
       </div>
@@ -81,47 +94,38 @@
     <form id="interfluidity-tech-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
      <input type="hidden" name="subscribableName" value="interfluidity-tech">
      <div class="subscribe-form">
-      <div class="sf-label sf-label-email">
-       E‑mail:
-      </div>
+      <div class="sf-label sf-label-email">E‑mail:</div>
       <div class="sf-field sf-field-email">
        <input type="text" name="addressPart">
       </div>
-      <div class="sf-label sf-label-name">
-       Display Name:
-      </div>
+      <div class="sf-label sf-label-name">Display Name:</div>
       <div class="sf-field sf-field-name">
        <input type="text" name="displayNamePart" placeholder="Optional">
-      </div><!-- <div class="sf-note-name">(Optional)</div> -->
-      <div class="sf-label sf-label-submit">
-       🤓
       </div>
+      <!-- <div class="sf-note-name">(Optional)</div> -->
+      <div class="sf-label sf-label-submit">🤓</div>
       <div class="sf-submit">
        <input name="main-submit" value="Subscribe to tech" type="submit">
       </div>
      </div>
     </form>
     <hr style="width: 30%">
-    <p><b>Subscribe to Mastodon six-packs</b><br>
-      (receive one e-mail with every six new Mastodon posts)</p>
+    <p><b>Subscribe to Mastodon six-packs</b>
+     <br>
+     (receive one e-mail with every six new Mastodon posts)</p>
     <form id="interfluidity-masto-sixpack--form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
      <input type="hidden" name="subscribableName" value="interfluidity-masto-sixpack">
      <div class="subscribe-form">
-      <div class="sf-label sf-label-email">
-       E‑mail:
-      </div>
+      <div class="sf-label sf-label-email">E‑mail:</div>
       <div class="sf-field sf-field-email">
        <input type="text" name="addressPart">
       </div>
-      <div class="sf-label sf-label-name">
-       Display Name:
-      </div>
+      <div class="sf-label sf-label-name">Display Name:</div>
       <div class="sf-field sf-field-name">
        <input type="text" name="displayNamePart" placeholder="Optional">
-      </div><!-- <div class="sf-note-name">(Optional)</div> -->
-      <div class="sf-label sf-label-submit">
-       🥴
       </div>
+      <!-- <div class="sf-note-name">(Optional)</div> -->
+      <div class="sf-label sf-label-submit">🥴</div>
       <div class="sf-submit">
        <input name="main-submit" value="Subscribe to six packs" type="submit">
       </div>
@@ -131,78 +135,66 @@
     <p><b>Subscribe to old-school </b><a href="https://www.interfluidity.com/"><code>www.interfluidity.com</code></a></p>
     <p>&nbsp;&nbsp;&nbsp;&nbsp;try <a href="https://www.interfluidity.com/e-mail">here</a>!</p>
     <hr style="width: 30%">
-    <p><b>Subscribe to longform, weekly</b><br>
-      (receive all longform interfluidity posts in one weekly digest)</p>
+    <p><b>Subscribe to longform, weekly</b>
+     <br>
+     (receive all longform interfluidity posts in one weekly digest)</p>
     <form id="interfluidity-longform-weekly-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
      <input type="hidden" name="subscribableName" value="interfluidity-longform-weekly">
      <div class="subscribe-form">
-      <div class="sf-label sf-label-email">
-       E‑mail:
-      </div>
+      <div class="sf-label sf-label-email">E‑mail:</div>
       <div class="sf-field sf-field-email">
        <input type="text" name="addressPart">
       </div>
-      <div class="sf-label sf-label-name">
-       Display Name:
-      </div>
+      <div class="sf-label sf-label-name">Display Name:</div>
       <div class="sf-field sf-field-name">
        <input type="text" name="displayNamePart" placeholder="Optional">
-      </div><!-- <div class="sf-note-name">(Optional)</div> -->
-      <div class="sf-label sf-label-submit">
-       😊
       </div>
+      <!-- <div class="sf-note-name">(Optional)</div> -->
+      <div class="sf-label sf-label-submit">😊</div>
       <div class="sf-submit">
        <input name="main-submit" value="Subscribe to longform weekly" type="submit">
       </div>
      </div>
     </form>
     <hr style="width: 30%">
-    <p><b>Subscribe to microblogs, weekly</b><br>
-      (receive all interfluidity microblog posts in one weekly digest)</p>
+    <p><b>Subscribe to microblogs, weekly</b>
+     <br>
+     (receive all interfluidity microblog posts in one weekly digest)</p>
     <form id="interfluidity-microblogs-weekly-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
      <input type="hidden" name="subscribableName" value="interfluidity-microblogs-weekly">
      <div class="subscribe-form">
-      <div class="sf-label sf-label-email">
-       E‑mail:
-      </div>
+      <div class="sf-label sf-label-email">E‑mail:</div>
       <div class="sf-field sf-field-email">
        <input type="text" name="addressPart">
       </div>
-      <div class="sf-label sf-label-name">
-       Display Name:
-      </div>
+      <div class="sf-label sf-label-name">Display Name:</div>
       <div class="sf-field sf-field-name">
        <input type="text" name="displayNamePart" placeholder="Optional">
-      </div><!-- <div class="sf-note-name">(Optional)</div> -->
-      <div class="sf-label sf-label-submit">
-       😳
       </div>
+      <!-- <div class="sf-note-name">(Optional)</div> -->
+      <div class="sf-label sf-label-submit">😳</div>
       <div class="sf-submit">
        <input name="main-submit" value="Subscribe to microblogs weekly" type="submit">
       </div>
      </div>
     </form>
     <hr style="width: 30%">
-    <p><b>Subscribe to everything, weekly</b><br>
-      (receive all interfluidity blog and microblog posts in one weekly digest)</p>
+    <p><b>Subscribe to everything, weekly</b>
+     <br>
+     (receive all interfluidity blog and microblog posts in one weekly digest)</p>
     <form id="interfluidity-weekly-form" action="https://feedletter.interfluidity.com/v0/subscription/create" method="POST">
      <input type="hidden" name="subscribableName" value="interfluidity-weekly">
      <div class="subscribe-form">
-      <div class="sf-label sf-label-email">
-       E‑mail:
-      </div>
+      <div class="sf-label sf-label-email">E‑mail:</div>
       <div class="sf-field sf-field-email">
        <input type="text" name="addressPart">
       </div>
-      <div class="sf-label sf-label-name">
-       Display Name:
-      </div>
+      <div class="sf-label sf-label-name">Display Name:</div>
       <div class="sf-field sf-field-name">
        <input type="text" name="displayNamePart" placeholder="Optional">
-      </div><!-- <div class="sf-note-name">(Optional)</div> -->
-      <div class="sf-label sf-label-submit">
-       😮
       </div>
+      <!-- <div class="sf-note-name">(Optional)</div> -->
+      <div class="sf-label sf-label-submit">😮</div>
       <div class="sf-submit">
        <input name="main-submit" value="Subscribe to everything weekly" type="submit">
       </div>
