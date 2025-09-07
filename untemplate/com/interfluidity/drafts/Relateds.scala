@@ -60,4 +60,13 @@ object Relateds:
       Related.Item( "##the-asset-side-of-the-balance-sheet",                     title = Some("The asset side of the balance sheet") )                         ::
       Nil
 
+  object NewCollege extends Abstract:
+    override val DefaultCategory = ("New College")
+    val Items =
+      Related.Item( "##new-college",                                             title = Some("New College") )       ::
+      Related.Item( "##we-haunt",                                                title = Some("We haunt") )          ::
+      Related.Item( "##masculine-virtues",                                       title = Some("Masculine Virtues") ) ::
+      Nil
+
+
 
