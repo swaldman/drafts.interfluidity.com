@@ -1,0 +1,65 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "pocketbook-history-US-macro-regimes"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "A fertile corpse",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-10-04T13:30:00-04:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"      -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+The Democratic Party should campaign and run on a single issue: Blowing up the two-party system.
+
+The Democratic Party, as presently constituted, cannot succeed under contemporary circumstances. The best thing it can do is become a fertile corpse from which more capable successors can grow. The party's infamous "fecklessness" is structural.
+
+To understand this, I recommend [a recent paper by Tom Pepinsky](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5363315), which usefully distinguishes between states that _structure_ or _referee_ pluralistic conflict and states that purport to _express_ an overriding collective will:
+
+> [S]hould the state aggregate, channel, or otherwise structure political organization and contestation among the units of society, or should it express the popular will? In the former approach to the state, political institutions mediate conflict and channel popular demands by establishing formal and informal rules that define public and private spheres and structure political competition. Countermajoritarian institutions, for example, restrain the majority from enacting its preferences, and representative institutions organize the politics of lawmaking, policy advocacy, voting, and other forms of claims-making in ways that prevent disordered, disorganized, or extreme political demands from becoming law or policy.
+>
+> An alternative view of the state sees any such mediating institutions as an obstacle to the full expression of the popular will. In this approach, the appropriate function of the state is to express or manifest a collective will, rather than to direct or constrain that will.
+
+The United States' electoral system, built on top of single-winner, first-past-the-post election [strongly encourages](https://www.interfluidity.com/v2/7687.html) the emergence of two and only two "major" political parties. Americans have generally conceived of these as necessarily "big tent" parties, each the product of fractious internal negotiations yielding broad coalitions which fully satisfy no one, but which represent — or at least better-represent than the other party — something like 50% of the electorate. There was broad consensus in the United States that role of government was to referee a pluralistic society. The major parties took on a kind of fractal, subsidiary role in the system, each refereeing contestation within its own half of the electorate.
+
+This consensus on the role of government has now been shattered, but asymmetrically. One of America's two major parties now conceives of itself as striving to realize a true collective will against obstacles imposed by internal enemies. Republicans now claim a "mandate" that cannot be [quantitatively justified on electoral grounds](https://www.nytimes.com/2025/10/01/opinion/trump-2024-election-maga.html), but which they nevertheless proclaim represents the true and correct will of the American people. It is not yet clear, under Pepinsky's taxonomy, whether the new Republican Party will ultimately prove to be "populist" — channeling a popular will conceived as an aggregation of what individual citizens want, or "integralist" — organized to serve social categories and hierarchies perceived as prior to and overriding of individual caprices. (My take is the Republican Party sells itself, while it still must sell itself, as populist, but its leaders mean to rule on authoritarian integralist terms.)
+
+While the Republicans monomaniacally express a will they fabricate on behalf of "real Americans", the Democratic Party remains a referee of its very fractious coalition. It seems as if "we" have no core, no underlying principle, because "we" constituted as the Democratic Party in fact do not all share similar values. For example, social democrats (like me) and the still very neoliberal "centrists" agree that we want a pluralistic society under rule of law. But in fact we hope for very different outcomes, very different kinds of societies, to emerge under that rule of law.
+
+When that was also true of the Republican Party — when their religious conservatives and their neoliberals were locked in analogous internecine struggles — there was a kind of symmetry. Both of the two parties faced the same kind of handicap, and the electoral system could function giving factions across the two parties more or less equally compromised forms of representation.
+
+But the Republican Party is something different now. Its internal differences are overridden by shared allegiance to the person of Donald Trump. It is united by [struggle against internal enemies](##what-is-fascism), a "far left" which those of us who allegedly constitute it perceive as farcical exaggeration, as caricature, but whose [social reality](https://en.wikipedia.org/wiki/Thomas_theorem) lies not in representational accuracy, but in how it  motivates and organizes the people who present it.
+
+Against this kind of party, the Democratic Party is a nullity. It can win elections sometimes, after the party which claims to express the collective will governs in ways that prove unpopular. But it subsists only in that party's negative space. A divided self-refereeing big-tent can exercise no real agency. It reacts. It must hope for and rely upon the other party's incompetence. Politics becomes a game played out between one clear protagonist and an inchoate cast of minor characters.
+
+The internal diversity of the everybody-but party is not, alas, that party's strength. Almost anything that would really excite one faction in the grab-bag party becomes a wedge issue alienating other factions. Those who identify with the populist or integralist or perhaps fascist party find themselves unified, excited, thrilled by their leaders' bold choices. Those who identify with the residual party find themselves constantly frustrated, betrayed, asked to embrace compromises that satisfy no one in the name of "strategy" that amounts to nothing more than holding onto our best shot if the other guy fucks up badly enough.
+
+This just isn't a winning hand. Even when the residual party wins elections, it disappoints by its compromised governance, rendering every reprieve fragile and temporary.
+
+Human affairs are not mere numbers games. Successful political struggle relies upon political passions. Perhaps a system in which nearly everyone's passions were frustrated or attenuated by the institutions of political contestation was once moderating, virtuous. Perhaps it was never virtuous, and that's why it failed.
+
+Regardless, it has failed. It is no longer on offer. We now require political parties that organize political communities with which people passionately identify, within which and on behalf of which people energetically act.
+
+The Republican Party is that. The Democratic Party cannot be that, not without alienating constituencies it requires in order to have any hope of victory. We can't all passionately identify as "Democrats", and share a common leadership, while that leadership necessarily sells out this group or that in the name of avoiding wedge issues and preserving the prospects of electoral incumbents we can't afford to lose. We would be more effective as distinct passionate communities who work in coalition, as strange bedfellows, on the pluralistic commitments we share without having to pretend we share views on how a good society would be organized that in fact we do not.
+
+But the factions of the Democratic Party cannot productively divorce so long as the electoral system overwhelmingly punishes defection from one of what must be only two structurally "major" political parties. The Democratic Party's monomaniacal challenge right now should be to insist that the House of Representatives is chosen by some form of proportional representation, and that inherently single-winner positions like Senator and President are chosen by [approval voting](##how-to-understand-approval-voting).
+
+Opening up the electoral system would shatter both of the legacy major parties, not just the Democrats. The MAGA wing that now controls the Republican Party has cowed and silenced the rest of its coalition, but Republican electoral success still relies upon people who have misgivings, but who fear "the left" more, or who prioritize their positions on taxes, or who just vote their cultural affinity. These people too could find homes and champions outside the ominous conformity enforced by Donald Trump.
+
+Most voters detest the two party system. Nearly all of us understand we are poorly represented by the choices we are offered. But we have been trained — correctly, in our current system! — that voting for a third-party amounts to childish self-harm, spoiling the prospects of the less awful major party, guaranteeing victory to the very worst or us.
+
+Once we educate the public about how and why seemingly technical changes to how we vote would in fact blow up the two-party system, electoral reform will become very popular, a great issue to run on. And it's a promise we can deliver on if we win. You don't need a Constitutional amendment to make these changes. Just an [Act of Congress](https://academic.oup.com/book/36918). A President who vetoes these reforms would make himself very unpopular, and we'd just do it again in two years.
+
+To compete with a party that passionately expresses its (very ugly) version of a collective will, the rest of us will require political parties that can passionately channel our own collective aspirations. Forming and joining such parties doesn't mean giving up on the pluralistic society most of us want to inhabit and nurture. It simply means removing pluralistic contestation from the level of big-tent political parties, where it once accidentally found itself, into the institution of the United States Congress, where it Constitutionally belongs.
+
+The Democratic Party cannot win and govern as a party defined primarily as "not those bastards". It can't commit to a clear identity (Bernie-style populist social democrats? Warren-style technocrat social democrats? Obama/Clinton-style progressive neoliberals?) without catastrophically demoralizing a large fraction of its coalition.
+
+But the Democratic Party can organize a murder/suicide of both legacy political parties, and of America's two-party system. Sweeter fruit will grow from its fertile corpse.
