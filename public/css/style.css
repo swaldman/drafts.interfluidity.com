@@ -166,6 +166,10 @@ div.entry-header h1 a {
     color: black;
     text-decoration: none;
 }
+div.entry-header h1 a:focus {
+    outline: none;
+    text-decoration: underline;
+}
 div.entry-body a, div.related a {
     /* background-color: #FFFF99; */
     /* text-decoration: #BBFFBB underline; */
