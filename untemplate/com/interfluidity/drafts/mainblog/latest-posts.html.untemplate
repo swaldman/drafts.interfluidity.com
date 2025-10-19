@@ -21,7 +21,7 @@ given PageBase = PageBase.fromPage(renderLocation)
           def relativeUrlToPermalink = DraftsSite.location(entryResolved.entryInfo.permalinkPathSiteRooted).relative
           val href = mbAnchor.fold(relativeUrlToPermalink)(anchor => "#" + anchor)
 ()>
-    <div class="lp-bullet">+</div><div class="lp-link"><a href="<( href )>"><( entryResolved.entryInfo.mbTitle.getOrElse("untitled") )></a></div>
+    <div class="lp-bullet">~</div><div class="lp-link"><a href="<( href )>"><( entryResolved.entryInfo.mbTitle.getOrElse("untitled") )></a></div>
 <()
         }
       }

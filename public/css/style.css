@@ -513,20 +513,19 @@ div.subscribe-form div.sf-submit {
 }
 
 .latest-posts {
-    font-family: Latin-Modern-Mono-Light;
-    font-size: 10pt;
+    font-family: caroni;
+    font-size: 12pt;
     display: flex;
     flexDirection: row;
     align-items: start;
     justify-items: start;
     line-height: 110%;
-    color: #ccc;
-    margin-bottom: 3rem;
+    color: var( --link-blue );
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .latest-posts-title {
-    font-family: caroni;
-    font-size: 12pt;
 }
 
 .latest-posts-body {
@@ -544,11 +543,11 @@ div.subscribe-form div.sf-submit {
 
 .latest-posts a {
     text-decoration: none;
-    color: #ccc;
+    color: var( --link-blue );
 }
 
 .latest-posts a:hover {
-    color: black;
+    color: var( --link-hover );
 }
 
 table.flexmark-table {
