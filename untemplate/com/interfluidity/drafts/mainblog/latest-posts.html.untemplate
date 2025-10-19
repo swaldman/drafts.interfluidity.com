@@ -1,0 +1,33 @@
+import com.interfluidity.drafts.DraftsSite
+import unstatic.PageBase
+
+val (renderLocation, blog) = tup
+
+given PageBase = PageBase.fromPage(renderLocation)
+
+(tup : (DraftsSite.SiteLocation, DraftsSite.MainBlog.type))[]~()>
+
+<()
+  blog.maxFrontPageEntries match
+    case Some( numEntries ) =>
+()>
+<div class="latest-posts">
+  <div class="latest-posts-title">latest posts:</div>
+  <div class="latest-posts-body">
+<()
+      blog.entriesResolved.take( numEntries ).foreach {
+        entryResolved => {
+          val mbAnchor = entryResolved.entryInfo.mbAnchor
+          def relativeUrlToPermalink = DraftsSite.location(entryResolved.entryInfo.permalinkPathSiteRooted).relative
+          val href = mbAnchor.fold(relativeUrlToPermalink)(anchor => "#" + anchor)
+()>
+    <div class="lp-bullet">+</div><div class="lp-link"><a href="<( href )>"><( entryResolved.entryInfo.mbTitle.getOrElse("untitled") )></a></div>
+<()
+        }
+      }
+()>
+  </div>
+</div>
+<()
+    case None => /* do nothing, generate whitespace-only string */
+()>

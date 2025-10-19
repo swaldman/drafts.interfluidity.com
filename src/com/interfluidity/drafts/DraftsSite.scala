@@ -67,6 +67,12 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
       val mainLayoutInput = MainLayoutInput( input.renderLocation, input.mainContentHtml, input.sourceEntries.map( _.entryUntemplate ), singleItemRssSpec )
       layout_main_html(mainLayoutInput).text
 
+    override def renderMultiplePrologue( renderLocation : SiteLocation ) : String =
+      if renderLocation == frontPage then
+        mainblog.latest_posts_html( renderLocation, this ).text
+      else
+        ""
+
     object Archive:
       val location = site.location("/archive.html")
       case class Input( renderLocation : SiteLocation, entryUntemplatesResolved : immutable.SortedSet[EntryResolved] )

@@ -13,7 +13,9 @@ val resolved = input.sourceEntry
 val ut = resolved.entryUntemplate
 val permalink = resolved.permalink
 val synthetic = ut.UntemplateSynthetic
-val articleClasses = presentationTypeClass + info.mbAnchor.fold("")(anchor => s" uid-${anchor}") + (if synthetic then " synthetic" else "")
+val mbAnchor = info.mbAnchor
+val articleClasses = presentationTypeClass + mbAnchor.fold("")(anchor => s" uid-${anchor}") + (if synthetic then " synthetic" else "")
+val titleNameAttributeEndSpace= mbAnchor.fold(" ")(anchor => s"""name="${anchor}" """ )
 val mbTitle  = info.mbTitle
 val authors = info.authors
 val authorsString =
@@ -52,7 +54,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
   if input.presentation != input.blog.Entry.Presentation.Rss then {
     mbTitle.fold("") { title =>
 ()>
-          <h1><a href="<( permalink.relative )>"><( title )></a></h1>
+          <h1><a <( titleNameAttributeEndSpace )>href="<( permalink.relative )>"><( title )></a></h1>
 <()
     }
   }

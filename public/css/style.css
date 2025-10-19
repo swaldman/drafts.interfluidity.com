@@ -512,6 +512,45 @@ div.subscribe-form div.sf-submit {
     grid-column: 2;
 }
 
+.latest-posts {
+    font-family: Latin-Modern-Mono-Light;
+    font-size: 10pt;
+    display: flex;
+    flexDirection: row;
+    align-items: start;
+    justify-items: start;
+    line-height: 110%;
+    color: #ccc;
+    margin-bottom: 3rem;
+}
+
+.latest-posts-title {
+    font-family: caroni;
+    font-size: 12pt;
+}
+
+.latest-posts-body {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin-left: 0.5rem;
+}
+
+.latest-posts-body .lp-bullet {
+    margin-left: 0.25rem;
+}
+.latest-posts-body .lp-link {
+    margin-left: 0.25rem;
+}
+
+.latest-posts a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.latest-posts a:hover {
+    color: black;
+}
+
 table.flexmark-table {
     border-collapse: collapse;
     margin-left: auto;
@@ -601,6 +640,9 @@ body.old-draft #top-banner {
     div.entry-body {
       hyphens: auto;
       hyphenate-limit-chars: 7;
+    }
+    .latest-posts {
+        flex-direction: column;
     }
 }
 
