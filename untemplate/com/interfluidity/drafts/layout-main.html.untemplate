@@ -69,7 +69,7 @@ end title
 
     <!-- end icons / favicons -->
 
-    <link rel="alternate" type="application/rss+xml" title="draft.interfluidity.com updates" href="<( feedLoc.relative )>">
+    <link rel="alternate" type="application/rss+xml" title="drafts.interfluidity.com updates" href="<( feedLoc.relative )>">
     <( allItemFeedLink )>
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
