@@ -103,7 +103,7 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
            |  a local copy of the complete <code>drafts.interfluidity.com</code> website.
            |</p>
            |<p>
-           |  To read the site offline, unzip the download, then open the file <code>index.html</code> you will find in the unzipped directory.
+           |  To read the site offline, unzip the download, then open the file <code>index.html</code>, which you will find in the unzipped directory.
            |</p>
            |<p>
            |  <b><i>Please keep in mind that zips are updated once each night, so very recent changes may not be included in your download. Give it a day!</i></b>
