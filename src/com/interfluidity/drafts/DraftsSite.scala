@@ -106,7 +106,7 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
            |  To read the site offline, unzip the download, then open the file <code>index.html</code>, which you will find in the unzipped directory.
            |</p>
            |<p>
-           |  <b><i>Please keep in mind that zips are updated once each night, so very recent changes may not be included in your download. Give it a day!</i></b>
+           |  <b><i>Please keep in mind that zips are typically updated once each night, so very recent changes may not be included in your download. Give it a day!</i></b>
            |</p>
            |""".stripMargin
       val task = zio.ZIO.attempt {
