@@ -94,8 +94,29 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
       val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("subscribe"), resolveHashSpecials = true )
     end Subscribe
 
+    object Zip:
+      val location = site.location("/zip.html")
+      val htmlText =
+        """|<h1>Download this site as a zip file!</h1>
+           |<p>
+           |  You can <a href="https://zip.interfluidity.com/drafts/latest" download>download</a>
+           |  a local copy of the complete <code>drafts.interfluidity.com</code> website.
+           |</p>
+           |<p>
+           |  To read the site offline, unzip the download, then open the file <code>index.html</code> you will find in the unzipped directory.
+           |</p>
+           |<p>
+           |  <b><i>Please keep in mind that zips are updated once each night, so very recent changes may not be included in your download. Give it a day!</i></b>
+           |</p>
+           |""".stripMargin
+      val task = zio.ZIO.attempt {
+         layout_main_html( MainLayoutInput( location, htmlText, Nil ) ).text
+      }
+      val endpointBinding = publicReadOnlyHtml( location, task, None, immutable.Set("zip"), resolveHashSpecials = true )
+    end Zip
+
     override def endpointBindings : immutable.Seq[ZTEndpointBinding] =
-      super.endpointBindings :+ Archive.endpointBinding :+ Subscribe.endpointBinding
+      super.endpointBindings :+ Archive.endpointBinding :+ Subscribe.endpointBinding :+ Zip.endpointBinding
 
   end MainBlog
 

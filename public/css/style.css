@@ -443,7 +443,19 @@ div.archive h1 {
     font-family: CooperHewitt-Bold;
     font-weight: normal;
     font-size: 18pt;
+    margin-block-end: 0em;
 }
+div.archive p.download-zip-offer {
+    margin-block-start: 0;
+    font-size: smaller;
+    margin-block-end: 1.5em;
+    /*
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    */
+}
+
 div.archive dt {
    font-family: CooperHewitt-Bold;
    font-weight: normal;

@@ -18,9 +18,13 @@ val entryUntemplatesResolvedByMonthStr =
   immutable.SortedMap.from( unsorted )( summon[Ordering[String]].reverse )
 val site = input.renderLocation.site
 
+val zip = site.location("/zip.html")
+
 (input : DraftsSite.MainBlog.Archive.Input)[]~()>
 <div class="archive">
   <h1>archive</h1>
+
+  <p class="download-zip-offer"><i>...you can also download the complete site as a zip file <a href="<( zip.relative )>">here</a>.</i></p>
 
   <dl>
 <()  
