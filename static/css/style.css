@@ -455,7 +455,9 @@ div.archive p.download-zip-offer {
     border-bottom: 1px solid black;
     */
 }
-
+div.archive p.download-zip-offer a:link {
+    text-decoration: none;
+}
 div.archive dt {
    font-family: CooperHewitt-Bold;
    font-weight: normal;

@@ -24,7 +24,7 @@ val zip = site.location("/zip.html")
 <div class="archive">
   <h1>archive</h1>
 
-  <p class="download-zip-offer"><i>...you can also <a href="<( zip.relative )>">download the complete site</a> as a zip file here.</i></p>
+  <p class="download-zip-offer"><i>...you can also <a href="<( zip.relative )>">download the complete site</a> as a zip file.</i></p>
 
   <dl>
 <()  
