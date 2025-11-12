@@ -21,7 +21,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 Will Stancil [posted](https://bsky.app/profile/whstancil.bsky.social/post/3m567gfggic2y) the following over the weekend:
 
 <div style="text-align: center">
-<a href="##./stancil-bsky-post-real-income-2025-Nov.png"><img src="##./stancil-bsky-post-real-income-2025-Nov.png" alt="What drives me absolutely insane about this debate is how claims like 'there has been a generational stagnation of purchasing power' have taken on the tenor of religious faith among progressives, and seemingly cannot be disproven with any evidence, no matter how overwhelming. It simply isn’t true! (a FRED graph of real median household income follows)" width="500"></a>
+<a href="##./stancil-bsky-post-real-income-2025-Nov.png"><img src="##./stancil-bsky-post-real-income-2025-Nov.png" alt="What drives me absolutely insane about this debate is how claims like 'there has been a generational stagnation of purchasing power' have taken on the tenor of religious faith among progressives, and seemingly cannot be disproven with any evidence, no matter how overwhelming. It simply isn’t true! (a FRED graph of real median household income follows)" style="width: min(500px,100%)"></a>
 </div>
 
 I want to offer a straightforward point that a lot of economic controversializing should better take into account.
@@ -56,7 +56,7 @@ Nevertheless, you have not said anything of interest if you have said people can
 
 Economists model human behavior in terms of utility maximization. We claim, at any given time, people face a budget constraint. Within that budget constraint they put together a bundle of goods and services that maximizes their "utility". That utility then translates to "welfare", the unobservable, unscientific, well-being that we actually care about, but cannot quantitatively measure.
 
-<div style="text-align: center;"><a href="##./welfare-diagram.png"><img src="##./welfare-diagram.png" width="460"></a></div>
+<div style="text-align: center;"><a href="##./welfare-diagram.png"><img src="##./welfare-diagram.png"  style="width: min(460px,100%)"></a></div>
 
 Measures of real purchasing power can tell us something about Transition A, from a budget constraint to a bundle of goods and services. They can tell us nothing, unfortunately, about Transition B, from a bundle of goods and services to a person's welfare.
 
@@ -159,7 +159,7 @@ Note that there is no necessary relationship between quality changes in the two 
 Among other responses to Stancil's post above was this (in)famous graph, taken from the [Baumol effect Wikipedia page](https://en.wikipedia.org/wiki/Baumol_effect):
 
 <div style="text-align: center">
-<a href="##./Price_changes_in_US_1998-2018.jpg"><img src="##./Price_changes_in_US_1998-2018.jpg" alt="Graph " width="500"></a>
+<a href="##./Price_changes_in_US_1998-2018.jpg"><img src="##./Price_changes_in_US_1998-2018.jpg" alt="Graph "  style="width: min(500px,100%)"></a>
 </div>
 
 "Real" purchasing power is based on the average price of some bundle of goods, usually allowing for some degree of substitution between similar goods. Even while the average stays relatively stable, prices of the components of the bundle can vary widely. As the graph shows, some things have grown _much_ more expensive, while others have grown _much_ cheaper, even while the overall price level ("CPI for All Items" in the graph) changed less dramatically.
