@@ -1,6 +1,6 @@
-//| mill-version: 1.0.4
+//| mill-version: 1.0.6
 //| mill-jvm-version: 17
-//| mvnDeps: ["com.mchange::untemplate-mill:0.3.0-SNAPSHOT"]
+//| mvnDeps: ["com.mchange::untemplate-mill:0.3.0"]
 //+---------------------------------------------------------------
 
 package build
@@ -10,14 +10,14 @@ import mill.scalalib.*
 
 import untemplate.mill.*
 
-val UnstaticVersion = "0.4.0-SNAPSHOT"
+val UnstaticVersion = "0.4.0"
 
 object Dependency:
   val Unstatic             = mvn"com.mchange::unstatic:${UnstaticVersion}"
   val UnstaticZTapir       = mvn"com.mchange::unstatic-ztapir:${UnstaticVersion}"
 
 object `package` extends UntemplateModule:
-  override def scalaVersion = "3.3.6"
+  override def scalaVersion = "3.3.7"
 
   override def untemplateSourcesFolders = super.untemplateSourcesFolders :+ "entries"
   override def untemplateSourcesPrefixPackagesFromModuleDir : Map[String,String] = Map("entries" -> "com.interfluidity.drafts.mainblog")
