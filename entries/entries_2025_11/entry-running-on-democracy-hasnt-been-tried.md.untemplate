@@ -1,0 +1,64 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "running-on-democracy-hasnt-been-tried"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Running on democracy hasn't been tried",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-11-18T16:20:00-05:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"        -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+I am very grateful for this post, by [Matt Yglesias](https://bsky.app/profile/mattyglesias.bsky.social/post/3m5lzmrhyl22k):
+
+> I know this is deeply unfashionable but IMO politics largely consists of two things:
+>
+> — Pandering to the fickle views of the voters to try to win elections
+> 
+> — Handling a series of tedious technical issues that most people don't care about or understand well
+> 
+> Having strongly held views not helpful.
+
+I fear readers will think I'm being sardonic, that I intend this as a back-handed diss at Yglesias. I do not. I have my differences with the gentleman. But one real virtue of an inclination toward the trollish and contrarian is sometimes you just plainly say what you think where others would not.
+
+I don't think [Eric Levitz](https://www.vox.com/politics/458175/democrats-polls-immigration-moderation) or David Shor (both of whom I regard warmly) would put things quite this way. But I also think they'd have a hard time distinguishing their views, or at least how their views function in practice, from Yglesias'. The worldview that Yglesias' post so succinctly expresses sits at the heart of professional politics in the Democratic Party.
+
+The party contests elections not as some saccharine exercise in representation, but as battles to win. It [acts instrumentally](##the-whole-point-of-a-democracy), using the best technical and communications tools at its disposal. When it does win, it governs technocratically, understanding public opinion as a constraint to be managed.
+
+Jean Claude Juncker is a European politician, not an American Democrat. But his famous lament &mdash; "We all know what to do, but we don’t know how to get re-elected once we have done it." &mdash; jibes pretty well with Yglesias' post and the Democratic Party's practice.
+
+Whatever truth there is or isn't in views like Yglesias' and Juncker's, they don't express much enthusiasm for, or even aspiration towards, democracy. Elections are a problem wise technocrats must work around to govern well, rather than the beating heart of our self-government.
+
+Over the past year, it has become conventional wisdom among professional Democrats that you can't "run on democracy". It's been tried, and the electorate, frustrated over the cost of living and other "kitchen-table issues", voted for the authoritarian.
+
+I think this analysis is dumb. I think the American public values democracy a very great deal, but doesn't perceive either of the choices on their ballot to offer it.
+
+Democrats offer paternalistic technocracy. They presume a (genuine!) commitment to protecting *status quo* institutions of US electoralism is equivalent to support for democracy that the public ought to reward. But the public has grown jaded about the quality those institutions.
+
+Republicans capitalize on the public's resentment toward precisely the attitude Yglesias expresses. They effectively ask, what do you prefer, sanctimonious deference to notionally "democratic" institutions whose ability to connect government to the people has in practice been neutered, or a bunch of assholes who you might not agree with, but who are candid with you, who could never be mistaken for the technocrats who ignore and manipulate you on the grounds that they know best?
+
+There is a certain beauty, really, in the outcome of the 2024 election and the year that has followed. Republicans got to prove that professional Democrats are a bunch of pinheads that much of the public hates and resents. Democrats got to prove that professional Republicans, while definitely not pinheads, are incompetents and crooks who should be nowhere near the levers of power. Everybody wins, everybody loses.
+
+Except democracy. Democracy just loses. People, like me, devoted to the idea of government of the people, by the people, for the people lose. H.L. Mencken coughs out a laugh in his grave, "Democracy is the theory that the common people know what they want, and deserve to get it good and hard."
+
+I am grateful to Yglesias for his candor. I often respect his technocratic insights. But he is wrong, and people with his take on social affairs and "democracy" are maybe not the best guides for an institution charged with representation. Democracy is dying in the West because it has been overtaken by a caste of professionals, politicians and technocrats, for whom democracy is a slogan, a contest, a source of legitimacy in an instrumental sense, but not an idea or ideal they respect or aspire to. An alternative has emerged in the form of barbarians at the gate, who are even more detestable, even more dangerous to the possibility of any improvement toward democratic ideals.
+
+Mencken is wrong. Democracy is not the implausible "theory that the common people know what they want". Democracy is the theory that it is possible to *organize* society in such a way that the public participates on free and equal terms in rational government on its own behalf. Democracy is not disproven when a public whose civil society consists primarily of tabloids and television, or now twitter and tik-tok, turns out not to be well versed in its own affairs. Democracy does not demand that every member of the public become expert at "tedious technical issues".
+
+Democracy is the project of building institutions under which every citizen's values and interests, on which each of us are sole authorities, are taken into account, institutions in which any of us who wish can participate, institutions that do become expert *as institutions* at tedious technical issues, and then advocate coherently and capably on constituents' account.
+
+Democracy is also an attitude, almost a religion, of valuing one another as equals, of genuine interest and curiosity into the perspectives of our neighbors, of reverence in every public institution for participation and contribution. We can work side-by-side at the school board to make sure the textbooks arrive and the teachers are hired, and argue spiritedly with one another while we do so. We disagree. Our disagreements together constitute a common enterprise. That common enterprise scales from a neighborhood block party to, yes, government by the people, for the people, of the people, even at its highest levels. Our institutions must sometimes be hierarchical, but they should be fluid and permeable.
+
+Neither US political party has a great track record on democracy. Democracy is really my only issue at this point. I spend my time thinking about policy, coming up with clever mechanisms I think might make the world a better place. But the world cannot be a better place without democracy. The Biden Administration was kind of great on domestic economic policy. The Inflation Reduction Act, CHIPS Act, muscular antitrust enforcement, and other interventions constituted what could have been the start of an American renaissance, from my perspective as a technocrat. All of it has been scribbled over by a toddler fingerpainting with shit.
+
+The usual critique is that Biden did a poor job of selling his accomplishments, he wasn't a great communicator, he was too old. That's all true. But it's too narrow. Democracy is not about any one man, no president, no king. The problem is Democrats governed in an institutional context insulated and alienated from any meaningful civil society, a context in which arguably there is no meaningful civil society. Whether you are selling out to lobbyists or building foundations of a brilliant economy, the public won't preserve what it has no means of perceiving, understanding, and evaluating. Our job is to build an institutional context that renders the public capable. Nothing will "work" until [we do](##a-fertile-corpse).
+
