@@ -20,9 +20,9 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 People often use quantitative data to try to debunk other people's qualitative impressions.
 
-But when the data at issue are putative welfare measures (e.g. real income, GDP per capita, etc), the *qualitative* measures are foundational, and the quantitative mere proxies.
+But when the data at issue are putative welfare measures (e.g. real income, GDP-per-capita, etc), the *qualitative* measures are foundational, and the quantitative mere proxies.
 
-GDP per capita is widely used as a welfare measure, not because it conceptually maps well to welfare  &mdash; for all kinds of reasons it does not! &mdash; but because from the mid-20th Century to the first years of the 21st, it mapped pretty well to our qualitative intuitions about relative welfare.
+GDP-per-capita is widely used as a welfare measure, not because it conceptually maps well to welfare  &mdash; for all kinds of reasons it does not! &mdash; but because from the mid-20th Century to the first years of the 21st, it mapped pretty well to our qualitative intuitions about relative welfare.
 
 The consensus that there is a good correlation between GDP per capita and qualitative welfare has broken down more recently. (Is [Mississippi](https://www.statista.com/statistics/248063/per-capita-us-real-gross-domestic-product-gdp-by-state/) really "richer", in human welfare terms, than [Spain](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal)_per_capita)?)
 
@@ -30,7 +30,7 @@ We can have arguments about why it has broken down. Inequality, differences in h
 
 The same is true of "real" wealth or purchasing power measures! They are not inherently welfare measures. (I [belabored](##real-purchasing-power-over-time) this in a recent post.)
 
-If people are making qualitative claims that some group's welfare is poor, and you try to debunk those claims with quantitative data, whether GDP-per-capita or real purchasing power measures, you are engaged in a kind of circular reasoning. The only reason we think these *should* be welfare measures is because they sometimes seem to work at capturing our qualitative intuitions about relative welfare.
+If people are making qualitative claims that some group's welfare is poor, and you try to debunk those claims with quantitative data, whether GDP-per-capita or real purchasing power measures, you are engaged in a kind of circular reasoning. The only reason we think these *should* be welfare measures is because they sometimes seem to work at capturing qualitative intuitions about relative welfare.
 
 If qualitatively they seem to cease to work well as welfare measures, then there is no reason to think they are good welfare measures. When you debunk widespread qualitative claims about welfare with this "data", you are really debunking the quality of your measures!
 
