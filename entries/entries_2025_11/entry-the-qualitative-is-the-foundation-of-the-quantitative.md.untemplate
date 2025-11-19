@@ -1,0 +1,42 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "the-qualitative-is-the-foundation-of-the-quantitative"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "The qualitative is the foundation of the quantitative",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2025-11-19T13:40:00-05:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"        -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+People often use quantitative data to try to debunk other people's qualitative impressions.
+
+But when the data at issue are putative welfare measures (e.g. real income, GDP per capita, etc), the *qualitative* measures are foundational, and the quantitative mere proxies.
+
+GDP per capita is widely used as a welfare measure, not because it conceptually maps well to welfare  &mdash; for all kinds of reasons it does not! &mdash; but because from the mid-20th Century to the first years of the 21st, it mapped pretty well to our qualitative intuitions about relative welfare.
+
+The consensus that there is a good correlation between GDP per capita and qualitative welfare has broken down more recently. (Is [Mississippi](https://www.statista.com/statistics/248063/per-capita-us-real-gross-domestic-product-gdp-by-state/) really "richer", in human welfare terms, than [Spain](https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal)_per_capita)?)
+
+We can have arguments about why it has broken down. Inequality, differences in how medical and social insurance are accounted in GDP, the effect of market power, and failure to account for differences in leisure time are all candidates. But fundamentally, GDP-per-capita was only ever a good measure because there was a widespread consensus that it tracked qualitative outcomes. Once that consensus has broken down, there is no reason to think it *should* be a welfare measure. The inventor of GDP, Simon Kuznets, [explicitly argued](https://fraser.stlouisfed.org/title/national-income-1929-1932-971?page=17) that it should not be! (ht [Marketplace](https://www.marketplace.org/story/2023/09/01/gdp-measure-of-economic-growth) for the source)
+
+The same is true of "real" wealth or purchasing power measures! They are not inherently welfare measures. (I [belabored](##real-purchasing-power-over-time) this in a recent post.)
+
+If people are making qualitative claims that some group's welfare is poor, and you try to debunk those claims with quantitative data, whether GDP-per-capita or real purchasing power measures, you are engaged in a kind of circular reasoning. The only reason we think these *should* be welfare measures is because they sometimes seem to work at capturing our qualitative intuitions about relative welfare.
+
+If qualitatively they seem to cease to work well as welfare measures, then there is no reason to think they are good welfare measures. When you debunk widespread qualitative claims about welfare with this "data", you are really debunking the quality of your measures!
+
+That's not to say unevidenced claims about qualitative welfare must be taken as gospel, at face value. The claims could still be wrong! Welfare is unobservable, hard to measure. This is [economics' foundational demon](https://www.interfluidity.com/v2/5149.html) as a "science".
+
+The moments when there is consensus that any quantitative measure maps to welfare are fleeting and precious. During those exceptional moments, it may come to seem plausible that we might maximize welfare "scientifically".
+
+But that is only hubris. When that consensus flags, like now, we have to cop to the fact that human welfare is not a scientific observable. Welfare, by which we mean "prosperity" or "thriving", is something we experience qualitatively, we construct [normatively](https://www.interfluidity.com/v2/5486.html), we strive to achieve politically. Those who think they have it as fact are only imposing elaborate fictions.
+
