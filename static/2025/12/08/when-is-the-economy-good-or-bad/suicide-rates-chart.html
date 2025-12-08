@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suicide Rate Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="vibecession-util.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #chartContainer {
+            position: relative;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="chartContainer">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        // Sample data
+        const labels = Array.from({length: 124}, (_, i) => 1900 + i);
+        const srates1 = [NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 11.9, 12, 12.2, 12.1, 12.4, 12.4, 12.9, 12.7, 12.4, 12.2, 12.4, 12.2, 11.9, 12, 11.8, 11.7, 11.5, 11.2, 11.1, 10.5, 10.4, 10.7, 11, 10.9, 11.1, 11, 11.2, 11.5, 11.8, 12, 12.4, 12.7, 12.9, 13, 13.4, 13.7, 13.9, 14.5, NaN, NaN, NaN, NaN, NaN, NaN];
+      const srates2 = [NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 10.4, 10.7, 10.9, 10.8, 11, 10.9, 11, 11.3, 11.6, 11.8, 12.1, 12.3, 12.6, 12.6, 13, 13.3, 13.5, 14, 14.2, 13.9, 13.5, 14.1, 14.21, 14.1];
+      const srates3 = [10.2, 10.4, 10.3, 11.3, 12.2, 13.5, 12.8, 14.5, 16.8, 16, 15.3, 16, 15.6, 15.4, 16.1, 16.2, 13.7, 13, 12.3, 11.5, 10.2, 12.4, 11.7, 11.5, 11.9, 12, 12.6, 13.2, 13.5, 13.5, 15.6, 16.8, 17.4, 15.9, 14.9, 14.3, 14.3, 15, 15.3, 14.1, 14.4, 12.8, 12, 10.2, 10, 11.2, 11.5, 11.5, 11.2, 11.4, 11.4, 10.4, 10, 10.1, 10.1, 10.2, 10, 9.8, 10.7, 10.6, 10.6, 10.4, 10.9, 11, 10.8, 11.1, 10.9, 10.8, 10.7, 11.1, 11.6, 11.6, 11.9, 11.9, 12, 12.6, 12.3, 13.1, 12.3, 12.1, 11.9, 12, 12.2, 12.1, 12.4, 12.4, 12.9, 12.7, 12.4, 12.2, 12.4, 12.2, 12, 12.1, 12, 11.9, 11.6, 11.4, 11.3, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN];
+
+
+      const s1Rgb = [100,80,0]
+      const s1Color = colorFromRgb( s1Rgb )
+      const s1ColorFaded = colorFromRgbFaded( s1Rgb )
+
+      const s2Rgb = [180,0,0]
+      const s2Color = colorFromRgb( s2Rgb )
+      const s2ColorFaded = colorFromRgbFaded( s2Rgb )
+
+      const s3Rgb = [100,0,100]
+      const s3Color = colorFromRgb( s3Rgb )
+      const s3ColorFaded = colorFromRgbFaded( s3Rgb )
+
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                      label: 'CDC Health',
+                      data: srates1,
+                      borderColor: s1Color,
+                      backgroundColor: s1ColorFaded,
+                      tension: 0.4,
+                      borderWidth: 3,
+                      pointRadius: 5,
+                      pointBackgroundColor: s1Color,
+                      pointBorderColor: '#fff',
+                      pointBorderWidth: 2
+                    },
+                    {
+                      label: 'CDC Suicide Data',
+                      data: srates2,
+                      borderColor: s2Color,
+                      backgroundColor: s2ColorFaded,
+                      tension: 0.4,
+                      borderWidth: 3,
+                      pointRadius: 5,
+                      pointBackgroundColor: s2Color,
+                      pointBorderColor: '#fff',
+                      pointBorderWidth: 2
+                    },
+                    {
+                        label: 'CDC Vital Statistics (HIST290)',
+                      data: srates3,
+                      borderColor: s3Color,
+                      backgroundColor: s3ColorFaded,
+                      tension: 0.4,
+                      borderWidth: 3,
+                      pointRadius: 5,
+                      pointBackgroundColor: s3Color,
+                      pointBorderColor: '#fff',
+                      pointBorderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Suicide Rate (crude, three series)',
+                        color: '#000',
+                        font: {
+                            size: 16
+                        }
+                    },
+                    annotation: {
+                        annotations: {
+                            box1: {
+                                type: 'box',
+                                xMin: 7.0,
+                                xMax: 15.0,
+                                yMin: 0,
+                                //yMax: 19,
+                                backgroundColor: redBackground,
+                                borderColor: redBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Panic of 1907',
+                                    position: {x: 'start', y: 'start'},
+                                    color: redLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box2: {
+                                type: 'box',
+                                xMin: 29.0,
+                                xMax: 41.0,
+                                yMin: 0,
+                                //yMax: 19,
+                                backgroundColor: redBackground,
+                                borderColor: redBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Great Depression',
+                                    position: {x: 'start', y: 'start'},
+                                    //position: {x: 'center', y: 'start'},
+                                    color: redLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box3: {
+                                type: 'box',
+                                xMin: 41,
+                                xMax: 45,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: 'rgba(32,32,32,0.1)',
+                                borderColor: 'rgb(32,32,32)',
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'WWII',
+                                    position: {x: 'start', y: 'start'},
+                                    //position: {x: 'center', y: 'start'},
+                                    color: 'rgb(32,32,32)',
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box4: {
+                                type: 'box',
+                                xMin: 54,
+                                xMax: 69,
+                                yMin: 0,
+                                //yMax: 19,
+                                backgroundColor: greenBackground,
+                                borderColor: greenBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Postwar Boom',
+                                    position: {x: 'start', y: 'start'},
+                                    color: greenLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box5: {
+                                type: 'box',
+                                xMin: 69,
+                                xMax: 79,
+                                yMin: 0,
+                                //yMax: 19,
+                                backgroundColor: yellowBackground,
+                                borderColor: yellowBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Great Inflation',
+                                    position: {x: 'start', y: 'start'},
+                                    //position: {x: 'center', y: 'start'},
+                                    color: yellowLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box6: {
+                                type: 'box',
+                                xMin: 79,
+                                xMax: 83,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: redBackground,
+                                borderColor: redBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Volcker',
+                                    position: {x: 0, y: 'start'},
+                                    yAdjust: 10,
+                                    rotation: -90,
+                                    //position: {x: 'center', y: 'start'},
+                                    color: redLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box7: {
+                                type: 'box',
+                                xMin: 83,
+                                xMax: 89,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: greenBackground,
+                                borderColor: greenBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Morning',
+                                    position: {x: 'start', y: 'start'},
+                                    //position: {x: 'center', y: 'start'},
+                                    color: greenLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box8: {
+                                type: 'box',
+                                xMin: 89,
+                                xMax: 93,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: redBackground,
+                                borderColor: redBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'GHWB',
+                                    position: {x: 0, y: 'start'},
+                                    yAdjust: 10,
+                                    rotation: -90,
+                                    //position: {x: 'center', y: 'start'},
+                                    color: redLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box9: {
+                                type: 'box',
+                                xMin: 93,
+                                xMax: 100,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: greenBackground,
+                                borderColor: greenBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: '\'90s Boom',
+                                    position: {x: 'start', y: 'start'},
+                                    //position: {x: 'center', y: 'start'},
+                                    color: greenLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box10: {
+                                type: 'box',
+                                xMin: 100,
+                                xMax: 107,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: yellowBackground,
+                                borderColor: yellowBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Iffy Aughts',
+                                    position: {x: 'start', y: 'start'},
+                                    //position: {x: 'center', y: 'start'},
+                                    color: yellowLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box11: {
+                                type: 'box',
+                                xMin: 107,
+                                xMax: 112,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: redBackground,
+                                borderColor: redBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'GFC',
+                                    position: {x: 'start', y: 'start'},
+                                    //position: {x: 'center', y: 'start'},
+                                    color: redLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            box12: {
+                                type: 'box',
+                                xMin: 112,
+                                xMax: 119,
+                                yMin: 0,
+                                //yMax: 120,
+                                backgroundColor: greenBackground,
+                                borderColor: greenBorder,
+                                borderWidth: 2,
+                                label: {
+                                    display: true,
+                                    content: 'Obama-Trump',
+                                    position: {x: 0, y: 'start'},
+                                    yAdjust: 28,
+                                    rotation: -90,
+                                    //position: {x: 'center', y: 'start'},
+                                    color: greenLabel,
+                                    font: {
+                                        size: 10,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                       }
+                    }
+                },
+                scales: {
+                    y: {
+                        //beginAtZero: true,
+                        min: 8,
+                        max: 18,
+                        title: {
+                            display: true,
+                            text: 'Rate (per 100,000)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
