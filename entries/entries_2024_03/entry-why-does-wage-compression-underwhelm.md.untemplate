@@ -2,7 +2,7 @@
 >   "Title"     -> "Why does wage compression underwhelm?",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-03-25T18:55:00-04:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> "why-does-wage-compression-underwhelm"
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

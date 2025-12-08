@@ -17,9 +17,13 @@ given PageBase = PageBase.fromPage(renderLocation)
 <()
       blog.entriesResolved.take( numEntries ).foreach {
         entryResolved => {
-          val mbAnchor = entryResolved.entryInfo.mbAnchor
           def relativeUrlToPermalink = DraftsSite.location(entryResolved.entryInfo.permalinkPathSiteRooted).relative
-          val href = mbAnchor.fold(relativeUrlToPermalink)(anchor => "#" + anchor)
+
+          // linking with anchors to articles in the front page escaped into non-permalinks in the wild, alas
+          //val mbAnchor = entryResolved.entryInfo.mbAnchor
+          //val href = mbAnchor.fold(relativeUrlToPermalink)(anchor => "#" + anchor)
+
+          val href = relativeUrlToPermalink 
 ()>
     <div class="lp-bullet">~</div><div class="lp-link"><a href="<( href )>"><( entryResolved.entryInfo.mbTitle.getOrElse("untitled") )></a></div>
 <()
