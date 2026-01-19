@@ -1,0 +1,68 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "where-am-i"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Where am I?",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2026-01-18T23:15:00-03:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"        -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+I am in Montevideo, Uruguay. My family has mostly moved here.
+
+We retain a US residence, in the most economical way I could arrange. To the degree it remains safe to do so,
+I hope we travel back to see family frequently.
+
+But my kid will attend school in Montevideo, not in the US.
+
+Yes, we have emigrated in response to the election of Donald Trump. We lived the last few years in
+suburban Pinellas County, Florida. We were very unhappy there. But prior to November 2024, we were gathering ourselves
+to move to a mid-size US city where a transit-centered urban life might be affordable. We were thinking about
+Pittsburgh and, um, Minneapolis, even though my wife and I both detest cold. In the US, we enjoyed living in San
+Francisco, but 400-ish square feet had become intolerable, and even that is less affordable now for us than it had been when
+we moved.
+
+Leaving the country was a decision based on information flows much slower than the news cycle.
+While we were packing up our lives in December, I was more optimistic
+about the direction of the US than I had been since inauguration. But we were already committed to the move, had been by May,
+with advances paid to lawyers and a private school where the kid will be taught in English. (We figure he'll pick up Spanish
+quickly, but he's worked very hard in school, we didn't want to overthrow his academic successes by throwing him into the
+deep-end of education in a foreign language.)
+
+Was this the right thing to do? I have no idea. You can see some of my thinking coming together
+[in this piece from February](##a-few-simple-points).
+
+I feel like a coward. I am relatively privileged as an American &mdash; economically, racially. My family
+is far from the top of the list of people under threat. But then events in Minneapolis are a reminder of how
+quickly the [Niemoller poem](https://hmd.org.uk/resource/first-they-came-by-pastor-martin-niemoller/) can be run through.
+
+Putting aside my own welfare, and my family's, is this the right thing to do, ethically? I don't know. I do feel I have
+an obligation to do my part, to fight for the United States. I am an American, and always will be. I remain tremendously
+proud of what the American experiment meant and still means in aspiration. We hold these truths to be self-evident, that
+all men are created equal. Government of the people, by the people, for the people.
+
+Of course I am, we all should be,
+ashamed of how short the American reality has often fallen from those aspirations. Of how short the United States is falling now.
+
+But the American project remains, in
+my view, a miracle in world history, and though it is wobbling &mdash; drunkenly, dangerously &mdash; we can and should and must save it.
+
+My tiny contribution to human affairs comes through words. I mean to continue to write them. I will continue
+to have lots to say about how, in my view, the American experiment can be reformed, refounded, rise again from the pile of toxic ashes it has become.
+
+I don't write much about my personal life here. That's not what this blog is for. But there are questions of standing, so you should know.
+Perhaps my cowardly flight means I have no standing to offer advice to the United States. That, dear reader, is for
+you to judge.
+
+I will, nevertheless, do my best. If you are ever in Montevideo, please let me know.
+
