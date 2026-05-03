@@ -1,0 +1,103 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "the-200000-standard-deduction"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "The $200,000 standard deduction",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2026-05-03T17:25:00-03:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"        -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+I favor it!
+
+But as part of a broader package.
+
+A bunch of Democratic politicians have called for big exemptions from the income tax at the low to middle
+to even upper-middle end of the income spectrum.
+[Chris Van Hollen](https://www.vanhollen.senate.gov/news/press-releases/van-hollen-kelly-gillibrand-booker-kim-beyer-introduce-new-bill-to-cut-taxes-for-millions-of-working-americans) and
+[Cory Booker](https://www.nbcnews.com/politics/congress/sen-cory-booker-2028-potential-unveil-bill-making-75000-income-tax-fre-rcna262093) have offered proposals at the Federal level,
+accompanied by [Katie Porter](https://x.com/katieporterca/status/2032495138384322988) at the state level. The proposals are accompanied by promises to make up lost
+revenue by increasing taxes at high incomes or on the very wealthy.
+
+There has been a so-called "[wonk revolt](https://www.nbcnews.com/politics/elections/tax-cuts-are-hot-new-idea-democrats-candidates-2026-2028-rcna264454)" against these proposals.
+As the always wonderful pseudonymous James Medlock [puts it](https://prospect.org/2026/03/16/democratic-presidential-contenders-new-idea-tax-cuts-van-hollen-booker/),
+Democratic tax cutters "ced[e] the right-wing frame that taxes are a problem to be solved, rather than a way we collectively solve problems.” The proposals have been colorfully derided
+as "[slopulism](https://www.concordcoalition.org/facing-the-future/are-democrats-backing-slopulist-tax-cuts/)", suggesting the cheap but ultimately fraudulent appeal of
+so many AI videos.
+
+I think of myself as pretty wonkish, yet I strongly favor not letting the income tax kick in until pretty high income levels. Two cheers for Van Hollen, Booker, and Porter!
+
+I agree with critics of these proposals that a civilized state requires broad-based taxation. Taxing the rich won't do it. Taxing the rich won't do it
+even if you fully replace the revenue you lose, because dollars from the middle-class are not fungible with dollars from the rich with respect to the purposes of taxation.
+
+If you cut taxes on a teacher by $10,000 but raise taxes on Elon Musk by $20,000, you have reduced the deficit, but you have created less, not more, fiscal space for
+government action. This is because the teacher is going to spend her $10,000, putting a bid under current goods and services, limiting the space available to the state before
+its spending proves inflationary. The $20,000 Elon Musk otherwise would have kept would have sat in an investment portfolio.
+It would have affected his spending behavior not at all. A marginal dollar of Musk's income
+is almost entirely inert with respect to current spending and so inflation pressure. A marginal dollar of a much more deserving teacher is hot money.
+
+So, if you want to have a civilized social democracy, you absolutely do need broad-based taxation, or some other means of regulating expenditure flow from the
+middle class. I am with the revolting wonks on that.
+
+The question is what form the tax should take. To answer that question, we should work towards legibly different purposes for different taxes.
+
+Creating fiscal space, "financing the government", is not the only or main purpose of taxation. An equally crucial purpose is regulating
+the distribution of wealth and income. American policy is a catastophe in part because its wonk class has not publicly made the case for that function,
+which has left our tax policy and the discourse surrounding it incoherent. As long as we cede, to steal a leaf from Medlock, the case that taxes
+are a necessary evil we accept only to buy government services worth their cost, we won't have a decent society, because
+[you can't have a decent society with dispersions of wealth and income level](https://www.interfluidity.com/v2/7629.html) as great as we currently now accept.
+
+The purpose of income and wealth taxes should be solely, openly, to regulate the distribution of incomme and wealth. The way plutocrats have destroyed the United States
+is precisely by blurring the lines between taxes we impose upon them to ensure we remain a cohesive political community
+and the middle-class taxation necessary to finance a civilized society. Plutocrats defang the income tax by using middle-class and ordinarily affluent
+people as [human shields](https://xcancel.com/interfluidity/status/1092519956439130112). They persuade upper-middle class people that
+hard-working professionals and entrepreneurs are taxation's "victims",
+people ripped off by getting less in value than they pay in, when in fact it is only the very wealthy, people rich enough to be able to remove or immunize
+themselves from social pathology, for whom that is even arguably true. An affluent accountant in fact has more in common with a homeless person
+than with Jeff Bezos. The tax system should reflect that.
+
+So, I favor a $200,000 standard deduction, $400,000 for married couples, then gentle progressivity from that point upwards, until we hit
+something close to a 100% marginal tax rate.
+
+None of this is punitive. It's not because the very rich are bad people, although often they become
+bad people once they are very rich. It's because the shape of the income and wealth distribution is an essential matter of public concern,
+and limiting the dispersion of income and wealth levels is a necessary social function.
+
+But then how do we finance the government? If we devote the income tax, openly and exclusively, to shaping the distribution, we still need something
+that regulates the expenditure flow by the broad public, so that there is fiscal space for a generous social democratic welfare state.
+
+That, I would argue, should be the role of progressive consumption taxes.
+
+Income taxes are for the rich, to limit just how rich they can become.
+The vast majority of the demos should see nothing to fear in them, and so should be supportive so long as we can make the absolutely true case
+that it is essential we regulate the distribution.
+
+Consumption taxes become the broad-based taxes we levy and adjust to create space for the universal benefits that a civilized society guarantees.
+In European social democracies, this is the role of the value-added tax, which is a pretty good tax we should adopt as a financing tool
+*in addition to much more steeply progressive income taxes* rather than as a replacement for them. VAT-style consumption taxes can be made
+modestly progressive by imposing lower-rates on essential goods, and by partially rebating them via a UBI.
+
+Consumption taxes are the most intelligible, legible means to create fiscal space for government action,
+because they tax precisely the private spending that must
+be discouraged to create non-inflationary space for public spending. Legibility of the different purposes of different programs is important in a
+democracy. People should be able to understand what a program is and why they should support it. When a tax system, like our current income tax,
+takes on a huge hodgepodge of roles, it's easy for malentrepreneurs to tar the whole enterprise with the tax's least popular or most threatening
+aspects.
+
+So, let's limit the income tax to people with very high incomes. And let's impose serious wealth taxes as well.
+
+But let's not imagine we can make up for the loss of middle-class tax revenue by taxing the very rich. That's not even why we tax the very rich.
+
+Let's tax ourselves, to finance the security and broad-based prosperity for which we all yearn, by replacing the middle-class income
+tax with progressive consumption taxes.
+
