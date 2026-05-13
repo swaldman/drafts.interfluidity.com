@@ -1,0 +1,191 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "the-fiduciary-class"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "The fiduciary class",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2026-05-13T07:45:00-03:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"        -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+I want to riff a bit on this [exchange](https://bsky.app/profile/sjshancoxli.liberalcurrents.com/post/3ml6y7tecmc2s)
+between [Kevin Elliot](https://bsky.app/profile/kjephd.bsky.social) and [Samantha Hancox-Li](https://bsky.app/profile/sjshancoxli.liberalcurrents.com).
+(I hope they'll forgive that I've played around with formatting and added punctuation.)
+
+> Elliot: ...What's changed are norms surrounding representation & aspiration. Being an educated, cultivated person has become widely politicized
+> in a wider environment of transgressive populist contempt for conventional respectability.
+>
+> Hancox-Li: i think not unrelated to this is that the dems are steadily becoming the party of the professional-managerial class and are
+> incredibly embarrassed about this.  this of course mirrors the pmc itself, which instead of achieving class consciousness has achieved
+> "class neuroticism", by which i mean: in practical terms members of the pmc devote much of their life's effort to becoming pmc while
+> also remaining in deep denial that this is in fact their aspiration. i dunno tho i think being well-educated, decent, and prosperous
+> is not a bad thing to aspire to.  it might even be good actually. makes u think... i basically blame marx for this.  the pmc is convinced
+> that salvation needs to arise from the working class--hence the paradoxes discussed in 
+> "[ultraliberalism](https://midwestsocialist.com/2022/02/07/ultraliberalism-the-dominant-tendency-of-the-american-left/)," AND the essay's own prescription
+> "go organize a shop floor".
+
+I'm a person very much of the educated professional class. I encourage people to become educated and cultivated.
+Education and cultivation should embarrass no one.
+
+(Cultivation, of course, includes moral sensibilities like, "it is cretinous
+to embarrass people solely for their purported lack of education or cultivation." When the United States was good, much of what
+made it good was a social oxymoron, promoting cultivation along with ostentatious disdain for putting on airs.)
+
+Nevertheless, I do think that "we" &mdash; by which I mean the professional class &mdash; fucked up. And we
+are smart enough to kind of know it. Hancox-Li is right. We are embarrassed about something. But we
+are not so clear about what, so it comes through as neurosis.
+I'll suggest what I think we should, in fact, be embarrassed about, not in order to prescribe hairshirts, but so that
+we can just not do that anymore and then stand proud again.
+
+In 2019, I offered the following [tweet](https://x.com/interfluidity/status/1183867514389843968). I am unduly fond of it.
+
+> alignments and outcomes:
+> 
+> working class + professional class ⇒ social democracy
+> 
+> professional class + plutocrats ⇒ liberal plutocracy (“neoliberalism”)
+> 
+> working class + plutocrats ⇒ fascism
+ 
+I think that during the period from the middle 1970s through the 2008 financial crisis, we, the professional class made
+a rather catastrophic error in judgment.
+
+(Obviously I am overgeneralizing &mdash; we have always been a heterogeneous and fraction crew &mdash;
+but, you know. In general.)
+
+The consensus among our class &mdash; which I shared! &mdash; was that our society was imperfectly but sufficiently a meritocracy, and that the basic frame of
+what came to be called "neoliberalism" was correct. A heavily marketized society was a society we-the-merited could succeed within, and it was also the form of
+society that would maximize all of our prosperity.
+The fact that our successes might be generously remunerated was not just a matter of private enjoyment, but reflected genuine social virtue.
+We had achieved a society in which one did well by doing good.
+
+This was never accurate. But journalists, think-tankers, and academic social scientists who were willing to advance this perspective in their work could count on career success.
+Which contributed to a consensus (not least but not only within the discipline of economics) that this suspiciously self-flattering perspective was in fact true.
+It was "science". The people at the top of many fields embraced the view. Dissidence became hard to distinguish from sour-grapes conspiracism.
+
+"Liberal professionals" had been recruited into what John Kenneth Galbraith [describes](https://wist.info/galbraith-john-kenneth/7463/)
+as the role of the modern conservative.
+They were "engaged...in one of man’s oldest, best financed, most applauded, and, on the whole, least successful exercises in moral
+philosophy. That is the search for a superior moral justification for selfishness."
+
+They had, in other words &mdash; _we_ had &mdash; become paid mouthpieces for the rich, who always want to be flattered that their
+wealth is merely a marker of their virtue, and who, more importantly, want their lessers to believe that. Otherwise reformists, or, God forbid,
+revolutionaries, might emerge, and confuse among the public their causes for justice.
+
+Some of us did pretty well, for a while. Academics could be surprisingly well paid. Software developers did well. Finance became a philosopher's stone by which
+one could convert research and a love of mathematics into exorbitant prosperity.
+
+What was not to like? The educated could thrive via the fruits of applying their
+education. The best educated economists assured us that for all the wealth we appropriated, it was less than the value we contributed.
+However great our opulence, it was less than our effective generosity. Follow the science.
+
+All of this was bullshit. Society was not well-arranged. Even within the ranks of the professional-managerial class, most of
+us did not do so well. Like the broader world we helped to justify, our own fates became stratified and increasingly structured as lotteries
+most of us would lose, but whose outcomes one could rig via certain kinds of institutional attachments and social connections. The information superhighway meant the world was
+flat. It became more important than ever to go to Harvard.
+
+Most of us ended up pretty miserable along with everybody else.
+
+As Hancox-Li suggests, there is nothing wrong with wanting to be prosperous. We should all want to be prosperous!
+
+But what it means to be prosperous is contested. One definition of prosperity might be a stable income
+sufficient to ensure a comfortable middle-class lifestyle.
+
+But there is also the fractal definition of prosperity
+implicit in the behavior of the very rich, under which [no amount of wealth is sufficient](https://www.interfluidity.com/v2/3487.html).
+Wherever you rise to in the distribution, it looks to you the same as where you last were. You find yourself [competing for positional goods,
+in tournaments whose outcomes become consequential to your actual welfare, not just to your vanity](https://www.interfluidity.com/v2/7263.html).
+There are always rivals who have more, or who at least are contesting for more. Either you continually accumulate, or you fall behind.
+"Prosperity" must always be pursued, but it can never be achieved.
+
+During the neoliberal period, professionals increasingly adopted plutocrats' version of prosperity. First as aspiration, then as desperation.
+Eventually it became difficult not to join the race. Falling behind would have consequences for ones children.
+Failure might be forgivable, but opting out was irresponsible.
+Prestigious academics became consultants, expert witnesses, paid speakers, despite already commanding enviable salaries.
+Entrepreneurial means good, right?
+The version of prosperity we adopted was "more" rather than "[enough](https://thecoloradocenter.com/jas-poems.pdf)".
+
+To return to my little tweet, we professionals had effectively aligned ourselves with the plutocrats. The result was an economy that immiserated
+an ever growing share of the nonplutocrats, the less-educated, but also those in our own ranks who did opt out of the insatiable
+contest for more, or who simply failed at it.
+
+That immiseration left the alignment democratically untenable. The less-educated, along with a so-called "downwardly mobile" fraction
+of the professional class, grew restive, hungered for some outsider to overthrow a game that made them losers and then insisted it was their own fault.
+
+The wise decision would have been for
+professionals, as a class, to join the working class in a muscular play for social democracy. Unfortunately, the professional class
+was famously divided (cf the neverending 2016 Democratic primary), while plutocrats coopted a growing share of the working class via the person of Donald Trump.
+The result of a working class + plutocrat alignment has been and is fascism.
+
+Hancox-Li is right to question paleo-Marxisms that presume the only way forward is the one conceived while
+the emerging form of work was tending steam-powered machines in labor-intensive factories. An objective alignment of
+workers' material interests against their bosses may still exist, but labor conditions under which that alignment
+would ever be likely to translate to effective organization have largely disappeared.
+
+It is no answer, however, to imagine
+that Democrats should become the party of the professional-managerial class alone. Under a two-party system,
+the obvious problem is that people with advanced educations are unlikely to constitute a majority.
+
+Plutocrats have long understood democracy is a system that inherently renders them naked and vulnerable, so they must somehow
+coopt sizable elements of other groups. In postwar, post-GI-bill, America, professionals do constitute a mass constituency,
+which can encourage a kind of hubris. A mass constituency we are, but still a minority. Our challenge should be more
+tractable than plutocrats': We are a greater fraction of the public, and we share much greater alignment of material interests with
+the rest of the public than plutocrats do. But plutocrats have outsize resources and a cohesiveness born both of commonality of interests
+and smallness of scale. Socialists proclaim solidarity. Plutocrats practice it, despite their personal rivalries and soap operas of mutual detestation.
+
+Further, plutocrats will always be able to divide us. We are a class defined by pursuing unusual excellences on behalf of those
+willing and able to pay us. We are the people who perform the actual work of contesting politics on behalf of plutocrats, even where that
+politics is at variance with our own class interest. (Plutocrats pay handsomely to align our individual interests with their politics.)
+
+We do have a weapon, though. What is it that Trumpists seek to undermine more than any other thing? What is their kryptonite? It the capacity
+for any form of authority to emerge whose pronouncements resist being bought. The standards and ethics of our professions, imperfect and
+compromised though they are, remain a constant threat. They are a threat not because we are numerous, but because despite the firehose of
+shit they flood the zone with, the liberal professions are institutions whose core purpose is to distinguish virtues from falsehoods in
+each of their many domains, and when we do that well a broader mass public might find our views persuasive.
+
+During the neoliberal era, we really did let our standards lapse. Yes, the anti-vaccine movement is catastrophic bullshit. But the medical profession
+really did allow itself to go along with the pretense that oxycontin was a not-so-addictive miracle drug, and that was
+never a supportable claim. Our vulnerability to the former is not unrelated to the latter. In a variety of ways, over the past few decades,
+we allowed ourselves to be seduced into a kind of betrayal of the bargain that must bind a democratic society to its experts and professionals:
+
+_We, the broad public, generally defer to your authority. You, the professionals, exercise that authority competently, in the interests of the public,
+in a manner structured to [maximize rather than override](##authority-minimization) the scope for individual and democratic choice
+under our actual objective constraints._
+
+I think that if we want to recover the trust of the broader public, we need to acknowledge that we did succumb to the corruptions inherent
+in the increasingly unequal society whose emergence we helped to justify. We need to enact institutional changes that would make such
+failures less likely going forward. (I have [ideas](https://www.interfluidity.com/v2/7317.html).)
+
+Moreover, I think we need to overtly reconceive of ourselves. The connotations of the word "professional" contain a contradiction we must
+definitively resolve. Do we define ourselves as inheritors of great bodies of knowledge, bound by and stewards of ethical and epistemological standards
+which have been developed and refined over generations? Or do we define ourselves as people who do stuff for money, careerists essentially?
+
+During the neoliberal era we pretended there was little contradiction in those two roles. That's about a clever an idea as the safety of oxycontin.
+
+I'll end all this a bit pathetically, by proposing the lamest remedy imaginable, a rebranding. But maybe there is some mitigation in a rebranding
+whose intent is not to persuade customers, but the rebranded providers themselves, that they now are, or ought to be, different. I propose that
+the class formerly known as professional adopt the word "fiduciary" as its defining characteristic.
+
+We are not in the business of selling our capacity
+to apply expert skills, to whomever is willing to pay us most, in our own interest. We are in the business of applying expert skills in the public interest, which we
+have an obligation to put before our own. Professionals, as a class, must be fiduciaries, not (just) to our own clients, but to the democratic public writ large.
+
+That must go beyond mere aspiration. We must reshape our professions so it becomes plausible that our obligations to the public interest override our own interests.
+That means altering the structure, and ultimately compressing the potential scale, of compensation. Excellent professionals should prosper. There should be a degree of
+incentive to encourage activity and capability. But when [extrinsic incentives](https://www.interfluidity.com/v2/8511.html) become too strong, too "high-powered",
+they [undermine virtue](https://www.interfluidity.com/v2/5031.html). We need a flatter structure of outcomes, 
+one that does not so heavily penalize pursuit of excellences that are not so rare or novel, like teaching, care work, or the tedious, meticulous aspects of science.
+Among the most important thing professionals do is help
+adjudicate complicated tradeoffs. At best, outside incentive providers misunderstand these tradeoffs, and risk accidentally skewing outcomes.
+More often, incentive providers have parochial stakes in outcomes, and so the skewing is not accidental. We need to dramatically
+reduce the role of outside incentive providers in shaping how professionals behave.
