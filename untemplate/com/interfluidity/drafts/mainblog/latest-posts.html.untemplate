@@ -3,6 +3,11 @@ import unstatic.PageBase
 
 val (renderLocation, blog) = tup
 
+def notUpdateAnnouncement( resolved : blog.EntryResolved ) =
+  import unstatic.ztapir.simple.{Attribute,SimpleBlog}
+  import Attribute.Key.*
+  resolved.checkAttributeKey(Attribute.Key.`SyntheticType`) != Some(SimpleBlog.SyntheticType.UpdateAnnouncement.toString)
+
 given PageBase = PageBase.fromPage(renderLocation)
 
 (tup : (DraftsSite.SiteLocation, DraftsSite.MainBlog.type))[]~()>
@@ -15,7 +20,7 @@ given PageBase = PageBase.fromPage(renderLocation)
   <div class="latest-posts-title">latest posts:</div>
   <div class="latest-posts-body">
 <()
-      blog.entriesResolved.take( numEntries ).foreach {
+      blog.entriesResolved.filter( notUpdateAnnouncement ).take( numEntries ).foreach {
         entryResolved => {
           def relativeUrlToPermalink = DraftsSite.location(entryResolved.entryInfo.permalinkPathSiteRooted).relative
 
