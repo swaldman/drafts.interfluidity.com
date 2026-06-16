@@ -1,0 +1,43 @@
+> val updateHistory =
+>   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
+>   Nil
+>
+> val uid = "multiple-parties-in-government-ii"
+>
+> val UntemplateAttributes = immutable.Map[String,Any] (
+>   "Title"         -> "Multiple parties in government: A gadget toward accountability and action",
+>   "Author"        -> "Steve Randy Waldman",
+>   "PubDate"       -> "2026-06-16T17:00:00-03:00",
+>   "UpdateHistory" -> updateHistory,
+>   //"Related"       -> Relateds.Housing.excluding(uid),
+>   //"Sprout"        -> true,
+>   "Anchor"        -> uid
+> )
+
+given PageBase = PageBase.fromPage(input.renderLocation)
+
+(input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
+
+In the [previous post](multiple-parties-in-government-i), we discussed why *status quo* multiparty democracy fails to adequately represent pluralistic publics, even though members of the public can cast votes for a rich menu of parties, including some that ostensibly share their values and interests.
+
+In a nutshell, the problem stems from the fact that (1) once elected, representatives must join heterogeneous coalitions in order to wield power; and (2) while those coalitions are heterogeneous in terms of party and ideology, they are homogenous in an orthogonal sense: all electeds share an interest in continuing to hold and wield power. Whoever we elect, whether in a two-party or multiparty system, we end up with a legislature made of incumbents who coordinate in large part to entrench, empower, and enrich incumbency. We are always governed, ultimately, by a governing coalition whose primary interest is to remain the governing coalition.
+
+There is some hope, however, in the rump existence of those ideologically coherent political parties. What if we could get those parties to precommit to the actions that they would take if they could, *prior* to the intercession of intracoalitional politics? What if those commitments might actually become effective, become a *status quo* that the blob &mdash; the full governing coalition &mdash; would encounter as a *fait accompli*, one they could only modify or correct via visible, politically dangerous, action rather than deniable, politically invisible, inaction?
+
+Here's the gadget:
+
+Instead of treating the legislative process as piecemeal, one-at-a-time small changes, expect to produce one major bill per legislative session. This bill, in its initial draft, would not be produced by negotiations among the full parliament, or even among the full ruling coalition. No. Each party represented in the legislature would be responsible for crafting their own bill, their version of the perfect result of the current legislative session. All of these bills would be finalized among the legislators of each respective party, and then published prior to an agreed deadline. Then, one bill from the collection would be chosen *at random, weighted by each party's share of the legislature,* to become the first draft of the parliament's work for that session.
+
+It would only be the first draft! Of course, the full body could and would amend it. However, any amendments would face a substantial supermajority requirement, something like the US Senate's *de facto* 60%. The "[lottery vote](https://www.semanticscholar.org/paper/1-1-1984-Choosing-Representatives-by-Lottery-Voting-Amar/6fd70eabac758800771f8baf880e7064cf361aa3?p2df)" that yields the default proposal would not be merely ceremonial, then quickly rolled back to the same-old-same-old. It would have effect, except where a substantial consensus exists that sections must be modified, eliminated, replaced, or augmented. When, occasionally, proposals offered by smaller parties win the legislative session's lottery, amendments would likely be very substantial. But every change would be an overt action, visible to the public. The "sensible" supermajority of the legislature would have to affirmatively explain why the Weird Party's great idea (or the Racist Party's mass expulsion) would in fact be terrible and should not survive into law. When, more frequently, the proposal of a sizable party wins the legislative lottery, only a very strong consensus among the rest, supplemented perhaps by open dissidence among some members of the winning party, could smooth away rough edges.
+
+This procedure would render parties suddenly very accountable. Party representatives would be accountable to their voters, because the proposal they draft would be purely an internal exercise. It would be their job and duty to craft what we, the party, believe the best way forward to be, without interference by or compromise with other members of any coalition. Representatives could, and undoubtedly would, craft their proposals with an eye toward maintaining broader support in the legislature should their draft be chosen. But no one could force what party rank-and-file would experience as painful compromises, and the supermajority requirement to amend means representatives would face a steep hill if they try to plead necessity for what their voters condemn as preemptive surrender.
+
+Also, the parties would become accountable to the polity as a whole, because even for smaller parties, there would be a significant possibility that proposals would either be enacted or incur a great deal of public effort to defang. The public tolerates purely performative fringe parties whose ideas and promises are entirely unworkable, because they are expected always to be irrelevant as a practical matter. But unaccountable performativity is toxic to the actual work of governing. Under this system, a 5% fringe party's platform would have a sizable shot of doing mischief. Its proponents could become extremely unpopular if by chance their bad ideas become law, or if the parliament's work for a session is bogged down in publicly dissecting and eliminating their bad ideas.
+
+This procedure would also counter the powerful [incentives to inaction](##wreckresentative-democracy-secret-congress-bee-sting-theory) among elected representatives. The result of inaction would no longer be a tolerable, almost invisible, *status quo*. On the contrary, legislative timidity would mean acceding to a profound set of changes, enacting the vision of a single political party, sometimes even a fringe political party. Sitting quietly, under these circumstances, would no longer suffice as a strategy to avoid criticism and political risk. Not participating in the work of undoing reckless proposals that might take effect absent active intercession would become a lightning rod for criticism. The safe default would be eliminated. In each legislative session, both while drafting their party's proposal and working to correct the winning draft, representatives would be stuck actively, visibly expressing the values and interests they work in practice to advance.
+
+This procedure might seem dangerous, but events in the United States, in Germany, in much of the (once) liberal democratic world prove that the *status quo* is quite dangerous.
+
+Even under the proposed procedure, after the major law takes effect (and its consequences become clear), corrections could continue to be made by the same supermajority that previously could have amended the law. It must always be possible for a supermajority to revise or undo obviously terrible law. In the end, in a democracy, a political consensus should always rule.
+
+*Status quo* electoral and legislative institutions currently obstruct formation of a broad, rough consensus. The very instability and dynamism inherent to this proposal might help remedy that. It would become less possible to stabilize and entrench rigid coalitions that mutually defer to what becomes a safe but democratically inadequate orthodoxy, but who maintain power by persuading voters that any deviation invites catastrophe. Until eventually increasingly dissatisfied voters opt for catastrophe.
