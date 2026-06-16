@@ -18,7 +18,7 @@ given PageBase = PageBase.fromPage(input.renderLocation)
 
 (input : MainBlog.EntryInput)[]~()>      ### modify Title/Author/Pubdate above, add markdown or html below!
 
-In the [previous post](multiple-parties-in-government-i), we discussed why *status quo* multiparty democracy fails to adequately represent pluralistic publics, even though members of the public can cast votes for a rich menu of parties, including some that ostensibly share their values and interests.
+In the [previous post](##multiple-parties-in-government-i), we discussed why *status quo* multiparty democracy fails to adequately represent pluralistic publics, even though members of the public can cast votes for a rich menu of parties, including some that ostensibly share their values and interests.
 
 In a nutshell, the problem stems from the fact that (1) once elected, representatives must join heterogeneous coalitions in order to wield power; and (2) while those coalitions are heterogeneous in terms of party and ideology, they are homogenous in an orthogonal sense: all electeds share an interest in continuing to hold and wield power. Whoever we elect, whether in a two-party or multiparty system, we end up with a legislature made of incumbents who coordinate in large part to entrench, empower, and enrich incumbency. We are always governed, ultimately, by a governing coalition whose primary interest is to remain the governing coalition.
 
