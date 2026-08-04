@@ -180,6 +180,12 @@ header {
     color: var( --menu-link-color );
     text-decoration: none;
 }
+/*
+  ORDER-DEPENDENT: :visited and :hover have identical specificity here
+  (#menu-container a:visited vs #menu-container a:hover, both 1-1-1), so whichever
+  is written last wins. :hover must stay below :visited or a visited link will not
+  change on hover. The usual LVHA rule.
+*/
 #menu-container a:visited {
     color: var( --menu-link-color );
 }
@@ -193,6 +199,9 @@ header {
   No hamburger above the narrow breakpoint. Hiding the checkbox too, not just the
   button: display:none is what keeps it out of the tab order, where an invisible
   focusable control would otherwise sit.
+
+  ORDER-DEPENDENT: the 520px block re-enables both with the same selectors and so the
+  same specificity. It only wins because it appears later in the file.
 */
 #menu-toggle, #menu-button {
     display: none;
@@ -784,13 +793,28 @@ body.old-draft #top-banner {
   before then. Keep 520 in sync with the matchMedia call in layout-main.html, which
   uses the same threshold to default narrow screens to modern.
 */
+/*
+  ===========================================================================
+  ORDER-DEPENDENT BLOCK. A media query adds no specificity of its own, so every
+  override below ties with the base rule it is overriding and wins purely because
+  it comes later in the file. Moving this block above the rules it overrides would
+  silently undo all of it -- no error, no warning, just the desktop styling back.
+
+  What relies on that here:
+    :root --menu-link-color   ties with the base :root  (0-1-0)
+    #menu-toggle, #menu-button  tie with the base hide  (1-0-0)
+    #menu-container grid-row/column  tie with the base placement (1-0-0)
+    #menu-container a:hover   ties with the desktop hover rule (1-1-1)
+
+  Keep this block last, before only the 300px query.
+  ===========================================================================
+*/
 @media only screen and (max-width: 520px) {
     /*
       #BBB is right for the inline strip on desktop, where the items read as one
       quiet line. Stacked, each item is on its own and needs more weight to hold --
       and black is already the page's ink, so there's no call to invent a grey.
       Covers the links and the hamburger alike, both of which read this variable.
-      Hover still reads, since it carries the yellow ground rather than a colour change.
     */
     :root {
         --menu-link-color: black;
@@ -833,6 +857,10 @@ body.old-draft #top-banner {
           with definite placement is contained by its grid area, which here would be
           the narrow hamburger cell. With auto placement the containing block is the
           header's padding box, so left/right:0 span its full width.
+
+          ORDER-DEPENDENT: ties with the base #menu-container placement (1-0-0) and wins
+          only by coming later. If it lost, the panel would silently shrink to the
+          hamburger's cell instead of spanning the header.
         */
         grid-row: auto;
         grid-column: auto;
@@ -841,50 +869,51 @@ body.old-draft #top-banner {
         left: 0;
         right: 0;
         z-index: 10;
-        background-color: white;   /* opaque, or the text beneath reads through */
-        /* the same 2pt black rule the entry separators use */
-        border-bottom: 2pt solid black;
-        padding-bottom: 0.75em;
+        /*
+          Translucent, so text behind shows through rather than being sliced by the
+          panel's edge. The taller the panel grows the more it covers, so it needs a
+          correspondingly higher alpha to stay quiet: at 44px rows it reaches down over
+          body text as well as the headline.
+        */
+        background-color: rgba( 204, 204, 204, 0.92 );
+        border-top: 1pt solid black;
         display: none;
     }
     #menu-toggle:checked ~ #menu-container {
         display: block;
-    }
-    /*
-      The panel's lower edge lands wherever it lands, typically slicing a line of body
-      text in half, which reads as broken rather than as covered. This washes the rest
-      of the viewport out so whatever the panel bisects is plainly *behind* it.
-
-      z-index: -1 puts the wash behind the panel's own background while staying inside
-      the panel's stacking context, so it still covers the page beneath.
-    */
-    #menu-toggle:checked ~ #menu-container::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba( 255, 255, 255, 0.88 );
-        z-index: -1;
-    }
-    /*
-      The wash covers the whole viewport, header included, which would fade the very
-      control you need in order to close the menu. Lift the header's own furniture
-      back above it; only the page content below stays dimmed.
-    */
-    #menu-toggle:checked ~ #menu-button,
-    #menu-toggle:checked ~ #rss-link-container {
-        position: relative;
-        z-index: 11;
     }
     #menu-container .menu-sep {
         display: none;
     }
     #menu-container a {
         display: block;
-        padding: 0.35em 0;
+        font-family: CooperHewitt-Bold;
+        /*
+          0.95em top and bottom, not 0.6: the menu is 10pt, so an em here is 13.3px,
+          and this is what puts the row at the ~44px tap target guideline.
+        */
+        padding: 0.95em 0 0.95em 1em;
+        border-bottom: 1pt solid black;
     }
+    /*
+      ORDER-DEPENDENT, and the sharpest edge in this block: this ties exactly with the
+      desktop #menu-container a:hover (both 1-1-1) and beats it only by being later.
+
+      That is also why font-family is repeated rather than redundant -- the desktop
+      hover rule sets CooperHewitt-Light, which would otherwise override the Bold set
+      just above on hover alone, so the row would change weight as the pointer crossed
+      it. display/padding/border-bottom genuinely are redundant; kept so the rule reads
+      as a complete description of a hovered row.
+    */
+    #menu-container a:hover {
+        display: block;
+        font-family: CooperHewitt-Bold;
+        padding: 0.95em 0 0.95em 1em;
+        border-bottom: 1pt solid black;
+        color: white;
+        background-color: black;
+    }
+
 }
 
 @media only screen and (max-width: 300px) {
