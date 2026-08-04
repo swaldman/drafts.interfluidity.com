@@ -45,7 +45,17 @@
       // Restore the reader's typography choice before first paint, so there is no
       // flash of typewriter on the way to modern. Must run before the stylesheet
       // has anything to apply to, i.e. before <body> exists.
-      try { document.documentElement.dataset.typography = localStorage.getItem("typography") || "typewriter"; } catch (e) {}
+      //
+      // Absent an explicit choice, narrow screens default to modern: justified
+      // monospace at ~45 characters a line opens ugly rivers of space. Deliberately
+      // does NOT write localStorage -- storing the computed default would freeze
+      // whichever mode the device first happened to load in. Evaluated once, not on
+      // resize, since swapping the body face mid-read is worse than a stale default.
+      try {
+          const stored = localStorage.getItem("typography");
+          const narrow = window.matchMedia("(max-width: 520px)").matches; // keep in sync with style.css
+          document.documentElement.dataset.typography = stored || (narrow ? "modern" : "typewriter");
+      } catch (e) {}
     </script>
   <link rel="stylesheet" href="css/style.css">
   <script>
@@ -73,11 +83,16 @@
  <body>
   <div id="top-banner"></div>
   <header>
+   <!--
+        Hamburger, css-only. #menu-toggle must precede both #menu-button (focus ring)
+        and #menu-container (the :checked ~ reveal), and all three must stay siblings.
+      -->
+   <input type="checkbox" id="menu-toggle" aria-label="Show menu"> <label for="menu-toggle" id="menu-button">≡</label>
    <div id="rss-link-container">
     <a id="rss-link" href="feed/index.rss"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>•<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
    </div>
    <div id="menu-container">
-    <a href="index.html">top</a> | <a href="archive.html">archive</a> | <a href="subscribe.html">subscribe</a> | <a href="#" id="typography-toggle"><span class="if-typewriter">modern</span><span class="if-modern">typewriter</span></a> | <a href="https://www.interfluidity.com/">main</a>
+    <a href="index.html">top</a><span class="menu-sep"> | </span><a href="archive.html">archive</a><span class="menu-sep"> | </span><a href="subscribe.html">subscribe</a><span class="menu-sep"> | </span><a href="#" id="typography-toggle"><span class="if-typewriter">modern</span><span class="if-modern">typewriter</span></a><span class="menu-sep"> | </span><a href="https://www.interfluidity.com/">main</a>
    </div>
   </header>
   <main>

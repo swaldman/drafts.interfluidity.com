@@ -189,6 +189,14 @@ header {
     /* text-decoration: underline; */
     background-color: yellow;
 }
+/*
+  No hamburger above the narrow breakpoint. Hiding the checkbox too, not just the
+  button: display:none is what keeps it out of the tab order, where an invisible
+  focusable control would otherwise sit.
+*/
+#menu-toggle, #menu-button {
+    display: none;
+}
 /* the toggle names the mode it would switch you *to* */
 #typography-toggle .if-modern {
     display: none;
@@ -768,6 +776,114 @@ body.old-draft #top-banner {
     }
     .latest-posts {
         flex-direction: column;
+    }
+}
+
+/*
+  Phones. The menu needs a 376px viewport to stay on one line, so it collapses well
+  before then. Keep 520 in sync with the matchMedia call in layout-main.html, which
+  uses the same threshold to default narrow screens to modern.
+*/
+@media only screen and (max-width: 520px) {
+    /*
+      #BBB is right for the inline strip on desktop, where the items read as one
+      quiet line. Stacked, each item is on its own and needs more weight to hold --
+      and black is already the page's ink, so there's no call to invent a grey.
+      Covers the links and the hamburger alike, both of which read this variable.
+      Hover still reads, since it carries the yellow ground rather than a colour change.
+    */
+    :root {
+        --menu-link-color: black;
+    }
+    /* clipped rather than display:none, so it stays keyboard-reachable */
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+    }
+    #menu-button {
+        display: block;
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: start;   /* hug the glyph; a 1fr-wide label would make the whole header row a hit target */
+        /*
+          The label lives in <header>, not #menu-container, so it would otherwise
+          inherit the body face -- and Public Sans has no U+2261, which would send
+          the glyph to a fallback font. Cooper Hewitt has it.
+        */
+        font-family: CooperHewitt-Light;
+        font-size: 16pt;
+        line-height: 1;
+        cursor: pointer;
+        padding: 0.2em 0.3em;  /* a finger-sized tap target */
+        color: var( --menu-link-color );
+    }
+    #menu-toggle:focus-visible ~ #menu-button {
+        outline: 2px solid black;
+    }
+    header {
+        position: relative;   /* containing block for the menu panel */
+    }
+    #menu-container {
+        /*
+          grid-row/column must go back to auto: an absolutely positioned grid child
+          with definite placement is contained by its grid area, which here would be
+          the narrow hamburger cell. With auto placement the containing block is the
+          header's padding box, so left/right:0 span its full width.
+        */
+        grid-row: auto;
+        grid-column: auto;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-color: white;   /* opaque, or the text beneath reads through */
+        /* the same 2pt black rule the entry separators use */
+        border-bottom: 2pt solid black;
+        padding-bottom: 0.75em;
+        display: none;
+    }
+    #menu-toggle:checked ~ #menu-container {
+        display: block;
+    }
+    /*
+      The panel's lower edge lands wherever it lands, typically slicing a line of body
+      text in half, which reads as broken rather than as covered. This washes the rest
+      of the viewport out so whatever the panel bisects is plainly *behind* it.
+
+      z-index: -1 puts the wash behind the panel's own background while staying inside
+      the panel's stacking context, so it still covers the page beneath.
+    */
+    #menu-toggle:checked ~ #menu-container::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba( 255, 255, 255, 0.88 );
+        z-index: -1;
+    }
+    /*
+      The wash covers the whole viewport, header included, which would fade the very
+      control you need in order to close the menu. Lift the header's own furniture
+      back above it; only the page content below stays dimmed.
+    */
+    #menu-toggle:checked ~ #menu-button,
+    #menu-toggle:checked ~ #rss-link-container {
+        position: relative;
+        z-index: 11;
+    }
+    #menu-container .menu-sep {
+        display: none;
+    }
+    #menu-container a {
+        display: block;
+        padding: 0.35em 0;
     }
 }
 
