@@ -17,7 +17,7 @@ given PageBase = PageBase.fromPage(renderLocation)
     case Some( numEntries ) =>
 ()>
 <div class="latest-posts">
-  <div class="latest-posts-title">latest posts:</div>
+  <div class="latest-posts-title">latest&nbsp;posts:</div>
   <div class="latest-posts-body">
 <()
       blog.entriesResolved.filter( notUpdateAnnouncement ).take( numEntries ).foreach {

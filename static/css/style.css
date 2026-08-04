@@ -160,9 +160,10 @@ header {
     color: var( --menu-link-color );
 }
 #menu-container a:hover {
-    font-family: CooperHewitt-Bold;
+    font-family: CooperHewitt-Light;
     color: black;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    background-color: yellow;
 }
 /* the toggle names the mode it would switch you *to* */
 #typography-toggle .if-modern {
