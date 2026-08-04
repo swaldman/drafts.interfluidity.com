@@ -634,7 +634,8 @@ div.subscribe-form div.sf-submit {
 }
 
 .latest-posts {
-    font-family: var( --font-link );
+    /* deliberately NOT var(--font-link), even in modern let's keep "latest posts" as handwritten after all. */
+    font-family: caroni;
     font-size: 12pt;
     display: flex;
     flexDirection: row;
