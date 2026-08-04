@@ -74,6 +74,12 @@ end title
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs" href="https://www.interfluidity.com/unify-rss/all-blogs.rss">
     <link rel="alternate" type="application/rss+xml" title="interfluidity - all blogs and microblogs" href="https://www.interfluidity.com/unify-rss/all-blogs-and-microblogs.rss">
     <( input.singleItemRssSpec.map( _.htmlLinkAlternateRelative(input.renderLocation.siteRootedPath) ).getOrElse("") )>
+    <script>
+      // Restore the reader's typography choice before first paint, so there is no
+      // flash of typewriter on the way to modern. Must run before the stylesheet
+      // has anything to apply to, i.e. before <body> exists.
+      try { document.documentElement.dataset.typography = localStorage.getItem("typography") || "typewriter"; } catch (e) {}
+    </script>
     <link rel="stylesheet" href="<( cssLoc.relative )>">
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -85,6 +91,14 @@ end title
               b.classList.add("old-draft");
               tb.innerHTML = "You are looking at an old, superceded version of this page. For the current version, please <a href=\"" + match[1] + ".html\">click here</a>.";
           }
+
+          document.getElementById("typography-toggle").addEventListener("click", function(evt) {
+              evt.preventDefault();
+              const root = document.documentElement;
+              const next = root.dataset.typography === "modern" ? "typewriter" : "modern";
+              root.dataset.typography = next;
+              try { localStorage.setItem("typography", next); } catch (e) {}
+          });
        });
     </script>
     <title><( title )></title>
@@ -96,7 +110,7 @@ end title
         <a id="rss-link" href="<( feedLoc.relative )>"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
       </div>
       <div id="menu-container">
-	<a href="<( mainLoc.relative )>">top</a> | <a href="<( archiveLoc.relative )>">archive</a> | <a href="<( subscribeLoc.relative )>">subscribe</a> | <a href="#">modern</a> | <a href="https://www.interfluidity.com/">main</a>
+	<a href="<( mainLoc.relative )>">top</a> | <a href="<( archiveLoc.relative )>">archive</a> | <a href="<( subscribeLoc.relative )>">subscribe</a> | <a href="#" id="typography-toggle"><span class="if-typewriter">modern</span><span class="if-modern">typewriter</span></a> | <a href="https://www.interfluidity.com/">main</a>
       </div>
     </header>
     <main>

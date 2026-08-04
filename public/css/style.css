@@ -45,10 +45,69 @@
 
 :root {
     --title-offset: -1em;
-    --prev-next-color: #DDD;
-    --menu-link-color: #DDD;
+    --prev-next-color: #BBB;
+    --menu-link-color: #BBB;
     --link-blue: rgb(93,117,222);
     --link-hover: #80D; /* #080; */
+
+    /*
+      Typography, typewriter (the default). The "modern" menu item flips
+      data-typography on <html>, which re-points these; every rule below reads
+      them rather than naming a face directly.
+    */
+    --font-body:             Latin-Modern-Mono-Light;
+    --font-body-bold:        Latin-Modern-Mono-Light-Bold;
+    --font-body-italic:      Latin-Modern-Mono-Light-Oblique;
+    --font-body-bold-italic: Latin-Modern-Mono-Light-Bold-Oblique;
+    --font-weight-bold:      normal;  /* bold is its own face here; don't double-embolden */
+    --font-style-italic:     normal;  /* oblique is its own face here */
+
+    --font-link:             caroni;
+    --font-link-size:        115%;
+    --font-link-shift:       -1pt;
+
+    --body-line-height:       normal;  /* the browser default, i.e. today's single spacing */
+    --blockquote-line-height: 110%;
+    --footnotes-line-height:  120%;
+
+    --blockquote-image:  url("../image/blockquote-line.png");  /* the pen-drawn stroke */
+    --blockquote-border: none;
+    /*
+      The png carries its own left inset (the ink sits ~6.5px into a 16px image),
+      so typewriter needs no margin. Modern reproduces that inset with margin, and
+      takes it back out of the padding so the quote is indented the same overall.
+    */
+    --blockquote-margin-left:  0.0em;
+    --blockquote-padding-left: 2em;
+
+    --entry-separator-content: '<< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    --entry-separator-border:  none;
+}
+
+:root[data-typography="modern"] {
+    --font-body:             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-body-bold:        var( --font-body );
+    --font-body-italic:      var( --font-body );
+    --font-body-bold-italic: var( --font-body );
+    --font-weight-bold:      700;
+    --font-style-italic:     italic;
+
+    --font-link:             inherit;
+    --font-link-size:        100%;
+    --font-link-shift:       0;
+
+    /* line-and-a-half body; quotes and footnotes stay proportionally tighter */
+    --body-line-height:       1.5;
+    --blockquote-line-height: 1.35;
+    --footnotes-line-height:  1.35;
+
+    --blockquote-image:  none;
+    --blockquote-border: 3pt solid #C00;
+    --blockquote-margin-left:  0.5em;   /* ≈ the png's 6.5px ink inset */
+    --blockquote-padding-left: 1.25em;  /* 0.5em + 3pt border + 1.25em ≈ the 2em above */
+
+    --entry-separator-content: '';
+    --entry-separator-border:  2pt solid black;
 }
 
 * {
@@ -57,7 +116,7 @@
 
 
 body {
-    font-family: Latin-Modern-Mono-Light;
+    font-family: var( --font-body );
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -84,6 +143,7 @@ header {
     text-align: right;
 }
 #menu-container {
+    font-family: CooperHewitt-Light;
     /*border: 2px solid orange;*/
     grid-row: 1;
     grid-column: 1;
@@ -100,7 +160,19 @@ header {
     color: var( --menu-link-color );
 }
 #menu-container a:hover {
+    font-family: CooperHewitt-Bold;
     color: black;
+    text-decoration: underline;
+}
+/* the toggle names the mode it would switch you *to* */
+#typography-toggle .if-modern {
+    display: none;
+}
+:root[data-typography="modern"] #typography-toggle .if-modern {
+    display: inline;
+}
+:root[data-typography="modern"] #typography-toggle .if-typewriter {
+    display: none;
 }
 main {
     flex-shrink: 1;
@@ -114,20 +186,20 @@ main {
     /* border: green solid 1px; */
 }
 b, strong {
-    font-family: Latin-Modern-Mono-Light-Bold;
-    font-weight: normal;
+    font-family: var( --font-body-bold );
+    font-weight: var( --font-weight-bold );
 }
 i, em {
     /* letter-spacing: -0.015em; */
     /* I prefer the synthesized slant... */
-    font-family: Latin-Modern-Mono-Light-Oblique;
-    font-style: normal;
+    font-family: var( --font-body-italic );
+    font-style: var( --font-style-italic );
 }
 b i, b em, strong i, strong em, i b, em b, i strong, em strong {
     /* letter-spacing: -0.05em; */
-    font-family: Latin-Modern-Mono-Light-Bold-Oblique;
-    font-style: normal;
-    font-weight: normal;
+    font-family: var( --font-body-bold-italic );
+    font-style: var( --font-style-italic );
+    font-weight: var( --font-weight-bold );
 }
 h1, h2, h3, h4, h5 {
     font-family: CooperHewitt-Bold;
@@ -144,10 +216,11 @@ blockquote::before {
 */
 blockquote {
     font-size: 90%;
-    line-height: 110%;
-    margin-left: 0.0em;
-    padding-left: 2em;
-    background-image: url("../image/blockquote-line.png");
+    line-height: var( --blockquote-line-height );
+    margin-left: var( --blockquote-margin-left );
+    padding-left: var( --blockquote-padding-left );
+    border-left: var( --blockquote-border );
+    background-image: var( --blockquote-image );
     background-repeat: no-repeat;
 }
 div.entry-header h1, div.subscribe-space h1 {
@@ -176,15 +249,15 @@ div.entry-body a, div.related a {
     text-decoration: none;
     /* color: black; */
     color: var( --link-blue );
-    font-family: caroni;
-    font-size: 115%;
+    font-family: var( --font-link );
+    font-size: var( --font-link-size );
     /* font-family: F25_Bank_Printer; */
     /*
       font-family: xxx-1942-report;
       letter-spacing: -0.125em;
     */
     position: relative;
-    bottom: -1pt;
+    bottom: var( --font-link-shift );
 }
 div.entry-body a:hover, div.related a:hover {
     /* text-decoration: underline; */
@@ -222,12 +295,14 @@ div.entry-body a.anchorlink:after {
 }
 */
 div.entry-body a i, div.entry-body a em, div.entry-body i a, div.entry-body em a {
-    font-family: caroni;
+    font-family: var( --font-link );
+    /* oblique falls back to a real italic face when the family has no oblique */
     font-style: oblique;
 }
 div.entry-body {
     text-align: justify;
     text-wrap: pretty;
+    line-height: var( --body-line-height );
 }
 article.synthetic em, article.synthetic i {
     font-family: CooperHewitt-Light;
@@ -343,6 +418,7 @@ div.entry-footer .post-metainfo {
 a#rss-link {
     color: black;
     text-decoration: none;
+    /* deliberately NOT var(--font-body-bold): the ascii art only lines up in mono */
     font-family: Latin-Modern-Mono-Light-Bold;
     font-weight: normal;
 }
@@ -368,7 +444,8 @@ sup {
     content: none;
 }
 .flexmark a.footnote-ref {
-    font-family: Latin-Modern-Mono-Light-Bold;
+    font-family: var( --font-body-bold );
+    font-weight: var( --font-weight-bold );
 }
 .flexmark .footnotes li {
     margin-bottom: 0.5rem;
@@ -387,7 +464,7 @@ sup {
 }
 .footnotes {
     font-size: smaller;
-    line-height: 120%;
+    line-height: var( --footnotes-line-height );
 }
 .bottom-form {
     padding-top: 4em;
@@ -428,10 +505,11 @@ hr.entry-separator {
     margin-top: 2em;
     margin-bottom: 2em;
     border: none;
+    border-top: var( --entry-separator-border );
 }
 hr.entry-separator::before {
     font-size: 100%;
-    content: '<< - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    content: var( --entry-separator-content );
     display: block;
     text-align: left;
     white-space: nowrap;
@@ -486,8 +564,8 @@ div.subscribe-form {
     padding-bottom: 1.5rem;
 }
 div.subscribe-form div.sf-label {
-    font-family: Latin-Modern-Mono-Light-Bold;
-    font-weight: normal;
+    font-family: var( --font-body-bold );
+    font-weight: var( --font-weight-bold );
     text-align: right;
     white-space: nowrap;
     grid-column: 1;
@@ -531,7 +609,7 @@ div.subscribe-form div.sf-submit {
 }
 
 .latest-posts {
-    font-family: caroni;
+    font-family: var( --font-link );
     font-size: 12pt;
     display: flex;
     flexDirection: row;
@@ -651,8 +729,12 @@ body.old-draft #top-banner {
     footer {
     	min-height: 1.5em; /* bigger on desktop to prevent occlusion by link targets on hover */
     }
-    hr.entry-separator::before {
-        content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+    /*
+      Set the variable rather than `content`, so the modern override
+      (higher specificity, wins regardless of order) still applies here.
+    */
+    :root {
+        --entry-separator-content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
     }
     div.entry-body {
       hyphens: auto;
