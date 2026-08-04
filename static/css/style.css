@@ -6,6 +6,30 @@
     font-family: 'RobotoCondensedItalic';
     src: url('../font/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf');
 }
+/*
+  Public Sans, the preferred face for "modern". Both files are variable on wght,
+  and their default instance is Thin — so the 100..900 descriptor is load-bearing:
+  without it the browser renders the thin default for every weight. With it,
+  font-weight 400 and 700 instantiate normally, and the italic file gives us a
+  real italic rather than a synthesized slant.
+
+  font-display: swap so the system-sans fallback paints immediately and Public
+  Sans swaps in when it arrives, rather than blocking on the download.
+*/
+@font-face {
+    font-family: 'PublicSans';
+    src: url('../font/Public_Sans/PublicSans-VariableFont_wght.ttf');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PublicSans';
+    src: url('../font/Public_Sans/PublicSans-Italic-VariableFont_wght.ttf');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
 @font-face {
     font-family: Latin-Modern-Mono-Light;
     src: url("../font/Latin-Modern-Mono/lmmonolt10-regular.otf") format("opentype");
@@ -85,7 +109,7 @@
 }
 
 :root[data-typography="modern"] {
-    --font-body:             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-body:             'PublicSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --font-body-bold:        var( --font-body );
     --font-body-italic:      var( --font-body );
     --font-body-bold-italic: var( --font-body );
