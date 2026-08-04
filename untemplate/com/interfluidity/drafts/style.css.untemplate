@@ -200,7 +200,7 @@ header {
   button: display:none is what keeps it out of the tab order, where an invisible
   focusable control would otherwise sit.
 
-  ORDER-DEPENDENT: the 520px block re-enables both with the same selectors and so the
+  ORDER-DEPENDENT: the <( DraftsSite.WidthThresholdMobilePixels )>px block re-enables both with the same selectors and so the
   same specificity. It only wins because it appears later in the file.
 */
 #menu-toggle, #menu-button {
@@ -790,8 +790,7 @@ body.old-draft #top-banner {
 
 /*
   Phones. The menu needs a 376px viewport to stay on one line, so it collapses well
-  before then. Keep 520 in sync with the matchMedia call in layout-main.html, which
-  uses the same threshold to default narrow screens to modern.
+  before then.
 */
 /*
   ===========================================================================
@@ -809,7 +808,7 @@ body.old-draft #top-banner {
   Keep this block last, before only the 300px query.
   ===========================================================================
 */
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: <( DraftsSite.WidthThresholdMobilePixels )>px) {
     /*
       #BBB is right for the inline strip on desktop, where the items read as one
       quiet line. Stacked, each item is on its own and needs more weight to hold --

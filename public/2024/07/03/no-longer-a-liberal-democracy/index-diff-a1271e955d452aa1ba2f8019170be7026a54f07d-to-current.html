@@ -52,7 +52,7 @@
 <tr class="INSERT"><th class="lineno">56</th><td></td><td><span class="NEW INSERT">      // resize, since swapping the body face mid-read is worse than a stale default.</span></td></tr>
 <tr class="INSERT"><th class="lineno">57</th><td></td><td><span class="NEW INSERT">      try {</span></td></tr>
 <tr class="INSERT"><th class="lineno">58</th><td></td><td><span class="NEW INSERT">          const stored = localStorage.getItem("typography");</span></td></tr>
-<tr class="INSERT"><th class="lineno">59</th><td></td><td><span class="NEW INSERT">          const narrow = window.matchMedia("(max-width: 520px)").matches; // keep in sync with style.css</span></td></tr>
+<tr class="INSERT"><th class="lineno">59</th><td></td><td><span class="NEW INSERT">          const narrow = window.matchMedia("(max-width: 520px)").matches;</span></td></tr>
 <tr class="INSERT"><th class="lineno">60</th><td></td><td><span class="NEW INSERT">          document.documentElement.dataset.typography = stored || (narrow ? "modern" : "typewriter");</span></td></tr>
 <tr class="INSERT"><th class="lineno">61</th><td></td><td><span class="NEW INSERT">      } catch (e) {}</span></td></tr>
 <tr class="INSERT"><th class="lineno">62</th><td></td><td><span class="NEW INSERT">    &lt;/script&gt;</span></td></tr>

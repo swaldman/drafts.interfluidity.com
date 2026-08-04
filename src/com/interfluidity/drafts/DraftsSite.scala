@@ -6,7 +6,8 @@ import unstatic.*
 import unstatic.ztapir.*
 import unstatic.ztapir.simple.*
 
-import unstatic.*, UrlPath.*
+import UrlPath.*
+import ZTEndpointBinding.publicReadOnlyCss
 
 import java.nio.file.Path as JPath
 
@@ -21,6 +22,14 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
   override val basePath  : Rooted = Rooted.root
 
   case class MainLayoutInput( renderLocation : SiteLocation, mainContentHtml : String, sourceUntemplates : immutable.Seq[AnyUntemplate] = immutable.Seq.empty, singleItemRssSpec : Option[SingleItemRssSpec] = None )
+
+  val WidthThresholdMobilePixels = 520
+
+  object Stylesheet:
+    val location = DraftsSite.location("/css/style.css")
+    val task = zio.ZIO.attempt( style_css().text )
+    val endpointBinding = publicReadOnlyCss( location, task, None, immutable.Set("style.css","stylesheet-main") )
+  end Stylesheet
 
   object MainBlog extends SimpleBlog:
     override type Site = DraftsSite.type
@@ -117,7 +126,7 @@ object DraftsSite extends ZTSite.SingleStaticRootComposite( JPath.of("static") )
     end Zip
 
     override def endpointBindings : immutable.Seq[ZTEndpointBinding] =
-      super.endpointBindings :+ Archive.endpointBinding :+ Subscribe.endpointBinding :+ Zip.endpointBinding
+      super.endpointBindings :+ Stylesheet.endpointBinding :+ Archive.endpointBinding :+ Subscribe.endpointBinding :+ Zip.endpointBinding
 
   end MainBlog
 

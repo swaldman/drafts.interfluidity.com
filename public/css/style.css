@@ -790,8 +790,7 @@ body.old-draft #top-banner {
 
 /*
   Phones. The menu needs a 376px viewport to stay on one line, so it collapses well
-  before then. Keep 520 in sync with the matchMedia call in layout-main.html, which
-  uses the same threshold to default narrow screens to modern.
+  before then.
 */
 /*
   ===========================================================================
