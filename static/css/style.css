@@ -45,8 +45,8 @@
 
 :root {
     --title-offset: -1em;
-    --prev-next-color: #DDD;
-    --menu-link-color: #DDD;
+    --prev-next-color: #BBB;
+    --menu-link-color: #BBB;
     --link-blue: rgb(93,117,222);
     --link-hover: #80D; /* #080; */
 }
@@ -84,6 +84,7 @@ header {
     text-align: right;
 }
 #menu-container {
+    font-family: CooperHewitt-Light;
     /*border: 2px solid orange;*/
     grid-row: 1;
     grid-column: 1;
@@ -100,7 +101,9 @@ header {
     color: var( --menu-link-color );
 }
 #menu-container a:hover {
+    font-family: CooperHewitt-Bold;
     color: black;
+    text-decoration: underline;
 }
 main {
     flex-shrink: 1;

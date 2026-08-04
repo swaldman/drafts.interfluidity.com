@@ -96,7 +96,7 @@ end title
         <a id="rss-link" href="<( feedLoc.relative )>"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
       </div>
       <div id="menu-container">
-	<a href="<( mainLoc.relative )>">top</a> | <a href="<( archiveLoc.relative )>">archive</a> | <a href="<( subscribeLoc.relative )>">subscribe</a> | <a href="https://www.interfluidity.com/">main</a>
+	<a href="<( mainLoc.relative )>">top</a> | <a href="<( archiveLoc.relative )>">archive</a> | <a href="<( subscribeLoc.relative )>">subscribe</a> | <a href="#">modern</a> | <a href="https://www.interfluidity.com/">main</a>
       </div>
     </header>
     <main>
