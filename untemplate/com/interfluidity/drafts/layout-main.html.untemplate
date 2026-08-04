@@ -27,6 +27,13 @@ val title =
   mbTitle.getOrElse("drafts &mdash; interfluidity")
 end title
 
+def maybeMenuItem(target : site.SiteLocation, label : String, last : Boolean = false) =
+  if input.renderLocation != target then
+    s"""<a href="${target.relative}">${label}</a>""" + (if !last then """<span class="menu-sep"> | </span>""" else "")
+  else
+    ""
+end maybeMenuItem
+
 (input : DraftsSite.MainLayoutInput)[]~()>
 <!DOCTYPE html>
 <html lang="en">
@@ -126,7 +133,7 @@ end title
         <a id="rss-link" href="<( feedLoc.relative )>"><span class="outer">(</span><span class="middle">(</span><span class="inner">(</span>&bull;<span class="inner">)</span><span class="middle">)</span><span class="outer">)</span></a>
       </div>
       <div id="menu-container">
-	<a href="<( mainLoc.relative )>">top</a><span class="menu-sep"> | </span><a href="<( archiveLoc.relative )>">archive</a><span class="menu-sep"> | </span><a href="<( subscribeLoc.relative )>">subscribe</a><span class="menu-sep"> | </span><a href="#" id="typography-toggle"><span class="if-typewriter">modern</span><span class="if-modern">typewriter</span></a><span class="menu-sep"> | </span><a href="https://www.interfluidity.com/">main</a>
+	<( maybeMenuItem(mainLoc, "top") )><( maybeMenuItem(archiveLoc, "archive") )><( maybeMenuItem( subscribeLoc, "subscribe" ) )><a href="#" id="typography-toggle"><span class="if-typewriter">modern</span><span class="if-modern">typewriter</span></a><span class="menu-sep"> | </span><a href="https://www.interfluidity.com/">main</a>
       </div>
     </header>
     <main>
