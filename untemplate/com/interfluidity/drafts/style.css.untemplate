@@ -762,7 +762,7 @@ body.old-draft #top-banner {
 
 @media only screen and (max-width: 700px) {
     :root {
-    	--title-offset: 0em;
+        --title-offset: 0em;
     }
     main {
         max-width: unset;
@@ -770,7 +770,7 @@ body.old-draft #top-banner {
         margin-right: 2em;;
     }
     footer {
-    	min-height: 1.5em; /* bigger on desktop to prevent occlusion by link targets on hover */
+        min-height: 1.5em; /* bigger on desktop to prevent occlusion by link targets on hover */
     }
     /*
       Set the variable rather than `content`, so the modern override
@@ -874,7 +874,7 @@ body.old-draft #top-banner {
           correspondingly higher alpha to stay quiet: at 44px rows it reaches down over
           body text as well as the headline.
         */
-        background-color: rgba( 204, 204, 204, 0.92 );
+        background-color: rgba( 204, 204, 204, 0.87 );
         border-top: 1pt solid black;
         display: none;
     }
