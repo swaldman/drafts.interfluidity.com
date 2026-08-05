@@ -9,7 +9,7 @@
 >   "Author"        -> "Steve Randy Waldman",
 >   "PubDate"       -> "2025-03-26T15:40:00-04:00",
 >   "UpdateHistory" -> updateHistory,
->   //"Related"       -> Relateds.HardInformationSoftInformation.excluding(uid),
+>   "Related"       -> Relateds.Democracy.excluding(uid),
 >   //"Sprout"      -> true,
 >   "Anchor"        -> uid
 > )

@@ -2,13 +2,16 @@
 >   //UpdateRecord("2024-06-05T22:50:00-04:00", Some("Only a test."), Some("086d755547b8e59254d3ca84e00365b1a184cb95")) ::
 >   Nil
 >
+> val uid = "authority-minimization"
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Authority minimization",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-06-09T20:45:00-04:00",
 >   //"UpdateHistory" -> updateHistory,
+>   "Related"   -> Relateds.Democracy.excluding(uid),
 >   //"Sprout"        -> true,
->   "Anchor"    -> "authority-minimization"
+>   "Anchor"    -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

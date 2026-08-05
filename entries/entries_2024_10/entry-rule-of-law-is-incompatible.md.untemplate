@@ -2,13 +2,16 @@
 >   //UpdateRecord("2024-09-13T00:15:00-04:00", Some("Add bold update, clarifying that I do not support debt-financed SWF purchases in ordinary times."), Some("66fbfad790d809e24266ef13862ba79b7a6654fd")) ::
 >   Nil
 >
+> val uid = "rule-of-law-is-incompatible-two-parties"
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Rule-of-law is incompatible with a sharply polarized two-party system",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2024-10-21T13:35:00-04:00",
 >   "UpdateHistory" -> updateHistory,
+>   "Related"      -> Relateds.Democracy.excluding(uid),
 >   //"Sprout"      -> true,
->   "Anchor"       -> "rule-of-law-is-incompatible-two-parties"
+>   "Anchor"       -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

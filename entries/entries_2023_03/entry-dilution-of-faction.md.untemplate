@@ -4,6 +4,7 @@
 >   "Title"     -> "Dilution of faction requires voting system reform",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-03-08T02:20:00-05:00",
+>   "Related"   -> Relateds.Democracy.excluding(uid),
 >   "Anchor"    -> uid
 > )
 

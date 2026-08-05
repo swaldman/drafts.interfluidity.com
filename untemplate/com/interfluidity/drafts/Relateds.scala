@@ -30,7 +30,7 @@ object Relateds:
       Related.Item( "https://www.interfluidity.com/v2/8772.html", title = Some("Microcities") )                            ::
       Related.Item( "##only-the-state-can-house-us",              title = Some("Only the state can house us") )            ::
       Related.Item( "##yimboree",                                 title = Some("Yimboree") )                               ::
-      Related.Item( "##it-isnt-sprawl-if-its-dense",              title = Some("It isn't sprawl of it's dense") )          ::
+      Related.Item( "##it-isnt-sprawl-if-its-dense",              title = Some("It isn't sprawl if it's dense") )          ::
       Related.Item( "##a-conversation-with-kevin-erdmann",        title = Some("A conversation with Kevin Erdmann") )      ::
       Nil
   object HardInformationSoftInformation extends Abstract:

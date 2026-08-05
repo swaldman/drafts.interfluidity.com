@@ -1,8 +1,11 @@
+> val uid = "two-parties-make-us-stupid"
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Two parties make us stupid",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-04-21T12:25:00-04:00",
->   "Anchor"    -> "two-parties-make-us-stupid"
+>   "Related"   -> Relateds.Democracy.excluding(uid),
+>   "Anchor"    -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
