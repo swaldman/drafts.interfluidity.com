@@ -2,13 +2,15 @@
 >   //UpdateRecord("2024-10-22T21:00:00-04:00", Some("This is just a temporary dummy test update to style updates."), Some("40a76141baeae4ccf283f421811540575dafdb2c")) ::
 >   Nil
 >
+> val uid = "plutocracy-as-a-positive-ideal"
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"         -> "Plutocracy as a positive ideal",
 >   "Author"        -> "Steve Randy Waldman",
 >   "PubDate"       -> "2024-11-19T12:40:00-05:00",
 >   "UpdateHistory" -> updateHistory,
 >   //"Sprout"      -> true,
->   //"Anchor"        -> ???
+>   "Anchor"        -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)

@@ -6,7 +6,7 @@ version="2.0" xmlns:iffy="http://tech.interfluidity.com/xml/iffy/" xmlns:atom="h
     <link>https://drafts.interfluidity.com/index.html</link>
     <description><![CDATA[Steve Randy Waldman's thoughts on policy and economics. Always unfinished.]]></description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 4 Aug 2026 18:47:33 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 5 Aug 2026 08:05:43 -0400</lastBuildDate>
     <generator>https://github.com/swaldman/unstatic</generator>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link type="application/rss+xml" rel="self" href="https://drafts.interfluidity.com/all-item-feed/index.rss"/>
@@ -2227,7 +2227,7 @@ version="2.0" xmlns:iffy="http://tech.interfluidity.com/xml/iffy/" xmlns:atom="h
       <title>Plutocracy as a positive ideal</title>
       <dc:creator><![CDATA[Steve Randy Waldman]]></dc:creator>
       <content:encoded>
-        <![CDATA[<article class="presentation-rss">
+        <![CDATA[<article class="presentation-rss uid-plutocracy-as-a-positive-ideal">
  <div class="entry-header-body-footer">
   <div class="entry-header"></div>
   <div class="entry-body">
@@ -6972,7 +6972,7 @@ whatfer@u.washington.edu          .-'-.
       <title>Dilution of faction requires voting system reform</title>
       <dc:creator><![CDATA[Steve Randy Waldman]]></dc:creator>
       <content:encoded>
-        <![CDATA[<article class="presentation-rss">
+        <![CDATA[<article class="presentation-rss uid-dilution-of-faction-requires-voting-system-reform">
  <div class="entry-header-body-footer">
   <div class="entry-header"></div>
   <div class="entry-body">

@@ -1,8 +1,10 @@
+> val uid = "dilution-of-faction-requires-voting-system-reform"
+>
 > val UntemplateAttributes = immutable.Map[String,Any] (
 >   "Title"     -> "Dilution of faction requires voting system reform",
 >   "Author"    -> "Steve Randy Waldman",
 >   "PubDate"   -> "2023-03-08T02:20:00-05:00",
->   // "Anchor"    -> "first-post"
+>   "Anchor"    -> uid
 > )
 
 given PageBase = PageBase.fromPage(input.renderLocation)
