@@ -69,8 +69,8 @@
 
 :root {
     --title-offset: -1em;
-    --prev-next-color: #BBB;
-    --menu-link-color: #BBB;
+    --prev-next-color: #AAA;
+    --menu-link-color: #AAA;
     --link-blue: rgb(93,117,222);
     --link-hover: #80D; /* #080; */
 
@@ -85,6 +85,8 @@
     --font-body-bold-italic: Latin-Modern-Mono-Light-Bold-Oblique;
     --font-weight-bold:      normal;  /* bold is its own face here; don't double-embolden */
     --font-style-italic:     normal;  /* oblique is its own face here */
+
+    --menu-font-family:      Latin-Modern-Mono-Light;
 
     --font-link:             caroni;
     --font-link-size:        115%;
@@ -167,7 +169,7 @@ header {
     text-align: right;
 }
 #menu-container {
-    font-family: CooperHewitt-Light;
+    font-family: var( --menu-font-family );
     /*border: 2px solid orange;*/
     grid-row: 1;
     grid-column: 1;
@@ -179,6 +181,8 @@ header {
 #menu-container a {
     color: var( --menu-link-color );
     text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 /*
   ORDER-DEPENDENT: :visited and :hover have identical specificity here
@@ -190,10 +194,10 @@ header {
     color: var( --menu-link-color );
 }
 #menu-container a:hover {
-    font-family: CooperHewitt-Light;
+    font-family: var( --menu-font-family );
     color: black;
     /* text-decoration: underline; */
-    background-color: yellow;
+    background-color: rgba( 0, 255, 255, 0.25 );
 }
 /*
   No hamburger above the narrow breakpoint. Hiding the checkbox too, not just the
