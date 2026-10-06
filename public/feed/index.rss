@@ -6,7 +6,7 @@ version="2.0" xmlns:iffy="http://tech.interfluidity.com/xml/iffy/" xmlns:atom="h
     <link>https://drafts.interfluidity.com/index.html</link>
     <description><![CDATA[Steve Randy Waldman's thoughts on policy and economics. Always unfinished.]]></description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 7 Aug 2026 15:12:12 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 6 Oct 2026 08:16:37 -0400</lastBuildDate>
     <generator>https://github.com/swaldman/unstatic</generator>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link type="application/rss+xml" rel="self" href="https://drafts.interfluidity.com/feed/index.rss"/>
